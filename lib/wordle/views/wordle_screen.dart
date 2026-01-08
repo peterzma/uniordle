@@ -70,4 +70,13 @@ class _WordleScreenState extends State<WordleScreen> {
       setState(() => _currentWord?.removeLetter());
     }
   }
+
+  void _onEnterTapped() {
+    if (_gameStatus == GameStatus.playing &&
+        _currentWord != null && 
+        !_currentWord!.letters.contains(Letter.empty())
+    ) {
+      _gameStatus = GameStatus.submitting;
+    }
+  }
 }
