@@ -13,8 +13,17 @@ class Word extends Equatable {
 
   void addLetter(String val) {
     final currentIndex = letters.indexWhere((e) => e.val.isEmpty);
+    // sets letter at the proper position
     if (currentIndex != -1) {
       letters[currentIndex] = Letter(val: val);
+    }
+  }
+
+  void removeLetter() {
+    final recentLetterIndex = letters.lastIndexWhere((e) => e.val.isNotEmpty);
+    // removes letter at the proper position
+    if (recentLetterIndex != -1) {
+      letters[recentLetterIndex] = Letter.empty();
     }
   }
 }
