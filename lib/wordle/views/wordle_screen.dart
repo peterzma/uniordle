@@ -58,4 +58,10 @@ class _WordleScreenState extends State<WordleScreen> {
       ),
     );
   }
+
+  void _onKeyTapped(String val) {
+    if (_gameStatus == GameStatus.playing) {
+      setState(() => _currentWord?.addLetter(val));
+    }
+  }
 }
