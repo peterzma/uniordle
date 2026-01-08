@@ -78,5 +78,22 @@ class _WordleScreenState extends State<WordleScreen> {
     ) {
       _gameStatus = GameStatus.submitting;
     }
-  }
+
+    for (var i = 0; i < _currentWord!.letters.length; i++) {
+      final currentWordLetter = _currentWord!.letters[i];
+      final currentSolutionLetter = _solution.letters[i];
+
+      setState(() {
+        if (currentWordLetter == currentSolutionLetter) {
+          _currentWord!.letters[i] =
+              currentWordLetter.copyWith(status: LetterStatus.correct);
+        } else if (_solution.letters.contains(currentWordLetter)) {
+          _currentWord!.letters[i] =
+              currentWordLetter.copyWith(status: LetterStatus.inWord);
+        } else {
+          _currentWord!.letters[i] =  
+              currentWordLetter.copyWith(status: LetterStatus.notInWord);
+        });
+      }
+    }
 }

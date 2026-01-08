@@ -2,7 +2,7 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter_wordle/app/app_colors.dart';
 import 'package:flutter/material.dart';
 
-enum LetterStatus { initial, notInWorld, inWord, correct }
+enum LetterStatus { initial, notInWord, inWord, correct }
 
 class Letter extends Equatable {
   const Letter({
@@ -21,7 +21,7 @@ class Letter extends Equatable {
     switch (status) {
       case LetterStatus.initial:
         return Colors.transparent;
-      case LetterStatus.notInWorld:
+      case LetterStatus.notInWord:
         return notInWordColor;
       case LetterStatus.inWord:
         return inWordColor;
