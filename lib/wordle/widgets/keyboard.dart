@@ -92,8 +92,19 @@ class _KeyboardButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+        vertical: 3.0,
+        horizontal: 2.0,
+      ),
+      child: Material(
+        color: backgroundColor,
+        borderRadius: BorderRadius.circular(4),
+        child: InkWell(
+          onTap: onTap,
+          child: Container(),
+        ),
+      ),
     );
   }
 }
