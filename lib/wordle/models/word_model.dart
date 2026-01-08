@@ -26,4 +26,7 @@ class Word extends Equatable {
       letters[recentLetterIndex] = Letter.empty();
     }
   }
+
+  @override
+  List<Object?> get props => [letters];
 }
