@@ -121,7 +121,7 @@ class _WordleScreenState extends State<WordleScreen> {
         );
     } else if (_currentWordIndex + 1 >= _board.length) {
       _gameStatus = GameStatus.lost;
-            ScaffoldMessenger.of(context).showSnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           dismissDirection: DismissDirection.none,
           duration: const Duration(days: 1),
@@ -129,14 +129,14 @@ class _WordleScreenState extends State<WordleScreen> {
           content: const Text (
             'You Lost! Solution: ${_solution.wordString}',
             style: TextStyle(color: Colors.white),
-            ),
-            action: SnackBarAction(
-              onPressed: _restart,
-              textColor: Colors.white,
-              label: 'New Game',
-            ),
           ),
-        );
+          action: SnackBarAction(
+            onPressed: _restart,
+            textColor: Colors.white,
+            label: 'New Game',
+          ),
+        ),
+      );
     } else {
       _gameStatus = GameStatus.playing;
     }
