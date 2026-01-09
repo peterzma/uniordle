@@ -72,34 +72,10 @@ Windows:
 flutter build windows
 ```
 
-### Playing the Web Build
-
-Flutter web builds must be served over HTTP.
-
-Steps:
-
-1. Open a terminal
-2. Navigate to:
-
-   ```bash
-   cd build/web
-   ```
-3. Run:
-
-   ```bash
-   python -m http.server
-   ```
-4. Open:
-
-   ```
-   http://localhost:8000
-   ```
-
 ## Releases
 
 You can download prebuilt versions from GitHub Releases:
 
-* Web build: unzip and serve with a local web server
 * Windows build: download and run the `.exe`
 
 Latest release:
