@@ -30,6 +30,8 @@ class _WordleScreenState extends State<WordleScreen> {
     fiveLetterWords[Random().nextInt(fiveLetterWords.length)].toUpperCase(),
   );
 
+  final Set<Letter> _keyboardLetters = {};
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,8 +55,9 @@ class _WordleScreenState extends State<WordleScreen> {
           const SizedBox(height: 80),
           Keyboard(
             onKeyTapped: _onKeyTapped,
-            OnDeleteTapped: _onDeleteTapped
+            onDeleteTapped: _onDeleteTapped,
             onEnterTapped: _onEnterTapped,
+            letters: _keyboardLetters,
           )
         ],
       ),
@@ -76,27 +79,37 @@ class _WordleScreenState extends State<WordleScreen> {
   void _onEnterTapped() {
     if (_gameStatus == GameStatus.playing &&
         _currentWord != null && 
-        !_currentWord!.letters.contains(Letter.empty())
-    ) {
+        !_currentWord!.letters.contains(Letter.empty())) {
       _gameStatus = GameStatus.submitting;
-    }
 
-    for (var i = 0; i < _currentWord!.letters.length; i++) {
-      final currentWordLetter = _currentWord!.letters[i];
-      final currentSolutionLetter = _solution.letters[i];
+      for (var i = 0; i < _currentWord!.letters.length; i++) {
+        final currentWordLetter = _currentWord!.letters[i];
+        final currentSolutionLetter = _solution.letters[i];
 
-      setState(() {
-        if (currentWordLetter == currentSolutionLetter) {
-          _currentWord!.letters[i] =
-              currentWordLetter.copyWith(status: LetterStatus.correct);
-        } else if (_solution.letters.contains(currentWordLetter)) {
-          _currentWord!.letters[i] =
-              currentWordLetter.copyWith(status: LetterStatus.inWord);
-        } else {
-          _currentWord!.letters[i] =  
-              currentWordLetter.copyWith(status: LetterStatus.notInWord);
+        setState(() {
+          if (currentWordLetter == currentSolutionLetter) {
+            _currentWord!.letters[i] =
+                currentWordLetter.copyWith(status: LetterStatus.correct);
+          } else if (_solution.letters.contains(currentWordLetter)) {
+            _currentWord!.letters[i] =
+                currentWordLetter.copyWith(status: LetterStatus.inWord);
+          } else {
+            _currentWord!.letters[i] =  
+                currentWordLetter.copyWith(status: LetterStatus.notInWord);
+          }
+        });
+
+        final letter = _keyboardLetters.firstWhere(
+          (e) => e.val == currentWordLetter.val,
+          orElse: () => Letter.empty(),
+        );
+        if (letter.status != LetterStatus.correct) {
+          _keyboardLetters.removeWhere((e) => e.val == currentWordLetter.val);
+          _keyboardLetters.add(_currentWord!.letters[i]);
         }
-      });
+      }
+        
+        _checkIfWinOrLoss();
     }
   }
 
@@ -158,6 +171,7 @@ class _WordleScreenState extends State<WordleScreen> {
       _solution = Word.fromString(
         fiveLetterWords[Random().nextInt(fiveLetterWords.length)].toUpperCase(),
       );
+      _keyboardLetters.clear();
     });
   }
 }

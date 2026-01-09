@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_wordle/wordle/wordle.dart';
 
 const _qwerty = [
   ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],
@@ -10,15 +11,18 @@ class Keyboard extends StatelessWidget {
   const Keyboard({ 
     Key? key,
     required this.onKeyTapped,
-    required this.OnDeleteTapped,
+    required this.onDeleteTapped,
     required this.onEnterTapped,
+    required this.letters,
   }): super(key: key);
 
   final void Function(String) onKeyTapped;
 
-  final VoidCallback OnDeleteTapped;
+  final VoidCallback onDeleteTapped;
 
   final VoidCallback onEnterTapped;
+
+  final Set<Letter> letters;
 
   @override
   Widget build(BuildContext context) {
@@ -31,14 +35,22 @@ class Keyboard extends StatelessWidget {
               children: keyRow.map(
                 (letter) {
                   if (letter == 'DEL') {
-                    return _KeyboardButton.delete(onTap: OnDeleteTapped);
+                    return _KeyboardButton.delete(onTap: onDeleteTapped);
                   } else if (letter == 'ENTER') {
                     return _KeyboardButton.enter(onTap: onEnterTapped);
                   }
-                  return _KeyboardButton.letter(
+
+                  final letterKey = letters.firstWhere(
+                    (e) => e.val == letter,
+                    orElse: () => Letter.empty(),
+                  );
+
+                  return _KeyboardButton(
                     onTap: () => onKeyTapped(letter),
                     letter: letter,
-                    backgroundColor: Colors.grey,
+                    backgroundColor: letterKey != Letter.empty()
+                        ? letterKey.backgroundColor
+                        : Colors.grey,
                   );
                 },
               ).toList(),
