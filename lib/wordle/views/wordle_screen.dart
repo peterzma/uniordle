@@ -1,6 +1,5 @@
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_wordle/app/app_colors.dart';
 import 'package:flutter_wordle/wordle/data/word_list.dart';
 import 'package:flutter_wordle/wordle/wordle.dart';
 import 'dart:math';

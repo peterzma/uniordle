@@ -68,7 +68,8 @@ class _KeyboardButton extends StatelessWidget {
     this.width = 30,
     required this.onTap,
     required this.backgroundColor,
-    required this.letter,
+    this.letter,
+    this.child,
     }): super(key: key);
 
     // del and enter keys are special sizes
@@ -79,7 +80,11 @@ class _KeyboardButton extends StatelessWidget {
         width: 56,
         onTap: onTap,
         backgroundColor: Colors.grey,
-        letter: 'DEL',
+        child: const Icon(
+          Icons.backspace, 
+          color: Colors.white, 
+          size: 20
+        ),
       );
 
     factory _KeyboardButton.enter({ 
@@ -100,7 +105,9 @@ class _KeyboardButton extends StatelessWidget {
 
     final Color backgroundColor;
 
-    final String letter;
+    final String? letter;
+
+    final Widget? child;
 
   @override
   Widget build(BuildContext context) {
