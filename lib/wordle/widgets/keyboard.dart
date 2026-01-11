@@ -57,7 +57,7 @@ class Keyboard extends StatelessWidget {
                     letter: letter,
                     backgroundColor: letterKey != Letter.empty()
                         ? letterKey.backgroundColor
-                        : Colors.grey,
+                        : Color(0xFF818384),
                   );
                 },
               ).toList(),
@@ -86,7 +86,7 @@ class _KeyboardButton extends StatelessWidget {
       _KeyboardButton(
         width: 56,
         onTap: onTap,
-        backgroundColor: Colors.grey,
+        backgroundColor: Color(0xFF818384),
         child: const Icon(
           Icons.backspace, 
           color: Colors.white, 
@@ -100,7 +100,7 @@ class _KeyboardButton extends StatelessWidget {
       _KeyboardButton(
         width: 56,
         onTap: onTap,
-        backgroundColor: Colors.grey,
+        backgroundColor: Color(0xFF818384),
         letter: 'ENTER',
       );
 
