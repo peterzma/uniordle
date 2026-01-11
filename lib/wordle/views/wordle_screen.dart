@@ -40,7 +40,7 @@ class _WordleScreenState extends State<WordleScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: : const Color(0xFF121213),
+      backgroundColor: const Color(0xFF121213),
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.transparent,
