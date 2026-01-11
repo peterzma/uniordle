@@ -46,13 +46,13 @@ class _WordleScreenState extends State<WordleScreen> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: const Padding(
-          padding: EdgeInsets.only(top: 20),
+          padding: EdgeInsets.all(20),
           child: Text(
             'UNIORDLE',
             style: TextStyle(
               fontSize: 36,
-              fontFamily: 'Roboto',
-              fontWeight: FontWeight.bold,
+              fontFamily: 'franklin',
+              fontWeight: FontWeight.w700,
               letterSpacing: 4,
             ),
           ),
