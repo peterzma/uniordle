@@ -75,8 +75,8 @@ flutter:
   fonts:
     - family: FranklinGothic
       fonts:
-        - asset: assets/fonts/FranklinGothic-Regular.ttf
-        - asset: assets/fonts/FranklinGothic-Bold.ttf
+        - asset: fonts/FranklinGothic-Regular.ttf
+        - asset: fonts/FranklinGothic-Bold.ttf
           weight: 700
   #   - family: Trajan Pro
   #     fonts:
