@@ -7,6 +7,17 @@ const _qwerty = [
   ['ENTER', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', 'DEL'],
 ];
 
+const _numpad = [
+  ['7', '8', '9'],
+  ['4', '5', '6'],
+  ['1', '2', '3'],
+  ['0', '.', 'DEL'],
+];
+
+class Numpad extends StatelessWidget {
+  
+}
+
 
 
 class Keyboard extends StatelessWidget {
