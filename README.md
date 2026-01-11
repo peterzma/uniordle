@@ -95,3 +95,4 @@ Latest release:
 * Improve UI for game over, restart, and win states
 * Add full physical keyboard input support
 * Add custom game modes
+* UQ mode to guess course codes
