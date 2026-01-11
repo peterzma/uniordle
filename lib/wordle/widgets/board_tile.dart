@@ -27,13 +27,27 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
       vsync: this,
     );
 
+    // pump effect
     _animation = TweenSequence<double>([
-      TweenSquenceItem(tween: Tween(begin: 1.0, end: 1.15), weight: 50),
-      TweenSquenceItem(tween: Tween(begin: 1.15, end: 1.0), weight: 50),
+      TweenSequenceItem(tween: Tween(begin: 1.0, end: 1.15), weight: 50),
+      TweenSequenceItem(tween: Tween(begin: 1.15, end: 1.0), weight: 50),
     ]).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
   }
 
+  @override
+  void didUpdateWidget(covariant BoardTile oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // plays pump effect when added letter
+    if (oldWidget.letter.val.isEmpty && widget.letter.val.isNotEmpty) {
+      _controller.forward(from: 0.0);
+    }
+  }
 
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
