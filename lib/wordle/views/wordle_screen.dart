@@ -4,6 +4,8 @@ import 'package:flutter_wordle/wordle/data/word_list.dart';
 import 'package:flutter_wordle/wordle/wordle.dart';
 import 'dart:math';
 
+const Duration _keyClickDelay = Duration(milliseconds: 1500);
+
 enum GameStatus { playing, submitting, won, lost }
 
 class WordleScreen extends StatefulWidget {
@@ -118,10 +120,8 @@ class _WordleScreenState extends State<WordleScreen> {
           _keyboardLetters.add(_currentWord!.letters[i]);
         }
 
-        await Future.delayed(
-          const Duration(milliseconds: 150),
-          () => _flipCardKeys[_currentWordIndex][i].currentState?.toggleCard(),
-        );
+        await Future.delayed(_keyClickDelay);
+        _flipCardKeys[_currentWordIndex][i].currentState?.toggleCard();
       }
         
         _checkIfWinOrLoss();

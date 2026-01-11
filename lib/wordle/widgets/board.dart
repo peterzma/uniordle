@@ -2,6 +2,8 @@ import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_wordle/wordle/wordle.dart';
 
+const int _flipSpeed = 600;
+
 class Board extends StatelessWidget {
   const Board({ 
     Key? key, 
@@ -33,6 +35,7 @@ class Board extends StatelessWidget {
                           key: flipCardKeys[i][j],
                           flipOnTouch: false,
                           direction: FlipDirection.VERTICAL,
+                          speed: _flipSpeed,
                           front: BoardTile(
                             letter: Letter(
                               val: letter.val,

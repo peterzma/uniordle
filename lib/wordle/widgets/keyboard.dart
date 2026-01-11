@@ -16,7 +16,7 @@ const _numpad = [
 
 const double _keyboardTextOffset = -2.0;
 const double _darkenIntensity = 0.3;
-const double _darkenSpeed = 10;
+const int _darkenSpeed = 10;
 
 class Keyboard extends StatelessWidget {
   
@@ -114,7 +114,6 @@ class _KeyboardButton extends StatefulWidget {
     }) =>
       _KeyboardButton(
         width: 65,
-
         onTap: onTap,
         backgroundColor: Color(0xFF818384),
         letter: 'ENTER',
