@@ -1,8 +1,8 @@
-# Flutter Wordle
+# UniWordle
 
 ## Overview
 
-Flutter Wordle is a Wordle-style word puzzle game built with Flutter and Dart. You guess a hidden word within a limited number of attempts, using colour feedback to guide each guess.
+UniWordle is a Wordle-style word puzzle game built with Flutter and Dart. You guess a hidden word within a limited number of attempts, using colour feedback to guide each guess. Words are based on University Course Codes.
 
 ## Features
 
@@ -95,4 +95,4 @@ Latest release:
 * Improve UI for game over, restart, and win states
 * Add full physical keyboard input support
 * Add custom game modes
-* UQ mode to guess course codes
+* Add different Universities.

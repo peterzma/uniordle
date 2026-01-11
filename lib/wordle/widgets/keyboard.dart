@@ -14,12 +14,6 @@ const _numpad = [
   ['0', '.', 'DEL'],
 ];
 
-class Numpad extends StatelessWidget {
-  
-}
-
-
-
 class Keyboard extends StatelessWidget {
   const Keyboard({ 
     Key? key,
