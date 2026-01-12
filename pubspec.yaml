@@ -106,3 +106,7 @@ flutter:
     fonts:
       - asset: assets/fonts/clashdisplay/clashdisplay.ttf
         weight: 400
+  - family: dm-sans
+    fonts:
+      - asset: assets/fonts/dm-sans/DMSans_24pt-Black.ttf
+        weight: 900

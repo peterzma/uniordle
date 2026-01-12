@@ -77,8 +77,8 @@ class Keyboard extends StatelessWidget {
 class _KeyboardButton extends StatefulWidget {
   const _KeyboardButton({ 
     Key? key, 
-    this.height = 58,
-    this.width = 43,
+    this.height = 64,
+    this.width = 44,
     required this.onTap,
     required this.backgroundColor,
     this.letter,
@@ -97,15 +97,15 @@ class _KeyboardButton extends StatefulWidget {
       required VoidCallback onTap 
     }) =>
       _KeyboardButton(
-        width: 65,
+        width: 66,
         onTap: onTap,
         backgroundColor: Color(0xFF818384),
         child: Transform.translate(
-          offset: const Offset(0, _keyboardTextOffset + 1.5),
+          offset: const Offset(0, _keyboardTextOffset),
           child: const Icon(
-            Icons.backspace_outlined, 
+            Icons.backspace, 
             color: Colors.white, 
-            size: 20
+            size: 22
           ),
         ),
       );
@@ -114,7 +114,7 @@ class _KeyboardButton extends StatefulWidget {
       required VoidCallback onTap,
     }) =>
       _KeyboardButton(
-        width: 65,
+        width: 66,
         onTap: onTap,
         backgroundColor: Color(0xFF818384),
         letter: 'ENTER',
@@ -123,7 +123,7 @@ class _KeyboardButton extends StatefulWidget {
           child: const Text(
             'ENTER',
             style: TextStyle(
-              fontSize: 12,  // Change this to your desired size
+              fontSize: 14,  // Change this to your desired size
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
@@ -142,8 +142,8 @@ class _KeyboardButtonState extends State<_KeyboardButton> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(
-        horizontal: 2.0, 
-        vertical: 3.5,
+        horizontal: 4.0, 
+        vertical: 4.0,
       ),
       child: GestureDetector(
         onTapDown: (_) => setState(() => _isPressed = true),
@@ -167,9 +167,9 @@ class _KeyboardButtonState extends State<_KeyboardButton> {
               widget.letter ?? '',
               textAlign: TextAlign.center,
               style: const TextStyle(
-                fontSize: 20,
-                fontFamily: 'franklin',
-                fontWeight: FontWeight.w700,
+                fontSize: 24,
+                fontFamily: 'dm-sans',
+                fontWeight: FontWeight.w900,
                 color: Colors.white,
               ),
             ),
