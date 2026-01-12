@@ -8,7 +8,7 @@ import 'dart:math';
 const Duration _flipDelay = Duration(milliseconds: 100);
 const Duration _flipDuration = Duration(milliseconds: 100);
 final int wordLength = 5;
-final int maxAttempts = 6;
+final int maxAttempts = 1;
 
 enum GameStatus { playing, submitting, won, lost }
 
@@ -66,18 +66,21 @@ class _WordleScreenState extends State<WordleScreen> {
         ),
       ),
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisSize: MainAxisSize.min, // shrink to fit content
         children: [
-          Board(board: _board, flipCardKeys: _flipCardKeys),
-          // distance between boxs and keyboard
-          const SizedBox(height: 12),
-          Keyboard(
-            onKeyTapped: _onKeyTapped,
-            onDeleteTapped: _onDeleteTapped,
-            onEnterTapped: _onEnterTapped,
-            letters: _keyboardLetters,
-          )
+          Expanded(
+            child: Center(
+              child: Board(board: _board, flipCardKeys: _flipCardKeys),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 12),
+            child: Keyboard(
+              onKeyTapped: _onKeyTapped,
+              onDeleteTapped: _onDeleteTapped,
+              onEnterTapped: _onEnterTapped,
+              letters: _keyboardLetters,
+            ),
+          ),
         ],
       ),
     );
