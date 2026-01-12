@@ -277,6 +277,43 @@ class _WordleScreenState extends State<WordleScreen> {
 }
 
 class _StatBox extends StatelessWidget {
-  final string title;
-  
+  final String title;
+  final String value;
+
+  const _StatBox({
+    required this.title;
+    required this.value;
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container( 
+      padding: const EdgeInsets.symmetric(vertical: 16),
+      decoration: BoxDecoration(
+        color: const Color(0XFF2A2A2A),
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: Colors.white12),
+      ),
+      child: Column(
+        children: [
+          Text(
+            title,
+            style: const TextStyle(
+              color: Colors.white60,
+              fontSize: 12,
+            ),
+          ),
+          const SizedBox(height: 6),
+          Text(
+          value,
+            style: const TextStyle(
+              color: Colors.white,
+              fontSize: 28,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 }
