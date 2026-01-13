@@ -12,5 +12,6 @@ void main() {
     appWindow.alignment = Alignment.center;
     appWindow.title = "Uniordle";
     appWindow.show();
+    
   });
 }
