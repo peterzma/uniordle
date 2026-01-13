@@ -1,19 +1,12 @@
 import 'package:flutter/material.dart';
 
-// overall
-const double _cornerRounding = 16;
-
 // outer box
-const double _outerBoxWidth = 32;
+const double _outerBoxWidth = 232;
 
 // top bar
-const double _topBarHeight = 16;
+const double _topBarHeight = 12;
 const Color _topBarWinColor = Color(0xFF55B725);
 const Color _topBarLoseColor = Color(0xFFC62121);
-
-// small label
-const double _smallLabelWidth = 8;
-const double _smallLabelHeight = 4;
 
 // stats box
 const double _statsHeight = 24;
@@ -43,7 +36,7 @@ class EndGameDialog extends StatelessWidget {
       ),
       backgroundColor: Color(0xFF1E2021),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(_cornerRounding),
+        borderRadius: BorderRadius.circular(12),
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -55,7 +48,7 @@ class EndGameDialog extends StatelessWidget {
             decoration: BoxDecoration(
               color: won ? _topBarWinColor : _topBarLoseColor,
               borderRadius: const BorderRadius.vertical(
-              top: Radius.circular(_cornerRounding),
+              top: Radius.circular(12),
               ),
             ),
             child: Text(
@@ -73,34 +66,39 @@ class EndGameDialog extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(
               horizontal: 20, 
-              vertical: 20
+              vertical: 16
             ), // inner boxes width padding
             child: Column(
               children: [
                 // top left label
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: _smallLabelWidth,
-                      vertical: _smallLabelHeight,
-                    ),
-                    decoration: BoxDecoration(
-                      color: Colors.black26,
-                      borderRadius: BorderRadius.circular(_cornerRounding),
-                    ),
-                    child: Text(
-                      '${solution.length} Letters',
-                      style: const TextStyle(
-                        color: Color(0xFFB0B4B7),
-                        fontSize: 14,
-                        fontFamily: 'dm-sans',
-                        fontWeight: FontWeight.w500,
+                  Column(
+                    children: [
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 6,
+                          vertical: 2,
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.black26,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Text(
+                          '${solution.length} Letters',
+                          style: const TextStyle(
+                            color: Color(0xFFB0B4B7),
+                            fontSize: 14,
+                            fontFamily: 'dm-sans',
+                            fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
                       ),
-                    ),
+                      const SizedBox(height: 16) // space between letters container and two stat boxes
+                    ],
                   ),
-                ),
-                const SizedBox(height: 18), // inner box background height
+                const SizedBox(height: 2), // padding between top bar and two boxes
                 // two boxes
                 Row(
                   children: [
@@ -119,28 +117,53 @@ class EndGameDialog extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(height: 18), // padding between two boxes to bottom box 
+                const SizedBox(height: 64), // padding between two boxes to bottom box 
                 // button
-                SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    onPressed: onRestart,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: _nextGameButtonColour,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(_cornerRounding),
-                      )
-                    ),
-                    child: Text(
-                      'New Game',
-                      style: const TextStyle(
-                        fontSize: 14,
-                        color: Colors.white,
-                        fontFamily: 'clashdisplay',
-                        fontWeight: FontWeight.w400
+                Row(
+                  children: [
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () => Navigator.pop(context),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.red,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                        ),
+                        child: const Text(
+                          'Back',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.white,
+                            fontFamily: 'clashdisplay',
+                            fontWeight: FontWeight.w400,
+                          ),
+                        )
                       ),
                     ),
-                  ),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: onRestart,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: _nextGameButtonColour,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          minimumSize: const Size.fromHeight(48),
+                        ),
+                        child: Text(
+                          'New Game',
+                          style: const TextStyle(
+                            fontSize: 14,
+                            color: Colors.white,
+                            fontFamily: 'clashdisplay',
+                            fontWeight: FontWeight.w400
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -167,7 +190,7 @@ class _StatBox extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: _statsHeight),
       decoration: BoxDecoration(
         color: const Color(0xFF1E2021),
-        borderRadius: BorderRadius.circular(_cornerRounding),
+        borderRadius: BorderRadius.circular(12),
         border: Border.all(color: Color(0xFF303436)),
       ),
       child: Column(
