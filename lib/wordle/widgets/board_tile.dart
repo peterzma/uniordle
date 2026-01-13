@@ -3,8 +3,13 @@ import 'package:flutter_wordle/wordle/wordle.dart';
 import 'package:flutter_wordle/app/app_colors.dart';
 
 const double _boardTileFontSize = 32;
-const Duration _pumpDuration = Duration(milliseconds: 80);
 const double _boardTileSize = 64;
+const double _boardTileGapPadding = 4;
+const double _boardTileCornerRounding = 5;
+const double _boardBorderWidth = 2;
+const Duration _pumpDuration = Duration(milliseconds: 80);
+const double _pumpBeginScale = 1.0;
+const double _pumpEndScale = 1.05;
 
 class BoardTile extends StatefulWidget {
   const BoardTile({
@@ -34,8 +39,8 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
     );
 
     _scale = Tween<double>(
-      begin: 1.0,
-      end: 1.05,
+      begin: _pumpBeginScale,
+      end: _pumpEndScale,
     ).animate(
       CurvedAnimation(parent: _controller, curve: Curves.easeOut),
     );
@@ -48,6 +53,7 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
   @override
   void didUpdateWidget(covariant BoardTile oldWidget) {
     super.didUpdateWidget(oldWidget);
+    // 0.0 for beginning of animation
     if (oldWidget.letter.val != widget.letter.val) _controller.forward(from: 0.0);
   }
 
@@ -62,7 +68,7 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
     return ScaleTransition(
       scale: _scale,
       child: Container(
-        margin: const EdgeInsets.all(4),
+        margin: const EdgeInsets.all(_boardTileGapPadding),
         height: _boardTileSize,
         width: _boardTileSize,
         alignment: Alignment.center,
@@ -72,9 +78,9 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
               : widget.letter.backgroundColor,
           border: Border.all(
             color: widget.letter.backgroundColor,
-            width: 2,
+            width: _boardBorderWidth,
           ),
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(_boardTileCornerRounding),
         ),
         child: Text(
           widget.letter.val,
