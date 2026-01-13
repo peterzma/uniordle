@@ -1,23 +1,27 @@
 import 'package:flutter/material.dart';
 
-// Outer box
-const double outerBoxWidth = 24;
-const double outerBoxCorner = 12;
+// outer box
+const double _outerBoxWidth = 24;
+const double _outerBoxCorner = 12;
 
-// Top bar
-const double topBarHeight = 14;
-const double topBarCorner = 12;
-const Color topBarWinColor = Color(0xFF55B725);
-const Color topBarLoseColor = Color(0xFFC62121);
+// top bar
+const double _topBarHeight = 14;
+const double _topBarCorner = 12;
+const Color _topBarWinColor = Color(0xFF55B725);
+const Color _topBarLoseColor = Color(0xFFC62121);
 
-// Stats box
-const double statsHeight = 22;
-const double statsCorner = 12;
-const double textToStatPadding = 6;
+// small label
+const double _smallLabelWidth = 8;
+const double _smallLabelHeight = 4;
+const double _smallLabelCorner = 10;
 
-// Button
-const double buttonCorner = 4;
-const Color buttonColor = topBarWinColor;
+// stats box
+const double _statsHeight = 22;
+const double _statsCorner = 12;
+const double _textToStatPadding = 6;
+
+// next game button
+const double _nextGameButtonColour = _topBarWinColor;
 
 class EndGameDialog extends StatelessWidget {
   final bool won;
@@ -39,18 +43,18 @@ class EndGameDialog extends StatelessWidget {
       backgroundColor: Color(0xFF1E2021),
       shape: RoundedRectangleBorder(
       // bottom of dialog corners
-        borderRadius: BorderRadius.circular(_outerBoxCornerRounding),
+        borderRadius: BorderRadius.circular(_outerBoxCorner),
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           Container(
             width: double.infinity,
-            padding: const EdgeInsets.symmetric(vertical: _topColourBarHeight),
+            padding: const EdgeInsets.symmetric(vertical: _topBarHeight),
             decoration: BoxDecoration(
-              color: won ? Color(0xFF55B725) : Color(0xFFC62121),
+              color: won ? _topBarWinColor : _topBarLoseColor,
               borderRadius: const BorderRadius.vertical(
-              top: Radius.circular(_topColourBarCornerRounding),
+              top: Radius.circular(_topBarCorner),
               ),
             ),
             child: Text(
@@ -66,7 +70,7 @@ class EndGameDialog extends StatelessWidget {
           ),
           // content
           Padding(
-            padding: const EdgeInsets.all(_innerBoxesWidthPadding),
+            padding: const EdgeInsets.all(16), // _inner boxes width padding
             child: Column(
               children: [
                 // top left label
@@ -74,23 +78,23 @@ class EndGameDialog extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   child: Container(
                     padding: const EdgeInsets.symmetric(
-                      horizontal: _letterLengthLabelWidth,
-                      vertical: _letterLengthLabelHeight,
+                      horizontal: _smallLabelWidth,
+                      vertical: _smallLabelHeight,
                     ),
                     decoration: BoxDecoration(
                       color: Colors.black26,
-                      borderRadius: BorderRadius.circular(_letterLengthLabelCornerRounding),
+                      borderRadius: BorderRadius.circular(_smallLabelCorner),
                     ),
                     child: Text(
                       '${solution.length} letters',
                       style: const TextStyle(
                         color: Colors.white70,
-                        fontSize: _letterLengthFontSize,
+                        fontSize: 12,
                       ),
                     ),
                   ),
                 ),
-                const SizedBox(height: _innerBoxBackgroundHeight),
+                const SizedBox(height: 16), // inner box background height
                 // two boxes
                 Row(
                   children: [
@@ -100,7 +104,7 @@ class EndGameDialog extends StatelessWidget {
                         value: solution,
                       ),
                     ),
-                    const SizedBox(width: _paddingBetweenTwoBoxes),
+                    const SizedBox(width: 12), // padding between two boxes
                     Expanded(
                       child: _StatBox(
                         title: 'ATTEMPTS', 
@@ -109,14 +113,14 @@ class EndGameDialog extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(height: _paddingBetweenTwoBoxesToBottomBox),
+                const SizedBox(height: 20), // padding between two boxes to bottom box 
                 // button
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: onRestart,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Color(0xFF55B725),
+                      backgroundColor: Color(_nextGameButtonColour),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(4),
                       )
@@ -157,7 +161,7 @@ class _StatBox extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: _statsHeight),
       decoration: BoxDecoration(
         color: const Color(0XFF2A2A2A),
-        borderRadius: BorderRadius.circular(_statsCornerRounding),
+        borderRadius: BorderRadius.circular(_statsCorner),
         border: Border.all(color: Colors.white12),
       ),
       child: Column(
