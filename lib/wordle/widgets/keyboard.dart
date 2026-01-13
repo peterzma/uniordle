@@ -129,10 +129,10 @@ class _KeyboardButtonState extends State<_KeyboardButton> with SingleTickerProvi
   bool _isPressed = false;
   bool _isTapped = false;
 
-  static const int _pressSpeed = 120; // ms
-  static const int _tapSpeed = 120; // ms for full animation
+  static const int _pressSpeed = 80; // ms
+  static const int _tapSpeed = 80; // ms for full animation
   static const int _darkenSpeed = 10; // ms
-  static const double _darkenIntensity = 0.3;
+  static const double _darkenIntensity = 0.2;
   static const double _keyboardTextOffset = -2.0;
 
 

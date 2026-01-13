@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_wordle/wordle/wordle.dart';
 import 'package:flutter_wordle/app/app_colors.dart';
 
+const double _boardTileFontSize = 32;
+const Duration _pumpDuration = Duration(milliseconds: 80);
+const double _boardTileSize = 64;
 
 class BoardTile extends StatefulWidget {
   const BoardTile({
@@ -26,13 +29,13 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
     super.initState();
 
     _controller = AnimationController(
-      duration: const Duration(milliseconds: 12000),
+      duration: _pumpDuration,
       vsync: this,
     );
 
     _scale = Tween<double>(
       begin: 1.0,
-      end: 5.0,
+      end: 1.05,
     ).animate(
       CurvedAnimation(parent: _controller, curve: Curves.easeOut),
     );
@@ -58,32 +61,27 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
   Widget build(BuildContext context) {
     return ScaleTransition(
       scale: _scale,
-      child: Transform.scale(
-        scale: _scale.value,
-        child: Container(
-          margin: const EdgeInsets.all(4),
-          height: 64,
-          width: 64,
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-            color: widget.letter.val.isEmpty
-                ? tileBackground
-                : widget.letter.backgroundColor,
-            border: Border.all(
-              color: widget.letter.backgroundColor,
-              width: 2,
-            ),
-            borderRadius: BorderRadius.circular(5),
+      child: Container(
+        margin: const EdgeInsets.all(4),
+        height: _boardTileSize,
+        width: _boardTileSize,
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          color: widget.letter.val.isEmpty
+              ? tileBackground
+              : widget.letter.backgroundColor,
+          border: Border.all(
+            color: widget.letter.backgroundColor,
+            width: 2,
           ),
-          child: FittedBox(
-            child: Text(
-              widget.letter.val,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+          borderRadius: BorderRadius.circular(5),
+        ),
+        child: Text(
+          widget.letter.val,
+          textAlign: TextAlign.center,
+          style: const TextStyle(
+            fontSize: _boardTileFontSize,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),
