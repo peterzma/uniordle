@@ -21,7 +21,7 @@ const double _statsCorner = 12;
 const double _textToStatPadding = 6;
 
 // next game button
-const double _nextGameButtonColour = _topBarWinColor;
+const Color _nextGameButtonColour = _topBarWinColor;
 
 class EndGameDialog extends StatelessWidget {
   final bool won;
@@ -120,7 +120,7 @@ class EndGameDialog extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: onRestart,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Color(_nextGameButtonColour),
+                      backgroundColor: _nextGameButtonColour,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(4),
                       )
