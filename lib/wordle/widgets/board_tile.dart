@@ -32,7 +32,7 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
 
     _scale = Tween<double>(
       begin: 1.0,
-      end: 5,
+      end: 5.0,
     ).animate(
       CurvedAnimation(parent: _controller, curve: Curves.easeOut),
     );
@@ -58,27 +58,32 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
   Widget build(BuildContext context) {
     return ScaleTransition(
       scale: _scale,
-      child: Container(
-        margin: const EdgeInsets.all(4),
-        height: 64,
-        width: 64,
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-          color: widget.letter.val.isEmpty
-              ? tileBackground
-              : widget.letter.backgroundColor,
-          border: Border.all(
-            color: widget.letter.backgroundColor,
-            width: 2,
+      child: Transform.scale(
+        scale: _scale.value,
+        child: Container(
+          margin: const EdgeInsets.all(4),
+          height: 64,
+          width: 64,
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            color: widget.letter.val.isEmpty
+                ? tileBackground
+                : widget.letter.backgroundColor,
+            border: Border.all(
+              color: widget.letter.backgroundColor,
+              width: 2,
+            ),
+            borderRadius: BorderRadius.circular(5),
           ),
-          borderRadius: BorderRadius.circular(5),
-        ),
-        child: Text(
-          widget.letter.val,
-          textAlign: TextAlign.center,
-          style: const TextStyle(
-            fontSize: 32,
-            fontWeight: FontWeight.bold,
+          child: FittedBox(
+            child: Text(
+              widget.letter.val,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
         ),
       ),

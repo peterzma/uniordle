@@ -7,9 +7,9 @@ void main() {
 
   
   doWhenWindowReady(() {
-    appWindow.size = const Size(652, 930);
-    appWindow.minSize = const Size(652, 930);
-    appWindow.maxSize = const Size(652, 930);
+    appWindow.size = const Size(540, 960);
+    appWindow.minSize = const Size(540, 960);
+    appWindow.maxSize = const Size(540, 960);
     appWindow.alignment = Alignment.center;
     appWindow.show();
   });
