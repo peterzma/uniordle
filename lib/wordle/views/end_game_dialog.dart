@@ -1,5 +1,25 @@
 import 'package:flutter/material.dart';
 
+const double _outerBoxWidth = 24;
+const double _outerBoxCornerRounding = 12;
+
+const double _topColourBarHeight = 14;
+const double _topColourBarCornerRounding = 12;
+
+const double _innerBoxWidthPadding = 16;
+
+const double _letterLengthLabelWidth = 8;
+const double _letterLengthLabelHeight = 4;
+const double _letterLengthLabelCornerRounding = 10;
+
+const double _innerBoxBackgroundHeight = 16;
+
+const double _statsHeight = 22;
+const double _statsCornerRounding = 12;
+const double _textFontSize = 12;
+const double _statFontSize = 28;
+const double _textToStatPadding = 6;
+
 class EndGameDialog extends StatelessWidget {
   final bool won;
   final String solution;
@@ -16,22 +36,22 @@ class EndGameDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Dialog(
-      insetPadding: const EdgeInsets.symmetric(horizontal: 24),
+      insetPadding: const EdgeInsets.symmetric(horizontal: _outerBoxWidth),
       backgroundColor: Colors.white,
       shape: RoundedRectangleBorder(
       // bottom of dialog corners
-        borderRadius: BorderRadius.circular(6),
+        borderRadius: BorderRadius.circular(_outerBoxCornerRounding),
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           Container(
             width: double.infinity,
-            padding: const EdgeInsets.symmetric(vertical: 14),
+            padding: const EdgeInsets.symmetric(vertical: _topColourBarHeight),
             decoration: BoxDecoration(
               color: won ? Colors.green : Colors.red,
               borderRadius: const BorderRadius.vertical(
-              top: Radius.circular(12),
+              top: Radius.circular(_topColourBarCornerRounding),
               ),
             ),
             child: Text(
@@ -46,7 +66,7 @@ class EndGameDialog extends StatelessWidget {
           ),
           // content
           Padding(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(_innerBoxWidthPadding),
             child: Column(
               children: [
                 // top left label
@@ -54,12 +74,12 @@ class EndGameDialog extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   child: Container(
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 8,
-                      vertical: 4,
+                      horizontal: _letterLengthLabelWidth,
+                      vertical: _letterLengthLabelHeight,
                     ),
                     decoration: BoxDecoration(
                       color: Colors.black26,
-                      borderRadius: BorderRadius.circular(6),
+                      borderRadius: BorderRadius.circular(_letterLengthLabelCornerRounding),
                     ),
                     child: Text(
                       '${solution.length} letters',
@@ -70,7 +90,7 @@ class EndGameDialog extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height: _innerBoxBackgroundHeight),
                 // two boxes
                 Row(
                   children: [
@@ -120,10 +140,10 @@ class _StatBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container( 
-      padding: const EdgeInsets.symmetric(vertical: 16),
+      padding: const EdgeInsets.symmetric(vertical: _statsHeight),
       decoration: BoxDecoration(
         color: const Color(0XFF2A2A2A),
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(_statsCornerRounding),
         border: Border.all(color: Colors.white12),
       ),
       child: Column(
@@ -132,15 +152,15 @@ class _StatBox extends StatelessWidget {
             title,
             style: const TextStyle(
               color: Colors.white60,
-              fontSize: 12,
+              fontSize: _textFontSize,
             ),
           ),
-          const SizedBox(height: 6),
+          const SizedBox(height: _textToStatPadding),
           Text(
           value,
             style: const TextStyle(
               color: Colors.white,
-              fontSize: 28,
+              fontSize: _statFontSize,
               fontWeight: FontWeight.w600,
             ),
           ),
