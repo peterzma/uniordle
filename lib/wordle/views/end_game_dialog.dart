@@ -1,24 +1,23 @@
 import 'package:flutter/material.dart';
 
+// overall
+const double _cornerRounding = 16;
+
 // outer box
-const double _outerBoxWidth = 36;
-const double _outerBoxCorner = 12;
+const double _outerBoxWidth = 32;
 
 // top bar
-const double _topBarHeight = 8;
-const double _topBarCorner = 12;
+const double _topBarHeight = 16;
 const Color _topBarWinColor = Color(0xFF55B725);
 const Color _topBarLoseColor = Color(0xFFC62121);
 
 // small label
 const double _smallLabelWidth = 8;
 const double _smallLabelHeight = 4;
-const double _smallLabelCorner = 12;
 
 // stats box
-const double _statsHeight = 22;
-const double _statsCorner = 12;
-const double _textToStatPadding = 6;
+const double _statsHeight = 24;
+const double _textToStatPadding = 8;
 
 // next game button
 const Color _nextGameButtonColour = _topBarWinColor;
@@ -44,7 +43,7 @@ class EndGameDialog extends StatelessWidget {
       ),
       backgroundColor: Color(0xFF1E2021),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(_outerBoxCorner),
+        borderRadius: BorderRadius.circular(_cornerRounding),
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -56,7 +55,7 @@ class EndGameDialog extends StatelessWidget {
             decoration: BoxDecoration(
               color: won ? _topBarWinColor : _topBarLoseColor,
               borderRadius: const BorderRadius.vertical(
-              top: Radius.circular(_outerBoxCorner),
+              top: Radius.circular(_cornerRounding),
               ),
             ),
             child: Text(
@@ -88,7 +87,7 @@ class EndGameDialog extends StatelessWidget {
                     ),
                     decoration: BoxDecoration(
                       color: Colors.black26,
-                      borderRadius: BorderRadius.circular(_smallLabelCorner),
+                      borderRadius: BorderRadius.circular(_cornerRounding),
                     ),
                     child: Text(
                       '${solution.length} Letters',
@@ -129,7 +128,7 @@ class EndGameDialog extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: _nextGameButtonColour,
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(_statsCorner),
+                        borderRadius: BorderRadius.circular(_cornerRounding),
                       )
                     ),
                     child: Text(
@@ -168,7 +167,7 @@ class _StatBox extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: _statsHeight),
       decoration: BoxDecoration(
         color: const Color(0xFF1E2021),
-        borderRadius: BorderRadius.circular(_statsCorner),
+        borderRadius: BorderRadius.circular(_cornerRounding),
         border: Border.all(color: Color(0xFF303436)),
       ),
       child: Column(
