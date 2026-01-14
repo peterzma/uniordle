@@ -1,0 +1,380 @@
+[
+  {
+    "CourseCode": "BIOE1001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOE3001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOE4020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOE4305",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOE6028",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOE6034",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE2003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE2010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE2020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE2030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE2040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE3004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE3005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE3007",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE3008",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE3020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE3205",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "CHEE3301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE4001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE4002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE4003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE4006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE4007",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE4009",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE4026",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEE4027",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGG2000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGG6020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVE2501",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVE4610",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "METL2201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "METL3219",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "METL4220",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "METL6204",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "METL6212",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MINE4201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WATR6103",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "WATR6105",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WATR6106",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WATR6108",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WATR6109",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Chemical Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  }
+]

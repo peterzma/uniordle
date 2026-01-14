@@ -1,0 +1,812 @@
+[
+  {
+    "CourseCode": "BIOE6100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOE6403",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOE6601",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOE6901",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP1100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP2011",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP2048",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP2140",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP2200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP2701",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP3301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP3320",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP3400",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP3506",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP3702",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP3710",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP3820",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP3880",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP3881",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP4000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP4403",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP4500",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP4702",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMP4703",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMS3200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMS4104",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMS4105",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMS4113",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMS4507",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMS6200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CSSE1001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CSSE2002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CSSE2010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CSSE2310",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CSSE3006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "CSSE3010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CSSE3012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CSSE3030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CSSE3100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CSSE3200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CSSE3610",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CSSE4010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CSSE4011",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CSSE4630",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CSSE6400",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CYBR3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DECO1100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DECO1400",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DECO1800",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DECO2200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DECO2300",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DECO2500",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DECO2800",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "DECO2801",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DECO2850",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DECO3500",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DECO3800",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DECO3801",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DECO3850",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DECO6500",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ELEC2004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ELEC2400",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ELEC3004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ELEC3100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ELEC3310",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ELEC4302",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ELEC4310",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ELEC4410",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ELEC4620",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ELEC4630",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGG1300",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGG2800",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGG3800",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGG4800",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGG4805",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGG4810",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "INFS1200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "INFS2200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "INFS3200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "INFS3202",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "INFS3204",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "INFS3208",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "INFS4203",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "INFS4205",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "METR4202",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "METR4810",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "REIT4841",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "REIT4842",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "REIT4881",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "8",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "REIT4882",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Elec Engineering, Comp Science",
+    "Units": "8",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  }
+]

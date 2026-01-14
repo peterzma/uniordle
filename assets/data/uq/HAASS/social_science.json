@@ -1,0 +1,551 @@
+[
+  {
+    "CourseCode": "ANTH1008",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANTH1030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANTH2010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANTH2020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANTH2060",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANTH2250",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANTH2260",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANTH2270",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANTH3019",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANTH3090",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANTH3140",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCA1000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCA2020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCA3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCS1001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCS2003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCS2011",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCS2050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCS2060",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCS2070",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCS2080",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCS2090",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCS3010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCS3118",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCS3168",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CRIM1000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CRIM1019",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CRIM1111",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CRIM2000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CRIM2080",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CRIM2099",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CRIM2100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CRIM2140",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CRIM2200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CRIM3039",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CRIM3100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CRIM3111",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CRIM3201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CRIM3202",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HHSS6020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOCY1030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOCY1050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOCY1070",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOCY2019",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOCY2020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOCY2050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOCY2220",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOCY2339",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOCY2340",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOCY3039",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOCY3329",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOCY3345",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOSC1000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOSC2190",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOSC2288",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOSC3201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOSC3202",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOSC3211",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "SOSC3600",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOSC6012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOSC6014",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Social Science School",
+    "Units": "12",
+    "Duration": "Three Semesters",
+    "AttendanceMode": "In Person"
+  }
+]

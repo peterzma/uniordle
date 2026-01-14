@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:uniordle/uniordle/uniordle.dart';
 
 const int _flipSpeed = 600;
-const double _titleToBoardPadding = 38;
+const double _titleToBoardPadding = 20;
 
 /// Displays the Uniordle game board
 /// 

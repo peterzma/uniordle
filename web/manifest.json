@@ -1,6 +1,6 @@
 {
-    "name": "flutter_wordle",
-    "short_name": "flutter_wordle",
+    "name": "uniordle",
+    "short_name": "uniordle",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

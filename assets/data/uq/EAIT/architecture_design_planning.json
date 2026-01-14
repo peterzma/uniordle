@@ -1,0 +1,506 @@
+[
+  {
+    "CourseCode": "ADPS1000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ADPS1001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ADPS3300",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH1000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH1001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH1002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH1003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH1010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH1020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH1100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH1111",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH1140",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH1160",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH1201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH1240",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH2100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH2140",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH2200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH2240",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH3100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH3130",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH3141",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH3200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH3241",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "ARCH3242",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "ARCH3341",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARCH3342",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BLDG1220",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BLDG2120",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BLDG2220",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BLDG3120",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BLDG3220",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DSGN1002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DSGN1100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DSGN1200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DSGN1300",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DSGN1400",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DSGN1500",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DSGN2100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DSGN2200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DSGN3100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DSGN3200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DSGN4000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PLAN1000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PLAN1001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PLAN1100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PLAN1101",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PLAN2003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PLAN2005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PLAN2100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PLAN3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PLAN3005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PLAN3200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PLAN4001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PLAN4009",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PLAN4100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Architecture, Design, Planning",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  }
+]

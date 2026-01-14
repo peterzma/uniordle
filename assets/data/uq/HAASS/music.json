@@ -1,0 +1,362 @@
+[
+  {
+    "CourseCode": "MUSC1010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC1050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC1150",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC1250",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC1260",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC1300",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC1600",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC1700",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC2060",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC2250",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC2260",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC2501",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC2620",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MUSC2700",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC2750",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC2755",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3060",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3160",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3170",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3255",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3265",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3340",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3450",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3570",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3580",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3720",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3740",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3745",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3750",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3755",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3780",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3840",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3850",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3890",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC3910",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC4410",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC4610",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "8",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC6012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MUSC6014",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Music School",
+    "Units": "12",
+    "Duration": "Three Semesters",
+    "AttendanceMode": "In Person"
+  }
+]

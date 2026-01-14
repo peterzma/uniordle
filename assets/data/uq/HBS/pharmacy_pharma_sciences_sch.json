@@ -1,0 +1,101 @@
+[
+  {
+    "CourseCode": "PHRM1012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Pharmacy & Pharma Sciences Sch",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHRM2011",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Pharmacy & Pharma Sciences Sch",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHRM2012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Pharmacy & Pharma Sciences Sch",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHRM2021",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Pharmacy & Pharma Sciences Sch",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "PHRM2022",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Pharmacy & Pharma Sciences Sch",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PHRM2030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Pharmacy & Pharma Sciences Sch",
+    "Units": "1",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PHRM2040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Pharmacy & Pharma Sciences Sch",
+    "Units": "1",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHRM2041",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Pharmacy & Pharma Sciences Sch",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHRM2050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Pharmacy & Pharma Sciences Sch",
+    "Units": "1",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHRM4022",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Pharmacy & Pharma Sciences Sch",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "PHRM4061",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Pharmacy & Pharma Sciences Sch",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  }
+]

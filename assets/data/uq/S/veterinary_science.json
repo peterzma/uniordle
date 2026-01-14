@@ -1,0 +1,434 @@
+[
+  {
+    "CourseCode": "AGRC1041",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANIM1120",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANIM2503",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS1018",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS1021",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS1025",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS1060",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS2006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS2007",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS2008",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS2009",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS2011",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS2012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS2033",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "VETS2043",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS3009",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS3010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS3017",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS3018",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS3023",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "VETS3024",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS3043",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS3044",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS3048",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "8",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS3050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS3060",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS3070",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS4010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "6",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS4022",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS4034",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS4035",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS4040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS5015",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS5016",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS5017",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS5020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS5024",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS5028",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS5029",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "2",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS5030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS5130",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "VETS6616",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS6617",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS6621",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "10",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS6622",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "10",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS6628",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "12",
+    "Duration": "Four Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "VETS6629",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Veterinary Science School",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  }
+]

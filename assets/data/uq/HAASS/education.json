@@ -1,0 +1,596 @@
+[
+  {
+    "CourseCode": "EDUC1650",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC1706",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC1710",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC1720",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC1730",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC1740",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC1750",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC1760",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC2017",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC2090",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC2604",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC2630",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC2704",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "EDUC2710",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC2720",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC2730",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC2740",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC2750",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC2760",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC2770",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC3079",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "EDUC3605",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC3606",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC3701",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "EDUC3703",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Flexible Delivery"
+  },
+  {
+    "CourseCode": "EDUC3705",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Flexible Delivery"
+  },
+  {
+    "CourseCode": "EDUC3706",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "EDUC3707",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC3710",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC3720",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC3730",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC3750",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC3760",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC3770",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4607",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4615",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4620",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4625",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4631",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4632",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4633",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4634",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4635",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4636",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4637",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4638",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4639",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4641",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4643",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4644",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4646",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4647",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4648",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4652",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4654",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4655",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4657",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4659",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4702",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Flexible Delivery"
+  },
+  {
+    "CourseCode": "EDUC4703",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4705",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4706",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4720",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4730",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4750",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EDUC4770",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Education School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  }
+]

@@ -1,0 +1,1235 @@
+[
+  {
+    "CourseCode": "ANIM1026",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANIM3018",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL1000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL1030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL1050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL2010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL2015",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL2106",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL2201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL2204",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL2205",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL2904",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL2910",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3205",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3209",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3211",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3215",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3227",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3232",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "BIOL3236",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3238",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3300",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3320",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3340",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3350",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3360",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3380",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3933",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL6402",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL6403",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL6501",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "14",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL6507",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "7",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM1501",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM1522",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM2002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM2003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM2008",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM2100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM2203",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM3010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM3017",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM3102",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM3103",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM3107",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM3115",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM3200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM3201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM3215",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM3220",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM3305",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM3506",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM4321",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "14",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM4324",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "14",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM4400",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM4501",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "10",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM4502",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "10",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM4512",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVM4525",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH1000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH1005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH1501",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH2002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH2003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH2004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH2005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH2006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH2050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH2205",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH3001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH3050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH3100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH3104",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH3105",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH3110",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH3120",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH3205",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH3212",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH3222",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH3250",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH6501",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "ERTH6502",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH6503",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "ERTH6504",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ERTH6507",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOG1000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOG2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOG2104",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOG2205",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOG3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOG3003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOG3205",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOM1000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOM2000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOM2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOM3001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOM3002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOM3005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOS2100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOS2101",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOS2103",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOS2105",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOS3102",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOS3103",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOS3106",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOS3400",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "GEOS3401",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOS3402",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEOS6001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "LAWS2800",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MARS1001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MARS2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MARS3012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "OHSS1000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "OHSS2000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "OHSS2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "OHSS3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "OHSS3001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "OHSS3002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "OHSS3003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "OHSS3004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "OHSS4000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "OHSS4004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "OHSS4012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "OHSS4014",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PLAN3001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE3010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE3230",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "SCIE3240",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE3241",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE4041",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE4042",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE4044",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE4045",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "6",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE4061",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE4062",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "School of the Environment",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  }
+]

@@ -1,0 +1,992 @@
+[
+  {
+    "CourseCode": "ARTT1105",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARTT1106",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARTT2010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARTT2103",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARTT2116",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARTT2127",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARTT3100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARTT3105",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARTT3117",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARTT3140",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARTT3200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARTT6012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ARTT6014",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "12",
+    "Duration": "Three Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AUST1000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AUST2000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU1050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU1052",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU1120",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU1130",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU1140",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU1152",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU1500",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU2030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU2100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU2120",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU2140",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU2150",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU2160",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU2170",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU2180",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU2311",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU3005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "COMU3015",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU3025",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU3100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU3110",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU3120",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU3130",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU3140",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU3150",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU3201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU3202",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU3222",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU3300",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU3801",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU6012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COMU6014",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "12",
+    "Duration": "Three Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DRAM1010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DRAM1100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DRAM2025",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DRAM2030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DRAM2040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DRAM2050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DRAM2200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DRAM2400",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DRAM3102",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DRAM3103",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DRAM3104",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DRAM3105",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DRAM6012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "DRAM6014",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "12",
+    "Duration": "Three Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGL1500",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGL1800",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGL2040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGL2060",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGL2080",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGL2405",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGL2440",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGL2630",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGL3020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGL3030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGL3100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGL3500",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGL3900",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGL6012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGL6014",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "12",
+    "Duration": "Three Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HHSS6040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "JOUR1001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "JOUR1112",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "JOUR2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "JOUR2221",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "JOUR2720",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "JOUR3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "JOUR3100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "JOUR3122",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "JOUR3222",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "JOUR3401",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "JOUR6012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "JOUR6014",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "12",
+    "Duration": "Three Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MSTU1001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MSTU2005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MSTU2006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MSTU2008",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MSTU2160",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MSTU3005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MSTU3012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MSTU3150",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MSTU6012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MSTU6014",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "12",
+    "Duration": "Three Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WRIT1005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WRIT1110",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WRIT1200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WRIT2000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WRIT2050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WRIT2100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WRIT2120",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WRIT2250",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WRIT3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WRIT3050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WRIT3700",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Communication & Arts School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  }
+]

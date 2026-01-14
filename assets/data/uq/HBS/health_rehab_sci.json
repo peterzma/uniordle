@@ -1,0 +1,119 @@
+[
+  {
+    "CourseCode": "HRSS4301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Health & Rehab Sci School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "SPCH2104",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Health & Rehab Sci School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SPCH2105",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Health & Rehab Sci School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SPCH2106",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Health & Rehab Sci School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SPCH2203",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Health & Rehab Sci School",
+    "Units": "1",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SPCH2204",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Health & Rehab Sci School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SPCH2205",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Health & Rehab Sci School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SPCH3102",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Health & Rehab Sci School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SPCH3106",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Health & Rehab Sci School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SPCH3107",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Health & Rehab Sci School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SPCH3200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Health & Rehab Sci School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SPCH3205",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Health & Rehab Sci School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SPCH3206",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Health & Rehab Sci School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  }
+]

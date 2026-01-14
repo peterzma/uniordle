@@ -1,0 +1,668 @@
+[
+  {
+    "CourseCode": "BIOC1011",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOC2000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOC2052",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOC2900",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOC3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOC3003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOC3005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOC3006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOC3900",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOC6511",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "16",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOC6512",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "16",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOC6513",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "16",
+    "Duration": "Four Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL1007",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3903",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3906",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOT3004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOT3009",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOT4000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOT4001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOT4002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOT4005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOT4020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOT4039",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOT4070",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOT4482",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOT4661",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOT6121",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "14",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOT6122",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "14",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOT6123",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "14",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOT6125",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "14",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOX4001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIPH3001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM1090",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM1100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM1200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM1221",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM1222",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM2050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM2054",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM2056",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM2060",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM2901",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM2902",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM3001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM3004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM3010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM3011",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM3016",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM3020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM3030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM3901",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM3910",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM4001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM6511",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "16",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM6512",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "16",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM6513",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "16",
+    "Duration": "Four Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MICR2000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MICR2900",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MICR3001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MICR3002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MICR3003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MICR3004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MICR3901",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PARA3002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RBUS6911",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE2020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE2100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE3040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "SCIE3100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE3260",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE3261",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE4481",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE4662",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Chemistry & Molec Biosciences",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  }
+]

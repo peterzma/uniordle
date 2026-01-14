@@ -1,0 +1,389 @@
+[
+  {
+    "CourseCode": "AERO4100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AERO4200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AERO4300",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AERO4450",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AERO4470",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AERO4800",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGG4103",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGG4281",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "8",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "Flexible Delivery"
+  },
+  {
+    "CourseCode": "ENGG4282",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "8",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "Flexible Delivery"
+  },
+  {
+    "CourseCode": "ENGG4510",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "6",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "ENGG4552",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGG4600",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENGG4601",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATE4302",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATE6301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH2100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH2210",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH2300",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH2305",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH2310",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH2410",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH2700",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH3100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH3200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH3250",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH3301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH3400",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH3410",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH3610",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH3780",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH4304",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH4950",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MECH6480",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "METR2800",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "METR3100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "METR4201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "METR6203",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MINE3122",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MINE4124",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MINE4126",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MINE4127",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MINE4129",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MINE6112",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Mech & Mine Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  }
+]

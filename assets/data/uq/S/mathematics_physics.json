@@ -1,0 +1,947 @@
+[
+  {
+    "CourseCode": "COSC2500",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "COSC3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH1040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH1050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH1051",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH1052",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH1061",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH1071",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH1072",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH1081",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH2010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "1",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH2011",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "1",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH2100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH2301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH2302",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH2400",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH2401",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH2901",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3070",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3090",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3101",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3102",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3103",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3104",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3202",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3204",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3205",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3302",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3303",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3401",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3402",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3403",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3404",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3405",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH3901",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH4001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Flexible Delivery"
+  },
+  {
+    "CourseCode": "MATH4090",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH4091",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH4105",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH4108",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH4210",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH4306",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH4307",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH4407",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH4408",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH6006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH6007",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH6030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "6",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH6100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "6",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MATH6101",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "6",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS1001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS1002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS1171",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS2020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS2041",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS2055",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS2082",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS2100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS2941",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS2955",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS3020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS3040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS3051",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS3071",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS3080",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS3830",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS3900",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS3920",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS3951",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS4030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS4040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS4045",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS4055",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS4070",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS4080",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS6004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS6500",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS6600",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "8",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHYS6601",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "8",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE3050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE3250",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT2003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT2004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT2201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "1",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT2203",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT2904",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT3001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT3004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT3006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT3007",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT3008",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT3306",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT3500",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT3901",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT4401",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT4402",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Flexible Delivery"
+  },
+  {
+    "CourseCode": "STAT4406",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT6003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT6004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT6030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "6",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT6040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "6",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "STAT6041",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Mathematics & Physics School",
+    "Units": "6",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  }
+]

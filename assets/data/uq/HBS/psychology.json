@@ -1,0 +1,173 @@
+[
+  {
+    "CourseCode": "COMU1030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PSYC1020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PSYC2020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PSYC3192",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PSYC3272",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PSYC3302",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PSYC3991",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "PSYC3992",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "PSYC4092",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "8",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "PSYC4311",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "1",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PSYC4331",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "1",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PSYC4341",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "1",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PSYC4361",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "1",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PSYC4371",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "1",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PSYC4888",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PSYC4982",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PSYC4991",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "1",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PSYC4992",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "1",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PSYC4993",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Psychology School",
+    "Units": "1",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  }
+]

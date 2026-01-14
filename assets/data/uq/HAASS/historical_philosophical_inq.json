@@ -1,0 +1,758 @@
+[
+  {
+    "CourseCode": "ANCH1240",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANCH1250",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANCH2030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANCH2040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANCH2050",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "ANCH2230",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANCH2301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANCH2320",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANCH3540",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANCH3570",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANCH3580",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANCH3590",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEND1010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEND1020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEND2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GEND3001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GREK1110",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GREK2120",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GREK2230",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GREK3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GREK3001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "GREK3002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HHSS6030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST1201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST1400",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST1601",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST2023",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST2024",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST2040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST2100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST2119",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST2220",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST2247",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST2312",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST2407",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST2411",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST2417",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST2603",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST3005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST3300",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST3301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HIST3302",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HLTH3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HUMN6012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HUMN6014",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "12",
+    "Duration": "Three Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HUMN6022",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "LATN1110",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "LATN2120",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "LATN2230",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "LATN3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "LATN3001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "LATN3002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL1002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL1013",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL1110",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL2000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL2013",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL2015",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL2025",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL2090",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL2110",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL2190",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL2220",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL2300",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL2330",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL2500",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL2750",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL3002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL3612",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL3620",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PHIL3630",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PPES4101",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RELN1000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RELN1080",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RELN1510",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RELN2307",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RELN2310",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RELN2410",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RELN2520",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RELN3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RELN3002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RELN3100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WRIT1999",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "WRIT3613",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Humanities, Arts and Social Sciences",
+    "School": "Historical & Philosophical Inq",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  }
+]

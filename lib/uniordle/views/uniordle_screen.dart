@@ -7,11 +7,11 @@ import 'package:uniordle/uniordle/views/end_game_dialog.dart';
 import 'dart:math';
 
 const Duration _tileFlipDuration = Duration(milliseconds: 100);
-const double _bottomKeyboardPadding = 72;
-const double _topTitlePadding = 86;
-const double _titleFontSize = 62;
+const double _bottomKeyboardPadding = 20;
+const double _topTitlePadding = 128;
+const double _titleFontSize = 72;
 
-final int wordLength = 8;
+final int wordLength = 5;
 final int maxAttempts = 6;
 
 enum GameStatus { 

@@ -1,0 +1,416 @@
+[
+  {
+    "CourseCode": "CIVL2131",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL2210",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL2330",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL2420",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL3155",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL3210",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL3220",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL3340",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL3360",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL3380",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL3390",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL3430",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL3520",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL3530",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4145",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4170",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4230",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4270",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4280",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4333",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4334",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4340",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4450",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4460",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4516",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4518",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4522",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4525",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4600",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4604",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4606",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "4",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL4999",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL6111",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL6112",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL6121",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL6210",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL6215",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL6220",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL6250",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL6360",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL6410",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CIVL6415",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVE3150",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ENVE3160",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FIRE3700",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FIRE4610",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Engineering, Architecture & Information Technology",
+    "School": "Civil Engineering School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  }
+]

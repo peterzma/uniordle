@@ -1,0 +1,1793 @@
+[
+  {
+    "CourseCode": "ACCT1101",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT1102",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT1110",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT1111",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT1112",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT2101",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "ACCT2102",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT2103",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT2110",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT2111",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT2112",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT2113",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT2114",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT3101",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT3103",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT3104",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT3105",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "ACCT3106",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT4101",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT6101",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ACCT6102",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ADVT2506",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "ADVT2509",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "ADVT2511",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "ADVT3505",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "ADVT3506",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "ADVT3507",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "ADVT3508",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "ADVT3509",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BISM1201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BISM2202",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BISM2203",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BISM2206",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BISM2207",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BISM2208",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BISM3205",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BISM3206",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BISM3208",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BISM3222",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BISM4203",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BISM6211",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BSAN2201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BSAN2204",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BSAN2205",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BSAN3204",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BSAN3209",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BSAN3210",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BSAN3212",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BSAN4201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BSAN4204",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "EVNT2000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "EVNT2003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "EVNT2004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "EVNT3003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "EVNT3004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "EVNT3005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "FINM1415",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM1416",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM2400",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "FINM2401",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "FINM2411",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM2412",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM2415",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM2416",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM3400",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Off-Shore"
+  },
+  {
+    "CourseCode": "FINM3403",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM3404",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM3405",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM3406",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM3407",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM3411",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM3412",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM3414",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM3421",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM3422",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM4401",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM4411",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM4412",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "FINM4413",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM4414",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM4999",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "FINM6401",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM6402",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM6403",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HOSP2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HOSP2003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HOSP2005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HOSP2006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HOSP3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HOSP3004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HOSP3005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "IBUS2301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "IBUS2302",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "IBUS2303",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "IBUS2309",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "IBUS3303",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "IBUS3304",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "IBUS3310",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "IBUS4301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS1301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS1601",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS2301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS2603",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS2604",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS2606",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS2607",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS2609",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS3301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS3302",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MGTS3526",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MGTS3601",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS3602",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS3603",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS3604",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS3605",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS3606",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS3607",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS3609",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS3610",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS4602",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS4603",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS6301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MGTS6600",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MKTG1501",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MKTG2501",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MKTG2505",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MKTG2508",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MKTG2509",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MKTG2510",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MKTG2511",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MKTG3501",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MKTG3503",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MKTG3504",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MKTG3506",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MKTG3509",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Flexible Delivery"
+  },
+  {
+    "CourseCode": "MKTG4501",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MKTG6500",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MKTG6501",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "PBEL3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RBUS2900",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "RBUS3888",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RBUS3900",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RBUS3903",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RBUS3904",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "RBUS3999",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RBUS4411",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RBUS4888",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RBUS4999",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RBUS6901",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RBUS6902",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RBUS6903",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "RBUS6923",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RBUS6933",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RBUS6996",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "8",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "RBUS6997",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "8",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "REDE1100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "REDE1300",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "REDE2201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "REDE3100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "REDE3101",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "REDE3102",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "REDE3201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "REDE3202",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "TIMS1301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TIMS2301",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TIMS2302",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TIMS3302",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TIMS3304",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TIMS3309",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TIMS3310",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TIMS3311",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TIMS4303",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TOUR1000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TOUR1001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "TOUR1002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TOUR1003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TOUR1004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TOUR2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Flexible Delivery"
+  },
+  {
+    "CourseCode": "TOUR2002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "TOUR2007",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "TOUR2008",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "TOUR2009",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "TOUR2010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Flexible Delivery"
+  },
+  {
+    "CourseCode": "TOUR3001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "TOUR3004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Off-Shore"
+  },
+  {
+    "CourseCode": "TOUR3006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "TOUR3007",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "TOUR3008",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TOUR3009",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "TOUR3010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TOUR6005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "TRVT2000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TRVT2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TRVT2002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TRVT2003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TRVT3001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TRVT3002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TRVT3003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "TRVT3004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Business, Economics & Law",
+    "School": "Business School",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  }
+]

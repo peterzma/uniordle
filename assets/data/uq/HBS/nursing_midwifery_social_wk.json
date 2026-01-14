@@ -1,0 +1,560 @@
+[
+  {
+    "CourseCode": "HSER1011",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "HSER1022",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "HSER2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "HSER3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW1005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW1006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW1007",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW1008",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW2002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW2003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW2004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW2005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW2006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW2007",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW2008",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW2009",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW2010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW2104",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW3001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "6",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW3002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "8",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "MIDW3003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "MIDW3105",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MIDW3109",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "6",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "NUMW2101",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS1001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS1002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS1003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS1004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS1005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS1006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS1007",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS1008",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS1101",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS1104",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS2002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS2003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS2004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS2005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS2006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS2007",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS2008",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS2104",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "NURS3001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "6",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS3002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "8",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS3007",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS3008",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS3009",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "NURS3013",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "NURS3102",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "6",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "NURS3104",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "6",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "NURS3109",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "6",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "POLY1000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SOSC1011",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SWSP2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "SWSP2211",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "SWSP2221",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "SWSP3302",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "SWSP4033",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "SWSP4088",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "Internal"
+  },
+  {
+    "CourseCode": "SWSP4100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Health & Behavioural Sciences",
+    "School": "Nursing, Midwifery & Social Wk",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  }
+]

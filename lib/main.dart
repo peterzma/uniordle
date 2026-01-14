@@ -7,7 +7,7 @@ void main() {
 
   doWhenWindowReady(() {
     appWindow.size = const Size(540, 960);
-    // appWindow.minSize = const Size(540, 960);
+    appWindow.minSize = const Size(540, 960);
     // appWindow.maxSize = Size(1080, 960);
     appWindow.alignment = Alignment.center;
     appWindow.title = "Uniordle";

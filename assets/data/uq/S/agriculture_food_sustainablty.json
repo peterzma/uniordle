@@ -1,0 +1,722 @@
+[
+  {
+    "CourseCode": "AGRC1012",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC1021",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC1023",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC1024",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC1040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC2000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC2013",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC2023",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC2030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC2031",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC2040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC2048",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "4",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC3002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC3006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC3018",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC3023",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC3040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC3041",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC3060",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC3602",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC4614",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "8",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC4616",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "8",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC6001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "14",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC6002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "14",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "AGRC6631",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANIM1006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANIM1020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANIM2021",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANIM2024",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "ANIM2033",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANIM2039",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANIM2044",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANIM2053",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANIM2057",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANIM3006",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANIM3030",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANIM3039",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANIM3046",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "ANIM3125",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3011",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3201",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3210",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "BIOL3900",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM1004",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "CHEM2003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FINM3960",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FOOD1001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FOOD2000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FOOD3000",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FOOD3007",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FOOD3008",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FOOD3011",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FOOD3017",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FOOD3023",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FOOD6001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "14",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FOOD6002",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "14",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FOOD6100",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "14",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "FOOD6200",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "14",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HORT2007",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HORT3003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "HORT3009",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "IBUS3960",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "LAND2003",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "LAND3005",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS1982",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MGTS3968",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "MICR2001",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MICR3860",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MKTG3960",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "MKTG3961",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "External"
+  },
+  {
+    "CourseCode": "PLNT2011",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "PLNT3009",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE3270",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE3963",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE4010",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE4020",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "12",
+    "Duration": "Two Semesters",
+    "AttendanceMode": "In Person"
+  },
+  {
+    "CourseCode": "SCIE4040",
+    "CourseLevel": "Undergraduate",
+    "Faculty": "Science",
+    "School": "Agriculture Food Sustainablty",
+    "Units": "2",
+    "Duration": "One Semester",
+    "AttendanceMode": "In Person"
+  }
+]
