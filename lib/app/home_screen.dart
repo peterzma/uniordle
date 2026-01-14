@@ -28,12 +28,45 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: GestureDetector(
           onTap: () => _showSettingsDialog(context),
-        )
-      )
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                height: 140,
+                width: 140,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(16),
+                  image: const DecorationImage(
+                    image: AssetImage('assets/images/uq_logo.png'),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 16),
+              
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(
+                    context, '/uniordle',
+                  );
+                },
+                child: const Text(
+                  'PLAY',
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontFamily: 'dm-sans',
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 
   void _showSettingsDialog(BuildContext context) {
-    
+
   }
 }
