@@ -3,10 +3,9 @@ import 'package:uniordle/app/app_colors.dart';
 
 const double _buttonHeight = 54;
 const double _buttonWidth = 44;
-const double _specialButtonWidth = 66;
+const double _specialButtonWidth = 69;
 const double _padding = 3;
 const double _textOffset = -2;
-const double _specialOffset = -3;
 
 /// A single key used on the keyboard
 /// 
@@ -38,7 +37,7 @@ class KeyboardButton extends StatefulWidget {
         onTap: onTap,
         backgroundColor: keyBackground,
         child: Transform.translate(
-          offset: const Offset(0, _specialOffset),
+          offset: const Offset(0, -2),
           child: const Icon(
             Icons.backspace, 
             color: Colors.white, 
@@ -57,7 +56,7 @@ class KeyboardButton extends StatefulWidget {
         backgroundColor: keyBackground,
         letter: 'ENTER',
         child: Transform.translate(
-          offset: const Offset(0, _specialOffset),
+          offset: const Offset(0, -3),
           child: const Text(
             'ENTER',
             style: TextStyle(

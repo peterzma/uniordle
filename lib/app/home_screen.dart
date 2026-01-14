@@ -11,16 +11,25 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: homeScreenBackground,
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pushNamed(
-              context, '/uniordle'
-            );
-          },
-          child: const Text(
-            'Play Uniordle',
-          ),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Center(
+              child: Padding(
+                padding: EdgeInsets.symmetric(vertical: 40),
+                child: Text(
+                'Uniordle',
+                style: TextStyle(
+                  fontSize: 48,
+                  fontFamily: 'crashdisplay',
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white),
+                ),
+              ),
+            ),
+
+            const Spacer(),
+          ],
         ),
       ),
     );

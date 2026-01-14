@@ -9,6 +9,7 @@ const double _gapPadding = 3;
 const double _cornerRounding = 5;
 const double _borderWidth = 2;
 
+/// Pump Animation
 const Duration _pumpDuration = Duration(milliseconds: 80);
 const double _pumpBeginScale = 1.0;
 const double _pumpEndScale = 1.05;
