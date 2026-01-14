@@ -12,7 +12,7 @@ const double _topTitlePadding = 86;
 const double _titleFontSize = 62;
 
 final int wordLength = 8;
-final int maxAttempts = 2;
+final int maxAttempts = 6;
 
 enum GameStatus { 
   playing, // player is entering letters
