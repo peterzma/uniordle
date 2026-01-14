@@ -2,7 +2,7 @@ import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
 import 'package:uniordle/app/app_colors.dart';
 import 'package:uniordle/uniordle/data/word_list.dart';
-import 'package:uniordle/uniordle/wordle.dart';
+import 'package:uniordle/uniordle/uniordle.dart';
 import 'package:uniordle/uniordle/views/end_game_dialog.dart';
 import 'dart:math';
 

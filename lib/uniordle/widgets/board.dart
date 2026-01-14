@@ -1,6 +1,6 @@
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
-import 'package:uniordle/uniordle/wordle.dart';
+import 'package:uniordle/uniordle/uniordle.dart';
 
 const int _flipSpeed = 600;
 const double _titleToBoardPadding = 38;

@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:uniordle/uniordle/wordle.dart';
+import 'package:uniordle/uniordle/uniordle.dart';
 
 /// Represents a guessed word in the game
 /// 

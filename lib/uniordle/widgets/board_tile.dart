@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uniordle/uniordle/wordle.dart';
+import 'package:uniordle/uniordle/uniordle.dart';
 import 'package:uniordle/app/app_colors.dart';
 
 const double _boardTileFontSize = 36;
