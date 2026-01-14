@@ -9,6 +9,15 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final logoPaths = [
+      'assets/images/uq_logo.png',
+      'assets/images/uq_logo.png',
+      'assets/images/uq_logo.png',
+      'assets/images/uq_logo.png',
+      'assets/images/uq_logo.png',
+      'assets/images/uq_logo.png',
+    ];
+
     return Scaffold(
       backgroundColor: homeScreenBackground,
       appBar: AppBar(
@@ -31,9 +40,17 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
+              Expanded(
+                child: GridView.count(
+                  shrinkWrap: true,
+                  crossAxisCount: 3,
+                  mainAxisSpacing: 16,
+                  crossAxisSpacing: 16,
+                  children: logoPaths.map((path) => _buildLogo(path)).toList(),
+                ),
+              ),
               _buildLogo('assets/images/uq_logo.png'),
               const SizedBox(height: 16),
-              
               ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(
