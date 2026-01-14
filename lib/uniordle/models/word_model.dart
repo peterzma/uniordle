@@ -1,26 +1,40 @@
 import 'package:equatable/equatable.dart';
 import 'package:uniordle/uniordle/wordle.dart';
 
+/// Represents a guessed word in the game
+/// 
+/// A word consists of a fixed length list of [Letter] objects
 class Word extends Equatable {
-  const Word({required this.letters});
+  const Word({
+    required this.letters
+  });
 
+  /// Creates a word from string
+  /// 
+  /// Each character becomes a [Letter] with an initial status
   factory Word.fromString(String word) =>
-    Word(letters: word.split('').map((e) => Letter(val: e)).toList());
+    Word(
+      letters: word
+      .split('')
+      .map((e) => Letter(val: e))
+      .toList()
+    );
 
   final List<Letter> letters;
+  /// Returns the word as a single string
   String get wordString => letters.map((e) => e.val).join();
 
+  /// Add letter to first enmpty position
   void addLetter(String val) {
     final currentIndex = letters.indexWhere((e) => e.val.isEmpty);
-    // sets letter at the proper position
     if (currentIndex != -1) {
       letters[currentIndex] = Letter(val: val);
     }
   }
 
+  /// Removes most recent added letter
   void removeLetter() {
     final recentLetterIndex = letters.lastIndexWhere((e) => e.val.isNotEmpty);
-    // removes letter at the proper position
     if (recentLetterIndex != -1) {
       letters[recentLetterIndex] = Letter.empty();
     }
