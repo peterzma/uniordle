@@ -12,6 +12,10 @@ const Duration _pumpDuration = Duration(milliseconds: 80);
 const double _pumpBeginScale = 1.0;
 const double _pumpEndScale = 1.05;
 
+/// A single tile displayed on the Uniordle board
+/// 
+/// Shows a letter, background colour based on [LetterStatus],
+/// and plays a brief pump animation when a letter changes
 class BoardTile extends StatefulWidget {
   const BoardTile({
     super.key,
@@ -27,7 +31,10 @@ class BoardTile extends StatefulWidget {
 }
 
 class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMixin{
+  /// Controls the pump animation
   late AnimationController _controller;
+
+  /// Scale animation applied to the tile
   late Animation<double> _scale;
 
   @override
@@ -54,8 +61,10 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
   @override
   void didUpdateWidget(covariant BoardTile oldWidget) {
     super.didUpdateWidget(oldWidget);
-    // 0.0 for beginning of animation
-    if (oldWidget.letter.val != widget.letter.val) _controller.forward(from: 0.0);
+    /// Triggers the pump animation when the letter changes
+    if (oldWidget.letter.val != widget.letter.val) {
+      _controller.forward(from: 0.0);
+    }
   }
 
   @override
