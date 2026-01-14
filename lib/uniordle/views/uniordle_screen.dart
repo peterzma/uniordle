@@ -14,8 +14,14 @@ const double _titleFontSize = 62;
 final int wordLength = 8;
 final int maxAttempts = 2;
 
-enum GameStatus { playing, submitting, won, lost }
+enum GameStatus { 
+  playing, // player is entering letters
+  submitting, // word is being checked and tiles are flipping
+  won, // player guessed word correctly
+  lost
+}
 
+/// Main game screen for Uniordle
 class UniordleScreen extends StatefulWidget {
   const UniordleScreen({
     super.key,
@@ -28,25 +34,31 @@ class UniordleScreen extends StatefulWidget {
 class _UniordleScreenState extends State<UniordleScreen> {
   GameStatus _gameStatus = GameStatus.playing;
 
+  /// Game board containing all guessed words
   final List<Word> _board = List.generate(
     maxAttempts,
     (_) => Word(letters: List.generate(wordLength, (_) => Letter.empty())),
   );
   
+  /// Keys used to trigger flip animations for each tile
   final List<List<GlobalKey<FlipCardState>>> _flipCardKeys = List.generate(
     maxAttempts,
     (_) => List.generate(wordLength, (_) => GlobalKey<FlipCardState>()),
   );
 
+  /// Index of active word row
   int _currentWordIndex = 0;
 
+  /// Currently active word being edited
   Word? get _currentWord =>
       _currentWordIndex < _board.length ? _board[_currentWordIndex] : null;
 
+  /// Correct solutiion word for the game
   Word _solution = Word.fromString(
     fiveLetterWords[Random().nextInt(fiveLetterWords.length)].toUpperCase(),
   );
 
+  // Letters used to update keyboard colouring
   final Set<Letter> _keyboardLetters = {};
 
   @override
@@ -100,6 +112,8 @@ class _UniordleScreenState extends State<UniordleScreen> {
     }
   }
 
+  /// Submits the current word, checks letter states,
+  /// and triggers tile flip animations
   Future<void> _onEnterTapped() async {
     if (_gameStatus != GameStatus.playing || _currentWord == null) return;
     if (_currentWord!.letters.contains(Letter.empty())) return;
