@@ -16,16 +16,16 @@ final int maxAttempts = 2;
 
 enum GameStatus { playing, submitting, won, lost }
 
-class WordleScreen extends StatefulWidget {
-  const WordleScreen({
+class UniordleScreen extends StatefulWidget {
+  const UniordleScreen({
     super.key,
     });
 
   @override
-  _WordleScreenState createState() => _WordleScreenState();
+  _UniordleScreenState createState() => _UniordleScreenState();
 }
 
-class _WordleScreenState extends State<WordleScreen> {
+class _UniordleScreenState extends State<UniordleScreen> {
   GameStatus _gameStatus = GameStatus.playing;
 
   final List<Word> _board = List.generate(

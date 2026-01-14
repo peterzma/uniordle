@@ -18,7 +18,7 @@ class App extends StatelessWidget {
       initialRoute: '/', // start screen
       routes: {
         '/': (context) => const HomeScreen(),
-        '/uniordle': (context) => const WordleScreen(),
+        '/uniordle': (context) => const UniordleScreen(),
       }
     );
   }
