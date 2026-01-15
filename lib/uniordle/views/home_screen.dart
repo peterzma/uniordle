@@ -29,7 +29,6 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: AppColors.gameBackground,
       body: CustomScrollView(
         slivers: [
-          _buildTopOverlay(),
           SliverSafeArea(
             bottom: false,
             sliver: SliverPadding(
@@ -49,15 +48,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       bottomNavigationBar: _buildBottomNav(),
-    );
-  }
-
-  Widget _buildTopOverlay() {
-    return SliverToBoxAdapter(
-      child: Container(
-        height: MediaQuery.of(context).size.height * 0.05,
-        color: AppColors.gameBackground,
-      ),
     );
   }
 
@@ -123,24 +113,28 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildCampusGrid() {
-    return GridView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
+  return SliverPadding(
+    padding: const EdgeInsets.symmetric(horizontal: 24),
+    sliver: SliverGrid(
+      delegate: SliverChildBuilderDelegate(
+        (context, index) {
+          return CampusCard(
+            university: universities[index],
+            onTap: () =>
+                _showPlayDialog(context, universities[index].name),
+          );
+        },
+        childCount: universities.length,
+      ),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         crossAxisSpacing: 16,
         mainAxisSpacing: 16,
-        childAspectRatio: 0.7,  
+        childAspectRatio: 0.7,
       ),
-      itemCount: universities.length,
-      itemBuilder: (context, index) {
-        return CampusCard(
-          university: universities[index],
-          onTap: () => _showPlayDialog(context, universities[index].name),
-        );
-      },
-    );
-  }
+    ),
+  );
+}
 
 
   Widget _buildBottomNav() {
