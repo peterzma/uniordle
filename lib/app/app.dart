@@ -21,9 +21,36 @@ class App extends StatelessWidget {
       initialRoute: '/',
       /// Named routes for navication
       routes: {
-        '/': (context) => const HomeScreen(),
-        '/uniordle': (context) => const UniordleScreen(),
+        '/': (context) => const MaxWidthLayout(
+          child: HomeScreen(),
+        ),
+        '/uniordle': (context) => const MaxWidthLayout(
+          child: UniordleScreen(),
+        ),
       },
+    );
+  }
+}
+
+class MaxWidthLayout extends StatelessWidget {
+  const MaxWidthLayout({
+    super.key,
+    required this.child,
+  });
+
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(
+            maxWidth: 540,
+          ),
+          child: child,
+        ),
+      ),
     );
   }
 }
