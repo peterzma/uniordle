@@ -78,20 +78,24 @@ class HomeScreen extends StatelessWidget {
                 crossAxisSpacing: 16,
                 childAspectRatio: 0.75,
                 children: logos.map((logo) {
-                  return InkWell(
+                  return Material(
+                    color: Colors.transparent,
                     borderRadius: BorderRadius.circular(46),
-                    onTap: () => _showSettingsDialog(
-                      context,
-                      logo['name'] as String,
-                    ),
-                    child: _buildLogo(
-                      logo['path'] as String,
-                      logo['name'] as String,
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(46),
+                      onTap: () => _showSettingsDialog(
+                        context,
+                        logo['name'] as String,
+                      ),
+                      child: _buildLogo(
+                        logo['path'] as String,
+                        logo['name'] as String,
+                      ),
                     ),
                   );
-                }).toList(),
-              ),
-            );
+                  }).toList(),
+                ),
+              );
           }
         ),
       ),
