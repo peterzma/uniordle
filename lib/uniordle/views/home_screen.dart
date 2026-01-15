@@ -162,8 +162,22 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              _v
-            ]
+              _navItem(
+              id: 'fields', 
+              label: 'Fields', 
+              icon: LucideIcons.layoutGrid
+              ),
+              _navItem(
+              id: 'stats', 
+              label: 'Stats', 
+              icon: LucideIcons.history,
+              ),
+              _navItem(
+              id: 'profile', 
+              label: 'Profile', 
+              icon: LucideIcons.user,
+              ),
+            ],
           ),
         ),
       ),
@@ -201,7 +215,7 @@ class _HomeScreenState extends State<HomeScreen> {
           )
         ]
       )
-    )
+    );
   }
 
   void _showPlayDialog(BuildContext context, String universityName) {
