@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uniordle/fields/field_screen.dart';
+import 'package:uniordle/fields/views/field_screen.dart';
 import 'package:uniordle/uniordle/views/uniordle_screen.dart';
 
 /// Root widget of Uniordle

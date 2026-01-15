@@ -163,14 +163,14 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               _navItem(
-              id: 'fields', 
-              label: 'Fields', 
-              icon: LucideIcons.layoutGrid
-              ),
-              _navItem(
               id: 'stats', 
               label: 'Stats', 
               icon: LucideIcons.history,
+              ),
+              _navItem(
+              id: 'fields', 
+              label: 'Fields', 
+              icon: LucideIcons.layoutGrid
               ),
               _navItem(
               id: 'profile', 
@@ -215,52 +215,6 @@ class _HomeScreenState extends State<HomeScreen> {
           )
         ]
       )
-    );
-  }
-
-  void _showPlayDialog(BuildContext context, String universityName) {
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        backgroundColor: const Color(0xFF1A1F2B),
-        title: Text(universityName, style: const TextStyle(color: Colors.white)),
-        content: const _DialogContent(),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('CLOSE', style: TextStyle(color: Colors.grey)),
-          ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
-            onPressed: () => Navigator.pushNamed(context, '/uniordle'),
-            child: const Text('PLAY', style: TextStyle(color: Colors.white)),
-          ),
-        ],
-      ),
-    );
-  }
-}
-class _DialogContent extends StatelessWidget {
-  const _DialogContent();
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        _buildToggleRow('Option 1', false),
-        _buildToggleRow('Option 2', true),
-      ],
-    );
-  }
-
-  Widget _buildToggleRow(String title, bool value) {
-    return Row(
-      children: [
-        Text(title, style: const TextStyle(color: Colors.white70)),
-        const Spacer(),
-        Switch(value: value, onChanged: (_) {}),
-      ],
     );
   }
 }

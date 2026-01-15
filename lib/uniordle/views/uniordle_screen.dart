@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:uniordle/app/app_colors.dart';
 import 'package:uniordle/uniordle/data/word_list.dart';
 import 'package:uniordle/uniordle/uniordle.dart';
-import 'package:uniordle/uniordle/views/dialogs/end_dialog.dart';
+import 'package:uniordle/uniordle/views/end_dialog.dart';
 import 'dart:math';
 
 const Duration _tileFlipDuration = Duration(milliseconds: 100);

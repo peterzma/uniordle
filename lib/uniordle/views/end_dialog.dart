@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:uniordle/uniordle/views/widgets/stat_box.dart';
-import 'package:uniordle/uniordle/views/widgets/action_button.dart';
+import 'package:uniordle/uniordle/widgets/stat_box.dart';
+import 'package:uniordle/uniordle/widgets/action_button.dart';
 
 const Color _topBarWinColor = Color(0xFF55B725);
 const Color _topBarLoseColor = Color(0xFFC62121);
