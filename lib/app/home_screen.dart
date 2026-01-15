@@ -125,6 +125,32 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
+  Widget _buildHeroSection() {
+    return Column(
+      children: [
+        const Text(
+          'Campuses',
+          style: TextStyle(
+            fontSize: 40,
+            fontWeight: FontWeight.w900,
+            color: Colors.white,
+            letterSpacing: -1,
+          ),
+        ),
+        const SizedBox(height: 12),
+        const Text(
+          'Select a University to begin.',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            color: Colors.blueGrey,
+            fontSize: 14,
+            height: 1.5,
+          ),
+        ),
+      ],
+    );
+  }
+
   Widget _buildBottomNav() {
     return Container(
       decoration: BoxDecoration(
