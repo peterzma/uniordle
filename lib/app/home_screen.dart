@@ -78,20 +78,10 @@ class HomeScreen extends StatelessWidget {
                 crossAxisSpacing: 16,
                 childAspectRatio: 0.75,
                 children: logos.map((logo) {
-                  return Material(
-                    color: Colors.transparent,
-                    borderRadius: BorderRadius.circular(46),
-                    child: InkWell(
-                      borderRadius: BorderRadius.circular(46),
-                      onTap: () => _showSettingsDialog(
-                        context,
-                        logo['name'] as String,
-                      ),
-                      child: _buildLogo(
-                        logo['path'] as String,
-                        logo['name'] as String,
-                      ),
-                    ),
+                  return _buildLogo(
+                    logo['path'] as String,
+                    logo['name'] as String,
+                    context,
                   );
                   }).toList(),
                 ),
@@ -102,17 +92,25 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildLogo(String assetPath, String label) {
+  Widget _buildLogo(String assetPath, String label, BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        AspectRatio(
-          aspectRatio: 1,
-          child: ClipRRect(
+        Material(
+          color: Colors.transparent,
+          borderRadius: BorderRadius.circular(46),
+          child: InkWell (
             borderRadius: BorderRadius.circular(46),
-            child: Image.asset(
-              assetPath,
-              fit: BoxFit.contain,
+            onTap: () => _showSettingsDialog(context, label),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(46),
+                child: Image.asset(
+                  assetPath,
+                  fit: BoxFit.contain,
+                ),
+              ),
             ),
           ),
         ),
