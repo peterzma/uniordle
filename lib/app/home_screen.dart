@@ -16,52 +16,20 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   String _activeTab = 'campus';
 
-  final List<Map<String, dynamic>> _tabs = [
-    {'id': 'campus', 'label': 'CAMPUS', 'icon': LucideIcons.graduationCap},
-    {'id': 'archive', 'label': 'ARCHIVE', 'icon': LucideIcons.library},
-    {'id': 'profile', 'label': 'PROFILE', 'icon': LucideIcons.user},
-  ];
+  final List<Map<String, String>> logos = [
+      {'path': 'assets/images/uq_logo.png', 'name': 'University of Adelaide'},
+      {'path': 'assets/images/uq_logo.png', 'name': 'Australian National University'},
+      {'path': 'assets/images/uq_logo.png', 'name': 'University of Melbourne'},
+      {'path': 'assets/images/uq_logo.png', 'name': 'Monash University'},
+      {'path': 'assets/images/uq_logo.png', 'name': 'UNSW Sydney'},
+      {'path': 'assets/images/uq_logo.png', 'name': 'University of Queensland'},
+      {'path': 'assets/images/uq_logo.png', 'name': 'University of Sydney'},
+      {'path': 'assets/images/uq_logo.png', 'name': 'Queensland University of Technology'},
+      {'path': 'assets/images/uq_logo.png', 'name': 'University of Tasmania'},
+    ];
 
   @override
   Widget build(BuildContext context) {
-    final logos = [
-      {
-        'path': 'assets/images/uq_logo.png',
-        'name': 'University of Adelaide',
-      },
-      {
-        'path': 'assets/images/uq_logo.png',
-        'name': 'Australian National University',
-      },
-      {
-        'path': 'assets/images/uq_logo.png',
-        'name': 'University of Melbourne',
-      },
-      {
-        'path': 'assets/images/uq_logo.png',
-        'name': 'Monash University',
-      },
-      {
-        'path': 'assets/images/uq_logo.png',
-        'name': 'UNSW Sydney',
-      },
-      {
-        'path': 'assets/images/uq_logo.png',
-        'name': 'University of Queensland',
-      },
-      {
-        'path': 'assets/images/uq_logo.png',
-        'name': 'University of Sydney',
-      },
-      {
-        'path': 'assets/images/uq_logo.png',
-        'name': 'Queensland University of Technology',
-      },
-      {
-        'path': 'assets/images/uq_logo.png',
-        'name': 'University of Tasmania',
-      },
-];
     return Scaffold(
       backgroundColor: Color(0xFF0A0E17),
       appBar: AppBar(
@@ -151,7 +119,54 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
+  Widget _buildCampusGrid() {
+    return GridView.builder(
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        crossAxisSpacing: 16,
+        mainAxisSpacing: 16,
+        childAspectRatio: 0.85,  
+      ),
+      itemCount: logos.length,
+      itemBuilder: (context, index) {
+        final logo = logos[index];
+        return GestureDetector(
+          onTap: () => _showSettingsDialog(context, logo['name']!),
+          child: Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: Colors.white.withValues(alpha: 0.05),
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(
+                color: Colors.white.withValues(alpha: 0.1)),
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Expanded(
+                  child: Image.asset(
+                    logo['path']!, 
+                    fit: BoxFit.contain,
+                  ),
+                ),
+                const SizedBox(height: 12),
+              ]
+            )
+          )
+        )
+      }
+    )
+  }
+
   Widget _buildBottomNav() {
+    final List<Map<String, dynamic>> _tabs = [
+      {'id': 'campus', 'label': 'CAMPUS', 'icon': LucideIcons.graduationCap},
+      {'id': 'archive', 'label': 'ARCHIVE', 'icon': LucideIcons.library},
+      {'id': 'profile', 'label': 'PROFILE', 'icon': LucideIcons.user},
+    ];
+
     return Container(
       decoration: BoxDecoration(
         color: const Color(0xFF0A0E17).withValues(alpha: 0.95),
