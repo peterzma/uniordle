@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:uniordle/app/app_colors.dart';
+import 'package:lucide_icons/lucide_icons.dart';
 import 'package:uniordle/app/app_layout.dart';
 
 /// The first screen the user sees on opening application
@@ -7,6 +8,19 @@ class HomeScreen extends StatelessWidget {
   const HomeScreen({
     super.key
   });
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  String _activeTab = 'campus';
+
+  final List<Map<String, dynamic>> _tabs = [
+    {'id': 'campus', 'label': 'CAMPUS', 'icon': LucideIcons.graduationCap},
+    {'id': 'archive', 'label': 'ARCHIVE', 'icon': LucideIcons.library},
+    {'id': 'profile', 'label': 'PROFILE', 'icon': LucideIcons.user},
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +62,6 @@ class HomeScreen extends StatelessWidget {
         'name': 'University of Tasmania',
       },
 ];
-
     return Scaffold(
       backgroundColor: homeScreenBackground,
       appBar: AppBar(
@@ -89,6 +102,52 @@ class HomeScreen extends StatelessWidget {
           }
         ),
       ),
+      bottomNavigationBar: _buildBottomNav(),
+    );
+  }
+
+  Widget _buildBottomNav() {
+    return Container(
+      decoration: BoxDecoration(
+        color: const Color(0xFF0A0E17).withValues(alpha: 0.95),
+        border: const Border(
+          top: BorderSide(color: Colors.white10, width: 1),
+        ),
+      ),
+      padding: const EdgeInsets.symmetric(vertical: 12),
+      child: SafeArea(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: _tabs.map((tab) {
+            final bool isActive = _activeTab == tab['id'];
+            final Color color = isActive ? Colors.blue : Colors.grey;
+
+            return GestureDetector(
+              onTap: () => setState(() => _activeTab = tab['id']),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(
+                    tab['icon'],
+                    color: color,
+                    size: 28,
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    tab['label'],
+                    style: TextStyle(
+                      color: color,
+                      fontSize: 10,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1.2,
+                    ),
+                  ),
+                ],
+              ),
+            );
+          }).toList(),
+        ),
+      )
     );
   }
 

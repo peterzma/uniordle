@@ -15,7 +15,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       /// Application title in OS task switcher
       title: 'Uniordle',
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: Colors.black),
       /// Initial home screen displayed
       initialRoute: '/',

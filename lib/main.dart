@@ -6,7 +6,9 @@ import 'package:uniordle/app/app_layout.dart';
 const double appWidth = 540;
 
 void main() {
+  
   runApp(const App());
+  
 
   doWhenWindowReady(() {
     appWindow.size = const Size(AppLayout.minWidth, 960);
