@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uniordle/app/app_colors.dart';
 import 'package:lucide_icons/lucide_icons.dart';
-import 'package:uniordle/app/app_layout.dart';
+import 'package:uniordle/app/responsive_wrapper.dart';
 import 'package:uniordle/uniordle/widgets/campus_card.dart';
 import 'package:uniordle/uniordle/data/university_data.dart';
 
@@ -17,6 +17,12 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   String _activeTab = 'campus';
+
+  final List<Map<String, dynamic>> _navigationTabs = const [
+    {'id': 'campus', 'label': 'CAMPUS', 'icon': LucideIcons.graduationCap},
+    {'id': 'archive', 'label': 'ARCHIVE', 'icon': LucideIcons.library},
+    {'id': 'profile', 'label': 'PROFILE', 'icon': LucideIcons.user},
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -51,41 +57,47 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
+  Widget _buildTopOverlay() {
+    return SliverToBoxAdapter(
+      child: Container(
+        height: MediaQuery.of(context).size.height * 0.05,
+        color: AppColors.gameBackground,
+      ),
+    );
+  }
+
   Widget _buildHeader() {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 24),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Icon(
-              LucideIcons.settings,
-              color: Colors.grey,
-              size: 24,
-          ),
-          Column(
-            children: [
-              const Text(
-                'Uniordle',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-              Container(
-                height: 2,
-                width: 40,
-                margin: const EdgeInsets.only(top: 4), color: Colors.blue
-              ),
-            ]
-          ),
-          Icon(
-            LucideIcons.barChart3,
-            color: Colors.grey,
-            size: 24,
-          ),
-        ]
+          const Icon(LucideIcons.settings, color: Colors.grey, size: 24),
+          _buildLogo(),
+          const Icon(LucideIcons.barChart3, color: Colors.grey, size: 24),
+        ],
       ),
+    );
+  }
+
+  Widget _buildLogo() {
+    return Column(
+      children: [
+        const Text(
+          'Uniordle',
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+        Container(
+          height: 2,
+          width: 40,
+          margin: const EdgeInsets.only(top: 4),
+          color: Colors.blue,
+        ),
+      ],
     );
   }
 
@@ -135,54 +147,47 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _buildBottomNav() {
-    final List<Map<String, dynamic>> _tabs = [
-      {'id': 'campus', 'label': 'CAMPUS', 'icon': LucideIcons.graduationCap},
-      {'id': 'archive', 'label': 'ARCHIVE', 'icon': LucideIcons.library},
-      {'id': 'profile', 'label': 'PROFILE', 'icon': LucideIcons.user},
-    ];
 
+  Widget _buildBottomNav() {
     return Container(
       decoration: BoxDecoration(
         color: const Color(0xFF0A0E17).withValues(alpha: 0.95),
-        border: const Border(
-          top: BorderSide(color: Colors.white10, width: 1),
+        border: const Border(top: BorderSide(color: Colors.white10)),
+      ),
+      child: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 12),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: _navigationTabs.map((tab) => _buildNavItem(tab)).toList(),
+          ),
         ),
       ),
-      padding: const EdgeInsets.symmetric(vertical: 12),
-      child: SafeArea(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: _tabs.map((tab) {
-            final bool isActive = _activeTab == tab['id'];
-            final Color color = isActive ? Colors.blue : Colors.grey;
+    );
+  }
 
-            return GestureDetector(
-              onTap: () => setState(() => _activeTab = tab['id']),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Icon(
-                    tab['icon'],
-                    color: color,
-                    size: 28,
-                  ),
-                  const SizedBox(height: 6),
-                  Text(
-                    tab['label'],
-                    style: TextStyle(
-                      color: color,
-                      fontSize: 10,
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 1.2,
-                    ),
-                  ),
-                ],
-              ),
-            );
-          }).toList(),
-        ),
-      )
+  Widget _buildNavItem(Map<String, dynamic> tab) {
+    final bool isActive = _activeTab == tab['id'];
+    final Color color = isActive ? Colors.blue : Colors.grey;
+
+    return InkWell(
+      onTap: () => setState(() => _activeTab = tab['id']),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(tab['icon'], color: color, size: 28),
+          const SizedBox(height: 6),
+          Text(
+            tab['label'],
+            style: TextStyle(
+              color: color,
+              fontSize: 10,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 1.2,
+            ),
+          ),
+        ],
+      ),
     );
   }
 
