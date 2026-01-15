@@ -17,6 +17,9 @@ class HomeScreen extends StatelessWidget {
       'assets/images/uq_logo.png',
       'assets/images/uq_logo.png',
       'assets/images/uq_logo.png',
+      'assets/images/uq_logo.png',
+      'assets/images/uq_logo.png',
+      'assets/images/uq_logo.png',
     ];
 
     return Scaffold(
@@ -43,7 +46,7 @@ class HomeScreen extends StatelessWidget {
             children: [
               LayoutBuilder(
                 builder: (context, constraints) {
-                  final double maxWidth = constraints.maxWidth.clamp(AppLayout.minWidth, AppLayout.minWidth);
+                  final double maxWidth = constraints.maxWidth.clamp(400, 444);
                   return SizedBox(
                     width: maxWidth,
                     child: GridView.count(
@@ -51,6 +54,7 @@ class HomeScreen extends StatelessWidget {
                       crossAxisCount: 3,
                       mainAxisSpacing: 16,
                       crossAxisSpacing: 16,
+                      childAspectRatio: 0.75,
                       children: logoPaths.map((path) => _buildLogo(path)).toList(),
                     ),
                   );
@@ -80,23 +84,33 @@ class HomeScreen extends StatelessWidget {
   }
 
   Widget _buildLogo(String assetPath) {
-    return Container(
-      height: 140,
-      width: 140,
-      decoration: BoxDecoration(
-        color: Color(0xFF1E2021),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(
-          color: Color(0xFF303436),
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        SizedBox(
+          height: 140,
+          width: 140,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(46),
+            child: Image.asset(
+              assetPath,
+              fit: BoxFit.contain,
+            ),
+          ),
         ),
-      ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(16),
-        child: Image.asset(
-          assetPath,
-          fit: BoxFit.contain,
+        const SizedBox(height: 8),
+        const Text(
+          'University of Queensland',
+          textAlign: TextAlign.center,
+          maxLines: 2,
+          style: TextStyle(
+            fontSize: 12,
+            fontFamily: 'dm-sans',
+            fontWeight: FontWeight.w500,
+            color: Colors.white,
+          ),
         ),
-      )
+      ],
     );
   }
 
