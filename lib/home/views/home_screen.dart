@@ -45,25 +45,4 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: HomeFooter(activeTab: _activeTab, onTabChange: _onTabChange),
     );
   }
-
-  // Widget _buildLogo() {
-  //   return Column(
-  //     children: [
-  //       const Text(
-  //         'Uniordle',
-  //         style: TextStyle(
-  //           fontSize: 24,
-  //           fontWeight: FontWeight.bold,
-  //           color: Colors.white,
-  //         ),
-  //       ),
-  //       Container(
-  //         height: 2,
-  //         width: 40,
-  //         margin: const EdgeInsets.only(top: 4),
-  //         color: Colors.blue,
-  //       ),
-  //     ],
-  //   );
-  // }
 }

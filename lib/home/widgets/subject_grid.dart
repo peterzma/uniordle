@@ -1,8 +1,6 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:lucide_icons/lucide_icons.dart';
-import 'package:uniordle/app/app_colors.dart';
+import 'package:uniordle/home/models/subject.dart';
 
 class SubjectGrid extends StatelessWidget {
   final List<Subject> subjects;
@@ -29,10 +27,32 @@ class SubjectGrid extends StatelessWidget {
       ),
       itemBuilder: (context, index) {
         final sub = subjects[index];
+        return 
       },
     );
   }
+}
 
+class _AnimatedSubjectTile extends StatefulWidget {
+  final Subject subject;
+  final VoidCallback onTap;
+
+  const _AnimatedSubjectTile({
+    required this.subject,
+    required this.onTap,
+  });
+
+  @override
+  State<_AnimatedSubjectTile> createState() => _AnimatedSubjectTileState();
+}
+
+class _AniamtedSubjectTileState extends StatefulWidget {
+  double _scale = 1.0;
+
+  void _onTapDown(_) => setState(() => _scale = 0.95);
+  void _onTapUp(_) => setState(() => _scale = 1.0);
+  void _onTapCancel() => setState(() => _scale = 1.0);  
+}
   IconData _getIcon(String name) {
     switch (name) {
       case 'category':
@@ -41,4 +61,3 @@ class SubjectGrid extends StatelessWidget {
         return LucideIcons.bookOpen;
     }
   }
-}
