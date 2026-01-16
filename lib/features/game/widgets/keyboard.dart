@@ -1,8 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:uniordle/core/app_colors.dart';
-import 'package:uniordle/shared/game_screen_exports.dart';
 import 'package:flutter/services.dart';
-import 'package:uniordle/features/game/widgets/keyboard_button.dart';
+import 'package:uniordle/shared/game_screen_exports.dart';
 
 const _qwerty = [
   ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],

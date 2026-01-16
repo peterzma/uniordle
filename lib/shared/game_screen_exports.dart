@@ -1,4 +1,3 @@
-// export from wordle folders
 export '../features/game/models/letter_model.dart';
 export '../features/game/models/word_model.dart';
 export '../features/game/views/game_screen.dart';
@@ -9,4 +8,6 @@ export '../features/game/controller/uniordle_controller.dart';
 export '../features/game/components/game_header_section.dart';
 export '../features/game/data/word_list.dart';
 export '../features/game/widgets/keyboard_button.dart';
+export '../core/constants.dart';
 export 'package:flutter/material.dart';
+export '../core/app_colors.dart';

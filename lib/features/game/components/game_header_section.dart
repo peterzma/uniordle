@@ -1,4 +1,3 @@
-import 'package:uniordle/core/app_colors.dart';
 import 'package:uniordle/shared/game_screen_exports.dart';
 
 class GameHeader extends StatelessWidget implements PreferredSizeWidget {

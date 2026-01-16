@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
-import 'package:uniordle/core/app_colors.dart';
+import 'package:uniordle/shared/home_screen_exports.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({super.key});

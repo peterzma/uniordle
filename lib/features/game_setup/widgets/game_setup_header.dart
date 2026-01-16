@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
+import 'package:uniordle/shared/game_setup_exports.dart';
 import 'package:uniordle/features/home/models/discipline.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 
 class SettingsHeader extends StatelessWidget {
   final Discipline discipline;

@@ -1,13 +1,4 @@
-import 'package:flutter/material.dart';
 import 'package:uniordle/shared/game_screen_exports.dart';
-import 'package:uniordle/core/app_colors.dart';
-
-/// Board Tile
-const double _fontSize = 36;
-const double _size = 64;
-const double _gapPadding = 3;
-const double _cornerRounding = 5;
-const double _borderWidth = 2;
 
 /// Pump Animation
 const Duration _pumpDuration = Duration(milliseconds: 80);
@@ -80,9 +71,9 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
     return ScaleTransition(
       scale: _scale,
       child: Container(
-        margin: const EdgeInsets.all(_gapPadding),
-        height: _size,
-        width: _size,
+        margin: const EdgeInsets.all(BoardTileConstants.gapPadding),
+        height: BoardTileConstants.size,
+        width: BoardTileConstants.size,
         alignment: Alignment.center,
         decoration: BoxDecoration(
           color: widget.letter.val.isEmpty
@@ -90,15 +81,15 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
               : widget.letter.backgroundColor,
           border: Border.all(
             color: widget.letter.backgroundColor,
-            width: _borderWidth,
+            width: BoardTileConstants.borderWidth,
           ),
-          borderRadius: BorderRadius.circular(_cornerRounding),
+          borderRadius: BorderRadius.circular(BoardTileConstants.cornerRounding),
         ),
         child: Text(
           widget.letter.val,
           textAlign: TextAlign.center,
           style: const TextStyle(
-            fontSize: _fontSize,
+            fontSize: BoardTileConstants.fontSize,
             fontFamily: 'dm-sans',
             fontWeight: FontWeight.w600,
           ),

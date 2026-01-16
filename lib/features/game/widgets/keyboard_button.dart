@@ -1,11 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:uniordle/core/app_colors.dart';
-
-const double _buttonHeight = 54;
-const double _buttonWidth = 44;
-const double _specialButtonWidth = 69;
-const double _padding = 3;
-const double _textOffset = -2;
+import 'package:uniordle/shared/game_screen_exports.dart';
 
 /// A single key used on the keyboard
 /// 
@@ -13,8 +6,8 @@ const double _textOffset = -2;
 class KeyboardButton extends StatefulWidget {
   const KeyboardButton({ 
     super.key,
-    this.height = _buttonHeight,
-    this.width = _buttonWidth,
+    this.height = KeyBoardConstants.buttonHeight,
+    this.width = KeyBoardConstants.buttonWidth,
     required this.onTap,
     required this.backgroundColor,
     this.letter,
@@ -33,7 +26,7 @@ class KeyboardButton extends StatefulWidget {
       required VoidCallback onTap 
     }) =>
       KeyboardButton(
-        width: _specialButtonWidth,
+        width: KeyBoardConstants.specialButtonWidth,
         onTap: onTap,
         backgroundColor: AppColors.keyBackground,
         child: Transform.translate(
@@ -51,7 +44,7 @@ class KeyboardButton extends StatefulWidget {
       required VoidCallback onTap,
     }) =>
       KeyboardButton(
-        width: _specialButtonWidth,
+        width: KeyBoardConstants.specialButtonWidth,
         onTap: onTap,
         backgroundColor: AppColors.keyBackground,
         letter: 'ENTER',
@@ -105,7 +98,7 @@ class _KeyboardButtonState extends State<KeyboardButton> with SingleTickerProvid
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(
-        _padding,
+        KeyBoardConstants.padding,
       ),
       child: GestureDetector(
         onTapDown: (_) => setState(() => _isPressed = true),
@@ -137,7 +130,7 @@ class _KeyboardButtonState extends State<KeyboardButton> with SingleTickerProvid
                 borderRadius: BorderRadius.circular(4),
               ),
               child: widget.child ?? Transform.translate(
-                offset: const Offset(0, _textOffset),
+                offset: const Offset(0, KeyBoardConstants.textOffset),
                 child: widget.child ?? Text(
                   widget.letter ?? '',
                   textAlign: TextAlign.center,

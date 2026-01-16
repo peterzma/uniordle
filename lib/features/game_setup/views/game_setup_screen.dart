@@ -1,10 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:uniordle/core/app_colors.dart';
+import 'package:uniordle/shared/game_setup_exports.dart';
 import 'package:uniordle/features/home/models/discipline.dart';
-import 'package:uniordle/features/game_setup/widgets/difficulty_selector.dart';
-import 'package:uniordle/features/game_setup/widgets/game_setup_header.dart';
-import 'package:uniordle/features/game_setup/widgets/game_setup_footer.dart';
-import 'package:uniordle/features/game_setup/widgets/word_length_selector.dart';
 
 class GameSettingsScreen extends StatefulWidget {
   final Discipline discipline;

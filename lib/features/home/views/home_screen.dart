@@ -1,10 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:uniordle/core/app_colors.dart';
-import 'package:uniordle/features/home/widgets/home_footer_section.dart';
-import 'package:uniordle/features/home/widgets/home_header_section.dart';
-import 'package:uniordle/features/home/widgets/home_hero_section.dart';
-import 'package:uniordle/features/home/widgets/discipline_grid.dart';
-import 'package:uniordle/features/home/models/discipline.dart';
+import 'package:uniordle/shared/home_screen_exports.dart';
 import 'package:uniordle/features/game_setup/views/game_setup_screen.dart';
 
 /// The first screen the user sees on opening application
@@ -27,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
     Discipline(id: 'law', name: 'Law', icon: 'category', count: 12),
   ];
 
-void _onSubjectTap(Discipline sub) {
+void _onDisciplineTap(Discipline sub) {
   Navigator.push(
     context,
     MaterialPageRoute(
@@ -55,7 +49,7 @@ void _onSubjectTap(Discipline sub) {
                   const SizedBox(height: 24),
                   const HeroSection(),
                   const SizedBox(height: 32),
-                  DisciplineGrid(disciplines: disciplines, onSubjectTap: _onSubjectTap),
+                  DisciplineGrid(disciplines: disciplines, onSubjectTap: _onDisciplineTap),
                 ]),
               ),
             ),

@@ -1,6 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:uniordle/core/app_colors.dart';
-import 'package:flutter/material.dart';
+import 'package:uniordle/shared/game_screen_exports.dart';
 
 /// Represents a single letter in the game
 /// 

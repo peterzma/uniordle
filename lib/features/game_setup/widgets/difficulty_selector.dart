@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:uniordle/shared/game_setup_exports.dart';
 
 const _labels = {
   1: ('1st Year', '8'),

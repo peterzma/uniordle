@@ -1,7 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:uniordle/features/home/models/discipline.dart';
+import 'package:uniordle/shared/home_screen_exports.dart';
 import 'package:uniordle/shared/widgets/pump_button_wrapper.dart';
-import 'discipline_icon.dart';
 
 class SubjectTile extends StatefulWidget {
   final Discipline discipline;

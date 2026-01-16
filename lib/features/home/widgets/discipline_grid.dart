@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:uniordle/features/home/models/discipline.dart';
-import 'discipline_tile.dart';
+import 'package:uniordle/shared/home_screen_exports.dart';
 
 class DisciplineGrid extends StatelessWidget {
   final List<Discipline> disciplines;

@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'game_setup_play_button.dart';
-import 'game_setup_close_button.dart';
+import 'package:uniordle/shared/game_setup_exports.dart';
 
 class SettingsFooter extends StatelessWidget {
   final bool isLoading;

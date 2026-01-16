@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:uniordle/shared/home_screen_exports.dart';
 
 class Discipline {
   final String id;
