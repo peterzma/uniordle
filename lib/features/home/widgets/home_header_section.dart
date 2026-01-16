@@ -8,7 +8,7 @@ class HomeHeader extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 16),
       decoration: BoxDecoration(
-        color: AppColors.gameBackground.withValues(alpha: 0.8),
+        color: AppColors.mainBackground.withValues(alpha: 0.8),
         border: const Border(
           bottom: BorderSide(color: Color(0xFF1E293B), width: 0.5),
         ),

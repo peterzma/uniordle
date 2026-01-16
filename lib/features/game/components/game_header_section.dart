@@ -17,7 +17,7 @@ class GameHeader extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.gameBackground,
+        color: AppColors.mainBackground,
         border: Border(
           bottom: BorderSide(
             color: Colors.white.withValues(alpha: 0.1),

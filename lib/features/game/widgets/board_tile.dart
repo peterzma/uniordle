@@ -13,7 +13,7 @@ class BoardTile extends StatefulWidget {
   const BoardTile({
     super.key,
     required this.letter,
-    this.initialBorderColor = AppColors.tileBackground, 
+    this.initialBorderColor = BoardTileConstants.tileBackground, 
   });
 
   final Letter letter;
@@ -72,12 +72,12 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
       scale: _scale,
       child: Container(
         margin: const EdgeInsets.all(BoardTileConstants.gapPadding),
-        height: BoardTileConstants.size,
-        width: BoardTileConstants.size,
+        height: BoardTileConstants.tileSize,
+        width: BoardTileConstants.tileSize,
         alignment: Alignment.center,
         decoration: BoxDecoration(
           color: widget.letter.val.isEmpty
-              ? AppColors.tileBackground
+              ? BoardTileConstants.tileBackground
               : widget.letter.backgroundColor,
           border: Border.all(
             color: widget.letter.backgroundColor,

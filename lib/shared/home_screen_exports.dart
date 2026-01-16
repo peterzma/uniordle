@@ -9,4 +9,3 @@ export '../features/home/widgets/home_hero_section.dart';
 export 'package:lucide_icons/lucide_icons.dart';
 export '../core/constants.dart';
 export 'package:flutter/material.dart';
-export '../core/app_colors.dart';

@@ -6,8 +6,8 @@ import 'package:uniordle/shared/game_screen_exports.dart';
 class KeyboardButton extends StatefulWidget {
   const KeyboardButton({ 
     super.key,
-    this.height = KeyBoardConstants.buttonHeight,
-    this.width = KeyBoardConstants.buttonWidth,
+    this.height = KeyBoardConstants.keyHeight,
+    this.width = KeyBoardConstants.keyWidth,
     required this.onTap,
     required this.backgroundColor,
     this.letter,
@@ -26,9 +26,9 @@ class KeyboardButton extends StatefulWidget {
       required VoidCallback onTap 
     }) =>
       KeyboardButton(
-        width: KeyBoardConstants.specialButtonWidth,
+        width: KeyBoardConstants.specialKeyWidth,
         onTap: onTap,
-        backgroundColor: AppColors.keyBackground,
+        backgroundColor: KeyBoardConstants.keyBackground,
         child: Transform.translate(
           offset: const Offset(0, -2),
           child: const Icon(
@@ -44,9 +44,9 @@ class KeyboardButton extends StatefulWidget {
       required VoidCallback onTap,
     }) =>
       KeyboardButton(
-        width: KeyBoardConstants.specialButtonWidth,
+        width: KeyBoardConstants.specialKeyWidth,
         onTap: onTap,
-        backgroundColor: AppColors.keyBackground,
+        backgroundColor: KeyBoardConstants.keyBackground,
         letter: 'ENTER',
         child: Transform.translate(
           offset: const Offset(0, -3),
@@ -98,7 +98,7 @@ class _KeyboardButtonState extends State<KeyboardButton> with SingleTickerProvid
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(
-        KeyBoardConstants.padding,
+        KeyBoardConstants.gapPadding,
       ),
       child: GestureDetector(
         onTapDown: (_) => setState(() => _isPressed = true),
@@ -127,7 +127,7 @@ class _KeyboardButtonState extends State<KeyboardButton> with SingleTickerProvid
                         widget.backgroundColor
                       )
                     : widget.backgroundColor,
-                borderRadius: BorderRadius.circular(4),
+                borderRadius: BorderRadius.circular(KeyBoardConstants.keyRounding),
               ),
               child: widget.child ?? Transform.translate(
                 offset: const Offset(0, KeyBoardConstants.textOffset),

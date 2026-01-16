@@ -10,4 +10,3 @@ export '../features/game/data/word_list.dart';
 export '../features/game/widgets/keyboard_button.dart';
 export '../core/constants.dart';
 export 'package:flutter/material.dart';
-export '../core/app_colors.dart';

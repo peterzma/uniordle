@@ -40,7 +40,7 @@ class _GameSettingsScreenState extends State<GameSettingsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.homeScreenBackground,
+      backgroundColor: AppColors.mainBackground,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(

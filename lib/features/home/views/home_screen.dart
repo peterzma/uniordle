@@ -36,7 +36,7 @@ void _onDisciplineTap(Discipline sub) {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.gameBackground,
+      backgroundColor: AppColors.mainBackground,
       body: CustomScrollView(
         slivers: [
           SliverSafeArea(

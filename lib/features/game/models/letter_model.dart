@@ -34,22 +34,22 @@ class Letter extends Equatable {
   Color get backgroundColor {
     switch (status) {
       case LetterStatus.initial:
-        return AppColors.tileBackground;
+        return BoardTileConstants.tileBackground;
       case LetterStatus.notInWord:
-        return AppColors.notInWordColor;
+        return GameConstants.notInWordColor;
       case LetterStatus.inWord:
-        return AppColors.inWordColor;
+        return GameConstants.inWordColor;
       case LetterStatus.correct:
-        return AppColors.correctColor;
+        return GameConstants.correctColor;
     }
   }
 
   Color get borderColor {
     switch (status) {
       case LetterStatus.initial:
-        return AppColors.tileBackground;
+        return BoardTileConstants.tileBackground;
       default:
-      return AppColors.tileBackground;
+      return BoardTileConstants.tileBackground;
     }
   }
 

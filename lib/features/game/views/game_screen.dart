@@ -69,7 +69,7 @@ void didChangeDependencies() {
     if (!_isInitialized) return const Scaffold(body: Center(child: CircularProgressIndicator()));
 
     return Scaffold(
-      backgroundColor: AppColors.gameBackground,
+      backgroundColor: AppColors.mainBackground,
       appBar: const GameHeader(),
       body: Column(
         children: [
