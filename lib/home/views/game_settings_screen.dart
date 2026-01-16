@@ -33,39 +33,46 @@ class _GameSettingsScreenState extends State<GameSettingsScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.homeScreenBackground,
-      body: SafeArea(
-        child: Center(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 540),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 24,
-                vertical: 12,
-              ),
+Widget build(BuildContext context) {
+  // We keep the Scaffold so this screen has its own background color (AppColors.homeScreenBackground)
+  // while the global builder provides the outer background color.
+  return Scaffold(
+    backgroundColor: AppColors.homeScreenBackground,
+    body: SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 24,
+          vertical: 12,
+        ),
+        child: Column(
+          children: [
+            SettingsHeader(discipline: widget.discipline),
+            Expanded(
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                SettingsHeader(discipline: widget.discipline),
-                Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      WordLengthSelector(value: _wordLength, onChanged: (v) => setState(() => _wordLength = v)),
-                      const SizedBox(height: 48),
-                      DifficultySelector(value: _difficulty, onChanged: (v) => setState(() => _difficulty = v)),
-                      const Spacer(flex: 3),
-                    ],
+                  WordLengthSelector(
+                    value: _wordLength, 
+                    onChanged: (v) => setState(() => _wordLength = v),
                   ),
-                ),
-                SettingsFooter(isLoading: _isLoading, onPlay: _play, onClose: () => Navigator.pop(context)),
+                  const SizedBox(height: 48),
+                  DifficultySelector(
+                    value: _difficulty, 
+                    onChanged: (v) => setState(() => _difficulty = v),
+                  ),
+                  const Spacer(flex: 3),
                 ],
               ),
             ),
-          ),
+            SettingsFooter(
+              isLoading: _isLoading, 
+              onPlay: _play, 
+              onClose: () => Navigator.pop(context),
+            ),
+          ],
         ),
       ),
-    );
-  }
+    ),
+  );
+}
 }

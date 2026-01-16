@@ -20,38 +20,24 @@ class App extends StatelessWidget {
         scaffoldBackgroundColor: AppColors.homeScreenBackground,
       ),
 
+      builder: (context, child) {
+        return Scaffold(
+          // This color will fill everything OUTSIDE the 540px
+          backgroundColor: AppColors.homeScreenBackground, 
+          body: Center(
+            child: Container(
+              constraints: const BoxConstraints(maxWidth: 540),
+              child: ClipRect(child: child!),
+            ),
+          ),
+        );
+      },
+
       initialRoute: '/',
       routes: {
-        '/': (context) => const MaxWidthLayout(
-          child: HomeScreen(),
-        ),
-        '/uniordle': (context) => const MaxWidthLayout(
-          child: UniordleScreen(),
-        ),
+        '/': (context) => const HomeScreen(),
+        '/uniordle': (context) => const UniordleScreen(),
       },
-    );
-  }
-}
-
-class MaxWidthLayout extends StatelessWidget {
-  const MaxWidthLayout({
-    super.key,
-    required this.child,
-  });
-
-  final Widget child;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(
-            maxWidth: 540,
-          ),
-          child: child,
-        ),
-      ),
     );
   }
 }
