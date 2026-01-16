@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:uniordle/app/widgets/game_button_wrapper.dart';
+import 'play_button.dart';
+import 'close_button.dart';
 
 class SettingsFooter extends StatelessWidget {
   final bool isLoading;
@@ -21,39 +22,14 @@ class SettingsFooter extends StatelessWidget {
       padding: EdgeInsets.only(
         left: 24,
         right: 24,
-        bottom: bottomPadding > 0 ? bottomPadding : 20,
+        bottom: bottomPadding > 0 ? bottomPadding : 24,
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          ElevatedButton(
-            onPressed: isLoading ? null : onPlay,
-            style: ElevatedButton.styleFrom(
-              minimumSize: const Size.fromHeight(56),
-              backgroundColor: Colors.white,
-              foregroundColor: const Color(0xFF0A0E17),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20),
-              ),
-            ),
-            child: isLoading
-              ? CircularProgressIndicator()
-              : const Text(
-                'PLAY GAME',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                )
-              )
-          ),
-          TextButton(
-            onPressed: onClose,  
-            child: const Text(
-              'Close',
-              style: TextStyle(
-                color: Colors.blueGrey,
-              ),
-            ),
-          ),
+          PlayButton(isLoading: isLoading, onPressed: onPlay),
+          const SizedBox(height: 8),
+          SettingsCloseButton(onPressed: onClose),
         ],
       ),
     );
