@@ -1,7 +1,5 @@
 import 'package:flip_card/flip_card.dart';
-import 'package:flutter/material.dart';
 import 'package:uniordle/app/app_colors.dart';
-import 'package:uniordle/uniordle/data/word_list.dart';
 import 'package:uniordle/uniordle/uniordle.dart';
 import 'package:uniordle/uniordle/views/end_dialog.dart';
 import 'dart:math';
@@ -95,20 +93,7 @@ class _UniordleScreenState extends State<UniordleScreen> {
 
     return Scaffold(
       backgroundColor: AppColors.gameBackground,
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        toolbarHeight: _topTitlePadding,
-        title: const Text(
-            'Uniordle',
-            style: TextStyle(
-              fontSize: _titleFontSize,
-              fontFamily: 'clashdisplay',
-              fontWeight: FontWeight.w600,
-            ),
-        ),
-      ),
+      appBar: const UniordleAppBar(),
       body: Column(
         children: [
           Expanded(
