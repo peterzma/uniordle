@@ -11,17 +11,13 @@ const double _bottomKeyboardPadding = 20;
 const double _topTitlePadding = 128;
 const double _titleFontSize = 72;
 
-final int wordLength = 5;
-final int maxAttempts = 6;
-
 enum GameStatus { 
-  playing, // player is entering letters
-  submitting, // word is being checked and tiles are flipping
-  won, // player guessed word correctly
+  playing,
+  submitting,
+  won,
   lost
 }
 
-/// Main game screen for Uniordle
 class UniordleScreen extends StatefulWidget {
   const UniordleScreen({
     super.key,
@@ -34,6 +30,33 @@ class UniordleScreen extends StatefulWidget {
 class _UniordleScreenState extends State<UniordleScreen> {
   GameStatus _gameStatus = GameStatus.playing;
 
+  late int _wordLength;
+  late int _maxAttempts;
+  late List<Word> _board;
+  late List<List<GlobalKey<FlipCardState>>> _flipCardKeys;
+  late Word _solution;
+  
+  final Set<Letter> _keyboardLetters = {};
+  int _currentWordIndex = 0;
+  bool _isInitialised = false;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    
+    // load arguments only once when the screen loads
+    if (!_isInitialised) {
+      final args = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>?;
+
+      // Fallback values if arguments are missing
+      _wordLength = args?['wordLength'] ?? 5;
+      _maxAttempts = 6; 
+
+      _initGameState();
+      _isInitialised = true;
+    }
+  }
+
   /// Game board containing all guessed words
   final List<Word> _board = List.generate(
     maxAttempts,
@@ -45,9 +68,6 @@ class _UniordleScreenState extends State<UniordleScreen> {
     maxAttempts,
     (_) => List.generate(wordLength, (_) => GlobalKey<FlipCardState>()),
   );
-
-  /// Index of active word row
-  int _currentWordIndex = 0;
 
   /// Currently active word being edited
   Word? get _currentWord =>

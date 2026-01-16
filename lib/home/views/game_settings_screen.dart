@@ -28,8 +28,18 @@ class _GameSettingsScreenState extends State<GameSettingsScreen> {
 
     await Future.delayed(const Duration(seconds: 1));
 
+    if (!mounted) return;
     setState(() => _isLoading = false);
-    // go to uniordle
+
+    Navigator.pushNamed(
+      context, 
+      '/uniordle',
+      arguments: {
+        'discipline': widget.discipline,
+        'wordLength': _wordLength,
+        'difficulty': _difficulty,
+      },
+    );
   }
 
   @override

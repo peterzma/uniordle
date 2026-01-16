@@ -21,11 +21,11 @@ class App extends StatelessWidget {
       ),
 
       builder: (context, child) {
-        return Scaffold(
+        return Material(
           // This color will fill everything OUTSIDE the 540px
-          backgroundColor: AppColors.homeScreenBackground, 
-          body: Center(
-            child: Container(
+          color: AppColors.homeScreenBackground, 
+          child: Center(
+            child: ConstrainedBox(
               constraints: const BoxConstraints(maxWidth: 540),
               child: ClipRect(child: child!),
             ),
