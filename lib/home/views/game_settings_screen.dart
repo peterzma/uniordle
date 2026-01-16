@@ -37,27 +37,32 @@ class _GameSettingsScreenState extends State<GameSettingsScreen> {
     return Scaffold(
       backgroundColor: AppColors.homeScreenBackground,
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 24,
-            vertical: 12,
-          ),
-          child: Column(
-            children: [
-            SettingsHeader(discipline: widget.discipline),
-            Expanded(
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 540),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 24,
+                vertical: 12,
+              ),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  WordLengthSelector(value: _wordLength, onChanged: (v) => setState(() => _wordLength = v)),
-                  const SizedBox(height: 48),
-                  DifficultySelector(value: _difficulty, onChanged: (v) => setState(() => _difficulty = v)),
-                  const Spacer(flex: 3),
+                SettingsHeader(discipline: widget.discipline),
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      WordLengthSelector(value: _wordLength, onChanged: (v) => setState(() => _wordLength = v)),
+                      const SizedBox(height: 48),
+                      DifficultySelector(value: _difficulty, onChanged: (v) => setState(() => _difficulty = v)),
+                      const Spacer(flex: 3),
+                    ],
+                  ),
+                ),
+                SettingsFooter(isLoading: _isLoading, onPlay: _play, onClose: () => Navigator.pop(context)),
                 ],
               ),
             ),
-            SettingsFooter(isLoading: _isLoading, onPlay: _play, onClose: () => Navigator.pop(context)),
-            ],
           ),
         ),
       ),
