@@ -23,13 +23,18 @@ class Board extends StatelessWidget {
 
 @override
 Widget build(BuildContext context) {
-  return Column(
+  return FittedBox(
+    fit: BoxFit.contain,
+    alignment: Alignment.center,
+    child: Column(
+      mainAxisSize: MainAxisSize.min,
       children: board
           .asMap()
           .map(
             (i, word) => MapEntry(
               i,
               Row(
+                mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: word.letters
                     .asMap()
@@ -58,6 +63,7 @@ Widget build(BuildContext context) {
           )
           .values
           .toList(),
-      );
-  }
+    ),
+  );
+}
 }

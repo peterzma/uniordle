@@ -25,13 +25,14 @@ void didChangeDependencies() {
     
     final discipline = args?['discipline'] as Discipline?;
 
-    final difficulty = args?['difficulty'] ?? 1;
+    final dynamic rawDifficulty = args?['difficulty'] ?? 1;
+    final int difficulty = rawDifficulty is double ? rawDifficulty.round() : rawDifficulty as int;
 
     int attempts;
     switch (difficulty) {
-      case 4: attempts = 4; break; // Postgrad (Hardest)
-      case 3: attempts = 5; break; // 3rd year
-      case 2: attempts = 6; break; // 2nd year (Standard)
+      case 4: attempts = 5; break; // Postgrad (Hardest)
+      case 3: attempts = 6; break; // 3rd year
+      case 2: attempts = 7; break; // 2nd year (Standard)
       case 1:
       default: attempts = 8; break; // 1st year (Easiest)
     }
