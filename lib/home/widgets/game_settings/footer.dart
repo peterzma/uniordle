@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uniordle/app/widgets/game_button_wrapper.dart';
 
 class SettingsFooter extends StatelessWidget {
   final bool isLoading;
@@ -15,8 +16,13 @@ class SettingsFooter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final double bottomPadding = MediaQuery.of(context).padding.bottom;
+
     return Padding(
-      padding: EdgeInsets.only(bottom: bottomPadding > 0 ? bottomPadding: 20),
+      padding: EdgeInsets.only(
+        left: 24,
+        right: 24,
+        bottom: bottomPadding > 0 ? bottomPadding : 20,
+      ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
