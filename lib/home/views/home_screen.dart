@@ -3,7 +3,7 @@ import 'package:uniordle/app/app_colors.dart';
 import 'package:uniordle/home/widgets/home/footer.dart';
 import 'package:uniordle/home/widgets/home/header.dart';
 import 'package:uniordle/home/widgets/home/hero_section.dart';
-import 'package:uniordle/home/widgets/disciplines/discipline.dart';
+import 'package:uniordle/home/widgets/home/disciplines/discipline.dart';
 import 'package:uniordle/home/models/subject.dart';
 
 /// The first screen the user sees on opening application
