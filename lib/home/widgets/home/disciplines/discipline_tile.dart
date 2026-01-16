@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:uniordle/home/models/subject.dart';
+import 'package:uniordle/home/models/discipline.dart';
 import 'discipline_icon.dart';
 
 class SubjectTile extends StatefulWidget {
-  final Subject subject;
+  final Discipline discipline;
   final VoidCallback onTap;
 
-  const SubjectTile({super.key, required this.subject, required this.onTap});
+  const SubjectTile({super.key, required this.discipline, required this.onTap});
 
   @override
   State<SubjectTile> createState() => _SubjectTileState();
@@ -22,7 +22,7 @@ class _SubjectTileState extends State<SubjectTile> {
 
   @override
   Widget build(BuildContext context) {
-    final sub = widget.subject;
+    final sub = widget.discipline;
 
     return MouseRegion(
       onEnter: (_) => setState(() => _hovering = true),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Subject {
+class Discipline {
   final String id;
   final String name;
   final String icon; 
@@ -8,7 +8,7 @@ class Subject {
   final int? count;
   final Color? color;
 
-  Subject({
+  Discipline({
     required this.id,
     required this.name,
     required this.icon,

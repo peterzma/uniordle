@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:uniordle/home/models/subject.dart';
+import 'package:uniordle/home/models/discipline.dart';
 import 'discipline_tile.dart';
 
 class DisciplineGrid extends StatelessWidget {
-  final List<Subject> subjects;
-  final void Function(Subject) onSubjectTap;
+  final List<Discipline> disciplines;
+  final void Function(Discipline) onSubjectTap;
 
-  const DisciplineGrid({super.key, required this.subjects, required this.onSubjectTap});
+  const DisciplineGrid({super.key, required this.disciplines, required this.onSubjectTap});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class DisciplineGrid extends StatelessWidget {
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       padding: const EdgeInsets.only(bottom: 24),
-      itemCount: subjects.length,
+      itemCount: disciplines.length,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         mainAxisSpacing: 12,
@@ -22,8 +22,8 @@ class DisciplineGrid extends StatelessWidget {
         childAspectRatio: 3.5,
       ),
       itemBuilder: (context, index) {
-        final sub = subjects[index];
-        return SubjectTile(subject: sub, onTap: () => onSubjectTap(sub));
+        final sub = disciplines[index];
+        return SubjectTile(discipline: sub, onTap: () => onSubjectTap(sub));
       },
     );
   }
