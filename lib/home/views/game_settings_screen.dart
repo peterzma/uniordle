@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:uniordle/app/app_colors.dart';
 import 'package:uniordle/home/models/discipline.dart';
+import 'package:uniordle/home/widgets/game_settings/difficulty_selector.dart';
 import 'package:uniordle/home/widgets/game_settings/header.dart';
+import 'package:uniordle/home/widgets/game_settings/footer.dart';
+import 'package:uniordle/home/widgets/game_settings/word_length_selector.dart';
 
 class GameSettingsScreen extends StatefulWidget {
   final Discipline discipline;
@@ -44,10 +47,31 @@ class _GameSettingsScreenState extends State<GameSettingsScreen> {
             SettingsHeader(
               discipline: widget.discipline,
             ),
-            ]
-          )
-        )
-      )
+            Expanded(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  WordLengthSelector(
+                    value: _wordLength, 
+                    onChanged: (v) => setState(() => _wordLength = v)
+                  ),
+                  const SizedBox(height: 48),
+                  DifficultySelector(
+                    value: _difficulty, 
+                    onChanged: (v) => setState(() => _difficulty = v)
+                  ),
+                ],
+              ),
+            ),
+            SettingsFooter(
+              isLoading: _isLoading,
+              onPlay: _play,
+              onClose: () => Navigator.pop(context),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
