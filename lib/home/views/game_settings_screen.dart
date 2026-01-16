@@ -38,7 +38,7 @@ class _GameSettingsScreenState extends State<GameSettingsScreen> {
       backgroundColor: AppColors.homeScreenBackground,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsetsGeometry.symmetric(
+          padding: const EdgeInsets.symmetric(
             horizontal: 24,
             vertical: 12,
           ),

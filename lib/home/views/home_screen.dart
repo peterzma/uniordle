@@ -5,6 +5,7 @@ import 'package:uniordle/home/widgets/home/header.dart';
 import 'package:uniordle/home/widgets/home/hero_section.dart';
 import 'package:uniordle/home/widgets/home/disciplines/discipline.dart';
 import 'package:uniordle/home/models/discipline.dart';
+import 'package:uniordle/home/views/game_settings_screen.dart';
 
 /// The first screen the user sees on opening application
 class HomeScreen extends StatefulWidget {
@@ -26,9 +27,15 @@ class _HomeScreenState extends State<HomeScreen> {
     Discipline(id: '4', name: 'Law', icon: 'category', count: 12),
   ];
 
-  void _onSubjectTap(Discipline sub) {
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Selected ${sub.name}')));
-  }
+void _onSubjectTap(Discipline sub) {
+  Navigator.push(
+    context,
+    MaterialPageRoute(
+      fullscreenDialog: true,
+      builder: (context) => GameSettingsScreen(discipline: sub),
+    ),
+  );
+}
 
   void _onTabChange(String tabId) => setState(() => _activeTab = tabId);
 
