@@ -1,0 +1,5 @@
+final Map<int, List<String>> mathsWords = {
+  5: ['POINT', 'VALUE', 'ARRAY', 'GRAPH', 'AXITS', 'ROOTS', 'GRIDS', 'PLANE', 'LOGIC', 'PRIME'],
+  6: ['VECTOR', 'MATRIX', 'NUMBER', 'DIVIDE', 'ALGEBRA', 'LINEAR', 'RADIUS', 'SQUARE', 'MODULO', 'FACTOR'],
+  7: ['CALCULO', 'MEASURE', 'FORMULA', 'TANGENT', 'FRACTAL', 'INTEGER', 'PERCENT', 'EQUATE'],
+};

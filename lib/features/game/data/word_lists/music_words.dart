@@ -1,0 +1,5 @@
+final Map<int, List<String>> musicWords = {
+  5: ['MELOD', 'LYRIC', 'TUNES', 'VERSE', 'DRUMS', 'NOTES', 'BEATS', 'CHORD', 'PIANO', 'VOCAL', 'TEMPO', 'SHARP'],
+  6: ['GUITAR', 'SINGER', 'PIANOS', 'TUNING', 'RHYTHM', 'CHORUS', 'SONATA', 'BRIDGE', 'STANCE', 'VIOLIN'],
+  7: ['MELODY', 'LYRICS', 'CONCERT', 'HARPARY', 'SYMPHONY', 'BARITON', 'RECITALS', 'OPERA'],
+};

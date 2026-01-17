@@ -30,7 +30,6 @@ class SettingsFooter extends StatelessWidget {
         children: [
           PlayButton(isLoading: isLoading, onPressed: onPlay, discipline: discipline),
           const SizedBox(height: 8),
-          SettingsCloseButton(onPressed: onClose),
         ],
       ),
     );

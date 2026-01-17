@@ -2,7 +2,6 @@ export '../features/game_setup/models/difficulty.dart';
 export '../features/game_setup/models/game_setup.dart';
 export '../features/game_setup/views/game_setup_screen.dart';
 export '../features/game_setup/widgets/difficulty_selector.dart';
-export '../features/game_setup/widgets/game_setup_close_button.dart';
 export '../features/game_setup/widgets/game_setup_footer.dart';
 export '../features/game_setup/widgets/game_setup_header.dart';
 export '../features/game_setup/widgets/game_setup_play_button.dart';

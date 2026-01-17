@@ -1,5 +1,6 @@
 import 'package:uniordle/shared/game_setup_exports.dart';
 import 'package:uniordle/features/home/models/discipline.dart';
+import 'package:uniordle/features/game_setup/widgets/game_setup_hero.dart';
 
 class GameSettingsScreen extends StatefulWidget {
   final Discipline discipline;
@@ -41,6 +42,7 @@ class _GameSettingsScreenState extends State<GameSettingsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.mainBackground,
+      appBar: const SettingsHeader(),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(
@@ -49,7 +51,7 @@ class _GameSettingsScreenState extends State<GameSettingsScreen> {
           ),
           child: Column(
             children: [
-              SettingsHeader(discipline: widget.discipline),
+              GameSetupHero(discipline: widget.discipline),
               Expanded(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,

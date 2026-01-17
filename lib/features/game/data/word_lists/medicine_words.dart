@@ -1,5 +1,5 @@
 final Map<int, List<String>> medicineWords = {
-  4: ['BONE', 'VEIN', 'CYST', 'DOSE'],
-  5: ['HEART', 'ORGAN', 'BLOOD', 'NERVE', 'JOINT', 'VIRUS', 'ULCER'],
-  6: ['ARTERY', 'MUSCLE', 'KIDNEY', 'BIOPSY', 'PLASMA', 'SURGERY'],
+  5: ['HEART', 'ORGAN', 'BLOOD', 'NERVE', 'JOINT', 'VIRUS', 'ULCER', 'BONES', 'VEINS', 'CYSTS', 'DOSES', 'LUNGS'],
+  6: ['ARTERY', 'MUSCLE', 'KIDNEY', 'BIOPSY', 'PLASMA', 'CANCER', 'DOCTOR', 'REMEDY', 'STITCH', 'REFLEX'],
+  7: ['SURGERY', 'PATIENT', 'DISEASE', 'VACCINE', 'STOMACH', 'BLADDER', 'ANATOMY', 'THERAPY', 'MEDICAL'],
 };

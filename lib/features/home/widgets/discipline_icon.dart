@@ -54,5 +54,4 @@ IconData _getIcon(String name) {
       return LucideIcons.bookOpen;
   }
 }
-
 }
