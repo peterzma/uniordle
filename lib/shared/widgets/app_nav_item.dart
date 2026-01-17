@@ -1,4 +1,5 @@
 import 'package:uniordle/shared/home_screen_exports.dart';
+import 'package:uniordle/shared/widgets/select_button_wrapper.dart';
 
 class AppNavItem extends StatelessWidget {
   final IconData icon;
@@ -22,9 +23,10 @@ class AppNavItem extends StatelessWidget {
         ? AppColors.selectedIcon 
         : AppColors.nonSelectedIcon;
 
-    return InkWell(
+    return PumpButtonWrapper(
       borderRadius: BorderRadius.circular(16),
       onTap: onTap,
+      pressScale: 0.90,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(

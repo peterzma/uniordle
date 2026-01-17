@@ -1,4 +1,5 @@
 import 'package:uniordle/features/game/widgets/end_game/end_dialog.dart';
+import 'package:uniordle/features/game/widgets/game_info_bar.dart';
 import 'package:uniordle/shared/game_screen_exports.dart';
 import 'package:uniordle/features/home/models/discipline.dart';
 
@@ -15,25 +16,41 @@ class _UniordleScreenState extends State<UniordleScreen> {
 late UniordleController _controller;
   bool _isInitialized = false;
 
+  String _disciplineName = '';
+  String _yearLevel = '';
+  int _wordLength = 5;
+
 @override
 void didChangeDependencies() {
   super.didChangeDependencies();
 
   if (!_isInitialized) {
     final args = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>?;
-    
     final discipline = args?['discipline'] as Discipline?;
-
     final dynamic rawDifficulty = args?['difficulty'] ?? 1; // 1 is default difficulty
     final int difficulty = rawDifficulty is double ? rawDifficulty.round() : rawDifficulty as int;
+    _wordLength = args?['wordLength'] ?? 5;
+    _disciplineName = discipline?.name ?? 'General';
 
     int attempts;
     switch (difficulty) {
-      case 4: attempts = 5; break; // Postgrad (Hardest)
-      case 3: attempts = 6; break; // 3rd year
-      case 2: attempts = 7; break; // 2nd year (Standard)
+      case 4: 
+        attempts = 5; 
+        _yearLevel = 'Postgrad'; 
+        break;
+      case 3: 
+        attempts = 6; 
+        _yearLevel = '3rd Year'; 
+        break;
+      case 2: 
+        attempts = 7; 
+        _yearLevel = '2nd Year'; 
+        break;
       case 1:
-      default: attempts = 8; break; // 1st year (Easiest)
+      default: 
+        attempts = 8; 
+        _yearLevel = '1st Year'; 
+        break;
     }
     
     _controller = UniordleController(
@@ -86,14 +103,23 @@ void didChangeDependencies() {
           ),
           SafeArea(
             top: false,
-            child: Padding(
-              padding: const EdgeInsets.only(bottom: 24),
-              child: Keyboard(
-                onKeyTapped: _controller.addLetter,
-                onDeleteTapped: _controller.removeLetter,
-                onEnterTapped: _controller.submitWord,
-                letters: _controller.keyboardLetters,
-              ),
+            child: Column(
+              children: [
+                GameInfoBar(
+                  disciplineName: _disciplineName,
+                  yearLevel: _yearLevel,
+                  wordLength: _wordLength,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 24),
+                  child: Keyboard(
+                    onKeyTapped: _controller.addLetter,
+                    onDeleteTapped: _controller.removeLetter,
+                    onEnterTapped: _controller.submitWord,
+                    letters: _controller.keyboardLetters,
+                  ),
+                )
+              ]
             ),
           ),
         ],

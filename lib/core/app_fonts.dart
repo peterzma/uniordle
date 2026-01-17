@@ -10,14 +10,14 @@ class AppTextStyles {
         fontSize: 28,
         fontWeight: FontWeight.w800,
         color: Colors.white,
-      );
+  );
 
   static TextStyle get tileNumber => const TextStyle(
         fontFamily: displayFont,
         fontSize: 36,
         fontWeight: FontWeight.w700,
         color: Colors.white,
-      );
+    );
 
   // UI Styles
   static TextStyle get buttonText => const TextStyle(
@@ -25,7 +25,7 @@ class AppTextStyles {
         fontSize: 16,
         fontWeight: FontWeight.w700,
         letterSpacing: 0.5,
-      );
+  );
 
   static TextStyle get smallLabel => const TextStyle(
         fontFamily: uiFont,
@@ -33,20 +33,22 @@ class AppTextStyles {
         fontWeight: FontWeight.w500,
         color: Colors.white70,
         letterSpacing: 1.1,
-      );
+  );
 
   static TextStyle get microData => const TextStyle(
         fontFamily: uiFont,
         fontSize: 10,
         fontWeight: FontWeight.w800,
         color: Colors.blueAccent,
-      );
+  );
 }
 
 class GameFonts {  
   static TextStyle get tileText => AppTextStyles.tileNumber;
 
   static TextStyle get keyText => AppTextStyles.tileNumber.copyWith(fontSize: 24);
+
+  static TextStyle get infoBarText => AppTextStyles.microData;
 }
 
 class GameSetUpFonts {

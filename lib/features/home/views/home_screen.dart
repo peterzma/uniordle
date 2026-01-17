@@ -13,7 +13,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   String _activeTab = 'home';
 
-final List<Discipline> disciplines = [
+  final List<Discipline> disciplines = [
   Discipline(
     id: 'engineering',
     name: 'Engineering',
@@ -68,7 +68,7 @@ final List<Discipline> disciplines = [
     name: 'Humanities',
     icon: 'book_open',
     tag: '123 WORDS',
-    color: Colors.amberAccent,
+    color: Colors.amber,
   ),
   Discipline(
     id: 'education',
@@ -89,7 +89,7 @@ final List<Discipline> disciplines = [
     name: 'Music',
     icon: 'music',
     tag: '123 WORDS',
-    color: Colors.yellowAccent,
+    color: Colors.lime,
   ),
   Discipline(
     id: 'science',
@@ -110,7 +110,7 @@ final List<Discipline> disciplines = [
     name: 'Architecture',
     icon: 'building_2',
     tag: '123 WORDS',
-    color: Colors.limeAccent,
+    color: Colors.indigo,
   ),
 ];
 
