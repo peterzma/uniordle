@@ -47,12 +47,7 @@ class PlayButton extends StatelessWidget {
                     SizedBox(width: 8),
                     Text(
                       'PLAY GAME',
-                      style: TextStyle(
-                        color: Color(0xFF0A0E17),
-                        fontSize: 18,
-                        fontWeight: FontWeight.w900,
-                        letterSpacing: 1.1,
-                      ),
+                      style: GameSetUpFonts.playGameText,
                     ),
                   ],
                 ),

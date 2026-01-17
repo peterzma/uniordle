@@ -46,10 +46,7 @@ class _SubjectTileState extends State<SubjectTile> {
                   children: [
                     Text(
                       sub.name,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w600,
-                      ),
+                      style: HomeFonts.disciplineText,
                     ),
                     if (sub.tag != null)
                       Row(

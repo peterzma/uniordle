@@ -1,6 +1,8 @@
 import 'package:flip_card/flip_card.dart';
 import 'package:uniordle/shared/game_screen_exports.dart';
 
+const int _flipSpeed = 600;
+
 /// Displays the Uniordle game board
 /// 
 /// Renders each guessed [World] as a row of tiles and
@@ -18,14 +20,14 @@ class Board extends StatelessWidget {
   /// Keys to control flip animations for each tile
   final List<List<GlobalKey<FlipCardState>>> flipCardKeys;
 
-@override
-Widget build(BuildContext context) {
-  return FittedBox(
-    fit: BoxFit.contain,
-    alignment: Alignment.center,
-    child: Column(
-      mainAxisSize: MainAxisSize.min,
-      children: board
+  @override
+  Widget build(BuildContext context) {
+    return FittedBox(
+      fit: BoxFit.contain,
+      alignment: Alignment.center,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: board
           .asMap()
           .map(
             (i, word) => MapEntry(
@@ -42,7 +44,7 @@ Widget build(BuildContext context) {
                           key: flipCardKeys[i][j],
                           flipOnTouch: false,
                           direction: FlipDirection.VERTICAL,
-                          speed: BoardTileConstants.flipSpeed,
+                          speed: _flipSpeed,
                           front: BoardTile(
                             letter: Letter(
                               val: letter.val,
@@ -52,15 +54,11 @@ Widget build(BuildContext context) {
                           back: BoardTile(letter: letter),
                         ),
                       ),
-                    )
-                    .values
-                    .toList(),
+                    ).values.toList(),
               ),
             ),
-          )
-          .values
-          .toList(),
-    ),
-  );
-}
+          ).values.toList(),
+      ),
+    );
+  }
 }

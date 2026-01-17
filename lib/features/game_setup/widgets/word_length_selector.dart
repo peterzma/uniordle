@@ -18,14 +18,10 @@ class WordLengthSelector extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        const SizedBox(height: 32),
         const Text(
           'WORD LENGTH',
-          style: TextStyle(
-            color: Colors.blueGrey,
-            fontSize: 11,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 0.15 * 11,
-          ),
+          style: GameSetUpFonts.wordLengthText,
         ),
         const SizedBox(height: 16),
         Row(
@@ -55,20 +51,12 @@ class WordLengthSelector extends StatelessWidget {
                         children: [
                           Text(
                             '$len',
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 36,
-                              fontWeight: FontWeight.bold,
-                            ),
+                            style: GameSetUpFonts.numberOfLettersText,
                           ),
                           const SizedBox(height: 2),
                           const Text(
                             'LETTERS',
-                            style: TextStyle(
-                              fontSize: 9,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.white70,
-                            ),
+                            style: GameSetUpFonts.lettersText,
                           ),
                         ],
                       ),

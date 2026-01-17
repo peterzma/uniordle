@@ -1,5 +1,10 @@
 import 'package:uniordle/shared/game_screen_exports.dart';
 
+const double tileSize = 64;
+const double gapPadding = 4;
+const double cornerRounding = 6;
+const double borderWidth = 2;
+
 /// A single tile displayed on the Uniordle board
 /// 
 /// Shows a letter, background colour based on [LetterStatus],
@@ -8,7 +13,7 @@ class BoardTile extends StatefulWidget {
   const BoardTile({
     super.key,
     required this.letter,
-    this.initialBorderColor = BoardTileConstants.tileBackground, 
+    this.initialBorderColor = AppColors.tileBackground,
   });
 
   final Letter letter;
@@ -22,6 +27,10 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
   /// Controls the pump animation
   late AnimationController _controller;
 
+  static const Duration _pumpDuration = Duration(milliseconds: 80);
+  static const double _pumpBeginScale = 1.0;
+  static const double _pumpEndScale = 1.05;
+
   /// Scale animation applied to the tile
   late Animation<double> _scale;
 
@@ -30,13 +39,13 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
     super.initState();
 
     _controller = AnimationController(
-      duration: BoardTileConstants.pumpDuration,
+      duration: _pumpDuration,
       vsync: this,
     );
 
     _scale = Tween<double>(
-      begin: BoardTileConstants.pumpBeginScale,
-      end: BoardTileConstants.pumpEndScale,
+      begin: _pumpBeginScale,
+      end: _pumpEndScale,
     ).animate(
       CurvedAnimation(parent: _controller, curve: Curves.easeOut),
     );
@@ -66,28 +75,24 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
     return ScaleTransition(
       scale: _scale,
       child: Container(
-        margin: const EdgeInsets.all(BoardTileConstants.gapPadding),
-        height: BoardTileConstants.tileSize,
-        width: BoardTileConstants.tileSize,
+        margin: const EdgeInsets.all(gapPadding),
+        height: tileSize,
+        width: tileSize,
         alignment: Alignment.center,
         decoration: BoxDecoration(
           color: widget.letter.val.isEmpty
-              ? BoardTileConstants.tileBackground
+              ? AppColors.tileBackground
               : widget.letter.backgroundColor,
           border: Border.all(
             color: widget.letter.backgroundColor,
-            width: BoardTileConstants.borderWidth,
+            width: borderWidth,
           ),
-          borderRadius: BorderRadius.circular(BoardTileConstants.cornerRounding),
+          borderRadius: BorderRadius.circular(cornerRounding),
         ),
         child: Text(
           widget.letter.val,
           textAlign: TextAlign.center,
-          style: const TextStyle(
-            fontSize: BoardTileConstants.fontSize,
-            fontFamily: 'dm-sans',
-            fontWeight: FontWeight.w600,
-          ),
+          style: GameFonts.tileText,
         ),
       ),
     );

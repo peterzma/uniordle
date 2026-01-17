@@ -63,7 +63,7 @@ class _PumpButtonWrapperState extends State<PumpButtonWrapper> {
           duration: darkenDuration,
           decoration: BoxDecoration(
             color: backgroundColor,
-            borderRadius: BorderRadius.circular(KeyBoardConstants.keyRounding),
+            borderRadius: BorderRadius.circular(4),
           ),
           child: widget.child,
         ),

@@ -17,13 +17,13 @@ class App extends StatelessWidget {
       title: 'Uniordle',
       debugShowCheckedModeBanner: true,
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: AppColors.homeScreenBackground,
+        scaffoldBackgroundColor: AppColors.mainBackground,
       ),
 
       builder: (context, child) {
         return Material(
           // This color will fill everything OUTSIDE the 540px
-          color: AppColors.homeScreenBackground, 
+          color: AppColors.mainBackground, 
           child: Center(
             child: ConstrainedBox(
               constraints: const BoxConstraints(maxWidth: 540),

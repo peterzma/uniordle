@@ -74,7 +74,7 @@ class Keyboard extends StatelessWidget {
                       letter: letter,
                       backgroundColor: letterKey != Letter.empty()
                           ? letterKey.backgroundColor
-                          : KeyBoardConstants.keyBackground,
+                          : AppColors.keyBackground,
                     );
                   },
                 ).toList(),

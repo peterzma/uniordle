@@ -76,7 +76,7 @@ void didChangeDependencies() {
           Expanded(
             child: Center(
               child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: GameScreenConstants.boardVerticalPadding),
+                padding: const EdgeInsets.symmetric(vertical: 24),
                 child: Board(
                   board: _controller.board, 
                   flipCardKeys: _controller.flipCardKeys
@@ -87,7 +87,7 @@ void didChangeDependencies() {
           SafeArea(
             top: false,
             child: Padding(
-              padding: const EdgeInsets.only(bottom: GameScreenConstants.keyboardBottomPadding),
+              padding: const EdgeInsets.only(bottom: 24),
               child: Keyboard(
                 onKeyTapped: _controller.addLetter,
                 onDeleteTapped: _controller.removeLetter,

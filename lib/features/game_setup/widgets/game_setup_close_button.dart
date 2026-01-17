@@ -15,11 +15,7 @@ class SettingsCloseButton extends StatelessWidget {
       ),
       child: Text(
         'Close',
-        style: TextStyle(
-          color: Colors.blueGrey.shade400,
-          fontSize: 15,
-          fontWeight: FontWeight.w600,
-        ),
+        style: GameSetUpFonts.closeButtonText,
       ),
     );
   }

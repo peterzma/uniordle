@@ -23,31 +23,21 @@ class DifficultySelector extends StatelessWidget {
       children: [
         const Text(
           'YEAR LEVEL',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 22,
-            fontWeight: FontWeight.w900,
-            letterSpacing: 1.2,
-          ),
+          style: GameSetUpFonts.yearLevelText,
         ),
         const SizedBox(height: 8),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
-              Icons.favorite, 
-              color: Colors.blue.shade300,
-              size: 16,
+              GameSetUpFonts.attemptsIcon,
+              size: 12,
+              color: AppColors.attemptsActiveColor,
             ),
             const SizedBox(width: 8),
             Text(
               'ATTEMPTS ALLOWED',
-              style: TextStyle(
-                color: Colors.blue.shade300,
-                fontSize: 12,
-                fontWeight: FontWeight.bold,
-                letterSpacing: 1.5,
-              ),
+              style: GameSetUpFonts.attemptsAllowedText,
             ),
           ],
         ),
@@ -83,30 +73,28 @@ class DifficultySelector extends StatelessWidget {
                 children: [
                   Text(
                     e.value.$1,
-                    style: TextStyle(
-                      color: active ? Colors.white : Colors.white54,
-                      fontSize: 13,
-                      fontWeight: active ? FontWeight.bold : FontWeight.normal,
-                    ),
+                    style: active
+                        ? GameSetUpFonts.yearLabelActive
+                        : GameSetUpFonts.yearLabelBase,
                   ),
                   const SizedBox(height: 4),
                   Row(
                     children: [
                       Text(
                         e.value.$2,
-                        style: TextStyle(
-                          color: active ? Colors.blue.shade300 : Colors.white54,
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                        ),
+                        style: active
+                            ? GameSetUpFonts.attemptsActiveText
+                            : GameSetUpFonts.attemptsInactiveText,
                       ),
                       const SizedBox(width: 2),
                       Icon(
-                        Icons.favorite,
-                        color: active ? Colors.blue.shade300 : Colors.white54,
+                        GameSetUpFonts.attemptsIcon,
                         size: 12,
+                        color: active
+                            ? AppColors.attemptsActiveColor
+                            : AppColors.attemptsInactiveColor,
                       )
-                    ]
+                    ],
                   )
                 ],
               );

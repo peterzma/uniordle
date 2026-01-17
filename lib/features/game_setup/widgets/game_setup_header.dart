@@ -36,16 +36,10 @@ class SettingsHeader extends StatelessWidget {
             fontWeight: FontWeight.w800,
           ),
         ),
-        const SizedBox(height: 4),
-        const SizedBox(height: 16),
+        const SizedBox(height: 8),
         Text(
           'GAME SETTINGS',
-          style: const TextStyle(
-            color: Colors.blueGrey,
-            fontSize: 11,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2,
-          ),
+          style: GameSetUpFonts.gameSettingsText,
         ),
       ],
     );
