@@ -26,6 +26,7 @@ class BaseHeader extends StatelessWidget implements PreferredSizeWidget {
     final double topPadding = MediaQuery.of(context).padding.top;
 
     return Container(
+      width: double.infinity,
       height: preferredSize.height + topPadding,
       decoration: BoxDecoration(
         color: AppColors.mainBackground.withValues(alpha: 0.8),
@@ -40,7 +41,7 @@ class BaseHeader extends StatelessWidget implements PreferredSizeWidget {
         bottom: false,
         child: Container(
           height: height, 
-          padding: const EdgeInsets.symmetric(horizontal: 8),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,

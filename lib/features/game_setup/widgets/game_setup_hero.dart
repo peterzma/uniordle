@@ -22,7 +22,6 @@ class GameSetupHero extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.white.withValues(alpha: 0.05),
             borderRadius: BorderRadius.circular(32),
-            border: Border.all(color: AppColors.backgroundBorder),
           ),
           child: Icon(
             IconMapper.getIcon(discipline.icon),

@@ -8,10 +8,10 @@ class PumpButtonWrapper extends StatefulWidget {
   final Widget child;
   final VoidCallback? onTap;
   final double pressScale;
-
   final bool enableDarken;
   final Color? baseColor;
   final double darkenIntensity;
+  final BorderRadius? borderRadius;
 
   const PumpButtonWrapper({
     super.key,
@@ -21,6 +21,7 @@ class PumpButtonWrapper extends StatefulWidget {
     this.enableDarken = false,
     this.baseColor,
     this.darkenIntensity = 0.15,
+    this.borderRadius,
   });
 
   @override
@@ -63,7 +64,7 @@ class _PumpButtonWrapperState extends State<PumpButtonWrapper> {
           duration: darkenDuration,
           decoration: BoxDecoration(
             color: backgroundColor,
-            borderRadius: BorderRadius.circular(4),
+            borderRadius: widget.borderRadius ?? BorderRadius.circular(4),
           ),
           child: widget.child,
         ),

@@ -130,6 +130,7 @@ final List<Discipline> disciplines = [
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.mainBackground,
+      appBar: const HomeHeader(),
       body: ScrollConfiguration(
         behavior: const ScrollBehavior().copyWith(scrollbars: false),
         child: CustomScrollView(
@@ -141,7 +142,6 @@ final List<Discipline> disciplines = [
                 padding: const EdgeInsets.symmetric(horizontal: 24),
                 sliver: SliverList(
                   delegate: SliverChildListDelegate([
-                    const HomeHeader(),
                     const SizedBox(height: 24),
                     const HeroSection(),
                     const SizedBox(height: 36),

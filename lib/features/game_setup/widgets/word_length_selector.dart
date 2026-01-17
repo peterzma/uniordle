@@ -1,5 +1,6 @@
 import 'package:uniordle/features/home/models/discipline.dart';
 import 'package:uniordle/shared/game_setup_exports.dart';
+import 'package:uniordle/shared/widgets/select_button_wrapper.dart';
 
 class WordLengthSelector extends StatelessWidget {
   final int value;
@@ -26,12 +27,18 @@ class WordLengthSelector extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [5, 6, 7].map((len) {
-            final active = value == len;
+            final bool active = value == len;
+            final Color baseColor = active 
+                ? discipline.color 
+                : AppColors.nonSelectedButton;
             return Expanded(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                child: GestureDetector(
+                child: PumpButtonWrapper(
                   onTap: () => onChanged(len),
+                  baseColor: baseColor,
+                  enableDarken: true,
+                  borderRadius: BorderRadius.circular(36),
                   child: AspectRatio(
                     aspectRatio: 1,
                     child: AnimatedContainer(
@@ -41,7 +48,9 @@ class WordLengthSelector extends StatelessWidget {
                         color: active ? discipline.color : AppColors.nonSelectedButton,
                         borderRadius: BorderRadius.circular(36),
                         border: Border.all(
-                          color: active ? discipline.color : AppColors.nonSelectedButtonBorder,
+                          color: active 
+                              ? discipline.color 
+                              : AppColors.nonSelectedButtonBorder,
                           width: 1,
                         ),
                       ),
