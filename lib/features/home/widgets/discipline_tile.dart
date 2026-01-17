@@ -1,5 +1,5 @@
 import 'package:uniordle/shared/home_screen_exports.dart';
-import 'package:uniordle/shared/widgets/pump_button_wrapper.dart';
+import 'package:uniordle/shared/widgets/select_button_wrapper.dart';
 
 class DisciplineTile extends StatefulWidget {
   final Discipline discipline;

@@ -1,59 +1,24 @@
 import 'package:uniordle/shared/home_screen_exports.dart';
+import 'package:uniordle/shared/widgets/base_header.dart';
 
-class HomeHeader extends StatelessWidget {
+class HomeHeader extends StatelessWidget implements PreferredSizeWidget {
   const HomeHeader({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 16),
-      decoration: BoxDecoration(
-        color: AppColors.mainBackground.withValues(alpha: 0.8),
-        border: const Border(
-          bottom: BorderSide(
-            color: AppColors.backgroundBorder, 
-            width: 0.5
-          ),
-        ),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          _headerIcon(
-            icon: LucideIcons.settings,
-            onTap: () {
-              // open settings
-            },
-          ),
-          Text(
-            'Uniordle',
-            style: HomeFonts.titleText,
-          ),
-          _headerIcon(
-            icon: LucideIcons.helpCircle,
-            onTap: () {
-              // open help
-            },
-          ),
-        ],
-      ),
-    );
-  }
+  Size get preferredSize => const Size.fromHeight(72);
 
-  Widget _headerIcon({required IconData icon, required VoidCallback onTap}) {
-    return InkWell(
-      borderRadius: BorderRadius.circular(20),
-      onTap: onTap,
-      child: Container(
-        width: 40, 
-        height: 40, 
-        alignment: Alignment.center, 
-        child: Icon(
-          icon, 
-          size: 24, 
-          color: AppColors.nonSelectedIcon,
-        ),
-      ),
+  @override
+  Widget build(BuildContext context) {
+    return BaseHeader(
+      title: 'Uniordle',
+      leftIcon: LucideIcons.settings,
+      onLeftTap: () {
+        // settings logic here
+      },
+      rightIcon: LucideIcons.helpCircle,
+      onRightTap: () {
+        // help logic here
+      },
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:uniordle/shared/game_screen_exports.dart';
+import 'package:uniordle/shared/widgets/base_header.dart';
 
 class GameHeader extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback? onBack;
@@ -15,44 +16,14 @@ class GameHeader extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: AppColors.mainBackground,
-        border: Border(
-          bottom: BorderSide(
-            color: AppColors.backgroundBorder.withValues(alpha: 0.1),
-            width: 1,
-          ),
-        ),
-      ),
-      child: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8),
-          child: Stack(
-            alignment: Alignment.center,
-            children: [
-              Align(
-                alignment: Alignment.centerLeft,
-                child: IconButton(
-                  icon: const Icon(Icons.arrow_back, color: Colors.white),
-                  onPressed: onBack ?? () => Navigator.maybePop(context),
-                ),
-              ),
-              const Text(
-                'Uniordle',
-                style: GameFonts.titleText,
-              ),
-              Align(
-                alignment: Alignment.centerRight,
-                child: IconButton(
-                  icon: const Icon(Icons.settings, color: Colors.white),
-                  onPressed: onSettings ?? () {},
-                ),
-              ),
-            ]
-          )
-        )
-      )
+    return BaseHeader(
+      title: 'Uniordle',
+      leftIcon: LucideIcons.arrowLeft,
+      onLeftTap: () => Navigator.maybePop(context),
+      rightIcon: LucideIcons.helpCircle,
+      onRightTap: () {
+        // help logic here
+      },
     );
   }
 }

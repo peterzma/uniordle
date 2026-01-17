@@ -10,4 +10,5 @@ export '../features/game/data/word_list.dart';
 export '../features/game/widgets/keyboard_button.dart';
 export '../core/app_fonts.dart';
 export '../core/app_colors.dart';
+export 'package:lucide_icons/lucide_icons.dart';
 export 'package:flutter/material.dart';

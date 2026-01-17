@@ -15,7 +15,7 @@ class WordLengthSelector extends StatelessWidget {
     return Column(
       children: [
         const SizedBox(height: 32),
-        const Text(
+        Text(
           'WORD LENGTH',
           style: GameSetUpFonts.wordLengthText,
         ),

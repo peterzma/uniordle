@@ -1,5 +1,5 @@
 import 'package:uniordle/shared/game_setup_exports.dart';
-import 'package:uniordle/shared/widgets/pump_button_wrapper.dart';
+import 'package:uniordle/shared/widgets/select_button_wrapper.dart';
 
 class PlayButton extends StatelessWidget {
   final bool isLoading;
@@ -40,7 +40,7 @@ class PlayButton extends StatelessWidget {
                     color: AppColors.loadingCircle,
                   ),
                 )
-              : const Row(
+              : Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(Icons.play_arrow_rounded, size: 32, color: Color(0xFF0A0E17)),
