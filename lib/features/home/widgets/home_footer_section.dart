@@ -1,7 +1,7 @@
 import 'package:uniordle/shared/home_screen_exports.dart';
 
 
-class HomeFooter extends StatelessWidget {
+class HomeFooter extends StatelessWidget implements PreferredSizeWidget {
   final String activeTab;
   final Function(String) onTabChange;
   
@@ -12,8 +12,12 @@ class HomeFooter extends StatelessWidget {
   });
 
   @override
+  Size get preferredSize => const Size.fromHeight(88);
+
+  @override
   Widget build (BuildContext context) {
     return Container(
+      height: preferredSize.height + MediaQuery.of(context).padding.bottom,
       decoration: BoxDecoration(
         color: AppColors.mainBackground.withValues(alpha: 0.95),
         border: const Border(
@@ -23,7 +27,7 @@ class HomeFooter extends StatelessWidget {
       child: SafeArea(
         top: false,
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(32, 12, 32, 24),
+          padding: const EdgeInsets.symmetric(horizontal: 32),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -46,6 +50,7 @@ class HomeFooter extends StatelessWidget {
       borderRadius: BorderRadius.circular(16),
       onTap: () => onTabChange(id),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(
