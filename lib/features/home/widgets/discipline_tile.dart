@@ -31,7 +31,7 @@ class _SubjectTileState extends State<SubjectTile> {
             color: const Color(0xFF1A1F2B),
             borderRadius: BorderRadius.circular(16),
             border: Border.all(
-              color: _hovering ? Colors.blueAccent : Colors.grey.withValues(alpha: 0.4),
+              color: _hovering ? sub.color : Colors.grey.withValues(alpha: 0.4),
               width: _hovering ? 1.5 : 0.5,
             ),
           ),
@@ -48,37 +48,28 @@ class _SubjectTileState extends State<SubjectTile> {
                       sub.name,
                       style: HomeFonts.disciplineText,
                     ),
-                    if (sub.tag != null)
-                      Row(
-                        children: [
-                          Container(
-                            width: 6,
-                            height: 6,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: sub.tag == 'DONE' ? Colors.green : Colors.blue,
-                            ),
+                    const SizedBox(height: 2),
+                    Row(
+                      children: [
+                        Container(
+                          width: 6,
+                          height: 6,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: sub.color,
                           ),
-                          const SizedBox(width: 4),
-                          Text(
-                            sub.tag!,
-                            style: TextStyle(
-                              fontSize: 9,
-                              fontWeight: FontWeight.bold,
-                              color: sub.tag == 'DONE' ? Colors.green : Colors.blue,
-                            ),
-                          ),
-                        ],
-                      ),
-                    if (sub.count != null)
-                      Text(
-                        '${sub.count}',
-                        style: const TextStyle(
-                          fontSize: 9,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.grey,
                         ),
-                      ),
+                        const SizedBox(width: 4),
+                        Text(
+                          sub.tag,
+                          style: TextStyle(
+                            fontSize: 9,
+                            fontWeight: FontWeight.bold,
+                            color: sub.color,
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
