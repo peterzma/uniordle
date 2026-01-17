@@ -1,5 +1,48 @@
 import 'package:flutter/material.dart';
 
+class AppTextStyles {
+  static const String displayFont = 'Lexend';
+  static const String uiFont = 'PlusJakartaSans';
+
+  // Display Styles
+  static TextStyle get gameTitle => TextStyle(
+    fontFamily: displayFont,
+    fontSize: 28,
+    fontWeight: FontWeight.w800, // ExtraBold
+    color: Colors.white,
+  );
+
+  static TextStyle get tileNumber => TextStyle(
+    fontFamily: displayFont,
+    fontSize: 36,
+    fontWeight: FontWeight.w700, // Bold
+    color: Colors.white,
+  );
+
+  // UI Styles
+  static TextStyle get buttonText => TextStyle(
+    fontFamily: uiFont,
+    fontSize: 16,
+    fontWeight: FontWeight.w600, // SemiBold
+    letterSpacing: 0.5,
+  );
+
+  static TextStyle get smallLabel => TextStyle(
+    fontFamily: uiFont,
+    fontSize: 12,
+    fontWeight: FontWeight.w500, // Medium
+    color: Colors.white70,
+    letterSpacing: 1.1,
+  );
+
+  static TextStyle get microData => TextStyle(
+    fontFamily: uiFont,
+    fontSize: 10,
+    fontWeight: FontWeight.w800, // ExtraBold
+    color: Colors.blueAccent,
+  );
+}
+
 class GameFonts {
   static const TextStyle titleText = TextStyle(
     color: Colors.white, 
@@ -123,16 +166,7 @@ class HomeFonts {
     letterSpacing: -0.5,
   );
 
-  static const mainHeroText = TextStyle(
-    fontSize: 40,
-    fontWeight: FontWeight.w900,
-    color: Colors.white,
-    letterSpacing: -1,
-  );
+  static TextStyle get mainHeroText => AppTextStyles.gameTitle.copyWith(fontSize: 40, letterSpacing: -1, fontWeight: FontWeight.w900);
 
-  static const subHeroText = TextStyle(
-    color: Colors.blueGrey,
-    fontSize: 14,
-    height: 1.5,
-  );
+  static TextStyle get subHeroText => AppTextStyles.smallLabel.copyWith(fontSize: 14, color: Colors.blueGrey, height: 1.5);
 }
