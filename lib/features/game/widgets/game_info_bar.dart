@@ -21,9 +21,11 @@ class GameInfoBar extends StatelessWidget {
         child: Row(
           children: [
             Expanded(
-              child: _InfoTag(
-                label: disciplineName, 
-                color: AppColors.keyBackground,
+              child: WiggleWrapper(
+                child: _InfoTag(
+                  label: disciplineName, 
+                  color: AppColors.keyBackground,
+                ),
               ),
             ),
             const SizedBox(width: 4),

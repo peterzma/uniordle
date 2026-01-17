@@ -48,7 +48,7 @@ class GameFonts {
 
   static TextStyle get keyText => AppTextStyles.tileNumber.copyWith(fontSize: 24);
 
-  static TextStyle get infoBarText => AppTextStyles.microData;
+  static TextStyle get infoBarText => AppTextStyles.microData.copyWith(color: Colors.white, fontWeight: FontWeight.w600);
 }
 
 class GameSetUpFonts {
