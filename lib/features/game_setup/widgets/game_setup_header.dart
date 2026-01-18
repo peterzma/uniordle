@@ -10,7 +10,7 @@ class SettingsHeader extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return BaseHeader(
-      title: 'Uniordle',
+      title: '',
       leftIcon: LucideIcons.chevronLeft,
       onLeftTap: () => Navigator.of(context).pop(),
       height: 72,

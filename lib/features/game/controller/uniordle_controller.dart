@@ -10,6 +10,8 @@ class UniordleController extends ChangeNotifier {
   final String disciplineId;
   final Function(bool won) onGameEnd;
 
+  final Duration _flipDuration = const Duration(milliseconds: 160);
+
   UniordleController({
     required this.wordLength,
     required this.maxAttempts,
@@ -92,12 +94,16 @@ class UniordleController extends ChangeNotifier {
     currentWord!.letters[i] = currentWord!.letters[i].copyWith(status: statuses[i]);
     _updateKeyboard(currentWord!.letters[i]);
     
+    SoundManager().play(SoundType.keyboard);
+
     if (currentWordIndex < flipCardKeys.length && i < flipCardKeys[currentWordIndex].length) {
        flipCardKeys[currentWordIndex][i].currentState?.toggleCard();
     }
     
-    await Future.delayed(const Duration(milliseconds: 70));
+    await Future.delayed(_flipDuration);
   }
+
+  await Future.delayed(const Duration(milliseconds: 200));
 
   _checkResult();
 }

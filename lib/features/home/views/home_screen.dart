@@ -23,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
       id: 'engineering',
       name: 'Engineering',
       icon: 'settings',
-      // Dynamically calculate count
       tag: '${getWordCount(engineeringWords)} WORDS', 
       color: Colors.blue,
     ),
@@ -121,11 +120,9 @@ class _HomeScreenState extends State<HomeScreen> {
   ]..sort((a, b) => a.name.compareTo(b.name));
 
   void _onDisciplineTap(Discipline sub) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        fullscreenDialog: true,
-        builder: (context) => GameSettingsScreen(discipline: sub),
+    Navigator.of(context).push(
+      slideUpRoute(
+        GameSettingsScreen(discipline: sub),
       ),
     );
   }
