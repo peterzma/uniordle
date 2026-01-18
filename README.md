@@ -97,4 +97,6 @@ Latest release:
 * Add more words
 * Improve end game dialog
 * Move play button higher in game settings
-* Make settings screen ()
+* Make settings screen (Customise sound/music)
+* Add sound/music
+* Add stats/profile screens

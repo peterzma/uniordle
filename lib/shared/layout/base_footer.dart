@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/home_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_screen_exports.dart';
 
 class BaseFooter extends StatelessWidget implements PreferredSizeWidget {
   final Widget child;

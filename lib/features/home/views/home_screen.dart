@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/home_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_screen_exports.dart';
 import 'package:uniordle/features/game_setup/views/game_setup_screen.dart';
 
 class HomeScreen extends StatefulWidget {

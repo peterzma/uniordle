@@ -1,5 +1,5 @@
-import 'package:uniordle/shared/home_screen_exports.dart';
-import 'package:uniordle/shared/widgets/base_header.dart';
+import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/layout/base_header.dart';
 
 class HomeHeader extends StatelessWidget implements PreferredSizeWidget {
   const HomeHeader({super.key});

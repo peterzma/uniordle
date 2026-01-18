@@ -1,5 +1,5 @@
-import 'package:uniordle/shared/home_screen_exports.dart';
-import 'package:uniordle/shared/widgets/app_nav_item.dart'; // Adjust based on where your styles are
+import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/navigation/app_nav_item.dart'; // Adjust based on where your styles are
 
 class BaseHeader extends StatelessWidget implements PreferredSizeWidget {
   final String title;

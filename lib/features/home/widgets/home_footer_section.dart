@@ -1,11 +1,11 @@
-import 'package:uniordle/shared/home_screen_exports.dart';
-import 'package:uniordle/shared/widgets/app_nav_item.dart';
-import 'package:uniordle/shared/widgets/base_footer.dart';
+import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/navigation/app_nav_item.dart';
+import 'package:uniordle/shared/layout/base_footer.dart';
 
 
 class HomeFooter extends StatelessWidget implements PreferredSizeWidget {
   final String activeTab;
-  final Function(String) onTabChange;
+  final ValueChanged<String> onTabChange;
   
   const HomeFooter({
     super.key, 

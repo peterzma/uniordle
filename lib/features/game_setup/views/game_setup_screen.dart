@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/game_setup_exports.dart';
+import 'package:uniordle/shared/exports/game_setup_exports.dart';
 import 'package:uniordle/features/home/models/discipline.dart';
 import 'package:uniordle/features/game_setup/widgets/game_setup_hero.dart';
 

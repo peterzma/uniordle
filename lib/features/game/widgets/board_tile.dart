@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/game_screen_exports.dart';
+import 'package:uniordle/shared/exports/game_screen_exports.dart';
 
 /// A single tile displayed on the Uniordle board
 /// 

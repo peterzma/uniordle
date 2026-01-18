@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/game_screen_exports.dart';
+import 'package:uniordle/shared/exports/game_screen_exports.dart';
 import 'package:flip_card/flip_card.dart';
 import 'dart:math';
 

@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/game_setup_exports.dart';
+import 'package:uniordle/shared/exports/game_setup_exports.dart';
 
 class AppTextStyles {
   static const String displayFont = 'Lexend';

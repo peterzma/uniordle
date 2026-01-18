@@ -1,5 +1,5 @@
-import 'package:uniordle/shared/game_screen_exports.dart';
-import 'package:uniordle/shared/widgets/select_button_wrapper.dart';
+import 'package:uniordle/shared/exports/game_screen_exports.dart';
+import 'package:uniordle/shared/buttons/select_button_wrapper.dart';
 
 const double _specialKeyWidth = 70;
 

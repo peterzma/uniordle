@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/game_screen_exports.dart';
+import 'package:uniordle/shared/exports/game_screen_exports.dart';
 import 'package:equatable/equatable.dart';
 
 /// Represents a guessed word in the game

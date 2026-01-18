@@ -1,5 +1,5 @@
-import 'package:uniordle/shared/home_screen_exports.dart';
-import 'package:uniordle/shared/widgets/select_button_wrapper.dart';
+import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/buttons/select_button_wrapper.dart';
 
 class AppNavItem extends StatelessWidget {
   final IconData icon;

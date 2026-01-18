@@ -1,6 +1,6 @@
 import 'package:uniordle/features/game/widgets/end_game/end_dialog.dart';
 import 'package:uniordle/features/game/widgets/game_info_bar.dart';
-import 'package:uniordle/shared/game_screen_exports.dart';
+import 'package:uniordle/shared/exports/game_screen_exports.dart';
 import 'package:uniordle/features/home/models/discipline.dart';
 
 class UniordleScreen extends StatefulWidget {

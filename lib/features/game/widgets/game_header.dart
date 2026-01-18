@@ -1,5 +1,5 @@
-import 'package:uniordle/shared/game_screen_exports.dart';
-import 'package:uniordle/shared/widgets/base_header.dart';
+import 'package:uniordle/shared/exports/game_screen_exports.dart';
+import 'package:uniordle/shared/layout/base_header.dart';
 
 class GameHeader extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback? onBack;

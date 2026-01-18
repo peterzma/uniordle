@@ -1,5 +1,5 @@
-import 'package:uniordle/shared/game_setup_exports.dart';
-import 'package:uniordle/shared/widgets/base_header.dart';
+import 'package:uniordle/shared/exports/game_setup_exports.dart';
+import 'package:uniordle/shared/layout/base_header.dart';
 
 class SettingsHeader extends StatelessWidget implements PreferredSizeWidget {
   const SettingsHeader({super.key});

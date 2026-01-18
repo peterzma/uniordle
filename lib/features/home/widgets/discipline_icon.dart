@@ -1,5 +1,5 @@
-import 'package:uniordle/shared/home_screen_exports.dart';
-import 'package:uniordle/shared/widgets/icon_mapper.dart';
+import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/icons/icon_mapper.dart';
 
 class SubjectIcon extends StatelessWidget {
   final String iconName;

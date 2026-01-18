@@ -1,6 +1,6 @@
-import 'package:uniordle/shared/game_setup_exports.dart';
+import 'package:uniordle/shared/exports/game_setup_exports.dart';
 import 'package:uniordle/features/home/models/discipline.dart';
-import 'package:uniordle/shared/widgets/icon_mapper.dart';
+import 'package:uniordle/shared/icons/icon_mapper.dart';
 
 class GameSetupHero extends StatelessWidget {
   final Discipline discipline;

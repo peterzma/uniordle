@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/home_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_screen_exports.dart';
 
  const Duration pumpDuration = Duration(milliseconds: 100);
  const Duration darkenDuration = Duration(milliseconds: 100);

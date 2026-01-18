@@ -1,6 +1,6 @@
 import 'package:uniordle/features/home/models/discipline.dart';
-import 'package:uniordle/shared/game_setup_exports.dart';
-import 'package:uniordle/shared/widgets/select_button_wrapper.dart';
+import 'package:uniordle/shared/exports/game_setup_exports.dart';
+import 'package:uniordle/shared/buttons/select_button_wrapper.dart';
 
 class PlayButton extends StatelessWidget {
   final bool isLoading;

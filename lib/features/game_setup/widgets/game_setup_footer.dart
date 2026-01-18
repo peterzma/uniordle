@@ -1,5 +1,5 @@
 import 'package:uniordle/features/home/models/discipline.dart';
-import 'package:uniordle/shared/game_setup_exports.dart';
+import 'package:uniordle/shared/exports/game_setup_exports.dart';
 
 class SettingsFooter extends StatelessWidget {
   final bool isLoading;
