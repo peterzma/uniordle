@@ -1,5 +1,4 @@
 import 'package:uniordle/shared/exports/home_screen_exports.dart';
-import 'package:audioplayers/audioplayers.dart';
 
 const Duration pumpDuration = Duration(milliseconds: 100);
 const Duration darkenDuration = Duration(milliseconds: 100);
@@ -13,7 +12,6 @@ class PumpButtonWrapper extends StatefulWidget {
   final Color? baseColor;
   final double darkenIntensity;
   final BorderRadius? borderRadius;
-  final String soundPath;
 
   const PumpButtonWrapper({
     super.key,
@@ -24,7 +22,6 @@ class PumpButtonWrapper extends StatefulWidget {
     this.baseColor,
     this.darkenIntensity = 0.15,
     this.borderRadius,
-    this.soundPath = 'audio/ui_click.mp3',
   });
 
   @override
@@ -35,22 +32,16 @@ class _PumpButtonWrapperState extends State<PumpButtonWrapper> {
   double _scale = 1.0;
   bool _isPressed = false;
 
-  static final AudioPlayer _audioPlayer = AudioPlayer();
-
   void _updateState(double scale, bool pressed) {
     if (widget.onTap != null) {
       if (pressed) {
-        _playClick();
+        SoundManager().playClick(); 
       }
       setState(() {
         _scale = scale;
         _isPressed = pressed;
       });
     }
-  }
-
-  void _playClick() {
-    _audioPlayer.play(AssetSource(widget.soundPath), volume: 0.5);
   }
 
   @override

@@ -1,6 +1,5 @@
 import 'package:flutter/services.dart';
 import 'package:uniordle/shared/exports/game_screen_exports.dart';
-import 'package:audioplayers/audioplayers.dart';
 
 const _qwerty = [
   ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],
@@ -21,13 +20,6 @@ class Keyboard extends StatelessWidget {
     required this.letters,
   });
 
-  static final AudioPlayer _audioPlayer = AudioPlayer();
-
-  void _play(String path) {
-    _audioPlayer.stop();
-    _audioPlayer.play(AssetSource(path), volume: 0.5);
-  }
-
   final void Function(String) onKeyTapped;
   final VoidCallback onDeleteTapped;
   final VoidCallback onEnterTapped;
@@ -43,7 +35,6 @@ class Keyboard extends StatelessWidget {
     } else {
       final upper = key.toUpperCase();
       if (_qwerty.any((row) => row.contains(upper))) {
-        _play('audio/keyboard_tap.mp3');
         onKeyTapped(upper);
       }
     }

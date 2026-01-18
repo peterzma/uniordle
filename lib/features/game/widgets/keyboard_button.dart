@@ -13,7 +13,6 @@ class KeyboardButton extends StatelessWidget {
   final Color backgroundColor;
   final String? letter;
   final Widget? child;
-  final String soundPath;
 
   const KeyboardButton({ 
     super.key,
@@ -23,7 +22,6 @@ class KeyboardButton extends StatelessWidget {
     required this.backgroundColor,
     this.letter,
     this.child,
-    this.soundPath = 'audio/keyboard_tap.mp3',
   });
 
 
@@ -32,7 +30,6 @@ class KeyboardButton extends StatelessWidget {
         width: _specialKeyWidth,
         onTap: onTap,
         backgroundColor: AppColors.keyBackground,
-        soundPath: soundPath ?? 'audio/delete_tap.mp3',
         child: const Icon(Icons.backspace, color: Colors.white, size: 22),
       );
 
@@ -42,7 +39,6 @@ class KeyboardButton extends StatelessWidget {
         onTap: onTap,
         backgroundColor: AppColors.keyBackground,
         letter: 'ENTER',
-        soundPath: soundPath ?? 'audio/enter_tap.mp3',
         child: const Text(
           'ENTER',
           style: TextStyle(
@@ -59,7 +55,6 @@ class KeyboardButton extends StatelessWidget {
       padding: const EdgeInsets.all(4),
       child: PumpButtonWrapper(
         onTap: onTap,
-        soundPath: soundPath,
         pressScale: 0.95,
         enableDarken: true,
         baseColor: backgroundColor,
