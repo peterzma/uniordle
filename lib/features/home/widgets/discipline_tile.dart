@@ -20,7 +20,7 @@ class _DisciplineTileState extends State<DisciplineTile> {
 
     return PumpButtonWrapper(
       onTap: widget.onTap,
-      soundType: SoundType.click,
+      soundType: SoundType.grid,
       child: MouseRegion(
         onEnter: (_) {
           setState(() => _hovering = true);

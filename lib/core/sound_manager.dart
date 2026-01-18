@@ -7,6 +7,7 @@ enum SoundType {
   delete,
   enter,
   hover,
+  grid,
 }
 
 class SoundManager {
@@ -15,6 +16,16 @@ class SoundManager {
   SoundManager._internal();
 
   final Map<SoundType, AudioSource> _sources = {};
+
+  final Map<SoundType, double> _volumes = {
+    SoundType.click: 1.0,
+    SoundType.keyboard: 0.8,
+    SoundType.delete: 0.9,
+    SoundType.enter: 1.0,
+    SoundType.hover: 0.3,
+    SoundType.grid: 0.7,
+  };
+
   bool _isInitialized = false;
 
   Future<void> init() async {
@@ -23,11 +34,12 @@ class SoundManager {
     try {
       await SoLoud.instance.init();
       
-      _sources[SoundType.click] = await SoLoud.instance.loadAsset('assets/audio/ui_click.mp3');
+      _sources[SoundType.click] = await SoLoud.instance.loadAsset('assets/audio/grid_click.mp3');
       _sources[SoundType.keyboard] = await SoLoud.instance.loadAsset('assets/audio/keyboard_tap.mp3');
       _sources[SoundType.delete] = await SoLoud.instance.loadAsset('assets/audio/delete_tap.mp3');
       _sources[SoundType.enter] = await SoLoud.instance.loadAsset('assets/audio/enter_tap.mp3');
       _sources[SoundType.hover] = await SoLoud.instance.loadAsset('assets/audio/hover.mp3');
+      _sources[SoundType.grid] = await SoLoud.instance.loadAsset('assets/audio/grid_click.mp3');
 
       
       
@@ -37,12 +49,15 @@ class SoundManager {
     }
   }
 
-  void play(SoundType type) {
+  void play(SoundType type, {double? volumeOverride}) {
     if (!_isInitialized) return;
     
     final source = _sources[type];
     if (source != null) {
-      SoLoud.instance.play(source);
+
+      final double vol = volumeOverride ?? _volumes[type] ?? 1.0;
+
+      SoLoud.instance.play(source, volume: vol);
     }
   }
 
