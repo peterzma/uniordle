@@ -90,10 +90,13 @@ class UniordleController extends ChangeNotifier {
     }
   }
 
+  // reveal letters 1 by 1
   for (int i = 0; i < wordLength; i++) {
     currentWord!.letters[i] = currentWord!.letters[i].copyWith(status: statuses[i]);
     _updateKeyboard(currentWord!.letters[i]);
     
+    notifyListeners();
+
     SoundManager().play(SoundType.keyboard);
 
     if (currentWordIndex < flipCardKeys.length && i < flipCardKeys[currentWordIndex].length) {
