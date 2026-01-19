@@ -30,9 +30,7 @@ class AppColors {
   static const Color shadow = Colors.black;
 
   // Slider & Controls
-  static const Color sliderThumb = Colors.white;
   static const Color sliderInactiveTrack = Colors.white24;
   static const Color sliderActiveTickMark = Colors.white54;
   static const Color sliderInactiveTickMark = Colors.white54;
-  static const Color sliderOverlay = Colors.white;
 }

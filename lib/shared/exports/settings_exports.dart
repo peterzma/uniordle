@@ -7,3 +7,4 @@ export 'package:uniordle/features/settings/widgets/settings_card.dart';
 export 'package:uniordle/features/settings/widgets/settings_header_section.dart';
 export 'package:uniordle/features/settings/widgets/settings_toggle_tile.dart';
 export 'package:uniordle/features/settings/models/settings_state.dart';
+export 'package:uniordle/features/settings/widgets/settings_action_tile.dart';
