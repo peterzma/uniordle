@@ -66,6 +66,8 @@ void didChangeDependencies() {
   }
 
   void _showEndDialog(bool won) {
+    final args = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>?;
+    final discipline = args?['discipline'] as Discipline;
     showDialog(
       context: context,
       barrierDismissible: false,
@@ -73,6 +75,7 @@ void didChangeDependencies() {
         won: won,
         solution: _controller.solution.wordString,
         attempts: _controller.currentWordIndex + 1,
+        discipline: discipline,
         onRestart: () {
           Navigator.pop(context);
           _controller.restart();

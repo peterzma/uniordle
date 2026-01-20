@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uniordle/features/game/widgets/end_game/stat_box.dart';
 import 'package:uniordle/features/game/widgets/end_game/action_button.dart';
+import 'package:uniordle/features/home/models/discipline.dart';
 
 const Color _topBarWinColor = Color(0xFF55B725);
 const Color _topBarLoseColor = Color(0xFFC62121);
@@ -14,6 +15,7 @@ class EndGameDialog extends StatelessWidget {
   final bool won;
   final String solution;
   final int attempts;
+  final Discipline discipline;
   final VoidCallback onRestart;
 
   const EndGameDialog({
@@ -21,6 +23,7 @@ class EndGameDialog extends StatelessWidget {
     required this.won,
     required this.solution,
     required this.attempts,
+    required this.discipline,
     required this.onRestart,
   });
 
