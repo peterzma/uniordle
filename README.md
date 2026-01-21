@@ -102,3 +102,4 @@ Latest release:
 * Add stats/profile screens
 * Sort disciplines by alphabetical
 * change sound effect of tile flipping in game screen
+
