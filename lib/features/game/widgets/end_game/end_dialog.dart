@@ -77,7 +77,24 @@ class EndGameDialog extends StatelessWidget {
                     style: GameFonts.infoBarText,
                   ),
                   const SizedBox(height: 12),
-                  
+                  Container(
+                    // width: double.infinity,
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.white24),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Text(
+                      solution.toUpperCase(),
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 36,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 4,
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
