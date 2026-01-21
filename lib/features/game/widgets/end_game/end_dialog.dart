@@ -1,4 +1,6 @@
+import 'package:uniordle/features/game/widgets/end_game/attempts_info.dart';
 import 'package:uniordle/features/game/widgets/end_game/end_dialog_header.dart';
+import 'package:uniordle/features/game/widgets/end_game/solution_box.dart';
 import 'package:uniordle/features/home/models/discipline.dart';
 import 'package:uniordle/shared/buttons/primary_button.dart';
 import 'package:uniordle/shared/exports/game_screen_exports.dart';
@@ -44,58 +46,10 @@ class EndGameDialog extends StatelessWidget {
           children: [
             DialogHeader(won: won),
             const SizedBox(height: 24),
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
-              decoration: BoxDecoration(
-                color: AppColors.surfaceVariant,
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: Column(
-                children: [
-                  Text(
-                    'THE WORD WAS',
-                    style: GameFonts.infoBarText,
-                  ),
-                  const SizedBox(height: 12),
-                  Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.symmetric(vertical: 12),
-                    decoration: BoxDecoration(
-                      border: Border.all(color: AppColors.outline),
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Text(
-                      solution.toUpperCase(),
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(
-                        color: Colors.red,
-                      ),
-                    ),
-                  )
-                ],
-              ),
-            ),
+            SolutionBox(solution: solution),
             const SizedBox(height: 24),
-
-            RichText(
-              text: TextSpan(
-                style: const TextStyle(
-                  fontSize: 20,
-                ),
-                children: [
-                  TextSpan(
-                    text: '$attempts/$maxAttempts ',
-                  ),
-                  const TextSpan(
-                    text: 'Attempts',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ],
-              ),
-            ),
+            AttemptsInfo(attempts: attempts, maxAttempts: maxAttempts),
             const SizedBox(height: 20),
-
             Row(
               children: [
                 Expanded(child: InfoTag(label: discipline.name)),

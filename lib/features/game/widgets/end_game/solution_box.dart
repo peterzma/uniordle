@@ -1,0 +1,38 @@
+import 'package:uniordle/shared/exports/game_screen_exports.dart';
+
+class SolutionBox extends StatelessWidget {
+  final String solution;
+
+  const SolutionBox({super.key, required this.solution});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
+      decoration: BoxDecoration(
+        color: AppColors.surfaceVariant,
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Column(
+        children: [
+          Text('THE WORD WAS', style: GameFonts.infoBarText),
+          const SizedBox(height: 12),
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.symmetric(vertical: 12),
+            decoration: BoxDecoration(
+              border: Border.all(color: AppColors.outline),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Text(
+              solution.toUpperCase(),
+              textAlign: TextAlign.center,
+              style: const TextStyle(color: Colors.red),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
