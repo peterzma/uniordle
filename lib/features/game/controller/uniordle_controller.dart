@@ -96,6 +96,8 @@ class UniordleController extends ChangeNotifier {
     
     SoundManager().play(SoundType.keyboard);
 
+    notifyListeners();
+
     if (currentWordIndex < flipCardKeys.length && i < flipCardKeys[currentWordIndex].length) {
        flipCardKeys[currentWordIndex][i].currentState?.toggleCard();
     }
