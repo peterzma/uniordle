@@ -26,7 +26,7 @@ class SettingsActionTile extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
             border: !isLast
-                ? Border(bottom: BorderSide(color: AppColors.backgroundBorder.withValues(alpha: 0.4)))
+                ? Border(bottom: BorderSide(color: AppColors.outline.withValues(alpha: 0.4)))
                 : null,
           ),
           child: Row(
@@ -34,12 +34,12 @@ class SettingsActionTile extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Icon(icon, color: AppColors.textSecondary, size: 24),
+                  Icon(icon, color: AppColors.onSurfaceVariant, size: 24),
                   const SizedBox(width: 12),
                   Text(
                     label,
                     style: const TextStyle(
-                      color: AppColors.textPrimary,
+                      color: AppColors.onSurface,
                       fontSize: 15,
                       fontWeight: FontWeight.w500,
                     ),
@@ -52,7 +52,7 @@ class SettingsActionTile extends StatelessWidget {
                     Text(
                       value!,
                       style: const TextStyle(
-                        color: AppColors.textSecondary,
+                        color: AppColors.onSurfaceVariant,
                         fontSize: 12,
                         fontWeight: FontWeight.w500,
                       ),
@@ -60,7 +60,7 @@ class SettingsActionTile extends StatelessWidget {
                   if (value != null) const SizedBox(width: 8),
                   Icon(
                     Icons.chevron_right, 
-                    color: AppColors.textSecondary.withValues(alpha: 0.7), 
+                    color: AppColors.onSurfaceVariant.withValues(alpha: 0.7), 
                     size: 20
                   ),
                 ],

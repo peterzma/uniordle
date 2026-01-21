@@ -132,7 +132,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.mainBackground,
+      backgroundColor: AppColors.surface,
       appBar: const HomeHeader(),
       body: ScrollConfiguration(
         behavior: const ScrollBehavior().copyWith(scrollbars: false),

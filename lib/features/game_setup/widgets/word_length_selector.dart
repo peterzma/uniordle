@@ -30,7 +30,7 @@ class WordLengthSelector extends StatelessWidget {
             final bool active = value == len;
             final Color baseColor = active 
                 ? discipline.color 
-                : AppColors.nonSelectedButton;
+                : AppColors.onSurfaceVariant;
             return Expanded(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10.0),
@@ -46,12 +46,12 @@ class WordLengthSelector extends StatelessWidget {
                       duration: const Duration(milliseconds: 200),
                       curve: Curves.easeInOut,
                       decoration: BoxDecoration(
-                        color: active ? discipline.color : AppColors.nonSelectedButton,
+                        color: active ? discipline.color : AppColors.onSurfaceVariant,
                         borderRadius: BorderRadius.circular(36),
                         border: Border.all(
                           color: active 
                               ? discipline.color 
-                              : AppColors.nonSelectedButtonBorder,
+                              : AppColors.outline,
                           width: 1,
                         ),
                       ),

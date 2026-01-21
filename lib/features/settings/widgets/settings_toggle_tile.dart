@@ -23,7 +23,7 @@ class SettingsToggleTile extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         border: !isLast
-            ? Border(bottom: BorderSide(color: AppColors.backgroundBorder.withValues(alpha: 0.4)))
+            ? Border(bottom: BorderSide(color: AppColors.outline.withValues(alpha: 0.4)))
             : null,
       ),
       child: Row(
@@ -31,12 +31,12 @@ class SettingsToggleTile extends StatelessWidget {
         children: [
           Row(
             children: [
-              Icon(icon, color: AppColors.textSecondary, size: 24),
+              Icon(icon, color: AppColors.onSurfaceVariant, size: 24),
               const SizedBox(width: 12),
               Text(
                 label,
                 style: const TextStyle(
-                  color: AppColors.textPrimary,
+                  color: AppColors.onSurface,
                   fontSize: 15,
                   fontWeight: FontWeight.w500,
                 ),
@@ -46,8 +46,8 @@ class SettingsToggleTile extends StatelessWidget {
           CupertinoSwitch(
             value: value,
             onChanged: onChanged,
-            activeTrackColor: AppColors.selectedButton,
-            inactiveTrackColor: AppColors.nonSelectedButton,
+            activeTrackColor: AppColors.accent,
+            inactiveTrackColor: AppColors.onSurfaceVariant,
           ),
         ],
       ),

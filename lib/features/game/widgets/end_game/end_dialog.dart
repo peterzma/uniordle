@@ -35,7 +35,7 @@ class EndGameDialog extends StatelessWidget {
       insetPadding: const EdgeInsets.symmetric(
         horizontal: 20,
       ),
-      backgroundColor: Color(0xFF1E2021),
+      backgroundColor: AppColors.surface,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(32),
       ),
@@ -70,7 +70,7 @@ class EndGameDialog extends StatelessWidget {
               width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
               decoration: BoxDecoration(
-                color: const Color(0xFF1A1D26),
+                color: AppColors.onSurfaceVariant,
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Column(
@@ -120,11 +120,11 @@ class EndGameDialog extends StatelessWidget {
 
             Row(
               children: [
-                Expanded(child: InfoTag(label: discipline.name, color: AppColors.keyBackground)),
+                Expanded(child: InfoTag(label: discipline.name, color: AppColors.onSurfaceVariant)),
                 const SizedBox(width: 8),
-                Expanded(child: InfoTag(label: '${solution.length} LETTERS', color: AppColors.keyBackground)),
+                Expanded(child: InfoTag(label: '${solution.length} LETTERS', color: AppColors.onSurfaceVariant)),
                 const SizedBox(width: 8),
-                Expanded(child: InfoTag(label: yearLevel.toUpperCase(), color: AppColors.keyBackground)),
+                Expanded(child: InfoTag(label: yearLevel.toUpperCase(), color: AppColors.onSurfaceVariant)),
               ],
             ),
             const SizedBox(height: 32),

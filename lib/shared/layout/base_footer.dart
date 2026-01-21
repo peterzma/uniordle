@@ -20,10 +20,10 @@ class BaseFooter extends StatelessWidget implements PreferredSizeWidget {
     return Container(
       height: preferredSize.height + bottomPadding,
       decoration: BoxDecoration(
-        color: AppColors.mainBackground.withValues(alpha: 0.95),
+        color: AppColors.surface.withValues(alpha: 0.95),
         border: const Border(
           top: BorderSide(
-            color: AppColors.backgroundBorder,
+            color: AppColors.outline,
             width: 0.5,
           ),
         ),

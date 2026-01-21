@@ -30,10 +30,10 @@ class BaseHeader extends StatelessWidget implements PreferredSizeWidget {
       width: double.infinity,
       height: preferredSize.height + topPadding,
       decoration: BoxDecoration(
-        color: AppColors.mainBackground.withValues(alpha: 0.8),
+        color: AppColors.surface.withValues(alpha: 0.8),
         border: const Border(
           bottom: BorderSide(
-            color: AppColors.backgroundBorder,
+            color: AppColors.outline,
             width: 0.5,
           ),
         ),

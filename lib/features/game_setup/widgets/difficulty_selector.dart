@@ -57,7 +57,7 @@ class DifficultySelector extends StatelessWidget {
             thumbShape: const RoundSliderThumbShape(enabledThumbRadius: thumbRadius),
             tickMarkShape: const RoundSliderTickMarkShape(tickMarkRadius: 3),
             activeTickMarkColor: discipline.color,
-            inactiveTickMarkColor: AppColors.sliderInactiveTickMark,
+            inactiveTickMarkColor: AppColors.onSurfaceVariant,
           ),
           child: Slider(
             value: value.toDouble(),
@@ -129,7 +129,7 @@ class DifficultySelector extends StatelessWidget {
                                     size: 12,
                                     color: active
                                         ? discipline.color
-                                        : AppColors.nonSelectedIcon,
+                                        : AppColors.onSurfaceVariant,
                                   )
                                 ],
                               )

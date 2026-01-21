@@ -20,8 +20,8 @@ class AppNavItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color color = isActive 
-        ? AppColors.selectedIcon 
-        : AppColors.nonSelectedIcon;
+        ? AppColors.accent 
+        : AppColors.onSurfaceVariant;
 
     return PumpButtonWrapper(
       borderRadius: BorderRadius.circular(16),

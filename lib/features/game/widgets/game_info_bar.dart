@@ -23,21 +23,21 @@ class GameInfoBar extends StatelessWidget {
             Expanded(
               child: InfoTag(
                 label: disciplineName, 
-                color: AppColors.keyBackground,
+                color: AppColors.onSurfaceVariant,
               ),
             ),
             const SizedBox(width: 4),
             Expanded(
               child: InfoTag(
                 label: '$wordLength LETTERS', 
-                color: AppColors.keyBackground,
+                color: AppColors.onSurfaceVariant,
               ),
             ),
             const SizedBox(width: 4),
             Expanded(
               child: InfoTag(
                 label: yearLevel, 
-                color: AppColors.keyBackground,
+                color: AppColors.onSurfaceVariant,
               ),
             ),
           ],

@@ -34,7 +34,7 @@ class Letter extends Equatable {
   Color get backgroundColor {
     switch (status) {
       case LetterStatus.initial:
-        return AppColors.tileBackground;
+        return AppColors.surfaceVariant;
       case LetterStatus.notInWord:
         return AppColors.notInWordColor;
       case LetterStatus.inWord:
@@ -47,9 +47,9 @@ class Letter extends Equatable {
   Color get borderColor {
     switch (status) {
       case LetterStatus.initial:
-        return AppColors.tileBackground;
+        return AppColors.surfaceVariant;
       default:
-      return AppColors.tileBackground;
+      return AppColors.surfaceVariant;
     }
   }
 
