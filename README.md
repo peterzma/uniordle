@@ -103,6 +103,3 @@ Latest release:
 * Sort disciplines by alphabetical
 * change sound effect of tile flipping in game screen
 * replace ui click on buttons to be more minimal
-
-© 2026 Peter Ma. All rights reserved.
-You may play and study this game, but you may not copy, redistribute, or claim it as your own.
