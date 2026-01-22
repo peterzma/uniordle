@@ -75,7 +75,7 @@ void didChangeDependencies() {
     showDialog(
       context: context,
       barrierColor: Colors.black.withValues(alpha: 0.4),
-      barrierDismissible: false,
+      barrierDismissible: true,
       builder: (context) {
         return BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),

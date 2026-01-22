@@ -131,7 +131,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.surface,
-      appBar: const HomeHeader(),
+      appBar: HomeHeader(),
       body: ScrollConfiguration(
         behavior: const ScrollBehavior().copyWith(scrollbars: false),
         child: CustomScrollView(

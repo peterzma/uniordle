@@ -33,7 +33,7 @@ class EndGameDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     return Dialog(
       insetPadding: const EdgeInsets.symmetric(
-        horizontal: 20,
+        horizontal: 16,
       ),
       backgroundColor: AppColors.surface,
       shape: RoundedRectangleBorder(
@@ -48,7 +48,7 @@ class EndGameDialog extends StatelessWidget {
             const SizedBox(height: 24),
             SolutionBox(solution: solution),
             const SizedBox(height: 24),
-            AttemptsInfo(attempts: attempts, maxAttempts: maxAttempts),
+            AttemptsInfo(attempts: attempts, maxAttempts: maxAttempts, won: won),
             const SizedBox(height: 24),
             Row(
               children: [
@@ -64,14 +64,20 @@ class EndGameDialog extends StatelessWidget {
               label: 'NEW GAME',
               color: AppColors.accent,
               onPressed: onRestart,
+              borderRadius: 24,
             ),
             const SizedBox(height: 12),
             PrimaryButton(
               label: 'HOME',
               color: AppColors.surfaceVariant,
-              onPressed: () => Navigator.pop(context),
+              onPressed: () {
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                  '/',
+                  (route) => false,
+                );
+              },
+              borderRadius: 24,
             ),
-
           ],
         ),
       ),
