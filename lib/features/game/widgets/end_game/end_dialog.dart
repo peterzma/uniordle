@@ -35,7 +35,7 @@ class EndGameDialog extends StatelessWidget {
       insetPadding: const EdgeInsets.symmetric(
         horizontal: 20,
       ),
-      backgroundColor: AppColors.surface,
+      backgroundColor: AppColors.surfaceVariant,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(32),
       ),

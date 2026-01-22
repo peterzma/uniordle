@@ -87,7 +87,7 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
         child: Text(
           widget.letter.val,
           textAlign: TextAlign.center,
-          style: AppTextStyles.displayMedium,
+          style: AppTextStyles.displayLarge,
         ),
       ),
     );

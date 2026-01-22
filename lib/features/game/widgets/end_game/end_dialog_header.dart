@@ -19,12 +19,13 @@ class DialogHeader extends StatelessWidget {
           child: Icon(
             won ? Icons.stars_rounded : Icons.close_rounded,
             color: won ? Color(0xFF55B725) : Colors.red,
-            size: 60,
+            size: 64,
           ),
         ),
         const SizedBox(height: 16),
         Text(
           won ? 'YOU WIN!' : 'GAME OVER',
+          style: AppTextStyles.displayLarge
         ),
       ],
     );

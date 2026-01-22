@@ -11,12 +11,15 @@ class SolutionBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
       decoration: BoxDecoration(
-        color: AppColors.surfaceVariant,
+        color: AppColors.surface,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Column(
         children: [
-          Text('THE WORD WAS'),
+          Text(
+            'THE WORD WAS',
+          style: AppTextStyles.headline.copyWith(color: AppColors.onSurfaceVariant)
+          ),
           const SizedBox(height: 12),
           Container(
             width: double.infinity,
@@ -28,7 +31,7 @@ class SolutionBox extends StatelessWidget {
             child: Text(
               solution.toUpperCase(),
               textAlign: TextAlign.center,
-              style: const TextStyle(color: Colors.red),
+              style: AppTextStyles.displayLarge.copyWith(letterSpacing: 4),
             ),
           ),
         ],

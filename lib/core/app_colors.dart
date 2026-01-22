@@ -8,7 +8,7 @@ class AppColors {
   
   // Backgrounds
   static const Color surface = Color(0xFF00121f);   // Main dark background
-  static const Color surfaceVariant = Color(0xFF1E293B); // Cards, tiles, keyboard buttons
+  static const Color surfaceVariant = Color(0xFF1A1F2E); // Cards, tiles, keyboard buttons
   
   // Content (Text/Icons)
   static const Color onSurface = Color(0xFFF8FAFC);        // High emphasis text

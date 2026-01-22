@@ -2,6 +2,7 @@ import 'package:uniordle/features/game/widgets/end_game/end_dialog.dart';
 import 'package:uniordle/features/game/widgets/game_info_bar.dart';
 import 'package:uniordle/shared/exports/game_screen_exports.dart';
 import 'package:uniordle/features/home/models/discipline.dart';
+import 'dart:ui';
 
 class UniordleScreen extends StatefulWidget {
   const UniordleScreen({
@@ -73,19 +74,25 @@ void didChangeDependencies() {
     final discipline = args?['discipline'] as Discipline;
     showDialog(
       context: context,
+      barrierColor: Colors.black.withValues(alpha: 0.4),
       barrierDismissible: false,
-      builder: (context) => EndGameDialog(
-        won: won,
-        solution: _controller.solution.wordString,
-        attempts: _controller.currentWordIndex + 1,
-        maxAttempts: _maxAttempts,
-        discipline: discipline,
-        yearLevel: _yearLevel,
-        onRestart: () {
-          Navigator.pop(context);
-          _controller.restart();
-        },
-      ),
+      builder: (context) {
+        return BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 6, sigmaY: 6),
+          child: EndGameDialog(
+            won: won,
+            solution: _controller.solution.wordString,
+            attempts: _controller.currentWordIndex + 1,
+            maxAttempts: _maxAttempts,
+            discipline: discipline,
+            yearLevel: _yearLevel,
+            onRestart: () {
+              Navigator.pop(context);
+              _controller.restart();
+            },
+          ),
+        );
+      },
     );
   }
 

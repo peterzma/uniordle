@@ -99,6 +99,5 @@ Latest release:
 * Make settings screen (Customise sound/music)
 * Add sound/music
 * Add stats/profile screens
-* Sort disciplines by alphabetical
 * change sound effect of tile flipping in game screen
 * replace ui click on buttons to be more minimal
