@@ -1,3 +1,4 @@
+import 'package:uniordle/features/home/widgets/help/help_dialog.dart';
 import 'package:uniordle/shared/exports/game_screen_exports.dart';
 import 'package:uniordle/shared/layout/base_header.dart';
 
@@ -22,8 +23,13 @@ class GameHeader extends StatelessWidget implements PreferredSizeWidget {
       onLeftTap: () => Navigator.maybePop(context),
       rightIcon: LucideIcons.helpCircle,
       onRightTap: () {
-        // help logic here
-      },
+          showDialog(
+          context: context,
+          barrierDismissible: true, 
+          barrierColor: Colors.black.withValues(alpha: 0.4),
+          builder: (context) => const HelpDialog(),
+        );
+      }
     );
   }
 }
