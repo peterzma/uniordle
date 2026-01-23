@@ -47,7 +47,7 @@ class EndGameDialog extends StatelessWidget {
             DialogHeader(won: won),
             const SizedBox(height: 24),
             SolutionBox(solution: solution),
-            const SizedBox(height: 24),
+            const SizedBox(height: 12),
             AttemptsInfo(attempts: attempts, maxAttempts: maxAttempts, won: won),
             const SizedBox(height: 24),
             Row(
@@ -71,17 +71,20 @@ class EndGameDialog extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 12),
-            PrimaryButton(
-              label: 'HOME',
-              color: AppColors.surfaceVariant,
-              onPressed: () {
-                Navigator.of(context).pushNamedAndRemoveUntil(
-                  '/',
-                  (route) => false,
-                );
-              },
-              borderRadius: 24,
-            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              child: PrimaryButton(
+                label: 'HOME',
+                color: AppColors.surfaceVariant,
+                onPressed: () {
+                  Navigator.of(context).pushNamedAndRemoveUntil(
+                    '/',
+                    (route) => false,
+                  );
+                },
+                borderRadius: 24,
+              ),
+            )
           ],
         ),
       ),

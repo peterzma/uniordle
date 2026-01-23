@@ -3,7 +3,10 @@ import 'package:uniordle/shared/exports/settings_exports.dart';
 class SettingsCard extends StatelessWidget {
   final List<Widget> children;
 
-  const SettingsCard({super.key, required this.children});
+  const SettingsCard({
+    super.key, 
+    required this.children
+  });
 
   @override
   Widget build(BuildContext context) {

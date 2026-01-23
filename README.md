@@ -88,8 +88,6 @@ Latest release:
 ## TODO
 
 * Make categories more university related
-* Add settings (theming)
-* Subtexts for each category should be the number of unique words to play with
 * Change transition between screens
 * Add dialog when clicking help icon
 * Motion blur on game back to game settings transition

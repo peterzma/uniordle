@@ -18,15 +18,18 @@ class GameInfoBar extends StatelessWidget {
       child: Container(
         constraints: const BoxConstraints(maxWidth: 468), 
         padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 12),
-        child: Row(
-          children: [
-            Expanded(child: InfoTag(label: disciplineName)),
-            const SizedBox(width: 4),
-            Expanded(child: InfoTag(label: '$wordLength LETTERS')),
-            const SizedBox(width: 4),
-            Expanded(child: InfoTag(label: yearLevel)),
-          ],
-        ),
+        child: IntrinsicWidth(
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Expanded(child: InfoTag(label: disciplineName)),
+              const SizedBox(width: 4),
+              Expanded(child: InfoTag(label: '$wordLength LETTERS')),
+              const SizedBox(width: 4),
+              Expanded(child: InfoTag(label: yearLevel)),
+            ],
+          ),
+        )
       ),
     );
   }

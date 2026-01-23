@@ -5,7 +5,11 @@ class SubjectIcon extends StatelessWidget {
   final String iconName;
   final Color? color;
 
-  const SubjectIcon({super.key, required this.iconName, this.color});
+  const SubjectIcon({
+    super.key, 
+    required this.iconName, 
+    required this.color
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +21,7 @@ class SubjectIcon extends StatelessWidget {
         color: Colors.white.withValues(alpha: 0.05),
         borderRadius: BorderRadius.circular(12),
       ),
-      child: Icon(IconMapper.getIcon(iconName), color: color ?? Colors.blue, size: 24),
+      child: Icon(IconMapper.getIcon(iconName), color: color, size: 24),
     );
   }
 }
