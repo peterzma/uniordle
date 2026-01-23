@@ -93,8 +93,6 @@ Latest release:
 * Motion blur on game back to game settings transition
 * Add more words
 * Improve end game dialog
-* Move play button higher in game settings
-* Make settings screen (Customise sound/music)
 * Add sound/music
 * Add stats/profile screens
 * change sound effect of tile flipping in game screen

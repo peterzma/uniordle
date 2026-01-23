@@ -65,7 +65,7 @@ class _GameSettingsScreenState extends State<GameSettingsScreen> {
                       onChanged: (v) => setState(() => _wordLength = v),
                       discipline: widget.discipline,
                     ),
-                    const SizedBox(height: 48),
+                    const Spacer(flex: 2),
                     DifficultySelector(
                       value: _difficulty, 
                       onChanged: (v) => setState(() => _difficulty = v),
@@ -84,7 +84,7 @@ class _GameSettingsScreenState extends State<GameSettingsScreen> {
                 showShadow: true,
                 borderRadius: 20,
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 32),
             ],
           ),
         ),
