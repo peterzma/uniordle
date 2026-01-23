@@ -60,12 +60,16 @@ class WordLengthSelector extends StatelessWidget {
                         children: [
                           Text(
                             '$len',
-                            style: AppTextStyles.displayMedium,
+                            style: active 
+                            ? AppTextStyles.displayLarge
+                            : AppTextStyles.displayMedium,
                           ),
                           const SizedBox(height: 2),
                           Text(
                             'LETTERS',
-                            style: AppTextStyles.labelMedium,
+                            style: active 
+                            ? AppTextStyles.labelLarge
+                            : AppTextStyles.labelMedium,
                           ),
                         ],
                       ),
