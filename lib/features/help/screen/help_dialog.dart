@@ -1,3 +1,4 @@
+import 'package:uniordle/features/help/widgets/instruction_row.dart';
 import 'package:uniordle/shared/buttons/primary_button.dart';
 import 'package:uniordle/shared/exports/home_screen_exports.dart';
 import 'package:uniordle/shared/layout/base_dialog.dart';
@@ -28,6 +29,12 @@ class HelpDialog extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 32),
+            InstructionRow(letter: 'W', color: AppColors.correctColor, title: 'title', subtitle: 'subtitle'),
+            const SizedBox(height: 16),
+            InstructionRow(letter: 'I', color: AppColors.inWordColor, title: 'title', subtitle: 'subtitle'),
+            const SizedBox(height: 16),
+            InstructionRow(letter: 'N', color: AppColors.notInWordColor, title: 'title', subtitle: 'subtitle'),
+            const SizedBox(height: 40),
             PrimaryButton(
               label: 'GOT IT',
               onPressed: () => Navigator.pop(context),
