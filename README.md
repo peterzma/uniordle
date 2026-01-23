@@ -99,3 +99,4 @@ Latest release:
 * Add stats/profile screens
 * change sound effect of tile flipping in game screen
 * replace ui click on buttons to be more minimal
+* circle background on the badge in end game dialog should animate shinking/enlarging

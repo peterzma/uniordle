@@ -37,8 +37,7 @@ class SolutionBox extends StatelessWidget {
             ),
             child: Text(
               solution.toUpperCase(),
-              textAlign: TextAlign.center,
-              style: AppTextStyles.displayLarge.copyWith(letterSpacing: 4),
+              style: AppTextStyles.displayLarge.copyWith(fontSize: 48, letterSpacing: 8),
             ),
           ),
         ],

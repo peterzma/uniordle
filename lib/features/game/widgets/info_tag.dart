@@ -15,6 +15,8 @@ class InfoTag extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: double.infinity,
+      alignment: Alignment.center,
       padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
       decoration: BoxDecoration(
         color: backgroundColor.withValues(alpha: 0.5),

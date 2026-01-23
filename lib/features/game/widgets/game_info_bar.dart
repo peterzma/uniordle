@@ -15,10 +15,10 @@ class GameInfoBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Container(
-        constraints: const BoxConstraints(maxWidth: 468), 
-        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 12),
-        child: IntrinsicWidth(
+      child: IntrinsicWidth(
+        child: Container(
+          constraints: const BoxConstraints(maxWidth: 468), 
+          padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 12),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
