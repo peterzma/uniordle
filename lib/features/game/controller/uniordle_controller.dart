@@ -10,6 +10,7 @@ class UniordleController extends ChangeNotifier {
   final int maxAttempts;
   final String disciplineId;
   final Function(bool won) onGameEnd;
+  final VoidCallback? onInvalidWord;
 
   final Duration _flipDuration = const Duration(milliseconds: 160);
 
@@ -18,6 +19,7 @@ class UniordleController extends ChangeNotifier {
     required this.maxAttempts,
     required this.disciplineId,
     required this.onGameEnd,
+    this.onInvalidWord,
   }) {
     _initGame();
   }

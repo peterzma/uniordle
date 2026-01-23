@@ -4,6 +4,8 @@ import 'package:uniordle/shared/exports/game_screen_exports.dart';
 import 'package:uniordle/features/home/models/discipline.dart';
 import 'dart:ui';
 
+import 'package:uniordle/shared/layout/base_dialog.dart';
+
 class UniordleScreen extends StatefulWidget {
   const UniordleScreen({
     super.key,
@@ -62,6 +64,7 @@ void didChangeDependencies() {
       maxAttempts: attempts,
       disciplineId: discipline?.id ?? 'engineering',
       onGameEnd: (won) => _showEndDialog(won),
+      onInvalidWord: _showInvalidWord,
     );
 
     _controller.addListener(() => setState(() {}));
@@ -139,6 +142,32 @@ void didChangeDependencies() {
           ),
         ],
       ),
+    );
+  }
+
+  void _showInvalidWord() {
+    showDialog(
+      context: context,
+      barrierColor: Colors.transparent,
+      barrierDismissible: false,
+      builder: (dialogContext) {
+        final navigator = Navigator.of(dialogContext);
+
+        Future.delayed(const Duration(milliseconds: 700), () {
+          if (mounted && navigator.canPop()) {
+            navigator.pop();
+          }
+        });
+
+        return BaseDialog(
+          blur: 0.0,
+          child: Text(
+            'Word not found', 
+            textAlign: TextAlign.center,
+            style: AppTextStyles.labelLarge
+          ),
+        );
+      },
     );
   }
 }
