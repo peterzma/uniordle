@@ -28,25 +28,29 @@ class AppNavItem extends StatelessWidget {
       onTap: onTap,
       pressScale: 0.90,
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(
-              icon,
-              size: iconSize,
-              color: color,
-            ),
-            if (label != null) ...[
-              const SizedBox(height: 4),
-              Text(
-                label!.toUpperCase(),
-                style: AppTextStyles.labelSmall.copyWith(color: color),
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+        child: SizedBox(
+          height: 48, 
+          width: 56,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                icon,
+                size: iconSize,
+                color: color,
               ),
+              if (label != null) ...[
+                const SizedBox(height: 2),
+                Text(
+                  label!.toUpperCase(),
+                  style: AppTextStyles.labelSmall.copyWith(color: color),
+                ),
+              ],
             ],
-          ],
-        ),
+          ),
+        )
       ),
     );
   }

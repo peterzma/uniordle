@@ -1,7 +1,8 @@
+import 'package:uniordle/core/app_layout.dart';
 import 'package:uniordle/shared/exports/home_screen_exports.dart';
-import 'package:uniordle/shared/navigation/app_nav_item.dart'; // Adjust based on where your styles are
+import 'package:uniordle/shared/navigation/app_nav_item.dart';
 
-class BaseHeader extends StatelessWidget implements PreferredSizeWidget {
+class BaseHeader extends StatelessWidget {
   final String title;
   final IconData leftIcon;
   final VoidCallback onLeftTap;
@@ -20,15 +21,12 @@ class BaseHeader extends StatelessWidget implements PreferredSizeWidget {
   });
 
   @override
-  Size get preferredSize => Size.fromHeight(height);
-
-  @override
   Widget build(BuildContext context) {
     final double topPadding = MediaQuery.of(context).padding.top;
 
     return Container(
+      height: AppLayout.barHeight + topPadding,
       width: double.infinity,
-      height: preferredSize.height + topPadding,
       decoration: BoxDecoration(
         color: AppColors.surface.withValues(alpha: 0.8),
         border: const Border(
@@ -40,9 +38,8 @@ class BaseHeader extends StatelessWidget implements PreferredSizeWidget {
       ),
       child: SafeArea(
         bottom: false,
-        child: Container(
-          height: height, 
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: AppLayout.kSidePadding),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,

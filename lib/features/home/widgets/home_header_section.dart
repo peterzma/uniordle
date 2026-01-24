@@ -10,9 +10,7 @@ class HomeHeader extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0),
-      child: BaseHeader(
+    return BaseHeader(
         title: 'Uniordle',
         leftIcon: LucideIcons.settings,
         onLeftTap: () {
@@ -26,8 +24,7 @@ class HomeHeader extends StatelessWidget implements PreferredSizeWidget {
           barrierColor: Colors.black.withValues(alpha: 0.4),
           builder: (context) => const HelpDialog(),
         );
-        },
-      ),
+      },
     );
   }
 }

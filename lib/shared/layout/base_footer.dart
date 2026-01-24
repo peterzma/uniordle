@@ -1,24 +1,22 @@
+import 'package:uniordle/core/app_layout.dart';
 import 'package:uniordle/shared/exports/home_screen_exports.dart';
 
-class BaseFooter extends StatelessWidget implements PreferredSizeWidget {
-  final Widget child;
+class BaseFooter extends StatelessWidget {
+  final List<Widget> children;
   final double height;
 
   const BaseFooter({
     super.key,
-    required this.child,
+    required this.children,
     this.height = 72,
   });
-
-  @override
-  Size get preferredSize => Size.fromHeight(height);
 
   @override
   Widget build(BuildContext context) {
     final double bottomPadding = MediaQuery.of(context).padding.bottom;
 
     return Container(
-      height: preferredSize.height + bottomPadding,
+      height: AppLayout.barHeight + bottomPadding,
       decoration: BoxDecoration(
         color: AppColors.surface.withValues(alpha: 0.95),
         border: const Border(
@@ -30,7 +28,14 @@ class BaseFooter extends StatelessWidget implements PreferredSizeWidget {
       ),
       child: SafeArea(
         top: false,
-        child: child,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: AppLayout.kSidePadding),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: children, 
+          ),
+        ),
       ),
     );
   }
