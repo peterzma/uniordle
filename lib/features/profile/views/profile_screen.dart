@@ -17,7 +17,7 @@ class ProfileView extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
-          const ProfileHeader(),
+          ProfileHeader(),
 
           const SizedBox(height: 32),
 
@@ -57,7 +57,13 @@ class ProfileView extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text("UNLOCKED DISCIPLINES", style: AppTextStyles.labelLarge),
-              TextButton(onPressed: () {}, child: const Text("See All")),
+              TextButton(
+                onPressed: () {}, 
+                child: Text(
+                  "See All",
+                  style: AppTextStyles.labelSmall.copyWith(fontSize: 12)
+                )
+              ),
             ],
           ),
 
