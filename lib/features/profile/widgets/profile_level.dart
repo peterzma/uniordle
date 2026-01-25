@@ -15,20 +15,15 @@ class LevelCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 12),
       decoration: BoxDecoration(
-        color: AppColors.surface,
+        color: AppColors.surfaceVariant.withValues(alpha: 0.5), 
         borderRadius: BorderRadius.circular(24),
       ),
       child: Column(
         children: [
           Text(
-            "LEVEL",
-            style: AppTextStyles.labelMedium,
-          ),
-          const SizedBox(height: 4),
-          Text(
-            "$level",
+            "LEVEL $level",
             style: AppTextStyles.displayMedium,
           ),
           const SizedBox(height: 12),
@@ -41,10 +36,17 @@ class LevelCard extends StatelessWidget {
               valueColor: const AlwaysStoppedAnimation<Color>(AppColors.accent),
             ),
           ),
-          const SizedBox(height: 8),
-          Text(
-            "${(progress * 100).toInt()}% TO $nextLevel",
-            style: AppTextStyles.labelSmall
+          const SizedBox(height: 16),
+          Container(
+            padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 6),
+            decoration: BoxDecoration(
+              color: AppColors.accent.withValues(alpha: 0.2), 
+              borderRadius: BorderRadius.circular(36),
+            ),
+            child: Text(
+              "${(progress * 100).toInt()}% TO LEVEL $nextLevel",
+              style: AppTextStyles.labelSmall
+            ),
           ),
         ],
       ),

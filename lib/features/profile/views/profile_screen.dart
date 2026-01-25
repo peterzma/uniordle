@@ -19,6 +19,8 @@ class ProfileView extends StatelessWidget {
         children: [
           const ProfileHeader(),
 
+          const SizedBox(height: 32),
+
           LevelCard(
             level: currentLevel,
             progress: progressValue,
@@ -37,7 +39,7 @@ class ProfileView extends StatelessWidget {
                   iconColor: Colors.orange,
                 )
               ),
-              const SizedBox(width: 12),
+              const SizedBox(width: 16),
               Expanded(
                 child: SummaryCard(
                   label: "Solved", 
