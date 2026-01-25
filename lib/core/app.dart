@@ -3,6 +3,7 @@ import 'package:uniordle/shared/exports/home_screen_exports.dart';
 import 'package:uniordle/shared/exports/game_screen_exports.dart';
 import 'package:uniordle/shared/exports/game_setup_exports.dart';
 import 'package:uniordle/features/settings/screens/settings_screen.dart';
+import 'package:uniordle/shared/exports/profile_screen_exports.dart';
 
 /// Root widget of Uniordle
 /// 
@@ -45,6 +46,7 @@ class App extends StatelessWidget {
         '/settings': (context) => SettingsScreen(
           onClose: () => Navigator.of(context).pop(), 
         ),
+        '/profile': (context) => const ProfileView(),
       },
     );
   }

@@ -34,7 +34,9 @@ class HomeFooter extends StatelessWidget {
           icon: LucideIcons.user,
           label: 'Profile',
           isActive: activeTab == 'profile',
-          onTap: () => onTabChange('profile'),
+          onTap: () {
+            Navigator.of(context).pushNamed('/profile');
+          },
         ),
       ],
     );
