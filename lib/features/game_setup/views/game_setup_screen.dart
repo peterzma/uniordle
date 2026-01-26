@@ -33,7 +33,7 @@ class _GameSetupScreenState extends State<GameSetupScreen> {
       arguments: {
         'discipline': widget.discipline,
         'wordLength': _wordLength,
-        'difficulty': _difficulty,
+        'yearLevel': _difficulty,
       },
     );
 

@@ -1,17 +1,26 @@
 class UserStats {
   final int streak;
   final int solved;
+  final int xp;
 
-  UserStats({required this.streak, required this.solved});
+  UserStats({
+    required this.streak, 
+    required this.solved, 
+    required this.xp,
+  });
 }
 
 extension UserStatsExtension on UserStats {
-  static const int wordsPerLevel = 2;
+  static const int xpPerLevel = 100;
 
-  int get currentLevel => solved ~/ wordsPerLevel;
+  static int calculateGainedXP(int yearLevel, int wordLength) {
+    return 20 + (yearLevel * 5) + ((wordLength - 5) * 5);
+  }
+
+  int get currentLevel => xp ~/ xpPerLevel;
   int get nextLevel => currentLevel + 1;
-  double get levelProgress => (solved % wordsPerLevel) / wordsPerLevel;
-  int get solvedInCurrentLevel => solved % wordsPerLevel;
+  double get levelProgress => (xp % xpPerLevel) / xpPerLevel;
+  int get xpInCurrentLevel => xp % xpPerLevel;
   
-  String get progressText => "$solvedInCurrentLevel/$wordsPerLevel SOLVES TO LEVEL $nextLevel";
+  String get progressText => "$xpInCurrentLevel/$xpPerLevel XP";
 }

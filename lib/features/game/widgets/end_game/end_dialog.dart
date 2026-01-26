@@ -33,6 +33,9 @@ class EndDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final int levelValue = _mapYearToValue(yearLevel);
+    final gainedXP = UserStatsExtension.calculateGainedXP(levelValue, solution.length);
+
     return BaseDialog(
       child: Padding(
         padding: const EdgeInsets.symmetric(
@@ -43,7 +46,26 @@ class EndDialog extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             EndDialogHeader(won: won),
-            const SizedBox(height: 24),
+            const SizedBox(height: 12),
+            if (won) ...[
+              const SizedBox(height: 8),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                decoration: BoxDecoration(
+                  color: AppColors.accent.withValues(alpha: 0.1),
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: AppColors.accent.withValues(alpha: 0.2)),
+                ),
+                child: Text(
+                  '+$gainedXP XP',
+                  style: AppFonts.labelMedium.copyWith(
+                    color: AppColors.accent,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+            const SizedBox(height: 12),
             SolutionBox(solution: solution),
             const SizedBox(height: 12),
             AttemptsInfo(attempts: attempts, maxAttempts: maxAttempts, won: won),
@@ -77,4 +99,11 @@ class EndDialog extends StatelessWidget {
       ),
     );
   }
+}
+
+int _mapYearToValue(String year) {
+  if (year.contains('1st')) return 1;
+  if (year.contains('2nd')) return 2;
+  if (year.contains('3rd')) return 3;
+  return 4; // Postgrad
 }

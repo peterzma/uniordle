@@ -32,13 +32,13 @@ void didChangeDependencies() {
   if (!_isInitialized) {
     final args = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>?;
     final discipline = args?['discipline'] as Discipline?;
-    final dynamic rawDifficulty = args?['difficulty'] ?? 1; // 1 is default difficulty
-    final int difficulty = rawDifficulty is double ? rawDifficulty.round() : rawDifficulty as int;
+    final dynamic rawDifficulty = args?['yearLevel'] ?? 1; // 1 is default yearLevel
+    final int yearLevel = rawDifficulty is double ? rawDifficulty.round() : rawDifficulty as int;
     _wordLength = args?['wordLength'] ?? 5;
     _disciplineName = discipline?.name ?? 'Engineering';
 
     int attempts;
-    switch (difficulty) {
+    switch (yearLevel) {
       case 4: 
         attempts = 5; 
         _yearLevel = 'Postgrad'; 
@@ -66,6 +66,7 @@ void didChangeDependencies() {
       disciplineId: discipline?.id ?? 'engineering',
       onGameEnd: (won) => _showEndDialog(won),
       onInvalidWord: _showInvalidWord,
+      yearLevel: yearLevel,
     );
 
     _controller.addListener(() => setState(() {}));

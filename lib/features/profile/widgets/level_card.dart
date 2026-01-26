@@ -19,7 +19,7 @@ class LevelCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: AppColors.surfaceVariant.withValues(alpha: 0.5), 
+        color: AppColors.surfaceVariant, 
         borderRadius: BorderRadius.circular(24),
       ),
       child: Column(
@@ -40,7 +40,7 @@ class LevelCard extends StatelessWidget {
             child: LinearProgressIndicator(
               value: progress,
               minHeight: 12,
-              backgroundColor: AppColors.surfaceVariant,
+              backgroundColor: AppColors.outline,
               valueColor: const AlwaysStoppedAnimation<Color>(AppColors.accent),
             ),
           ),

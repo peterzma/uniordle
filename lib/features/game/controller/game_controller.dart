@@ -10,6 +10,7 @@ class GameController extends ChangeNotifier {
   final int wordLength;
   final int maxAttempts;
   final String disciplineId;
+  final int yearLevel;
   final Function(bool won) onGameEnd;
   final VoidCallback? onInvalidWord;
 
@@ -18,6 +19,7 @@ class GameController extends ChangeNotifier {
   GameController({
     required this.wordLength,
     required this.maxAttempts,
+    required this.yearLevel,
     required this.disciplineId,
     required this.onGameEnd,
     this.onInvalidWord,
@@ -135,7 +137,10 @@ class GameController extends ChangeNotifier {
   void _checkResult() {
     if (currentWord!.wordString == solution.wordString) {
       status = GameStatus.won;
-      statsManager.recordWin();
+      statsManager.recordWin(
+      yearLevel: yearLevel,
+      wordLength: wordLength, 
+    );
       onGameEnd(true);
     } else if (currentWordIndex + 1 >= maxAttempts) {
       status = GameStatus.lost;
