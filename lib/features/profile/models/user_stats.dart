@@ -65,11 +65,11 @@ extension UserStatsExtension on UserStats {
     const titles = [
       "UNDERGRADUATE", // 0-9
       "BACHELOR",      // 10-19
-      "HONOURS",        // 20-29
+      "HONOURS",       // 20-29
       "MASTERS",       // 30-39
       "DOCTORAL",      // 40-49
-      "FELLOW",        // 50-59
-      "EMERITUS",      // 60+
+      "PROFESSOR",     // 50-59
+      "DEAN",          // 60+
       "CHANCELLOR",    // 70+
     ];
     
