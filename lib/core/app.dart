@@ -1,10 +1,10 @@
 import 'package:uniordle/core/app_layout.dart';
 import 'package:uniordle/core/app_theme.dart';
-import 'package:uniordle/shared/exports/home_screen_exports.dart';
-import 'package:uniordle/shared/exports/game_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_exports.dart';
+import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:uniordle/shared/exports/game_setup_exports.dart';
 import 'package:uniordle/features/settings/screens/settings_screen.dart';
-import 'package:uniordle/shared/exports/profile_screen_exports.dart';
+import 'package:uniordle/shared/exports/profile_exports.dart';
 
 /// Root widget of Uniordle
 /// 
@@ -41,10 +41,10 @@ class App extends StatelessWidget {
       case '/':
         return const HomeScreen();
       case '/uniordle':
-        return const UniordleScreen();
+        return const GameScreen();
       case '/setup':
         final args = settings.arguments as Discipline;
-        return GameSettingsScreen(discipline: args);
+        return GameSetupScreen(discipline: args);
       case '/settings':
         return Builder(builder: (context) {
           return SettingsScreen(
@@ -52,7 +52,7 @@ class App extends StatelessWidget {
           );
         });
       case '/profile':
-        return const ProfileView();
+        return const ProfileScreen();
       default:
         return const HomeScreen();
     }

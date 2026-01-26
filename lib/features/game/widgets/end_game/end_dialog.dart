@@ -4,14 +4,14 @@ import 'package:uniordle/features/game/widgets/end_game/solution_box.dart';
 import 'package:uniordle/features/game/widgets/game_info_bar.dart';
 import 'package:uniordle/features/home/models/discipline.dart';
 import 'package:uniordle/shared/buttons/primary_button.dart';
-import 'package:uniordle/shared/exports/game_screen_exports.dart';
+import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:uniordle/shared/layout/base_dialog.dart';
 
 /// Dialog shown when game ends
 /// 
 /// Displays win or loss, solution world, attempt count,
 /// and actions to restart or go back to main menu
-class EndGameDialog extends StatelessWidget {
+class EndDialog extends StatelessWidget {
   final bool won;
   final String solution;
   final int attempts;
@@ -20,7 +20,7 @@ class EndGameDialog extends StatelessWidget {
   final Discipline discipline;
   final VoidCallback onRestart;
 
-  const EndGameDialog({
+  const EndDialog({
     super.key,
     required this.won,
     required this.solution,
@@ -42,7 +42,7 @@ class EndGameDialog extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            DialogHeader(won: won),
+            EndDialogHeader(won: won),
             const SizedBox(height: 24),
             SolutionBox(solution: solution),
             const SizedBox(height: 12),

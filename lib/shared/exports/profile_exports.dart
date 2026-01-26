@@ -1,9 +1,10 @@
 export 'package:flutter/material.dart';
-export 'package:uniordle/features/profile/models/profile_data.dart';
+export 'package:uniordle/features/profile/models/user_stats.dart';
 export 'package:uniordle/features/profile/views/profile_screen.dart';
 export 'package:uniordle/features/profile/widgets/summary_card.dart';
 export 'package:uniordle/features/profile/widgets/profile_header.dart';
-export '../../features/profile/controller/stat_manager.dart';
+export '../../features/profile/controller/stats_manager.dart';
 export 'package:shared_preferences/shared_preferences.dart';
+export '../../features/profile/widgets/level_card.dart';
 export '../../core/app_fonts.dart';
 export '../../core/app_colors.dart';

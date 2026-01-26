@@ -1,5 +1,5 @@
 import 'package:uniordle/core/app_layout.dart';
-import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_exports.dart';
 
 class BaseFooter extends StatelessWidget {
   final List<Widget> children;

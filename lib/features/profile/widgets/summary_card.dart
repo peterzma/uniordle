@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/exports/profile_screen_exports.dart';
+import 'package:uniordle/shared/exports/profile_exports.dart';
 
 class SummaryCard extends StatelessWidget {
   final String label, value;

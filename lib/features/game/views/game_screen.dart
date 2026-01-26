@@ -1,23 +1,23 @@
 import 'package:uniordle/core/app_layout.dart';
 import 'package:uniordle/features/game/widgets/end_game/end_dialog.dart';
 import 'package:uniordle/features/game/widgets/game_info_bar.dart';
-import 'package:uniordle/shared/exports/game_screen_exports.dart';
+import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:uniordle/features/home/models/discipline.dart';
 import 'dart:ui';
 
 import 'package:uniordle/shared/layout/base_dialog.dart';
 
-class UniordleScreen extends StatefulWidget {
-  const UniordleScreen({
+class GameScreen extends StatefulWidget {
+  const GameScreen({
     super.key,
     });
 
   @override
-  _UniordleScreenState createState() => _UniordleScreenState();
+  _GameScreenState createState() => _GameScreenState();
 }
 
-class _UniordleScreenState extends State<UniordleScreen> {
-late UniordleController _controller;
+class _GameScreenState extends State<GameScreen> {
+late GameController _controller;
   bool _isInitialized = false;
 
   String _disciplineName = '';
@@ -60,7 +60,7 @@ void didChangeDependencies() {
 
     _maxAttempts = attempts;
     
-    _controller = UniordleController(
+    _controller = GameController(
       wordLength: args?['wordLength'] ?? 5,
       maxAttempts: attempts,
       disciplineId: discipline?.id ?? 'engineering',
@@ -83,7 +83,7 @@ void didChangeDependencies() {
       builder: (context) {
         return BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-          child: EndGameDialog(
+          child: EndDialog(
             won: won,
             solution: _controller.solution.wordString,
             attempts: _controller.currentWordIndex + 1,

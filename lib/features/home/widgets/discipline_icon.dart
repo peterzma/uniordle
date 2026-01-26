@@ -1,11 +1,11 @@
-import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_exports.dart';
 import 'package:uniordle/shared/icons/icon_mapper.dart';
 
-class SubjectIcon extends StatelessWidget {
+class DisciplineIcon extends StatelessWidget {
   final String iconName;
   final Color? color;
 
-  const SubjectIcon({
+  const DisciplineIcon({
     super.key, 
     required this.iconName, 
     required this.color

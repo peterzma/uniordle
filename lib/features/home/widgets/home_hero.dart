@@ -1,7 +1,7 @@
-import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_exports.dart';
 
-class HeroSection extends StatelessWidget {
-  const HeroSection({super.key});
+class HomeHero extends StatelessWidget {
+  const HomeHero({super.key});
 
   @override
   Widget build (BuildContext context) {

@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/exports/game_screen_exports.dart';
+import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:uniordle/shared/buttons/select_button_wrapper.dart';
 
 const double _specialKeyWidth = 70;
@@ -57,7 +57,7 @@ class KeyboardButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(4),
-      child: PumpButtonWrapper(
+      child: SelectButtonWrapper(
         onTap: onTap,
         pressScale: 0.95,
         enableDarken: true,

@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/exports/game_screen_exports.dart';
+import 'package:uniordle/shared/exports/game_exports.dart';
 
 class SolutionBox extends StatelessWidget {
   final String solution;

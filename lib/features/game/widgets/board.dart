@@ -1,5 +1,5 @@
 import 'package:flip_card/flip_card.dart';
-import 'package:uniordle/shared/exports/game_screen_exports.dart';
+import 'package:uniordle/shared/exports/game_exports.dart';
 
 const int _flipSpeed = 600;
 

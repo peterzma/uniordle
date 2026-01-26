@@ -1,8 +1,7 @@
-import 'package:uniordle/features/profile/widgets/profile_level.dart';
-import 'package:uniordle/shared/exports/profile_screen_exports.dart';
+import 'package:uniordle/shared/exports/profile_exports.dart';
 
-class ProfileView extends StatelessWidget {
-  const ProfileView({super.key});
+class ProfileScreen extends StatelessWidget {
+  const ProfileScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/exports/game_screen_exports.dart';
+import 'package:uniordle/shared/exports/game_exports.dart';
 
 class BoardTile extends StatefulWidget {
   const BoardTile({

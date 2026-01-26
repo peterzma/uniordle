@@ -58,7 +58,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               child: ListView(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 children: [
-                  const SettingsSectionHeader(title: 'PREFERENCES'),
+                  const SettingsHeader(title: 'PREFERENCES'),
                   SettingsCard(
                     children: [
                       SettingsToggleTile(
@@ -76,7 +76,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       ),
                     ],
                   ),
-                  const SettingsSectionHeader(title: 'SUPPORT'),
+                  const SettingsHeader(title: 'SUPPORT'),
                   SettingsCard(
                     children: [
                       SettingsActionTile(

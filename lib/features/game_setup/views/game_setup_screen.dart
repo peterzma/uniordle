@@ -3,19 +3,19 @@ import 'package:uniordle/shared/exports/game_setup_exports.dart';
 import 'package:uniordle/features/home/models/discipline.dart';
 import 'package:uniordle/features/game_setup/widgets/game_setup_hero.dart';
 
-class GameSettingsScreen extends StatefulWidget {
+class GameSetupScreen extends StatefulWidget {
   final Discipline discipline;
 
-  const GameSettingsScreen({
+  const GameSetupScreen({
     super.key,
     required this.discipline,
   });
 
   @override
-  State<GameSettingsScreen> createState() => _GameSettingsScreenState();
+  State<GameSetupScreen> createState() => _GameSetupScreenState();
 }
 
-class _GameSettingsScreenState extends State<GameSettingsScreen> {
+class _GameSetupScreenState extends State<GameSetupScreen> {
   int _wordLength = 5;
   int _difficulty = 1;
   bool _isLoading = false;
@@ -46,7 +46,7 @@ class _GameSettingsScreenState extends State<GameSettingsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.surface,
-      appBar: const SettingsHeader(),
+      appBar: const GameSetupHeader(),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(

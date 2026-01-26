@@ -1,12 +1,12 @@
 import 'package:uniordle/features/game/data/word_repository.dart';
-import 'package:uniordle/features/profile/controller/stat_manager.dart';
-import 'package:uniordle/shared/exports/game_screen_exports.dart';
+import 'package:uniordle/features/profile/controller/stats_manager.dart';
+import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:flip_card/flip_card.dart';
 import 'dart:math';
 
 enum GameStatus { playing, submitting, won, lost }
 
-class UniordleController extends ChangeNotifier {
+class GameController extends ChangeNotifier {
   final int wordLength;
   final int maxAttempts;
   final String disciplineId;
@@ -15,7 +15,7 @@ class UniordleController extends ChangeNotifier {
 
   final Duration _flipDuration = const Duration(milliseconds: 160);
 
-  UniordleController({
+  GameController({
     required this.wordLength,
     required this.maxAttempts,
     required this.disciplineId,

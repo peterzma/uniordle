@@ -1,6 +1,6 @@
 import 'package:uniordle/features/help/widgets/instruction_row.dart';
 import 'package:uniordle/shared/buttons/primary_button.dart';
-import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_exports.dart';
 import 'package:uniordle/shared/layout/base_dialog.dart';
 
 class HelpDialog extends StatelessWidget {

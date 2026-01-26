@@ -1,16 +1,16 @@
-import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_exports.dart';
 import 'dart:math';
 
-class WiggleWrapper extends StatefulWidget {
+class WiggleButtonWrapper extends StatefulWidget {
   final Widget child;
 
-  const WiggleWrapper({super.key, required this.child});
+  const WiggleButtonWrapper({super.key, required this.child});
 
   @override
-  State<WiggleWrapper> createState() => _WiggleWrapperState();
+  State<WiggleButtonWrapper> createState() => _WiggleWrapperState();
 }
 
-class _WiggleWrapperState extends State<WiggleWrapper> with SingleTickerProviderStateMixin {
+class _WiggleWrapperState extends State<WiggleButtonWrapper> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
 
   @override

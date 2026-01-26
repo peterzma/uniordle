@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_exports.dart';
 
 class DisciplineGrid extends StatelessWidget {
   final List<Discipline> disciplines;

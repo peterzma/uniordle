@@ -1,9 +1,9 @@
 import 'package:uniordle/shared/exports/settings_exports.dart';
 
-class SettingsSectionHeader extends StatelessWidget {
+class SettingsHeader extends StatelessWidget {
   final String title;
 
-  const SettingsSectionHeader({
+  const SettingsHeader({
     super.key, required this.title
   });
 

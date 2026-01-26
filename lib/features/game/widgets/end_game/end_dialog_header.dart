@@ -1,10 +1,10 @@
-import 'package:uniordle/shared/exports/game_screen_exports.dart';
+import 'package:uniordle/shared/exports/game_exports.dart';
 
 
-class DialogHeader extends StatelessWidget {
+class EndDialogHeader extends StatelessWidget {
   final bool won;
 
-  const DialogHeader({super.key, required this.won});
+  const EndDialogHeader({super.key, required this.won});
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:uniordle/shared/exports/game_screen_exports.dart';
+import 'package:uniordle/shared/exports/game_exports.dart';
 
 /// Represents a single letter in the game
 /// 

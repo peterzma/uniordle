@@ -1,7 +1,7 @@
 import 'package:uniordle/core/app_layout.dart';
 import 'package:uniordle/features/home/data/disciplines_data.dart';
 import 'package:uniordle/features/profile/views/profile_screen.dart';
-import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_exports.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({
@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
     switch (_activeTab) {
       case 'profile':
         activeTitle = 'Profile';
-        activeBody = const ProfileView();
+        activeBody = const ProfileScreen();
         break;
       case 'stats':
         activeTitle = 'Statistics';
@@ -68,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        const HeroSection(),
+        const HomeHero(),
         const SizedBox(height: 36),
         DisciplineGrid(
           disciplines: _disciplines,

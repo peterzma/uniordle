@@ -1,5 +1,5 @@
 import 'package:uniordle/core/app_layout.dart';
-import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_exports.dart';
 import 'package:uniordle/shared/navigation/app_nav_item.dart';
 
 class BaseHeader extends StatelessWidget {

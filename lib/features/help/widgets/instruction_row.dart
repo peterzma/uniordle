@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_exports.dart';
 
 class InstructionRow extends StatelessWidget {
   final String letter;

@@ -1,10 +1,10 @@
-import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_exports.dart';
 
 const Duration pumpDuration = Duration(milliseconds: 100);
 const Duration darkenDuration = Duration(milliseconds: 100);
 
 /// Scale effect and Darken Effect on Click
-class PumpButtonWrapper extends StatefulWidget {
+class SelectButtonWrapper extends StatefulWidget {
   final Widget child;
   final VoidCallback? onTap;
   final double pressScale;
@@ -14,7 +14,7 @@ class PumpButtonWrapper extends StatefulWidget {
   final BorderRadius? borderRadius;
   final SoundType soundType;
 
-  const PumpButtonWrapper({
+  const SelectButtonWrapper({
     super.key,
     required this.child,
     this.onTap,
@@ -27,10 +27,10 @@ class PumpButtonWrapper extends StatefulWidget {
   });
 
   @override
-  State<PumpButtonWrapper> createState() => _PumpButtonWrapperState();
+  State<SelectButtonWrapper> createState() => _PumpButtonWrapperState();
 }
 
-class _PumpButtonWrapperState extends State<PumpButtonWrapper> {
+class _PumpButtonWrapperState extends State<SelectButtonWrapper> {
   double _scale = 1.0;
   bool _isPressed = false;
   bool _isHovered = false;

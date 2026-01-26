@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_exports.dart';
 import 'package:uniordle/shared/navigation/app_nav_item.dart';
 import 'package:uniordle/shared/layout/base_footer.dart';
 

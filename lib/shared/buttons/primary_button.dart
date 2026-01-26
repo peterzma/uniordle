@@ -1,5 +1,5 @@
 import 'package:uniordle/shared/buttons/select_button_wrapper.dart';
-import 'package:uniordle/shared/exports/game_screen_exports.dart';
+import 'package:uniordle/shared/exports/game_exports.dart';
 
 class PrimaryButton extends StatelessWidget {
   final String label;
@@ -27,7 +27,7 @@ class PrimaryButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PumpButtonWrapper(
+    return SelectButtonWrapper(
       onTap: isLoading ? null : onPressed,
       child: Container(
         width: width,

@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_exports.dart';
 import 'package:uniordle/shared/buttons/select_button_wrapper.dart';
 
 class DisciplineTile extends StatefulWidget {
@@ -18,7 +18,7 @@ class _DisciplineTileState extends State<DisciplineTile> {
   Widget build(BuildContext context) {
     final sub = widget.discipline;
 
-    return PumpButtonWrapper(
+    return SelectButtonWrapper(
       onTap: widget.onTap,
       soundType: SoundType.grid,
       child: MouseRegion(
@@ -41,7 +41,7 @@ class _DisciplineTileState extends State<DisciplineTile> {
           ),
           child: Row(
             children: [
-              SubjectIcon(iconName: sub.icon, color: sub.color),
+              DisciplineIcon(iconName: sub.icon, color: sub.color),
               const SizedBox(width: 12),
               Expanded(
                 child: Column(

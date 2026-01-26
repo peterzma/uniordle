@@ -1,4 +1,4 @@
-import 'package:uniordle/shared/exports/home_screen_exports.dart';
+import 'package:uniordle/shared/exports/home_exports.dart';
 import 'package:uniordle/shared/buttons/select_button_wrapper.dart';
 
 class AppNavItem extends StatelessWidget {
@@ -23,7 +23,7 @@ class AppNavItem extends StatelessWidget {
         ? AppColors.accent 
         : AppColors.onSurfaceVariant;
 
-    return PumpButtonWrapper(
+    return SelectButtonWrapper(
       borderRadius: BorderRadius.circular(16),
       onTap: onTap,
       pressScale: 0.90,
