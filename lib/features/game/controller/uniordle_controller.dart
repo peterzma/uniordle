@@ -1,5 +1,5 @@
 import 'package:uniordle/features/game/data/word_repository.dart';
-import 'package:uniordle/features/profile/controller/player_stats.dart';
+import 'package:uniordle/features/profile/controller/stat_manager.dart';
 import 'package:uniordle/shared/exports/game_screen_exports.dart';
 import 'package:flip_card/flip_card.dart';
 import 'dart:math';

@@ -1,12 +1,5 @@
 import 'package:uniordle/shared/exports/profile_screen_exports.dart';
 
-class UserStats {
-  final int streak;
-  final int solved;
-
-  UserStats({required this.streak, required this.solved});
-}
-
 class StatsManager {
   static final StatsManager _instance = StatsManager._internal();
   factory StatsManager() => _instance;

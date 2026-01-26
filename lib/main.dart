@@ -2,7 +2,7 @@ import 'package:uniordle/core/app.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:uniordle/core/app_layout.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:uniordle/features/profile/controller/player_stats.dart';
+import 'package:uniordle/features/profile/controller/stat_manager.dart';
 import 'package:uniordle/features/settings/settings_manager.dart';
 import 'package:uniordle/shared/exports/settings_exports.dart';
 
