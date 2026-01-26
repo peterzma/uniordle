@@ -11,7 +11,7 @@ class HowToPlay extends StatelessWidget {
         Text('HOW TO PLAY', style: AppFonts.headline, textAlign: TextAlign.center),
         const SizedBox(height: 8),
         Text(
-          'Choose a category, customise your settings, then guess the word!',
+          'Choose a discipline. Customise your game settings. Guess the word!',
           style: AppFonts.labelMedium.copyWith(color: AppColors.onSurfaceVariant),
           textAlign: TextAlign.center,
         ),

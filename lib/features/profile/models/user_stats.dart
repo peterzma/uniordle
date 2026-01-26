@@ -57,7 +57,7 @@ extension UserStatsExtension on UserStats {
   double get levelProgress => (xp % creditsPerLevel) / creditsPerLevel;
   int get xpInCurrentLevel => xp % creditsPerLevel;
   
-  String get progressText => "$xpInCurrentLevel/$creditsPerLevel CREDITS";
+  String get progressText => "$xpInCurrentLevel/$creditsPerLevel MERITS";
 
   String get academicTitle => getAcademicTitle(currentLevel);
 

@@ -42,7 +42,7 @@ class StatsScreen extends StatelessWidget {
                           Icon(Icons.stars, color: AppColors.accent, size: 20),
                           const SizedBox(width: 12),
                           Text(
-                            "${stats.xp} TOTAL CREDITS",
+                            "${stats.xp} TOTAL MERITS",
                             style: AppFonts.labelLarge.copyWith(
                               color: AppColors.accent,
                             ),

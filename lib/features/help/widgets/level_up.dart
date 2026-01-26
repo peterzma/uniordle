@@ -15,17 +15,17 @@ class LevelUp extends StatelessWidget {
             children: [
               const TextSpan(text: 'Guess words correctly to earn '),
               TextSpan(
-                text: 'credits',
+                text: 'merits',
                 style: TextStyle(
-                  color: Colors.amber, // Makes credits pop
+                  color: Colors.amber,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const TextSpan(text: '. Level up with credits, and every five levels you unlock a new '),
+              const TextSpan(text: '. Level up with merits, and every five levels you unlock a new '),
               TextSpan(
                 text: 'discipline',
                 style: TextStyle(
-                  color: Colors.greenAccent, // Distinct color for the reward
+                  color: Colors.greenAccent,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -44,7 +44,7 @@ class LevelUp extends StatelessWidget {
               InstructionRow(
                 leading: Icon(LucideIcons.dollarSign, color: Color(0xFFFFD700), size: 24),
                 color: AppColors.surfaceVariant,
-                title: 'Earn Credits',
+                title: 'Earn Merits',
                 subtitle: 'FOR EVERY CORRECT GUESS',
               ),
               const SizedBox(height: 32),
@@ -52,7 +52,7 @@ class LevelUp extends StatelessWidget {
                 leading: Icon(LucideIcons.trendingUp, color: Color(0xFF4A90E2), size: 24),
                 color: AppColors.surfaceVariant,
                 title: 'Choose your education',
-                subtitle: 'HARDER SETTINGS = MORE CREDITS',
+                subtitle: 'HARDER SETTINGS = MORE MERITS',
               ),
               const SizedBox(height: 32),
               InstructionRow(

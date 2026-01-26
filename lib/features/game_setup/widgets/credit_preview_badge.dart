@@ -35,7 +35,7 @@ class CreditPreviewBadge extends StatelessWidget {
           ),
           const SizedBox(width: 8),
           Text(
-            "POTENTIAL CREDITS: ",
+            "POTENTIAL MERITS: ",
             style: AppFonts.labelLarge.copyWith(
               color: discipline.color,
             ),

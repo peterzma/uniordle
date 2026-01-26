@@ -25,36 +25,39 @@ class _HelpDialogState extends State<HelpDialog> {
           clipBehavior: Clip.none,
           alignment: Alignment.center,
           children: [
-            Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                SizedBox(
-                  height: 300,
-                  child: PageView(
-                    controller: _pageController,
-                    physics: const BouncingScrollPhysics(),
-                    onPageChanged: (index) => setState(() => _currentPage = index),
-                    children: [
-                      const HowToPlay(),
-                      const LevelUp(),
-                      const ReachTop(),
-                    ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  SizedBox(
+                    height: 300,
+                    child: PageView(
+                      controller: _pageController,
+                      physics: const BouncingScrollPhysics(),
+                      onPageChanged: (index) => setState(() => _currentPage = index),
+                      children: [
+                        const HowToPlay(),
+                        const LevelUp(),
+                        const ReachTop(),
+                      ],
+                    ),
                   ),
-                ),
-                const SizedBox(height: 16),
-                PageIndicator(
-                  totalPages: _totalPages,
-                  currentPage: _currentPage,
-                ),
-                const SizedBox(height: 32),
-                PrimaryButton(
-                  label: 'Got it!',
-                  onPressed: () => Navigator.pop(context),
-                  borderRadius: 16,
-                  height: 48,
-                  width: 400
-                ),
-              ],
+                  const SizedBox(height: 16),
+                  PageIndicator(
+                    totalPages: _totalPages,
+                    currentPage: _currentPage,
+                  ),
+                  const SizedBox(height: 32),
+                  PrimaryButton(
+                    label: 'Got it!',
+                    onPressed: () => Navigator.pop(context),
+                    borderRadius: 16,
+                    height: 48,
+                    width: 400
+                  ),
+                ],
+              ),
             ),
 
             // Left Arrow
