@@ -138,9 +138,10 @@ class GameController extends ChangeNotifier {
     if (currentWord!.wordString == solution.wordString) {
       status = GameStatus.won;
       statsManager.recordWin(
-      yearLevel: yearLevel,
-      wordLength: wordLength, 
-    );
+        yearLevel: yearLevel, 
+        wordLength: wordLength, 
+        attempts: currentWordIndex + 1,
+      );
       onGameEnd(true);
     } else if (currentWordIndex + 1 >= maxAttempts) {
       status = GameStatus.lost;
