@@ -58,6 +58,8 @@ class _HelpDialogState extends State<HelpDialog> {
                   label: 'Got it!',
                   onPressed: () => Navigator.pop(context),
                   borderRadius: 16,
+                  height: 48,
+                  width: 400
                 ),
               ],
             ),
@@ -65,7 +67,7 @@ class _HelpDialogState extends State<HelpDialog> {
             // Left Arrow
             if (_currentPage > 0)
               Positioned(
-                left: -20,
+                left: -25,
                 top: 170,
                 child: _NavArrow(
                   icon: LucideIcons.chevronLeft,
@@ -79,7 +81,7 @@ class _HelpDialogState extends State<HelpDialog> {
             // Right Arrow
             if (_currentPage < _totalPages - 1)
               Positioned(
-                right: -20,
+                right: -25,
                 top: 170,
                 child: _NavArrow(
                   icon: LucideIcons.chevronRight,
