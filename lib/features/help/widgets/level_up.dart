@@ -1,7 +1,7 @@
 import 'package:uniordle/shared/exports/help_exports.dart';
 
-class HowToPlay extends StatelessWidget {
-  const HowToPlay({super.key});
+class HowToPlaySlide extends StatelessWidget {
+  const HowToPlaySlide({super.key});
 
   @override
   Widget build(BuildContext context) {

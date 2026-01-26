@@ -28,11 +28,12 @@ class _HelpDialogState extends State<HelpDialog> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 SizedBox(
+                  height: 300,
                   child: PageView(
                     controller: _pageController,
                     onPageChanged: (index) => setState(() => _currentPage = index),
                     children: [
-                      const HowToPlaySlide(),
+                      const HowToPlay(),
                       const Center(child: Text("Slide 2", style: TextStyle(color: Colors.white))),
                       const Center(child: Text("Slide 3", style: TextStyle(color: Colors.white))),
                     ],
@@ -102,20 +103,12 @@ class _NavArrow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        customBorder: const CircleBorder(),
-        child: Container(
-          padding: const EdgeInsets.all(8),
-          child: Icon(
-            icon,
-            color: AppColors.outline,
-            size: 24,
-          ),
-        ),
-      ),
+    return IconButton(
+      icon: Icon(icon, color: AppColors.outline),
+      onPressed: onTap,
+      splashColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      hoverColor: Colors.transparent,
     );
   }
 }
