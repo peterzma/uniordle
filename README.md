@@ -95,4 +95,7 @@ Latest release:
 * Add stats/profile screens
 * change sound effect of tile flipping in game screen
 * replace ui click on buttons to be more minimal
-* circle background on the badge in end game dialog should animate shinking/enlarging
+* Add level system - make levels longer to complete every discpline unlock
+* Add locked disciplines - let player choose 1 from the start, unlock every 5 levels.
+* Add level up pop up.
+* Add win/loss sound to end dialog

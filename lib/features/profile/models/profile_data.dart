@@ -7,5 +7,3 @@ class UserStats {
     required this.solved, 
   });
 }
-
-final currentStats = UserStats(streak: 0, solved: 14); // temporary

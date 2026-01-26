@@ -13,10 +13,12 @@ class ProfileView extends StatelessWidget {
         final int solvedCount = stats.solved;
         final int currentStreak = stats.streak;
 
-        const int wordsPerLevel = 10;
+        const int wordsPerLevel = 2;
 
-        final int currentLevel = (solvedCount / wordsPerLevel).floor();
+        final int currentLevel = solvedCount ~/ wordsPerLevel;
+
         final double progressValue = (solvedCount % wordsPerLevel) / wordsPerLevel;
+
         final int nextLevel = currentLevel + 1;
 
         return SingleChildScrollView(
