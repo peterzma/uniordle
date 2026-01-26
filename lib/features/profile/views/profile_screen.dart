@@ -53,12 +53,12 @@ class ProfileView extends StatelessWidget {
               // Row(
               //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
               //   children: [
-              //     Text("UNLOCKED DISCIPLINES", style: AppTextStyles.labelLarge),
+              //     Text("UNLOCKED DISCIPLINES", style: AppFonts.labelLarge),
               //     TextButton(
               //       onPressed: () {}, 
               //       child: Text(
               //         "See All",
-              //         style: AppTextStyles.labelSmall.copyWith(fontSize: 12)
+              //         style: AppFonts.labelSmall.copyWith(fontSize: 12)
               //       )
               //     ),
               //   ],

@@ -49,7 +49,7 @@ class KeyboardButton extends StatelessWidget {
         soundType: SoundType.enter,
         child: Text(
           'ENTER',
-          style: AppTextStyles.labelLarge
+          style: AppFonts.labelLarge
         ),
       );
 
@@ -69,7 +69,7 @@ class KeyboardButton extends StatelessWidget {
           child: Center(
             child: child ?? Text(
               letter ?? '',
-              style: AppTextStyles.displayMedium.copyWith(fontSize: 24),
+              style: AppFonts.displayMedium.copyWith(fontSize: 24),
             ),
           ),
         )

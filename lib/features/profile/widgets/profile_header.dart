@@ -37,7 +37,7 @@ class ProfileHeader extends StatelessWidget {
         const SizedBox(height: 8),
         Text(
           "Temp Name",
-          style: AppTextStyles.displayMedium
+          style: AppFonts.displayMedium
         ),
         const SizedBox(height: 8),
         Row(
@@ -45,11 +45,11 @@ class ProfileHeader extends StatelessWidget {
           children: [
             Text(
             "Academic Level: ", 
-            style: AppTextStyles.labelMedium
+            style: AppFonts.labelMedium
             ),
             Text(
               "SENIOR", 
-            style: AppTextStyles.labelLarge.copyWith(color: AppColors.accent)
+            style: AppFonts.labelLarge.copyWith(color: AppColors.accent)
             ),
           ],
         ),

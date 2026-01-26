@@ -31,7 +31,7 @@ class InfoTag extends StatelessWidget {
         textAlign: TextAlign.center,
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
-        style: AppTextStyles.labelMedium,
+        style: AppFonts.labelMedium,
       ),
     );
   }

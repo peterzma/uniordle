@@ -27,11 +27,11 @@ class SummaryCard extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             label.toUpperCase(), 
-            style: AppTextStyles.labelMedium
+            style: AppFonts.labelMedium
           ),
           Text(
             value, 
-            style: AppTextStyles.headline
+            style: AppFonts.headline
           ),
         ],
       ),

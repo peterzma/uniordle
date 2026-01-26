@@ -50,7 +50,7 @@ class _DisciplineTileState extends State<DisciplineTile> {
                   children: [
                     Text(
                       sub.name,
-                      style: AppTextStyles.labelLarge,
+                      style: AppFonts.labelLarge,
                     ),
                     const SizedBox(height: 2),
                     Row(
@@ -66,7 +66,7 @@ class _DisciplineTileState extends State<DisciplineTile> {
                         const SizedBox(width: 4),
                         Text(
                           sub.tag,
-                          style: AppTextStyles.labelSmall.copyWith(color: sub.color),
+                          style: AppFonts.labelSmall.copyWith(color: sub.color),
                         ),
                       ],
                     ),

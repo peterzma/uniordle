@@ -75,7 +75,7 @@ class PrimaryButton extends StatelessWidget {
         ],
         Text(
           label.toUpperCase(),
-          style: AppTextStyles.labelLarge
+          style: AppFonts.labelLarge
         ),
       ],
     );

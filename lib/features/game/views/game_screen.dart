@@ -165,7 +165,7 @@ void didChangeDependencies() {
           child: Text(
             'Word not found', 
             textAlign: TextAlign.center,
-            style: AppTextStyles.labelLarge
+            style: AppFonts.labelLarge
           ),
         );
       },

@@ -30,7 +30,7 @@ class DifficultySelector extends StatelessWidget {
       children: [
         Text(
           'YEAR LEVEL',
-          style: AppTextStyles.displayMedium,
+          style: AppFonts.displayMedium,
         ),
         const SizedBox(height: 4),
         Row(
@@ -44,7 +44,7 @@ class DifficultySelector extends StatelessWidget {
             const SizedBox(width: 8),
             Text(
               'ATTEMPTS ALLOWED',
-              style: AppTextStyles.labelMedium.copyWith(color: discipline.color),
+              style: AppFonts.labelMedium.copyWith(color: discipline.color),
             ),
           ],
         ),
@@ -105,8 +105,8 @@ class DifficultySelector extends StatelessWidget {
                                 e.value.$1,
                                 textAlign: TextAlign.center,
                                 style: active
-                                    ? AppTextStyles.labelMedium.copyWith(color: Colors.white, fontWeight: FontWeight.w600)
-                                    : AppTextStyles.labelMedium,
+                                    ? AppFonts.labelMedium.copyWith(color: Colors.white, fontWeight: FontWeight.w600)
+                                    : AppFonts.labelMedium,
                               ),
                               const SizedBox(height: 4),
                               Row(
@@ -121,8 +121,8 @@ class DifficultySelector extends StatelessWidget {
                                     child: Text(
                                       e.value.$2,
                                       style: active
-                                          ? AppTextStyles.labelMedium.copyWith(color: discipline.color, fontWeight: FontWeight.w600)
-                                          : AppTextStyles.labelMedium,
+                                          ? AppFonts.labelMedium.copyWith(color: discipline.color, fontWeight: FontWeight.w600)
+                                          : AppFonts.labelMedium,
                                     ),
                                   ),
                                   const SizedBox(width: 2),

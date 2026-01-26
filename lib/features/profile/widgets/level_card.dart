@@ -4,14 +4,14 @@ class LevelCard extends StatelessWidget {
   final int level;
   final double progress; 
   final int nextLevel;
-  final String progressLabel; // Add this field
+  final String progressLabel;
 
   const LevelCard({
     super.key,
     required this.level,
     required this.progress,
     required this.nextLevel,
-    required this.progressLabel, // Add to constructor
+    required this.progressLabel,
   });
 
   @override

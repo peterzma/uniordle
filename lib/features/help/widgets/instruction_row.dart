@@ -36,7 +36,7 @@ class InstructionRow extends StatelessWidget {
           alignment: Alignment.center,
           child: Text(
             letter,
-            style: AppTextStyles.displayMedium
+            style: AppFonts.displayMedium
           ),
         ),
         const SizedBox(width: 16),
@@ -46,11 +46,11 @@ class InstructionRow extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: AppTextStyles.labelLarge,
+                style: AppFonts.labelLarge,
                 ),
               Text(
                 subtitle,
-                style: AppTextStyles.labelMedium
+                style: AppFonts.labelMedium
               ),
             ]
           )

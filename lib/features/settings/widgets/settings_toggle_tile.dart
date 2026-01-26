@@ -30,7 +30,7 @@ class SettingsToggleTile extends StatelessWidget {
               const SizedBox(width: 12),
               Text(
                 label,
-                style: AppTextStyles.labelLarge
+                style: AppFonts.labelLarge
               ),
             ],
           ),

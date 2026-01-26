@@ -29,7 +29,7 @@ class DialogHeader extends StatelessWidget {
         const SizedBox(height: 16),
         Text(
           won ? 'YOU WIN!' : 'GAME OVER',
-          style: AppTextStyles.displayLarge
+          style: AppFonts.displayLarge
         ),
       ],
     );

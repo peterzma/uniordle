@@ -38,7 +38,7 @@ class SettingsActionTile extends StatelessWidget {
                   const SizedBox(width: 12),
                   Text(
                     label,
-                    style: AppTextStyles.labelLarge
+                    style: AppFonts.labelLarge
                   ),
                 ],
               ),
@@ -47,7 +47,7 @@ class SettingsActionTile extends StatelessWidget {
                   if (value != null)
                     Text(
                       value!,
-                      style: AppTextStyles.labelSmall
+                      style: AppFonts.labelSmall
                     ),
                   if (value != null) const SizedBox(width: 8),
                   Icon(

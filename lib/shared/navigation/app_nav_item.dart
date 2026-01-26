@@ -45,7 +45,7 @@ class AppNavItem extends StatelessWidget {
                 const SizedBox(height: 2),
                 Text(
                   label!.toUpperCase(),
-                  style: AppTextStyles.labelSmall.copyWith(color: color),
+                  style: AppFonts.labelSmall.copyWith(color: color),
                 ),
               ],
             ],

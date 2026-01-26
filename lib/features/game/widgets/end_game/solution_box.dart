@@ -22,7 +22,7 @@ class SolutionBox extends StatelessWidget {
         children: [
           Text(
             'THE WORD WAS',
-          style: AppTextStyles.labelLarge.copyWith(color: AppColors.onSurfaceVariant)
+          style: AppFonts.labelLarge.copyWith(color: AppColors.onSurfaceVariant)
           ),
           const SizedBox(height: 12),
           Container(
@@ -37,7 +37,7 @@ class SolutionBox extends StatelessWidget {
             ),
             child: Text(
               solution.toUpperCase(),
-              style: AppTextStyles.displayLarge.copyWith(fontSize: 48, letterSpacing: 8),
+              style: AppFonts.displayLarge.copyWith(fontSize: 48, letterSpacing: 8),
             ),
           ),
         ],

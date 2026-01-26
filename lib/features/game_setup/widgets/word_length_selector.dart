@@ -21,7 +21,7 @@ class WordLengthSelector extends StatelessWidget {
         const SizedBox(height: 32),
         Text(
           'WORD LENGTH',
-          style: AppTextStyles.displayMedium,
+          style: AppFonts.displayMedium,
         ),
         const SizedBox(height: 16),
         Row(
@@ -61,15 +61,15 @@ class WordLengthSelector extends StatelessWidget {
                           Text(
                             '$len',
                             style: active 
-                            ? AppTextStyles.displayLarge
-                            : AppTextStyles.displayMedium,
+                            ? AppFonts.displayLarge
+                            : AppFonts.displayMedium,
                           ),
                           const SizedBox(height: 2),
                           Text(
                             'LETTERS',
                             style: active 
-                            ? AppTextStyles.labelLarge
-                            : AppTextStyles.labelMedium,
+                            ? AppFonts.labelLarge
+                            : AppFonts.labelMedium,
                           ),
                         ],
                       ),

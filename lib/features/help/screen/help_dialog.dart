@@ -17,13 +17,13 @@ class HelpDialog extends StatelessWidget {
         children: [
           Text(
             'HOW TO PLAY', 
-            style: AppTextStyles.headline,
+            style: AppFonts.headline,
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 8),
           Text(
             'Choose a category, customise your settings, then guess the word!',
-            style: AppTextStyles.labelMedium.copyWith(
+            style: AppFonts.labelMedium.copyWith(
               color: Colors.white70,
             ),
             textAlign: TextAlign.center,

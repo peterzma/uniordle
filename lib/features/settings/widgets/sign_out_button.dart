@@ -30,7 +30,7 @@ class SettingsSignOutButton extends StatelessWidget {
             child: Text(
               'Sign Out',
               textAlign: TextAlign.center,
-              style: AppTextStyles.labelMedium.copyWith(color: Colors.red)
+              style: AppFonts.labelMedium.copyWith(color: Colors.red)
             ),
           ),
         ),

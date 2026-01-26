@@ -13,7 +13,7 @@ class SettingsSectionHeader extends StatelessWidget {
       padding: const EdgeInsets.only(left: 8, bottom: 8, top: 24),
       child: Text(
         title.toUpperCase(),
-        style: AppTextStyles.labelMedium
+        style: AppFonts.labelMedium
       ),
     );
   }

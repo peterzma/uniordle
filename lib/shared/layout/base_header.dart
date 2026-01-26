@@ -50,7 +50,7 @@ class BaseHeader extends StatelessWidget {
               ),
               Text(
                 title,
-                style: AppTextStyles.displayMedium,
+                style: AppFonts.displayMedium,
               ),
               rightIcon != null
                   ? AppNavItem(icon: rightIcon!, onTap: onRightTap ?? () {})

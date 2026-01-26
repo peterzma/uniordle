@@ -4,14 +4,14 @@ class AppTheme {
   static ThemeData get darkTheme {
     return ThemeData(
       brightness: Brightness.dark,
-      fontFamily: AppTextStyles.displayFont,
+      fontFamily: AppFonts.displayFont,
       scaffoldBackgroundColor: AppColors.surface,
     ).copyWith(
       textTheme: TextTheme(
-        displayLarge: AppTextStyles.displayMedium,
-        headlineMedium: AppTextStyles.displayLarge,
-        labelLarge: AppTextStyles.labelLarge,
-        labelSmall: AppTextStyles.labelMedium,
+        displayLarge: AppFonts.displayMedium,
+        headlineMedium: AppFonts.displayLarge,
+        labelLarge: AppFonts.labelLarge,
+        labelSmall: AppFonts.labelMedium,
       )
     );
   }
