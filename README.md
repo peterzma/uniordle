@@ -99,3 +99,4 @@ Latest release:
 * Add win/loss sound to end dialog
 * Put unlocked disciplines at the top, rest locked can stay alphabetical. 
 * Make a pop up surprise when you reach level 5 for the unlocking, and also in this update the academic title
+* BIG BUG: xp gained in level up dialog does not match profile xp

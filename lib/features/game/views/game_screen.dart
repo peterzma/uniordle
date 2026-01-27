@@ -81,7 +81,7 @@ void _showEndDialog(bool won) {
   final args = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>?;
   final discipline = args?['discipline'] as Discipline;
 
-    final int totalXPAfterWin = statsManager.statsNotifier.value.xp;
+    final int currentXP = statsManager.statsNotifier.value.xp;
 
     final int levelValue = _mapYearToValue(_yearLevel);
     final int gainedXP = UserStatsExtension.calculateGainedXP(
@@ -89,10 +89,8 @@ void _showEndDialog(bool won) {
       _controller.solution.wordString.length
     );
 
-    final int totalXPBeforeWin = totalXPAfterWin - gainedXP;
-
-    final int startLevel = totalXPBeforeWin ~/ 100;
-    final double startProgress = (totalXPBeforeWin % 100) / 100.0;
+    final int startLevel = currentXP ~/ 100;
+    final double startProgress = (currentXP % 100) / 100.0;
 
   showDialog(
     context: context,
