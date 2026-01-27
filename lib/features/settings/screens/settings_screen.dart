@@ -1,7 +1,6 @@
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:uniordle/features/settings/data/data_reset_service.dart';
 import 'package:uniordle/features/settings/settings_manager.dart';
-import 'package:uniordle/shared/exports/help_exports.dart';
 import 'package:uniordle/shared/exports/settings_exports.dart';
 import 'package:uniordle/shared/layout/base_header.dart';
 import 'package:url_launcher/url_launcher.dart';
