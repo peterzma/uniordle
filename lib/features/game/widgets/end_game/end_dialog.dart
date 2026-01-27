@@ -75,6 +75,7 @@ class EndDialog extends StatelessWidget {
             const SizedBox(height: 24),
             PrimaryButton(
               label: 'NEW GAME',
+              color: AppColors.accent,
               onPressed: () {
                 Navigator.of(context).pushNamed(
                   '/setup',
@@ -86,7 +87,6 @@ class EndDialog extends StatelessWidget {
             const SizedBox(height: 12),
             PrimaryButton(
               label: 'HOME',
-              color: AppColors.surfaceVariant,
               borderRadius: 24,
               onPressed: () {
                 Navigator.of(context).pushNamedAndRemoveUntil(

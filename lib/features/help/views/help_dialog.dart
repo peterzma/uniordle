@@ -51,6 +51,7 @@ class _HelpDialogState extends State<HelpDialog> {
           const SizedBox(height: 32),
           PrimaryButton(
             label: 'Got it!',
+            color: AppColors.accent,
             onPressed: () => Navigator.pop(context),
           ),
         ],

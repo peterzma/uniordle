@@ -179,6 +179,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               PrimaryButton(
                 onPressed: () => showLicensePage(context: context),
                 label: "LICENSES",
+                color: AppColors.accent,
               ),
           
               const SizedBox(height: 12),

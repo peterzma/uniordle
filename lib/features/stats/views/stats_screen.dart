@@ -11,6 +11,10 @@ class StatsScreen extends StatelessWidget {
     return ValueListenableBuilder<UserStats>(
       valueListenable: statsManager.statsNotifier,
       builder: (context, stats, child) {
+        final double winValue = double.tryParse(stats.winPercentage.replaceAll('%', '')) ?? 0;
+        final double normalizedValue = (winValue / 100).clamp(0.0, 1.0);
+        final Color winColor = Color.lerp(Colors.red, AppColors.correctColor, normalizedValue)!;
+        
         return SingleChildScrollView(
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
           child: Column(
@@ -61,7 +65,13 @@ class StatsScreen extends StatelessWidget {
                   children: [
                     Expanded(child: StatCard(value: "${stats.totalGames}", label: "Total\nGames")),
                     const SizedBox(width: 12),
-                    Expanded(child: StatCard(value: stats.winPercentage, label: "Win\n%", color: Colors.red)),
+                    Expanded(
+                      child: StatCard(
+                        value: stats.winPercentage, 
+                        label: "Win\n%", 
+                        color: winColor,
+                      ),
+                    ),
                     const SizedBox(width: 12),
                     Expanded(child: StatCard(value: "${stats.maxStreak}", label: "Max\nStreak", color: AppColors.accent)),
                   ],
