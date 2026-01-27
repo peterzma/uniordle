@@ -2,7 +2,6 @@ import 'package:uniordle/shared/exports/game_setup_exports.dart';
 
 abstract class AppFonts {
   static const String displayFont = 'Lexend';
-  static const String uiFont = 'PlusJakartaSans';
 
   // Big Hero
   static TextStyle get displayLarge => const TextStyle(
