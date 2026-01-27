@@ -40,12 +40,16 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
         .animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOutCubic));
 
     _controller.addListener(() {
-      int currentLevel = _animation.value.floor();
-      if (currentLevel > widget.startingLevel && !_hasLeveledUp) {
-        setState(() {
-          _hasLeveledUp = true;
-          _newLevelReached = currentLevel;
-        });
+      double currentTotal = _animation.value;
+      int currentLevel = currentTotal.floor();
+      
+      if (currentLevel > widget.startingLevel) {
+        if (!_hasLeveledUp || _newLevelReached != currentLevel) {
+          setState(() {
+            _hasLeveledUp = true;
+            _newLevelReached = currentLevel;
+          });
+        }
       }
     });
 
@@ -78,12 +82,22 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
               const SizedBox(height: 16),
               AnimatedBuilder(
                 animation: _animation,
-                builder: (context, _) => LevelCard(
-                  level: _animation.value.floor(),
-                  progress: _animation.value % 1.0,
-                  nextLevel: _animation.value.floor() + 1,
-                  progressLabel: _hasLeveledUp ? "GOAL REACHED" : "STUDYING...",
-                ),
+                builder: (context, _) {
+                  final double val = _animation.value;
+                  final int displayLevel = val.floor();
+                  final double displayProgress = val % 1.0;
+                  
+                  final int currentLevelXP = (displayProgress * 100).round();
+                  
+                  return LevelCard(
+                    level: displayLevel,
+                    progress: displayProgress,
+                    nextLevel: displayLevel + 1,
+                    progressLabel: _hasLeveledUp 
+                        ? "LEVEL UP REACHED!" 
+                        : "$currentLevelXP / 100 MERITS",
+                  );
+                },
               ),
               if (_hasLeveledUp) ...[
                 const SizedBox(height: 20),

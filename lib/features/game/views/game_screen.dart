@@ -81,55 +81,52 @@ void _showEndDialog(bool won) {
   final args = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>?;
   final discipline = args?['discipline'] as Discipline;
 
-  final stats = statsManager.statsNotifier.value;
-  final int levelValue = _mapYearToValue(_yearLevel);
-  final double gainedXP = UserStatsExtension.calculateGainedXP(
-    levelValue, 
-    _controller.solution.wordString.length
-  ).toDouble();
+    final int totalXPAfterWin = statsManager.statsNotifier.value.xp;
 
-  double currentTotal = stats.currentLevel + stats.levelProgress;
-  double startTotal = currentTotal - (gainedXP / 100);
-  
-  int startLevel = startTotal.floor();
-  double startProgress = startTotal % 1.0;
+    final int levelValue = _mapYearToValue(_yearLevel);
+    final int gainedXP = UserStatsExtension.calculateGainedXP(
+      levelValue, 
+      _controller.solution.wordString.length
+    );
+
+    final int totalXPBeforeWin = totalXPAfterWin - gainedXP;
+
+    final int startLevel = totalXPBeforeWin ~/ 100;
+    final double startProgress = (totalXPBeforeWin % 100) / 100.0;
 
   showDialog(
     context: context,
     barrierColor: Colors.black.withValues(alpha: 0.4),
     builder: (context) {
-      return BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-        child: EndDialog(
-          won: won,
-          solution: _controller.solution.wordString,
-          attempts: _controller.currentWordIndex + 1,
-          maxAttempts: _maxAttempts,
-          discipline: discipline,
-          yearLevel: _yearLevel,
-          onRestart: () {
-            Navigator.pop(context);
-            _controller.restart();
-          },
-          onNext: () {
-            Navigator.pop(context);
+      return EndDialog(
+        won: won,
+        solution: _controller.solution.wordString,
+        attempts: _controller.currentWordIndex + 1,
+        maxAttempts: _maxAttempts,
+        discipline: discipline,
+        yearLevel: _yearLevel,
+        onRestart: () {
+          Navigator.pop(context);
+          _controller.restart();
+        },
+        onNext: () {
+          Navigator.pop(context);
 
-            showDialog(
-              context: context,
-              barrierDismissible: false,
-              barrierColor: Colors.black.withValues(alpha: 0.4),
-              builder: (context) => BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-                child: LevelUpDialog(
-                  startingLevel: startLevel,
-                  startingProgress: startProgress,
-                  gainedXP: gainedXP,
-                  discipline: discipline,
-                ),
+          showDialog(
+            context: context,
+            barrierDismissible: false,
+            barrierColor: Colors.black.withValues(alpha: 0.4),
+            builder: (context) => BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+              child: LevelUpDialog(
+                startingLevel: startLevel,
+                startingProgress: startProgress,
+                gainedXP: gainedXP.toDouble(),
+                discipline: discipline,
               ),
-            );
-          },
-        ),
+            ),
+          );
+        },
       );
     },
   );
