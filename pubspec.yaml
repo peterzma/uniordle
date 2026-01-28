@@ -32,7 +32,8 @@ flutter:
 
   assets:
     - assets/audio/
-      
+    - assets/images/white_on_blue/favicon.png
+
   fonts:
   - family: Lexend
     fonts:

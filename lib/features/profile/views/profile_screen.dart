@@ -1,3 +1,4 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/exports/profile_exports.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -33,7 +34,7 @@ class ProfileScreen extends StatelessWidget {
                     child: SummaryCard(
                       label: "Streak", 
                       value: '${stats.streak}',
-                      icon: Icons.local_fire_department,
+                      icon: AppIcons.streak,
                       iconColor: Colors.orange,
                     )
                   ),
@@ -42,7 +43,7 @@ class ProfileScreen extends StatelessWidget {
                     child: SummaryCard(
                       label: "Solved", 
                       value: '${stats.solved}',
-                      icon: Icons.check_circle_outline,
+                      icon: AppIcons.solved,
                       iconColor: AppColors.accent,
                     )
                   ),

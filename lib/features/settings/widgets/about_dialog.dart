@@ -43,13 +43,16 @@
       );
     }
 
-    Widget _buildAppIcon() => Container(
-      height: 80, width: 80,
-      decoration: BoxDecoration(
-        color: AppColors.accent,
-        borderRadius: BorderRadius.circular(20),
+    Widget _buildAppIcon() => CircleAvatar(
+      radius: 80,
+      backgroundColor: AppColors.surfaceVariant,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Image.asset(
+          'assets/images/white_on_blue/favicon.png',
+          fit: BoxFit.contain,
+        ),
       ),
-      child: const Icon(Icons.school, size: 40, color: Colors.white),
     );
 
     Widget _buildAuthorText() => RichText(

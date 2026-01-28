@@ -1,3 +1,4 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/exports/help_exports.dart';
 
 class ThankYouDialog extends StatelessWidget {
@@ -9,7 +10,7 @@ class ThankYouDialog extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const Icon(Icons.auto_stories, size: 64, color: Colors.orange),
+          const Icon(AppIcons.thankYou, size: 64, color: Colors.orange),
           const SizedBox(height: 16),
           Text("COMMENCEMENT", style: AppFonts.headline),
           const SizedBox(height: 12),

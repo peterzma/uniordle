@@ -1,8 +1,7 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/features/game_setup/data/difficulty_config.dart';
 import 'package:uniordle/features/home/models/discipline.dart';
 import 'package:uniordle/shared/exports/game_setup_exports.dart';
-
-const _attemptsIcon = Icons.favorite;
 
 class DifficultySelector extends StatelessWidget {
   final int value;
@@ -31,7 +30,7 @@ class DifficultySelector extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
-              _attemptsIcon,
+              AppIcons.attempts,
               size: 12,
               color: discipline.color,
             ),
@@ -121,7 +120,7 @@ class DifficultySelector extends StatelessWidget {
                                   ),
                                   const SizedBox(width: 2),
                                   Icon(
-                                    _attemptsIcon,
+                                    AppIcons.attempts,
                                     size: 12,
                                     color: active
                                         ? discipline.color

@@ -1,3 +1,4 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/buttons/primary_button.dart';
 import 'package:uniordle/shared/exports/profile_exports.dart';
 
@@ -132,8 +133,8 @@ class RankPathway extends StatelessWidget {
         children: [
           Icon(
             isLast && isAchieved
-                ? Icons.workspace_premium
-                : (isAchieved ? Icons.check_circle : (isNext ? Icons.radio_button_checked : Icons.lock_outline)),
+                ? AppIcons.finalRank
+                : (isAchieved ? AppIcons.unlockedRank : (isNext ? AppIcons.nextRank : AppIcons.lockedRank)),
             color: rowColor,
             size: 24,
           ),

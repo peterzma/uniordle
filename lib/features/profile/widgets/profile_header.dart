@@ -1,3 +1,4 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/exports/profile_exports.dart';
 
 class ProfileHeader extends StatelessWidget {
@@ -31,7 +32,7 @@ class ProfileHeader extends StatelessWidget {
                       child: CircleAvatar(
                         radius: 40,
                         backgroundColor: AppColors.surfaceVariant,
-                        child: Icon(Icons.account_circle, size: 48, color: AppColors.onSurfaceVariant),
+                        child: Icon(AppIcons.defaultProfile, size: 48, color: AppColors.onSurfaceVariant),
                       ),
                     ),
                   ),

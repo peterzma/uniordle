@@ -1,3 +1,4 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/exports/settings_exports.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -12,7 +13,7 @@ class DataResetService {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Icon(Icons.warning_amber_rounded, size: 64, color: Colors.red),
+            const Icon(AppIcons.inProgressDeleteData1, size: 64, color: Colors.red),
             const SizedBox(height: 16),
             Text("RESET PROGRESS?", style: AppFonts.headline),
             const SizedBox(height: 12),
@@ -49,7 +50,7 @@ class DataResetService {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Icon(Icons.error_outline_rounded, size: 64, color: Colors.red),
+              const Icon(AppIcons.inProgressDeleteData2, size: 64, color: Colors.red),
               const SizedBox(height: 16),
               Text("ARE YOU CERTAIN?", style: AppFonts.headline),
               const SizedBox(height: 12),
