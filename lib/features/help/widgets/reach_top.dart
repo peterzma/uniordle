@@ -17,7 +17,7 @@ class ReachTop extends StatelessWidget {
         Text('REACH THE TOP', style: AppFonts.headline, textAlign: TextAlign.center),
         const SizedBox(height: AppLayout.titleToSubtitle),
         Text(
-          'Earn a new academic rank every 10 levels!',
+          'Earn a new academic rank every 10 levels and reach the end. Will you be able to do it?',
           style: AppFonts.labelMedium,
           textAlign: TextAlign.center,
         ),
@@ -56,7 +56,7 @@ class ReachTop extends StatelessWidget {
 
   Widget _buildRankRow(Map<String, String> rank, {required Color color, bool isBold = false}) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 16.0),
+      padding: const EdgeInsets.symmetric(vertical: 10.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

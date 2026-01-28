@@ -20,19 +20,19 @@ class LevelUp extends StatelessWidget {
                 TextSpan(
                   text: 'merits',
                   style: TextStyle(
-                    color: Color(0xFFFFD700),
+                    color: Colors.amberAccent,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const TextSpan(text: '. Level up with merits, and every five levels gain a '),
+                const TextSpan(text: '. Level up with merits, and gain a '),
                 TextSpan(
-                  text: 'credit',
+                  text: 'credit ',
                   style: TextStyle(
                     color: AppColors.accent,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const TextSpan(text: '.'),
+                const TextSpan(text: 'every five levels.'),
               ],
             ),
             style: AppFonts.labelMedium.copyWith(color: Colors.white70),
@@ -46,7 +46,7 @@ class LevelUp extends StatelessWidget {
           child: Column(
             children: [
               InstructionRow(
-                leading: Icon(LucideIcons.dollarSign, color: Color(0xFFFFD700), size: 24),
+                leading: Icon(LucideIcons.dollarSign, color: Colors.amberAccent, size: 24),
                 color: AppColors.surfaceVariant,
                 title: 'Earn Merits',
                 subtitle: 'FOR EVERY CORRECT GUESS',
