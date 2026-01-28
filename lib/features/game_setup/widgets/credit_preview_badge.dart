@@ -1,7 +1,7 @@
 import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/exports/game_setup_exports.dart';
 import 'package:uniordle/features/home/models/discipline.dart';
-import 'package:uniordle/features/profile/models/user_stats.dart';
+import 'package:uniordle/shared/services/models/user_stats.dart';
 
 class CreditPreviewBadge extends StatelessWidget {
   final int difficulty;

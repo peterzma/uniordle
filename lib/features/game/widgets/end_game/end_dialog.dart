@@ -8,7 +8,6 @@ class EndDialog extends StatelessWidget {
   final String yearLevel;
   final Discipline discipline;
   final VoidCallback onRestart;
-  final VoidCallback onNext;
 
   const EndDialog({
     super.key,
@@ -19,9 +18,38 @@ class EndDialog extends StatelessWidget {
     required this.yearLevel,
     required this.discipline,
     required this.onRestart,
-    required this.onNext,
   });
 
+  void _handleNext(BuildContext context) {
+    // 1. Get current stats
+    final int currentXP = statsManager.statsNotifier.value.xp;
+    
+    // 2. Calculate logic locally
+    final int levelValue = _mapYearToValue(yearLevel);
+    final int gainedXP = UserStatsExtension.calculateGainedXP(levelValue, solution.length);
+    final int startLevel = currentXP ~/ 100;
+    final double startProgress = (currentXP % 100) / 100.0;
+
+    Navigator.pop(context);
+
+    showDialog(
+      context: context,
+      builder: (context) => 
+        LevelUpDialog(
+          startingLevel: startLevel,
+          startingProgress: startProgress,
+          gainedXP: gainedXP.toDouble(),
+          discipline: discipline,
+        ),
+    );
+  }
+
+  int _mapYearToValue(String year) {
+    if (year.contains('Postgrad')) return 4;
+    if (year.contains('3rd')) return 3;
+    if (year.contains('2nd')) return 2;
+    return 1;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +73,7 @@ class EndDialog extends StatelessWidget {
             PrimaryButton(
               label: 'NEXT',
               color: AppColors.accent,
-              onPressed: onNext,
+              onPressed: () => _handleNext(context),
             ),
             const SizedBox(height: 12),
           ],

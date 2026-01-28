@@ -72,17 +72,6 @@ void _showEndDialog(bool won) {
   final args = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>?;
   final discipline = args?['discipline'] as Discipline;
 
-    final int currentXP = statsManager.statsNotifier.value.xp;
-
-    final int levelValue = _mapYearToValue(_yearLevel);
-    final int gainedXP = UserStatsExtension.calculateGainedXP(
-      levelValue, 
-      _controller.solution.wordString.length
-    );
-
-    final int startLevel = currentXP ~/ 100;
-    final double startProgress = (currentXP % 100) / 100.0;
-
   showDialog(
     context: context,
     barrierColor: Colors.black.withValues(alpha: 0.4),
@@ -97,24 +86,6 @@ void _showEndDialog(bool won) {
         onRestart: () {
           Navigator.pop(context);
           _controller.restart();
-        },
-        onNext: () {
-          Navigator.pop(context);
-
-          showDialog(
-            context: context,
-            barrierDismissible: false,
-            barrierColor: Colors.black.withValues(alpha: 0.4),
-            builder: (context) => BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-              child: LevelUpDialog(
-                startingLevel: startLevel,
-                startingProgress: startProgress,
-                gainedXP: gainedXP.toDouble(),
-                discipline: discipline,
-              ),
-            ),
-          );
         },
       );
     },
@@ -193,10 +164,3 @@ void _showEndDialog(bool won) {
     );
   }
 }
-
-int _mapYearToValue(String year) {
-    if (year.contains('Postgrad')) return 4;
-    if (year.contains('3rd')) return 3;
-    if (year.contains('2nd')) return 2;
-    return 1;
-  }
