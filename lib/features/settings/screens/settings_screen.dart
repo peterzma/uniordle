@@ -1,4 +1,3 @@
-import 'package:uniordle/features/settings/controller/settings_controller.dart';
 import 'package:uniordle/features/settings/data/data_reset_service.dart';
 import 'package:uniordle/features/settings/data/link_service.dart';
 import 'package:uniordle/shared/exports/settings_exports.dart';

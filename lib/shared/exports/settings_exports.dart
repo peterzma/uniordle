@@ -10,3 +10,4 @@ export 'package:uniordle/features/settings/widgets/settings_action_tile.dart';
 export 'package:uniordle/features/settings/widgets/settings_sign_out_button.dart';
 export 'package:uniordle/shared/buttons/primary_button.dart';
 export 'package:uniordle/shared/layout/base_dialog.dart';
+export 'package:uniordle/features/settings/controller/settings_controller.dart';
