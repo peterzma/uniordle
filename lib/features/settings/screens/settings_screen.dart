@@ -1,6 +1,7 @@
 import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/features/settings/data/data_reset_service.dart';
 import 'package:uniordle/features/settings/data/link_service.dart';
+import 'package:uniordle/shared/exports/app_exports.dart';
 import 'package:uniordle/shared/exports/settings_exports.dart';
 import 'package:uniordle/shared/layout/base_header.dart';
 import 'package:uniordle/features/settings/widgets/about_dialog.dart';
@@ -30,7 +31,7 @@ class SettingsScreen extends StatelessWidget {
                 valueListenable: controller.state,
                 builder: (context, state, _) {
                   return ListView(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    padding: const EdgeInsets.symmetric(horizontal: AppLayout.sidePadding),
                     children: [
                       const SettingsHeader(title: 'PREFERENCES'),
                       SettingsToggleTile(
