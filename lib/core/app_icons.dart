@@ -6,6 +6,7 @@ abstract class AppIcons {
   static const IconData leftArrow = LucideIcons.chevronLeft;
   static const IconData rightArrow = LucideIcons.chevronRight;
   static const IconData help = LucideIcons.helpCircle;
+  static const IconData settings = LucideIcons.settings;
   
   // Settings
   static const IconData volume = Icons.volume_up_rounded;

@@ -26,9 +26,10 @@ class BaseHeader extends StatelessWidget {
 
     return Container(
       height: AppLayout.barHeight + topPadding,
+      padding: EdgeInsets.only(top: topPadding),
       width: double.infinity,
       decoration: BoxDecoration(
-        color: AppColors.surface.withValues(alpha: 0.8),
+        color: AppColors.surface,
         border: const Border(
           bottom: BorderSide(
             color: AppColors.outline,
@@ -36,27 +37,33 @@ class BaseHeader extends StatelessWidget {
           ),
         ),
       ),
-      child: SafeArea(
-        bottom: false,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: AppLayout.sidePadding),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              NavigationItem(
-                icon: leftIcon,
-                onTap: onLeftTap,
-              ),
-              Text(
-                title,
-                style: AppFonts.displayMedium,
-              ),
-              rightIcon != null
-                  ? NavigationItem(icon: rightIcon!, onTap: onRightTap ?? () {})
-                  : const SizedBox(width: 40),
-            ],
-          ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: AppLayout.sidePadding),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            NavigationItem(
+              icon: leftIcon,
+              onTap: onLeftTap,
+            ),
+            Text(
+              title,
+              style: AppFonts.displayMedium,
+            ),
+            if (rightIcon != null)
+              NavigationItem(icon: rightIcon!, onTap: onRightTap ?? () {})
+            else
+                Opacity(
+                  opacity: 0,
+                  child: IgnorePointer(
+                    child: NavigationItem(
+                      icon: leftIcon,
+                      onTap: () {},
+                    ),
+                  ),
+                ),
+          ],
         ),
       ),
     );

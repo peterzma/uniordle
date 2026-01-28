@@ -1,3 +1,4 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/core/app_layout.dart';
 import 'package:uniordle/features/help/views/help_dialog.dart';
 import 'package:uniordle/shared/exports/home_exports.dart';
@@ -17,7 +18,7 @@ class MainNavigationHeader extends StatelessWidget implements PreferredSizeWidge
   Widget build(BuildContext context) {
     return BaseHeader(
         title: title,
-        leftIcon: LucideIcons.settings,
+        leftIcon: AppIcons.settings,
         onLeftTap: () {
           Navigator.of(context).pushNamed('/settings');
         },
