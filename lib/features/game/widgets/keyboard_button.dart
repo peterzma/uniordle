@@ -1,3 +1,4 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:uniordle/shared/buttons/select_button_wrapper.dart';
 
@@ -29,7 +30,7 @@ class KeyboardButton extends StatelessWidget {
         backgroundColor: AppColors.surfaceVariant,
         soundType: SoundType.delete,
         child: Icon(
-          Icons.backspace, 
+          AppIcons.backspace, 
           color: Colors.white, 
           size: 22
         ),

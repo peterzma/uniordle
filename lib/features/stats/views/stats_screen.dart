@@ -1,3 +1,4 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/exports/end_game_exports.dart';
 import 'package:uniordle/shared/exports/stats_exports.dart';
 
@@ -43,7 +44,7 @@ class StatsScreen extends StatelessWidget {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Icon(Icons.stars, color: AppColors.accent, size: 20),
+                          Icon(AppIcons.merits, color: AppColors.accent, size: 20),
 
                           const SizedBox(width: 12),
                           

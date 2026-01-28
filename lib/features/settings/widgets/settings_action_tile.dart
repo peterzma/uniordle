@@ -1,3 +1,4 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/core/app_layout.dart';
 import 'package:uniordle/shared/buttons/select_button_wrapper.dart';
 import 'package:uniordle/shared/exports/settings_exports.dart';
@@ -47,7 +48,7 @@ class SettingsActionTile extends StatelessWidget {
                     Text(value!, style: AppFonts.labelSmall),
                   if (value != null) const SizedBox(width: 8),
                   Icon(
-                    Icons.chevron_right,
+                    AppIcons.settingsRightArrow,
                     color: AppColors.onSurfaceVariant.withValues(alpha: 0.7),
                     size: 20,
                   ),

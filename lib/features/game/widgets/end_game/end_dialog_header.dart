@@ -1,3 +1,4 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/exports/game_exports.dart';
 
 
@@ -21,7 +22,7 @@ class EndDialogHeader extends StatelessWidget {
           ),
           
           child: Icon(
-            won ? Icons.stars_rounded : Icons.close_rounded,
+            won ? AppIcons.gameWin : AppIcons.gameLoss,
             color: won ? AppColors.correctColor : Colors.red,
             size: 64,
           ),

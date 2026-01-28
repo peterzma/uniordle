@@ -1,3 +1,4 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/exports/game_setup_exports.dart';
 import 'package:uniordle/features/home/models/discipline.dart';
 import 'package:uniordle/features/profile/models/user_stats.dart';
@@ -29,7 +30,7 @@ class CreditPreviewBadge extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(
-            Icons.stars, 
+            AppIcons.merits, 
             size: 16, 
             color: discipline.color
           ),

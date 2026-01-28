@@ -3,6 +3,7 @@ import 'package:uniordle/features/settings/data/data_reset_service.dart';
 import 'package:uniordle/features/settings/data/link_service.dart';
 import 'package:uniordle/shared/exports/settings_exports.dart';
 import 'package:uniordle/shared/layout/base_header.dart';
+import 'package:uniordle/features/settings/widgets/about_dialog.dart';
 
 class SettingsScreen extends StatelessWidget {
   final VoidCallback onClose;
@@ -69,7 +70,12 @@ class SettingsScreen extends StatelessWidget {
                         icon: AppIcons.about,
                         label: 'About Uniordle',
                         value: 'v1.0.0',
-                        onTap: () => const AboutDialog()
+                        onTap: () {
+                          showDialog(
+                            context: context,
+                            builder: (context) => const AboutGameDialog(),
+                          );
+                        },
                       ),
                       const SettingsHeader(title: 'DANGER ZONE'),
                       SettingsActionTile(
