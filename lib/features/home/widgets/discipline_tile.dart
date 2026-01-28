@@ -43,7 +43,7 @@ class _DisciplineTileState extends State<DisciplineTile> {
             color: AppColors.surfaceVariant,
             borderRadius: BorderRadius.circular(12),
             border: Border.all(
-              color: _hovering ? sub.color : Colors.transparent,
+              color: _hovering ? displayColor : Colors.transparent,
               width: 1.5,
             ),
           ),
@@ -73,7 +73,7 @@ class _DisciplineTileState extends State<DisciplineTile> {
                             height: 6,
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              color: sub.color,
+                              color: displayColor,
                             ),
                           ),
                           const SizedBox(width: 4),

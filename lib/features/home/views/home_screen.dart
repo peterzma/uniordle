@@ -7,7 +7,8 @@ class HomeScreen extends StatelessWidget {
 
   void _onDisciplineTap(BuildContext context, Discipline sub, UserStats stats) {
     if (stats.unlockedIds.contains(sub.id)) {
-      Navigator.of(context).pushNamed('/setup', arguments: sub);
+    Navigator.of(context).pushNamed('/setup', arguments: sub);
+    return;
     } else if (!stats.hasAnyUnlock) {
       _showUnlockDialog(context, sub, isFree: true);
     } else {
