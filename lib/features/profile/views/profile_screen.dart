@@ -54,7 +54,7 @@ class ProfileScreen extends StatelessWidget {
 
               RankPathway(currentLevel: stats.currentLevel),
 
-              const SizedBox(height: 32),
+              const SizedBox(height: 16),
             ],
           ),
         );
