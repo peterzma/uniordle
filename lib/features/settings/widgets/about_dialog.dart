@@ -1,7 +1,7 @@
 import 'package:uniordle/shared/exports/settings_exports.dart';
 
-class UniordleAboutDialog extends StatelessWidget {
-  const UniordleAboutDialog({super.key});
+class AboutDialog extends StatelessWidget {
+  const AboutDialog({super.key});
 
   @override
   Widget build(BuildContext context) {
