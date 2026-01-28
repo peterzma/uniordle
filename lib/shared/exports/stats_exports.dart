@@ -7,3 +7,4 @@ export '../../features/profile/controller/stats_manager.dart';
 export 'package:shared_preferences/shared_preferences.dart';
 export '../../core/app_fonts.dart';
 export '../../core/app_colors.dart';
+export '../../features/stats/widgets/distribution_bar.dart';
