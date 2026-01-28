@@ -3,7 +3,7 @@ export 'package:uniordle/features/stats/widgets/guess_distribution_chart.dart';
 export 'package:uniordle/features/stats/widgets/stat_card.dart';
 export 'package:uniordle/features/stats/views/stats_screen.dart';
 export 'package:uniordle/shared/services/models/user_stats.dart';
-export '../services/user_manager.dart';
+export '../services/stats_manager.dart';
 export 'package:shared_preferences/shared_preferences.dart';
 export '../../core/app_fonts.dart';
 export '../../core/app_colors.dart';

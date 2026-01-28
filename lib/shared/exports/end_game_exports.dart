@@ -3,7 +3,7 @@ export 'package:uniordle/features/game/widgets/end_game/end_dialog_header.dart';
 export 'package:uniordle/features/game/widgets/end_game/solution_box.dart';
 export 'package:uniordle/features/game/widgets/game_info_bar.dart';
 export 'package:uniordle/features/home/models/discipline.dart';
-export 'package:uniordle/shared/services/user_manager.dart';
+export 'package:uniordle/shared/services/stats_manager.dart';
 export 'package:uniordle/features/profile/widgets/level_card.dart';
 export 'package:uniordle/shared/buttons/primary_button.dart';
 export 'package:uniordle/shared/exports/game_exports.dart';

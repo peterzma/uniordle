@@ -1,7 +1,7 @@
 import 'package:uniordle/core/app.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:uniordle/core/app_layout.dart';
-import 'package:uniordle/shared/services/user_manager.dart';
+import 'package:uniordle/shared/services/stats_manager.dart';
 import 'package:uniordle/shared/exports/settings_exports.dart';
 
 const Size desktopMinSize = Size(AppLayout.minAppWidth, 960);

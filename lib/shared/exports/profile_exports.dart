@@ -3,7 +3,7 @@ export 'package:uniordle/shared/services/models/user_stats.dart';
 export 'package:uniordle/features/profile/views/profile_screen.dart';
 export 'package:uniordle/features/profile/widgets/summary_card.dart';
 export 'package:uniordle/features/profile/widgets/profile_header.dart';
-export '../services/user_manager.dart';
+export '../services/stats_manager.dart';
 export 'package:shared_preferences/shared_preferences.dart';
 export '../../features/profile/widgets/level_card.dart';
 export '../../core/app_fonts.dart';

@@ -18,7 +18,7 @@ export '../slide_up_route.dart';
 export 'package:flip_card/flip_card.dart';
 export 'dart:math';
 export 'package:uniordle/features/game/data/word_repository.dart';
-export 'package:uniordle/shared/services/user_manager.dart';
+export 'package:uniordle/shared/services/stats_manager.dart';
 export 'package:equatable/equatable.dart';
 export 'package:uniordle/core/app_layout.dart';
 export 'package:uniordle/features/game/widgets/end_game/end_dialog.dart';
