@@ -64,6 +64,7 @@ class StatsManager {
   Future<void> recordLoss() async {
     final current = statsNotifier.value;
     final newLost = current.lost + 1;
+    final penalty = 15;
     
     await _prefs.setInt('stat_streak', 0);
     await _prefs.setInt('stat_lost', newLost);
@@ -73,7 +74,7 @@ class StatsManager {
       maxStreak: current.maxStreak,
       solved: current.solved,
       lost: newLost,
-      merit: current.merit,
+      merit: (current.merit - penalty).clamp(0, 999999),
       guessDistribution: current.guessDistribution,
     );
   }

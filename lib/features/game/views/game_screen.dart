@@ -92,44 +92,61 @@ void didChangeDependencies() {
   Widget build(BuildContext context) {
     if (!_isInitialized) return const Scaffold(body: Center(child: CircularProgressIndicator()));
 
-    return Scaffold(
-      backgroundColor: AppColors.surface,
-      appBar: const GameHeader(),
-      body: Column(
-        children: [
-          Expanded(
-            child: Center(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: AppLayout.sidePadding),
-                child: Board(
-                  board: _controller.board, 
-                  flipCardKeys: _controller.flipCardKeys
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, result) {
+      if (didPop) return;
+      
+      if (_controller.status == GameStatus.playing || _controller.status == GameStatus.submitting) {
+        _controller.abandonGame();
+      }
+      
+      Navigator.of(context).pop();
+      },
+      child: Scaffold(
+        backgroundColor: AppColors.surface,
+        appBar: GameHeader(
+          onBack: () {
+            _controller.abandonGame();
+            Navigator.of(context).pop();
+          },
+        ),
+        body: Column(
+          children: [
+            Expanded(
+              child: Center(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: AppLayout.sidePadding),
+                  child: Board(
+                    board: _controller.board, 
+                    flipCardKeys: _controller.flipCardKeys
+                  ),
                 ),
               ),
             ),
-          ),
-          SafeArea(
-            top: false,
-            child: Column(
-              children: [
-                GameInfoBar(
-                  disciplineName: _disciplineName,
-                  yearLevel: _yearLevel,
-                  wordLength: _wordLength,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 24),
-                  child: Keyboard(
-                    onKeyTapped: _controller.addLetter,
-                    onDeleteTapped: _controller.removeLetter,
-                    onEnterTapped: _controller.submitWord,
-                    letters: _controller.keyboardLetters,
+            SafeArea(
+              top: false,
+              child: Column(
+                children: [
+                  GameInfoBar(
+                    disciplineName: _disciplineName,
+                    yearLevel: _yearLevel,
+                    wordLength: _wordLength,
                   ),
-                )
-              ]
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 24),
+                    child: Keyboard(
+                      onKeyTapped: _controller.addLetter,
+                      onDeleteTapped: _controller.removeLetter,
+                      onEnterTapped: _controller.submitWord,
+                      letters: _controller.keyboardLetters,
+                    ),
+                  )
+                ]
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

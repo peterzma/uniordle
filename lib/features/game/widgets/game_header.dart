@@ -21,7 +21,7 @@ class GameHeader extends StatelessWidget implements PreferredSizeWidget {
     return BaseHeader(
       title: 'Uniordle',
       leftIcon: AppIcons.leftArrow,
-      onLeftTap: () => Navigator.maybePop(context),
+      onLeftTap: onBack ?? () => Navigator.maybePop(context),
       rightIcon: AppIcons.help,
       onRightTap: () {
           showDialog(

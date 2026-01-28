@@ -143,4 +143,14 @@ class GameController extends ChangeNotifier {
     _initGame();
     notifyListeners();
   }
+
+  void abandonGame() {
+  if (status == GameStatus.playing || status == GameStatus.submitting) {
+    status = GameStatus.lost;
+    
+    statsManager.recordLoss(); 
+    
+    notifyListeners();
+  }
+}
 }
