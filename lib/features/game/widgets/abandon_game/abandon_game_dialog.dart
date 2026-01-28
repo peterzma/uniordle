@@ -6,6 +6,11 @@ class AbandonGameDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final streak = statsManager.statsNotifier.value.streak;
+    
+    final highlightStyle = AppFonts.labelMedium.copyWith(
+      color: AppColors.accent2,
+    );
 
     return BaseDialog(
       padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 24),
@@ -14,7 +19,7 @@ class AbandonGameDialog extends StatelessWidget {
         children: [
           const Icon(
             AppIcons.abandonGame,
-            color: Colors.orange,
+            color: AppColors.accent2,
             size: AppLayout.dialogIcon,
           ),
           const SizedBox(height: 16),
@@ -24,9 +29,27 @@ class AbandonGameDialog extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 16),
-          Text(
-            UserStatsExtension.getAbandonWarning(statsManager.statsNotifier.value.streak),
-            style: AppFonts.labelMedium,
+          Text.rich(
+            TextSpan(
+              style: AppFonts.labelMedium,
+              children: [
+                const TextSpan(text: "Leaving now will result in a penalty of "),
+                TextSpan(
+                  text: "${UserStatsExtension.penaltyAmount} merits",
+                  style: highlightStyle,
+                ),
+                if (streak > 0) ...[
+                  const TextSpan(text: " and the loss of your "),
+                  TextSpan(
+                    text: "$streak win streak",
+                    style: highlightStyle,
+                  ),
+                  const TextSpan(text: "."),
+                ] else ...[
+                  const TextSpan(text: " and streak loss."),
+                ],
+              ],
+            ),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 32),

@@ -88,12 +88,4 @@ extension UserStatsExtension on UserStats {
     
     return titles[index];
   }
-
-  static String getAbandonWarning(int currentStreak) {
-    String base = "Leaving now will result in a penalty of $penaltyAmount merits";
-    if (currentStreak > 0) {
-      return "$base and the loss of your $currentStreak game streak.";
-    }
-    return "$base.";
-  }
 }
