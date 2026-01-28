@@ -28,7 +28,7 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
   void initState() {
     super.initState();
 
-    const int meritPerLevel = UserStatsExtension.meritPerLevel;
+    const int meritPerLevel = UserStats.meritPerLevel;
 
     final double startTotal = widget.startingLevel + widget.startingProgress;
     final double levelChange = widget.gainedMerit / meritPerLevel;
@@ -82,8 +82,8 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
             mainAxisSize: MainAxisSize.min,
             children: [
               // TODO: change progress to something else
-              Text("PROGRESS", style: AppFonts.labelMedium),
-              const SizedBox(height: 16),
+              // Text("PROGRESS", style: AppFonts.labelMedium),
+              // const SizedBox(height: 16),
               AnimatedBuilder(
                 animation: _animation,
                 builder: (context, _) {
@@ -91,7 +91,7 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
                   final int displayLevel = val.floor();
                   final double displayProgress = val % 1.0;
                   
-                  const int totalRequired = UserStatsExtension.meritPerLevel;
+                  const int totalRequired = UserStats.meritPerLevel;
                   final int currentLevelMerit = (displayProgress * totalRequired).round();
                   
                   return LevelCard(

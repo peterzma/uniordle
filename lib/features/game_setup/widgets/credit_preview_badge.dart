@@ -39,7 +39,7 @@ class CreditPreviewBadge extends StatelessWidget {
             ),
           ),
           Text(
-            UserStatsExtension.getMeritRange(difficulty, wordLength),
+            UserStatsRewards.getMeritRange(difficulty, wordLength),
             style: AppFonts.labelLarge.copyWith(
               color: discipline.color,
               fontWeight: FontWeight.bold,

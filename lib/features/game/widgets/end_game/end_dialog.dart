@@ -25,7 +25,7 @@ class EndDialog extends StatelessWidget {
     
     final double directedMerit = won ? gainedMerit.toDouble() : -gainedMerit.toDouble();
 
-    final prevState = UserStatsExtension.getPreviousState(
+    final prevState = UserStatsProgress.getPreviousState(
     currentStats.merit, 
     directedMerit.toInt(),
     );

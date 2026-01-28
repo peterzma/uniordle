@@ -35,7 +35,7 @@ class AbandonGameDialog extends StatelessWidget {
               children: [
                 const TextSpan(text: "Leaving early will result in a penalty of "),
                 TextSpan(
-                  text: "${UserStatsExtension.penaltyAmount} demerits",
+                  text: "${UserStats.penaltyAmount} demerits",
                   style: highlightStyle,
                 ),
                 if (streak > 0) ...[

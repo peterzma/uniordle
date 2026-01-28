@@ -69,7 +69,7 @@ class _GameScreenState extends State<GameScreen> {
         attempts: _controller.currentWordIndex + 1,
       );
     } else {
-      meritChange = UserStatsExtension.penaltyAmount;
+      meritChange = UserStats.penaltyAmount;
       await statsManager.recordLoss();
     }
 

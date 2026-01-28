@@ -39,7 +39,7 @@ class StatsManager {
   Future<int> recordWin({required int yearLevel, required int wordLength, required int attempts}) async {
     final current = statsNotifier.value;
 
-    final int gainedMerit = UserStatsExtension.generateGainedMerit(yearLevel, wordLength);
+    final int gainedMerit = UserStatsRewards.generateGainedMerit(yearLevel, wordLength);
 
     final newMerit = current.merit + gainedMerit;
     final newStreak = current.streak + 1;
@@ -65,11 +65,11 @@ class StatsManager {
   }
 
   Future<void> recordLoss() async {
-    await _applyPenalty(UserStatsExtension.penaltyAmount);
+    await _applyPenalty(UserStats.penaltyAmount);
   }
 
   Future<void> recordAbandonment() async {
-    await _applyPenalty(UserStatsExtension.penaltyAmount);
+    await _applyPenalty(UserStats.penaltyAmount);
   }
 
   Future<void> _applyPenalty(int amount) async {
