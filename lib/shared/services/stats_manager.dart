@@ -78,12 +78,15 @@ class StatsManager {
   }
 
   Future<void> recordLoss() => _applyPenalty(UserStats.penaltyAmount);
-  Future<void> recordAbandonment() => _applyPenalty(UserStats.penaltyAmount);
+  Future<void> recordAbandonment() {
+    final current = statsNotifier.value;
+    return _applyPenalty(current.activePenalty);
+  }
 
   Future<void> _applyPenalty(int amount) async {
     final current = statsNotifier.value;
     final newLost = current.lost + 1;
-    final newMerit = (current.merit - amount).clamp(0, 999999);
+    final newMerit = max(0, current.merit - amount);
 
     await _prefs.setInt('stat_streak', 0);
     await _prefs.setInt('stat_lost', newLost);
