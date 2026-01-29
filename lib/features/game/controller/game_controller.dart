@@ -31,6 +31,21 @@ class GameController extends ChangeNotifier {
 
   Word? get currentWord => currentWordIndex < board.length ? board[currentWordIndex] : null;
 
+  void _initGame() {
+    board = List.generate(maxAttempts, (_) => Word(letters: List.generate(wordLength, (_) => Letter.empty())));
+    flipCardKeys = List.generate(maxAttempts, (_) => List.generate(wordLength, (_) => GlobalKey<FlipCardState>()));
+
+    final userSolvedWords = statsManager.statsNotifier.value.solvedWords;
+    
+    final String nextWord = WordRepository.getNextWord(
+      disciplineId: disciplineId,
+      length: wordLength,
+      userSolvedWords: userSolvedWords,
+    );
+
+    solution = Word.fromString(nextWord.toUpperCase());
+  }
+
   Future<void> submitWord() async {
     if (status != GameStatus.playing || currentWord == null) return;
     if (currentWord!.letters.any((l) => l.val.isEmpty)) return;
@@ -80,19 +95,6 @@ class GameController extends ChangeNotifier {
     }
 
     _checkResult();
-  }
-
-
-  void _initGame() {
-    board = List.generate(maxAttempts, (_) => Word(letters: List.generate(wordLength, (_) => Letter.empty())));
-    flipCardKeys = List.generate(maxAttempts, (_) => List.generate(wordLength, (_) => GlobalKey<FlipCardState>()));
-    
-    final disciplineLibrary = categorizedWords[disciplineId.toLowerCase()] ?? categorizedWords['engineering']!;
-    final library = disciplineLibrary[wordLength] ?? disciplineLibrary[5]!;
-
-    solution = Word.fromString(
-      library[Random().nextInt(library.length)].toUpperCase(),
-    );
   }
 
   void _updateKeyboard(Letter newLetter) {

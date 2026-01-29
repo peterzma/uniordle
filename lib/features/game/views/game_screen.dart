@@ -96,7 +96,6 @@ class _GameScreenState extends State<GameScreen> {
       },
     );
   }
-  
 
   void _handleBack() async {
     if (!_controller.hasSubmissions) {
