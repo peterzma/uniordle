@@ -1,4 +1,5 @@
-import 'package:uniordle/core/app_icons.dart';
+import 'package:uniordle/features/game/widgets/level_up/performance_breakdown.dart';
+import 'package:uniordle/features/game/widgets/level_up/milestone_item.dart'; // Ensure this import exists
 import 'package:uniordle/shared/exports/end_game_exports.dart';
 
 class LevelUpDialog extends StatefulWidget {
@@ -41,6 +42,7 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
     final double levelChange = widget.gainedMerit / UserStats.meritPerLevel;
     final double endTotal = startTotal + levelChange;
 
+    // Adjust duration based on how many levels were gained
     _controller = AnimationController(
       vsync: this,
       duration: Duration(milliseconds: 1500 + (levelChange.abs() * 500).toInt()),
@@ -55,6 +57,7 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
       
       final List<int> allAchieved = statsManager.statsNotifier.value.achievedMilestones;
 
+      // Trigger milestones as the bar animates past them
       for (int level in allAchieved) {
         if (level <= animatedLevel && 
             level > widget.startingLevel && 
@@ -75,38 +78,18 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
       _listKey.currentState?.insertItem(0, duration: const Duration(milliseconds: 500));
     });
     
-    // Auto-scroll to the top to show the newest achievement
     if (_scrollController.hasClients) {
       _scrollController.animateTo(0, 
         duration: const Duration(milliseconds: 300), 
         curve: Curves.easeOut
       );
     }
-    
-    // SoundManager().play(SoundType.grid);
-  }
-
-  String _getMilestoneTitle(int level) {
-    if (level % 10 == 0) return "RANK UP & CREDIT +1";
-    if (level % 5 == 0 && level <= 70) return "CREDIT +1";
-    return "LEVEL UP!";
-  }
-
-  String _getMilestoneSubtitle(int level) {
-    if (level % 10 == 0) {
-      final String rank = UserStats(
-        streak: 0, solved: 0, merit: level * UserStats.meritPerLevel
-      ).academicTitle;
-      final int rankBonus = (level ~/ 10) * 10;
-      return "Promoted to $rank! Permanent +$rankBonus% Rank Bonus reached.";
-    }
-    if (level % 5 == 0) return "Credit Earned! Check the Home screen to enroll in a new Discipline.";
-    return "You have reached LEVEL $level";
   }
 
   @override
   void dispose() {
     _controller.dispose();
+    _scrollController.dispose();
     super.dispose();
   }
 
@@ -116,12 +99,22 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
       mainAxisSize: MainAxisSize.min,
       children: [
         Text(
-        "ACADEMIC PROGRESS",
-        style: AppFonts.displayLarge,
+          "ACADEMIC PROGRESS",
+          style: AppFonts.displayLarge,
         ),
         const SizedBox(height: 16),
-        _buildPerformanceBreakdown(),
+        
+        // Performance Reasoner
+        PerformanceBreakdown(
+          won: widget.won,
+          attempts: widget.attempts,
+          maxAttempts: widget.maxAttempts,
+          gainedMerit: widget.gainedMerit,
+        ),
+        
         const SizedBox(height: 12),
+        
+        // Animated Level Progress
         AnimatedBuilder(
           animation: _animation,
           builder: (context, _) {
@@ -141,6 +134,7 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
     
         const SizedBox(height: 16),
       
+        // List of unlocked milestones (Rank ups, Credits, etc)
         ConstrainedBox(
           constraints: const BoxConstraints(maxHeight: 200),
           child: AnimatedList(
@@ -155,7 +149,7 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
                   sizeFactor: animation,
                   child: Padding(
                     padding: const EdgeInsets.only(bottom: 8.0),
-                    child: _buildMilestoneItem(_visibleMilestones[index]),
+                    child: MilestoneItem(level: _visibleMilestones[index]),
                   ),
                 ),
               );
@@ -194,123 +188,7 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
             ),
           ],
         ),
-      
-      ]
-    );
-  } 
-
-  Widget _buildMilestoneItem(int level) {
-    final bool isRankUp = level % 10 == 0;
-    final bool isCreditEarned = level % 5 == 0;
-    final bool isCreditOnly = level % 5 == 0 && level % 10 != 0;
-    
-    final Color bgColor = isRankUp 
-      ? AppColors.accent3 
-      : (isCreditOnly ? AppColors.accent : AppColors.surfaceVariant);
-    
-    final Color contentColor = (isRankUp || isCreditEarned) 
-        ? AppColors.onSurface 
-        : AppColors.onSurfaceVariant;
-
-    return Container(
-      padding: const EdgeInsets.all(12),
-      decoration: BoxDecoration(
-        color: bgColor,
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: Row(
-        children: [
-          Icon(
-            isRankUp ? LucideIcons.graduationCap : (isCreditOnly ? AppIcons.credits : AppIcons.merits),
-            size: 20,
-            color: contentColor,
-          ),
-          const SizedBox(width: 12),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  _getMilestoneTitle(level),
-                  style: AppFonts.labelLarge.copyWith(
-                    color: contentColor,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Text(
-                  _getMilestoneSubtitle(level),
-                  style: AppFonts.labelSmall.copyWith(
-                    color: contentColor,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildPerformanceBreakdown() {
-  final double weight = widget.won 
-      ? (widget.maxAttempts - widget.attempts) / (widget.maxAttempts - 1).toDouble()
-      : 0.0;
-  
-  String performanceText;
-  Color performanceColor;
-  
-    if (!widget.won) {
-    performanceText = "FAIL";
-    performanceColor = AppColors.accent2;
-  } else {
-    if (weight >= 0.85) { // Roughly 1-2 attempts
-      performanceText = "HIGH DISTINCTION";
-      performanceColor = AppColors.correctColor;
-    } else if (weight >= 0.70) { // Roughly 3 attempts
-      performanceText = "DISTINCTION";
-      performanceColor = AppColors.accent;
-    } else if (weight >= 0.50) { // Roughly 4-5 attempts
-      performanceText = "CREDIT";
-      performanceColor = Colors.orange;
-    } else { // 6-8 attempts
-      performanceText = "PASS";
-      performanceColor = Colors.blueGrey;
-    }
-  }
-
-  return Container(
-    padding: const EdgeInsets.all(12),
-    decoration: BoxDecoration(
-      color: performanceColor.withValues(alpha: 0.1),
-      borderRadius: BorderRadius.circular(16),
-      border: Border.all(color: performanceColor.withValues(alpha: 0.2)),
-    ),
-    child: Column(
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(performanceText, style: AppFonts.labelSmall.copyWith(color: performanceColor, fontWeight: FontWeight.bold)),
-            Text("${widget.attempts}/${widget.maxAttempts} ATTEMPTS", style: AppFonts.labelSmall.copyWith(color: performanceColor)),
-          ],
-        ),
-        const SizedBox(height: 4),
-        Text(
-          widget.gainedMerit >= 0
-              ? "You earned ${widget.gainedMerit.toInt()} merits based on your attempts."
-              : "You lost ${widget.gainedMerit.toInt().abs()} merits due to academic failure.",
-          style: AppFonts.labelSmall.copyWith(
-            color: widget.gainedMerit >= 0 
-                ? AppColors.onSurfaceVariant 
-                : AppColors.accent2.withValues(alpha: 0.8),
-          ),
-          textAlign: TextAlign.center,
-        ),
       ],
-    ),
-  );
+    );
+  }
 }
-}
-
-
-

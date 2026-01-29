@@ -23,7 +23,7 @@ export 'package:equatable/equatable.dart';
 export 'package:uniordle/core/app_layout.dart';
 export 'package:uniordle/features/game/widgets/end_game/end_dialog.dart';
 export 'package:uniordle/features/game/widgets/game_info_bar.dart';
-export 'package:uniordle/features/game/widgets/level_up/widgets/level_up_dialog.dart';
+export 'package:uniordle/features/game/widgets/level_up/level_up_dialog.dart';
 export 'package:uniordle/shared/services/models/user_stats.dart';
 export 'package:uniordle/shared/exports/game_exports.dart';
 export 'package:uniordle/features/home/models/discipline.dart';

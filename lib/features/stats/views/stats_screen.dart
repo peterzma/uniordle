@@ -1,7 +1,5 @@
-import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/exports/end_game_exports.dart';
 import 'package:uniordle/shared/exports/stats_exports.dart';
-import 'package:uniordle/shared/layout/base_badge.dart';
 
 class StatsScreen extends StatelessWidget {
 
@@ -18,9 +16,6 @@ class StatsScreen extends StatelessWidget {
         final double winValue = double.tryParse(stats.winPercentage.replaceAll('%', '')) ?? 0;
         final double normalizedValue = (winValue / 100).clamp(0.0, 1.0);
         final Color winColor = Color.lerp(AppColors.accent2, AppColors.correctColor, normalizedValue)!;
-
-        final int bonusCount = stats.unlockedIds.length;
-        final int totalBonusPercent = (bonusCount * 5).clamp(0, 100);
         
         return SingleChildScrollView(
           padding: const EdgeInsets.all(AppLayout.sidePadding),
@@ -34,25 +29,6 @@ class StatsScreen extends StatelessWidget {
                     const SizedBox(height: AppLayout.titleToSubtitle),
                     Text("Your learning journey analytics", textAlign: TextAlign.center, style: AppFonts.labelMedium),
                     const SizedBox(height: 12),
-                    Wrap(
-                      spacing: 12,
-                      runSpacing: 12,
-                      alignment: WrapAlignment.center,
-                      children: [
-                        BaseBadge(
-                          label: "${stats.merit} TOTAL MERITS",
-                          icon: AppIcons.merits,
-                          color: AppColors.accent,
-                        ),
-                        
-                        if (stats.unlockedIds.isNotEmpty)
-                          BaseBadge(
-                            label: "+$totalBonusPercent% MERIT BONUS",
-                            icon: LucideIcons.trendingUp,
-                            color: AppColors.correctColor,
-                          ),
-                      ],
-                    ),
                   ],
                 ),
               ),
