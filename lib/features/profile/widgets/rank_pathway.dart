@@ -28,7 +28,7 @@ class RankPathway extends StatelessWidget {
       children: [
         Text("Academic Pathway", style: AppFonts.headline),
 
-        const SizedBox(height: 16),
+        const SizedBox(height: 8),
 
         Container(
           padding: const EdgeInsets.all(24),

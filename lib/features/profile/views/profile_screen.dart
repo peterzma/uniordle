@@ -23,8 +23,18 @@ class ProfileScreen extends StatelessWidget {
               const SizedBox(height: 16),
 
               const ProfileHeader(),
+
+              const SizedBox(height: 16),
+              
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  "ACADEMIC PROGRESS",
+                  style: AppFonts.headline,
+                ),
+              ),
         
-              const SizedBox(height: 32),
+              const SizedBox(height: 8),
         
               LevelCard(
                 level: stats.currentLevel,
@@ -72,7 +82,7 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
         
-              const SizedBox(height: 32),
+              const SizedBox(height: 16),
 
               RankPathway(currentLevel: stats.currentLevel),
 
