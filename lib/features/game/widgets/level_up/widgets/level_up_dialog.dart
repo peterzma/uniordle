@@ -53,6 +53,7 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
         if (level <= animatedLevel && 
             level > widget.startingLevel && 
             !_visibleMilestones.contains(level)) {
+          
           _revealMilestone(level);
         }
       }
@@ -80,7 +81,7 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
   }
 
   String _getMilestoneTitle(int level) {
-    if (level % 10 == 0) return "NEW ACADEMIC RANK!";
+    if (level % 10 == 0) return "RANK UP & CREDIT +1";
     if (level % 5 == 0 && level <= 70) return "CREDIT +1";
     return "LEVEL UP!";
   }
@@ -90,10 +91,10 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
       final String rank = UserStats(
         streak: 0, solved: 0, merit: level * UserStats.meritPerLevel
       ).academicTitle;
-      return "You have ranked up to $rank";
+      return "Promoted to $rank. Check the Home screen to spend your credit.";
     }
-    if (level % 5 == 0) return "Spend credits to unlock disciplines";
-    return "You have leveled up to LEVEL $level";
+    if (level % 5 == 0) return "Check the Home screen to spend your credit";
+    return "You have reached LEVEL $level";
   }
 
   @override
@@ -104,96 +105,99 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(20),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          AnimatedBuilder(
-            animation: _animation,
-            builder: (context, _) {
-              final double val = _animation.value;
-              final int displayLevel = val.floor();
-              final double displayProgress = val % 1.0;
-              final int percentage = (displayProgress * 100).round();
-              
-              return LevelCard(
-                level: displayLevel,
-                progress: displayProgress,
-                nextLevel: displayLevel + 1,
-                progressLabel: "$percentage%",
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+        "ACADEMIC PROGRESS",
+        style: AppFonts.displayLarge,
+        ),
+        const SizedBox(height: 16),
+        AnimatedBuilder(
+          animation: _animation,
+          builder: (context, _) {
+            final double val = _animation.value;
+            final int displayLevel = val.floor();
+            final double displayProgress = val % 1.0;
+            final int percentage = (displayProgress * 100).round();
+            
+            return LevelCard(
+              level: displayLevel,
+              progress: displayProgress,
+              nextLevel: displayLevel + 1,
+              progressLabel: "$percentage%",
+            );
+          },
+        ),
+    
+        const SizedBox(height: 16),
+      
+        ConstrainedBox(
+          constraints: const BoxConstraints(maxHeight: 200),
+          child: AnimatedList(
+            key: _listKey,
+            controller: _scrollController,
+            shrinkWrap: true,
+            initialItemCount: _visibleMilestones.length,
+            itemBuilder: (context, index, animation) {
+              return FadeTransition(
+                opacity: animation,
+                child: SizeTransition(
+                  sizeFactor: animation,
+                  child: Padding(
+                    padding: const EdgeInsets.only(bottom: 8.0),
+                    child: _buildMilestoneItem(_visibleMilestones[index]),
+                  ),
+                ),
               );
             },
           ),
-
-          const SizedBox(height: 16),
-        
-          ConstrainedBox(
-            constraints: const BoxConstraints(maxHeight: 200),
-            child: AnimatedList(
-              key: _listKey,
-              controller: _scrollController,
-              shrinkWrap: true,
-              initialItemCount: _visibleMilestones.length,
-              itemBuilder: (context, index, animation) {
-                return FadeTransition(
-                  opacity: animation,
-                  child: SizeTransition(
-                    sizeFactor: animation,
-                    child: Padding(
-                      padding: const EdgeInsets.only(bottom: 8.0),
-                      child: _buildMilestoneItem(_visibleMilestones[index]),
-                    ),
-                  ),
-                );
-              },
+        ),
+    
+        const SizedBox(height: AppLayout.gapToButton),
+      
+        Row(
+          children: [
+            Expanded(
+              child: PrimaryButton(
+                label: 'HOME',
+                onPressed: () {
+                  Navigator.of(context).pushNamedAndRemoveUntil(
+                    '/',
+                    (route) => false,
+                  );
+                },
+              ),
             ),
-          ),
-
-          const SizedBox(height: AppLayout.gapToButton),
-        
-          Row(
-            children: [
-              Expanded(
-                child: PrimaryButton(
-                  label: 'HOME',
-                  onPressed: () {
-                    Navigator.of(context).pushNamedAndRemoveUntil(
-                      '/',
-                      (route) => false,
-                    );
-                  },
-                ),
+            const SizedBox(width: AppLayout.gapBetweenButtons),
+            Expanded(
+              child: PrimaryButton(
+                label: 'NEW GAME',
+                color: AppColors.accent,
+                onPressed: () {
+                  Navigator.of(context).pushNamedAndRemoveUntil(
+                    '/setup',
+                    (route) => route.isFirst,
+                    arguments: widget.discipline,
+                  );
+                },
               ),
-              const SizedBox(width: AppLayout.gapBetweenButtons),
-              Expanded(
-                child: PrimaryButton(
-                  label: 'NEW GAME',
-                  color: AppColors.accent,
-                  onPressed: () {
-                    Navigator.of(context).pushNamedAndRemoveUntil(
-                      '/setup',
-                      (route) => route.isFirst,
-                      arguments: widget.discipline,
-                    );
-                  },
-                ),
-              ),
-            ],
-          ),
-        
-        ]
-      )
+            ),
+          ],
+        ),
+      
+      ]
     );
   } 
 
   Widget _buildMilestoneItem(int level) {
     final bool isRankUp = level % 10 == 0;
     final bool isCreditEarned = level % 5 == 0;
+    final bool isCreditOnly = level % 5 == 0 && level % 10 != 0;
     
-    final Color bgColor = (isRankUp || isCreditEarned) 
-        ? AppColors.accent3 
-        : AppColors.surfaceVariant;
+    final Color bgColor = isRankUp 
+      ? AppColors.accent3 
+      : (isCreditOnly ? AppColors.accent : AppColors.surfaceVariant);
     
     final Color contentColor = (isRankUp || isCreditEarned) 
         ? AppColors.onSurface 
@@ -208,7 +212,7 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
       child: Row(
         children: [
           Icon(
-            isCreditEarned ? AppIcons.credits : LucideIcons.award,
+            isRankUp ? LucideIcons.graduationCap : (isCreditOnly ? AppIcons.credits : AppIcons.merits),
             size: 20,
             color: contentColor,
           ),
