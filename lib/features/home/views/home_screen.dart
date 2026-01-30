@@ -28,21 +28,18 @@ Widget build(BuildContext context) {
     valueListenable: statsManager.statsNotifier,
     builder: (context, stats, _) {
       final sortedDisciplines = DisciplinesData.getSortedDisciplines(stats.unlockedIds);
-      
-      final bool isMobile = AppLayout.isSmall(context);
 
       return Scaffold(
         backgroundColor: AppColors.surface,
         body: SafeArea(
           child: SingleChildScrollView(
-            padding: EdgeInsets.all(isMobile ? 16.0 : AppLayout.sidePadding),
+            padding: EdgeInsets.all(AppLayout.sidePadding),
             child: Column(
               children: [
                 HomeHero(stats: stats),
                 const SizedBox(height: AppLayout.badgeToContent),
 
                 DisciplineGrid(
-                  isSmall: isMobile,
                   disciplines: sortedDisciplines,
                   unlockedIds: stats.unlockedIds,
                   onSubjectTap: (sub) => _onDisciplineTap(context, sub, stats),

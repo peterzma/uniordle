@@ -7,6 +7,7 @@ class ResponsiveWrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double dynamicWidth = AppLayout.contentWidth(context);
     return LayoutBuilder(
       builder: (context, constraints) {
         final double windowWidth = constraints.maxWidth;
@@ -18,13 +19,13 @@ class ResponsiveWrapper extends StatelessWidget {
             children: [
               Center(
                 child: OverflowBox(
-                  minWidth: AppLayout.minAppWidth,
-                  maxWidth: AppLayout.maxAppWidth,
+                  minWidth: dynamicWidth,
+                  maxWidth: dynamicWidth, 
                   alignment: Alignment.center,
                   child: ConstrainedBox(
-                    constraints: const BoxConstraints(
-                      minWidth: AppLayout.minAppWidth,
-                      maxWidth: AppLayout.maxAppWidth,
+                    constraints: BoxConstraints(
+                      minWidth: dynamicWidth,
+                      maxWidth: dynamicWidth,
                       minHeight: AppLayout.minAppHeight,
                     ),
                     child: ClipRect(child: child),

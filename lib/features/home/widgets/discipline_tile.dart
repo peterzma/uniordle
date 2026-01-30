@@ -72,7 +72,10 @@ class _DisciplineTileState extends State<DisciplineTile> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(sub.name, style: AppFonts.labelLarge),
+                              Text(
+                                sub.name, 
+                                style: AppFonts.labelLarge
+                              ),
                               if (!widget.isLocked)
                                 Text(
                                   "$masteredCount/${sub.totalWords}",

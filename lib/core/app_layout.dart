@@ -40,6 +40,9 @@ abstract class AppLayout {
 
   /// Returns the width of the app content (clamped between 360 and 512)
   static double contentWidth(BuildContext context) {
-    return screenWidth(context).clamp(minAppWidth, maxAppWidth);
+    final double screenW = MediaQuery.of(context).size.width;
+    // If window is 340, it returns 360
+    // If window is 400, it returns 400.
+    return screenW.clamp(minAppWidth, maxAppWidth);
   }
 }
