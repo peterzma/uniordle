@@ -27,7 +27,10 @@ class DisciplineGrid extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       itemCount: disciplines.length,
       separatorBuilder: (_, __) => const SizedBox(height: 12),
-      itemBuilder: (context, index) => _buildTile(disciplines[index]),
+      itemBuilder: (context, index) => SizedBox(
+        height: 80,
+        child: _buildTile(disciplines[index]),
+      ),
     );
   }
 
@@ -41,7 +44,7 @@ class DisciplineGrid extends StatelessWidget {
         crossAxisCount: 2,
         mainAxisSpacing: 12,
         crossAxisSpacing: 12,
-        childAspectRatio: 3,
+        mainAxisExtent: 80,
       ),
       itemBuilder: (context, index) => _buildTile(disciplines[index]),
     );
