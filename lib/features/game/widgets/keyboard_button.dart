@@ -13,8 +13,8 @@ class KeyboardButton extends StatelessWidget {
 
   const KeyboardButton({ 
     super.key,
-    this.height = 64,
-    this.width = 44,
+    this.height = 66,
+    this.width = 40,
     required this.onTap,
     required this.backgroundColor,
     this.letter,
@@ -25,7 +25,7 @@ class KeyboardButton extends StatelessWidget {
 
   factory KeyboardButton.delete({required VoidCallback onTap}) =>
       KeyboardButton(
-        width: 70,
+        width: 62,
         onTap: onTap,
         backgroundColor: AppColors.surfaceVariant,
         soundType: SoundType.delete,
@@ -38,7 +38,7 @@ class KeyboardButton extends StatelessWidget {
 
   factory KeyboardButton.enter({required VoidCallback onTap}) =>
       KeyboardButton(
-        width: 70,
+        width: 62,
         onTap: onTap,
         backgroundColor: AppColors.surfaceVariant,
         letter: 'ENTER',
@@ -51,11 +51,14 @@ class KeyboardButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double availableWidth = AppLayout.contentWidth(context);
+    final double scaleFactor = (availableWidth / AppLayout.maxAppWidth).clamp(0.7, 1.0);
+    final double dynamicPadding = 4.0 * scaleFactor;
+
     return Padding(
-      padding: const EdgeInsets.all(4),
+      padding: EdgeInsets.all(dynamicPadding),
       child: SelectButtonWrapper(
         onTap: onTap,
-        pressScale: 0.95,
         enableDarken: true,
         baseColor: backgroundColor,
         soundType: soundType,

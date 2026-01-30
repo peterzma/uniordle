@@ -47,37 +47,43 @@ class Keyboard extends StatelessWidget {
         }
         return KeyEventResult.handled;
       },
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: _qwerty
-            .map(
-              (keyRow) => Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: keyRow.map(
-                  (letter) {
-                    if (letter == 'DEL') {
-                      return KeyboardButton.delete(onTap: onDeleteTapped);
-                    } else if (letter == 'ENTER') {
-                      return KeyboardButton.enter(onTap: onEnterTapped);
-                    }
-
-                    final letterKey = letters.firstWhere(
-                      (e) => e.val == letter,
-                      orElse: () => Letter.empty(),
-                    );
-
-                    return KeyboardButton(
-                      onTap: () => onKeyTapped(letter),
-                      letter: letter,
-                      backgroundColor: letterKey != Letter.empty()
-                          ? letterKey.backgroundColor
-                          : AppColors.surfaceVariant,
-                    );
-                  },
-                ).toList(),
-              ),
-            )
-            .toList(),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        child: FittedBox(
+          fit: BoxFit.contain,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: _qwerty
+                .map(
+                  (keyRow) => Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: keyRow.map(
+                      (letter) {
+                        if (letter == 'DEL') {
+                          return KeyboardButton.delete(onTap: onDeleteTapped);
+                        } else if (letter == 'ENTER') {
+                          return KeyboardButton.enter(onTap: onEnterTapped);
+                        }
+          
+                        final letterKey = letters.firstWhere(
+                          (e) => e.val == letter,
+                          orElse: () => Letter.empty(),
+                        );
+          
+                        return KeyboardButton(
+                          onTap: () => onKeyTapped(letter),
+                          letter: letter,
+                          backgroundColor: letterKey != Letter.empty()
+                              ? letterKey.backgroundColor
+                              : AppColors.surfaceVariant,
+                        );
+                      },
+                    ).toList(),
+                  ),
+                )
+                .toList(),
+          ),
+        ),
       ),
     );
   }
