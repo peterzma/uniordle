@@ -1,4 +1,4 @@
-import 'package:uniordle/features/stats/widgets/academic_history.dart';
+import 'package:uniordle/features/stats/widgets/academic.dart/academic_history.dart';
 import 'package:uniordle/features/stats/widgets/mode_analytics_chart.dart';
 import 'package:uniordle/shared/exports/end_game_exports.dart';
 import 'package:uniordle/shared/exports/stats_exports.dart';
