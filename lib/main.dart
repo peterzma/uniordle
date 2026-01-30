@@ -4,9 +4,6 @@ import 'package:uniordle/core/app_layout.dart';
 import 'package:uniordle/shared/services/stats_manager.dart';
 import 'package:uniordle/shared/exports/settings_exports.dart';
 
-const Size desktopMinSize = Size(AppLayout.minAppWidth, 960);
-const Size desktopStartSize = Size(AppLayout.minAppWidth, 960);
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -20,8 +17,20 @@ void main() async {
   runApp(const App());
 
   doWhenWindowReady(() {
-    appWindow.minSize = desktopMinSize;
-    appWindow.size = desktopStartSize;
+    const double widthOverhead = 16.0; 
+    const double heightOverhead = 32.0;
+
+    final minSize = Size(
+      AppLayout.minAppWidth + widthOverhead, 
+      AppLayout.minAppHeight + heightOverhead
+    );
+      final startSize = Size(
+      AppLayout.maxAppWidth + widthOverhead, 
+      AppLayout.startAppHeight + heightOverhead
+    );
+
+    appWindow.minSize = minSize;
+    appWindow.size = startSize;
     appWindow.alignment = Alignment.center;
     appWindow.title = 'Uniordle';
     appWindow.show();

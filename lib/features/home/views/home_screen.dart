@@ -31,37 +31,26 @@ class HomeScreen extends StatelessWidget {
         final sortedDisciplines = DisciplinesData.getSortedDisciplines(stats.unlockedIds);
 
         return ResponsiveLayout(
-          smallScreen: _buildBody(context, stats, sortedDisciplines, isLarge: false),
-          
-          largeScreen: _buildBody(context, stats, sortedDisciplines, isLarge: true),
+          smallScreen: _buildSmallHome(context, stats, sortedDisciplines),
+
+          largeScreen: SingleChildScrollView(
+            padding: const EdgeInsets.all(AppLayout.sidePadding),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                HomeHero(stats: stats),
+                const SizedBox(height: AppLayout.badgeToContent),
+                DisciplineGrid(
+                  disciplines: sortedDisciplines,
+                  unlockedIds: stats.unlockedIds,
+                  onSubjectTap: (sub) => _onDisciplineTap(context, sub, stats),
+                ),
+              ],
+            ),
+          ),
         );
       },
-    );
-  }
-
-  Widget _buildBody(BuildContext context, UserStats stats, List<Discipline> disciplines, {required bool isLarge}) {
-    return Padding(
-      padding: const EdgeInsets.all(AppLayout.sidePadding),
-      child: Center(
-        child: Container(
-          constraints: BoxConstraints(
-            maxWidth: isLarge ? AppLayout.minAppWidth : double.infinity,
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              HomeHero(stats: stats),
-              const SizedBox(height: AppLayout.badgeToContent),
-              DisciplineGrid(
-                disciplines: disciplines,
-                unlockedIds: stats.unlockedIds,
-                onSubjectTap: (sub) => _onDisciplineTap(context, sub, stats),
-              ),
-            ],
-          ),
-        ),
-      ),
     );
   }
 }
