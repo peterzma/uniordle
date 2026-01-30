@@ -9,7 +9,6 @@ class ResponsiveWrapper extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        // Use the actual window width for the debug logic
         final double windowWidth = constraints.maxWidth;
         final bool isSmall = windowWidth < AppLayout.breakpoint;
 
@@ -17,11 +16,10 @@ class ResponsiveWrapper extends StatelessWidget {
           color: AppColors.surface,
           child: Stack(
             children: [
-              // 1. The App Content
               Center(
                 child: OverflowBox(
-                  minWidth: AppLayout.minAppWidth, // 360
-                  maxWidth: AppLayout.maxAppWidth, // 512
+                  minWidth: AppLayout.minAppWidth,
+                  maxWidth: AppLayout.maxAppWidth,
                   alignment: Alignment.center,
                   child: ConstrainedBox(
                     constraints: const BoxConstraints(
@@ -34,7 +32,6 @@ class ResponsiveWrapper extends StatelessWidget {
                 ),
               ),
 
-              // 2. The Debug Badge
               if (kDebugMode)
                 Positioned(
                   top: MediaQuery.of(context).padding.top + 10,

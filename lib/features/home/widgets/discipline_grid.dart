@@ -4,12 +4,14 @@ class DisciplineGrid extends StatelessWidget {
   final List<Discipline> disciplines;
   final List<String> unlockedIds;
   final void Function(Discipline) onSubjectTap;
+  final int crossAxisCount;
 
   const DisciplineGrid({
     super.key, 
     required this.disciplines, 
     required this.unlockedIds,
-    required this.onSubjectTap
+    required this.onSubjectTap,
+    this.crossAxisCount = 2,
   });
 
   @override
@@ -20,10 +22,10 @@ class DisciplineGrid extends StatelessWidget {
         physics: const NeverScrollableScrollPhysics(),
         itemCount: disciplines.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
+          crossAxisCount: crossAxisCount,
           mainAxisSpacing: 12,
           crossAxisSpacing: 12,
-          childAspectRatio: 3.1,
+          childAspectRatio: crossAxisCount == 1 ? 6.0 : 3.1,
         ),
         itemBuilder: (context, index) {
           final sub = disciplines[index];

@@ -32,25 +32,61 @@ class HomeScreen extends StatelessWidget {
 
         return ResponsiveLayout(
           smallScreen: _buildSmallHome(context, stats, sortedDisciplines),
+          largeScreen: _buildLargeHome(context, stats, sortedDisciplines),
+        );
+      },
+    );
+  }
 
-          largeScreen: SingleChildScrollView(
-            padding: const EdgeInsets.all(AppLayout.sidePadding),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                HomeHero(stats: stats),
-                const SizedBox(height: AppLayout.badgeToContent),
-                DisciplineGrid(
-                  disciplines: sortedDisciplines,
+  Widget _buildLargeHome(BuildContext context, UserStats stats, List<Discipline> disciplines) {
+    return SingleChildScrollView(
+      padding: const EdgeInsets.all(AppLayout.sidePadding),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          HomeHero(stats: stats),
+          const SizedBox(height: AppLayout.badgeToContent),
+          DisciplineGrid(
+            crossAxisCount: 2,
+            disciplines: disciplines,
+            unlockedIds: stats.unlockedIds,
+            onSubjectTap: (sub) => _onDisciplineTap(context, sub, stats),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildSmallHome(BuildContext context, UserStats stats, List<Discipline> disciplines) {
+    return Scaffold(
+      backgroundColor: AppColors.surface,
+      body: SafeArea(
+        child: CustomScrollView(
+          slivers: [
+            SliverPadding(
+              padding: const EdgeInsets.all(16.0),
+              sliver: SliverToBoxAdapter(
+                child: HomeHero(stats: stats),
+              ),
+            ),
+
+            SliverPadding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              sliver: SliverToBoxAdapter(
+                child: DisciplineGrid(
+                  crossAxisCount: 1,
+                  disciplines: disciplines,
                   unlockedIds: stats.unlockedIds,
                   onSubjectTap: (sub) => _onDisciplineTap(context, sub, stats),
                 ),
-              ],
+              ),
             ),
-          ),
-        );
-      },
+
+            const SliverToBoxAdapter(child: SizedBox(height: 32)),
+          ],
+        ),
+      ),
     );
   }
 }
