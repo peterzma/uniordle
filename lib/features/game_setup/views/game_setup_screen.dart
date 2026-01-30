@@ -54,17 +54,18 @@ class _GameSetupScreenState extends State<GameSetupScreen> {
           ),
           child: Column(
             children: [
-              GameSetupHero(discipline: widget.discipline),
               Expanded(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    GameSetupHero(discipline: widget.discipline),
+                    const SizedBox(height: 24),
                     WordLengthSelector(
                       value: _wordLength, 
                       onChanged: (v) => setState(() => _wordLength = v),
                       discipline: widget.discipline,
                     ),
-                    const SizedBox(height: 12),
+                    const SizedBox(height: 24),
                     DifficultySelector(
                       value: _difficulty, 
                       onChanged: (v) => setState(() => _difficulty = v),

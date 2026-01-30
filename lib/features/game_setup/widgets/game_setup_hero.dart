@@ -15,7 +15,6 @@ class GameSetupHero extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        const SizedBox(height: 16),
         Container(
           width: 96,
           height: 96,
@@ -29,12 +28,11 @@ class GameSetupHero extends StatelessWidget {
             size: 48,
           ),
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 8),
         Text(
           discipline.name,
           style: AppFonts.displayLarge,
         ),
-        const SizedBox(height: 8),
         Text(
           'GAME SETTINGS',
           style: AppFonts.labelLarge.copyWith(color: discipline.color),

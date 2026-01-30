@@ -1,5 +1,5 @@
-import 'package:uniordle/features/home/models/discipline.dart';
-import 'package:uniordle/shared/exports/game_setup_exports.dart';
+import 'package:auto_size_text/auto_size_text.dart';
+import 'package:uniordle/shared/exports/app_exports.dart';
 import 'package:uniordle/shared/buttons/select_button_wrapper.dart';
 
 class WordLengthSelector extends StatelessWidget {
@@ -16,14 +16,14 @@ class WordLengthSelector extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool isNarrow = AppLayout.mobileMode(context);
     return Column(
       children: [
-        const SizedBox(height: 32),
         Text(
           'WORD LENGTH',
           style: AppFonts.displayMedium,
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 12),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [5, 6, 7].map((len) {
@@ -33,7 +33,7 @@ class WordLengthSelector extends StatelessWidget {
                 : AppColors.surfaceVariant;
             return Expanded(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                padding: EdgeInsets.symmetric(horizontal: 6.0),
                 child: SelectButtonWrapper(
                   onTap: () => onChanged(len),
                   soundType: SoundType.settings,
@@ -43,29 +43,22 @@ class WordLengthSelector extends StatelessWidget {
                   child: AspectRatio(
                     aspectRatio: 1,
                     child: AnimatedContainer(
-                      duration: const Duration(milliseconds: 200),
+                      duration: const Duration(milliseconds: 300),
                       curve: Curves.easeInOut,
                       decoration: BoxDecoration(
                         color: active ? discipline.color : AppColors.surfaceVariant,
                         borderRadius: BorderRadius.circular(36),
-                        border: Border.all(
-                          color: active 
-                              ? discipline.color 
-                              : AppColors.surfaceVariant,
-                          width: 1,
-                        ),
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
+                          AutoSizeText(
                             '$len',
                             style: active 
                             ? AppFonts.displayMedium.copyWith(fontWeight: FontWeight.w900)
                             : AppFonts.displayMedium,
                           ),
-                          const SizedBox(height: 2),
-                          Text(
+                          AutoSizeText(
                             'LETTERS',
                             style: active 
                             ? AppFonts.labelMedium.copyWith(color: AppColors.onSurface, fontWeight: FontWeight.w600)
