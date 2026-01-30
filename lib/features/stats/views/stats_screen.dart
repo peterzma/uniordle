@@ -2,6 +2,7 @@ import 'package:uniordle/features/stats/widgets/academic.dart/academic_history.d
 import 'package:uniordle/features/stats/widgets/mode_analytics_chart.dart';
 import 'package:uniordle/shared/exports/end_game_exports.dart';
 import 'package:uniordle/shared/exports/stats_exports.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 
 class StatsScreen extends StatelessWidget {
 
@@ -27,7 +28,7 @@ class StatsScreen extends StatelessWidget {
               Center(
                 child: Column(
                   children: [
-                    Text("Academic Performance", style: AppFonts.displayLarge),
+                    AutoSizeText("Academic Performance", style: AppFonts.displayLarge, maxLines: 1),
                     const SizedBox(height: AppLayout.titleToSubtitle),
                     Text("Your learning journey analytics", textAlign: TextAlign.center, style: AppFonts.labelMedium),
                     const SizedBox(height: 12),

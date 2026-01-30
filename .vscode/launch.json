@@ -1,11 +1,11 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "Uniordle",
-      "request": "launch",
-      "type": "dart",
-      "preLaunchTask": "Run All Tests"
-    }
-  ]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Uniordle",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart"
+        }
+    ]
 }

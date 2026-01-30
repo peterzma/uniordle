@@ -52,7 +52,7 @@ class ProfileScreen extends StatelessWidget {
                   children: [
                     Expanded(
                       child: SummaryCard(
-                        label: "Discipline Bonus",
+                        label: "Major\nBonus",
                         value: "+$dBonus%",
                         icon: LucideIcons.graduationCap,
                         iconColor: dBonus > 0 ? AppColors.correctColor : AppColors.onSurfaceVariant,
@@ -62,7 +62,7 @@ class ProfileScreen extends StatelessWidget {
 
                     Expanded(
                       child: SummaryCard(
-                        label: "Total Merit",
+                        label: "Total\nMerit",
                         value: '${stats.merit}',
                         icon: AppIcons.merits,
                         iconColor: AppColors.accent,
@@ -72,7 +72,7 @@ class ProfileScreen extends StatelessWidget {
 
                     Expanded(
                       child: SummaryCard(
-                        label: "Rank Bonus",
+                        label: "Rank\nBonus",
                         value: "+$rBonus%",
                         icon: LucideIcons.award,
                         iconColor: rBonus > 0 ? Colors.orange : AppColors.onSurfaceVariant,

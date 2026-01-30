@@ -21,22 +21,22 @@ class DisciplinesData {
   }
 
   static List<Discipline> getSortedDisciplines(List<String> unlockedIds) {
-  List<Discipline> sortedList = List.from(all);
+    List<Discipline> sortedList = List.from(all);
 
-  sortedList.sort((a, b) {
-    bool isAUnlocked = unlockedIds.contains(a.id);
-    bool isBUnlocked = unlockedIds.contains(b.id);
+    sortedList.sort((a, b) {
+      bool isAUnlocked = unlockedIds.contains(a.id);
+      bool isBUnlocked = unlockedIds.contains(b.id);
 
-    // Sort by "Lockedness"
-    if (isAUnlocked && !isBUnlocked) return -1;
-    if (!isAUnlocked && isBUnlocked) return 1;
+      // Sort by "Lockedness"
+      if (isAUnlocked && !isBUnlocked) return -1;
+      if (!isAUnlocked && isBUnlocked) return 1;
 
-    // Sort Alphabetically
-    return a.name.compareTo(b.name);
-  });
+      // Sort Alphabetically
+      return a.name.compareTo(b.name);
+    });
 
-  return sortedList;
-}
+    return sortedList;
+  }
 
   static final List<Discipline> all = [
     Discipline(

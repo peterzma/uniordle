@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:uniordle/shared/exports/profile_exports.dart';
 
 class SummaryCard extends StatelessWidget {
@@ -14,27 +15,38 @@ class SummaryCard extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 24),
-      decoration: BoxDecoration(
-        color: AppColors.surfaceVariant, 
-        borderRadius: BorderRadius.circular(24),
-      ),
-      child: Column(
-        children: [
-          Icon(icon, color: iconColor, size: 28),
-          const SizedBox(height: 8),
-          Text(
-            label.toUpperCase(), 
-            style: AppFonts.labelMedium
+Widget build(BuildContext context) {
+  return Container(
+    height: 140,
+    padding: const EdgeInsets.all(12),
+    decoration: BoxDecoration(
+      color: AppColors.surfaceVariant, 
+      borderRadius: BorderRadius.circular(24),
+    ),
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Icon(icon, color: iconColor, size: 28),
+        const SizedBox(height: 8),
+        SizedBox(
+          height: 40,
+          child: Center(
+            child: AutoSizeText(
+              label.toUpperCase(),
+              style: AppFonts.labelMedium,
+              textAlign: TextAlign.center,
+              maxLines: 2,
+              minFontSize: 8,
+            ),
           ),
-          Text(
-            value, 
-            style: AppFonts.headline
-          ),
-        ],
-      ),
-    );
-  }
+        ),
+        AutoSizeText(
+          value,
+          style: AppFonts.headline,
+          maxLines: 1,
+        ),
+      ],
+    ),
+  );
+}
 }

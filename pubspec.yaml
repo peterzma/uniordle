@@ -19,6 +19,7 @@ dependencies:
   flutter_soloud: ^3.4.9
   shared_preferences: ^2.5.4
   url_launcher: ^6.3.2
+  auto_size_text: ^3.0.0
   
 
 dev_dependencies:
