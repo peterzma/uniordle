@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
           HomeHero(stats: stats),
           const SizedBox(height: AppLayout.badgeToContent),
           DisciplineGrid(
-            crossAxisCount: 2,
+            isSmall: false,
             disciplines: disciplines,
             unlockedIds: stats.unlockedIds,
             onSubjectTap: (sub) => _onDisciplineTap(context, sub, stats),
@@ -75,7 +75,7 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               sliver: SliverToBoxAdapter(
                 child: DisciplineGrid(
-                  crossAxisCount: 1,
+                  isSmall: true,
                   disciplines: disciplines,
                   unlockedIds: stats.unlockedIds,
                   onSubjectTap: (sub) => _onDisciplineTap(context, sub, stats),
