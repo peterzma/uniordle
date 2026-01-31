@@ -103,4 +103,17 @@ extension ResponsiveLayout on BuildContext {
       overflow: TextOverflow.ellipsis,
     );
   }
+
+  Widget autoIcon(
+    IconData icon, {
+    double size = 24,
+    double reduction = 4,
+    Color? color,
+  }) {
+    return Icon(
+      icon,
+      color: color,
+      size: responsive(size - reduction, size),
+    );
+  }
 }

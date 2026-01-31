@@ -19,7 +19,7 @@ class SettingsToggleTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      padding: EdgeInsets.all(context.r(16)),
       height: AppLayout.settingsTileHeight,
       decoration: BoxDecoration(
         color: AppColors.surfaceVariant,
@@ -31,9 +31,9 @@ class SettingsToggleTile extends StatelessWidget {
         children: [
           Row(
             children: [
-              Icon(icon, color: AppColors.onSurfaceVariant, size: 24),
+              context.autoIcon(icon, color: AppColors.onSurfaceVariant),
               const SizedBox(width: 12),
-              Text(label, style: AppFonts.labelLarge),
+              context.autoText(label, style: AppFonts.labelLarge),
             ],
           ),
           Transform.scale(

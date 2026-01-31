@@ -10,7 +10,7 @@ class SettingsHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 8, bottom: 8, top: 24),
+      padding: const EdgeInsets.symmetric(vertical: 12),
       child: Text(
         title.toUpperCase(),
         style: AppFonts.labelMedium
