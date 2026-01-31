@@ -73,13 +73,13 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
             color: statusColor,
             size: AppLayout.dialogIcon,
           ),
-          const SizedBox(height: 8),
+          SizedBox(height: context.r(8)),
       
           Text(
             canAfford ? "Enroll in ${widget.major.name}?" : "LOCKED",
             style: AppFonts.displayMedium,
           ),
-          const SizedBox(height: AppLayout.titleToSubtitle),
+          SizedBox(height: context.r(16)),
           
           Text(
             canAfford 
@@ -89,10 +89,10 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
             style: AppFonts.labelLarge,
           ),
           
-          const SizedBox(height: 8),
+          SizedBox(height: context.r(16)),
 
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             decoration: BoxDecoration(
               color: canAfford 
                   ? widget.major.color.withValues(alpha: 0.1)
@@ -107,7 +107,7 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
                   size: 16, 
                   color: canAfford ? widget.major.color : AppColors.onSurfaceVariant,
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: 4),
                 Text(
                   bonusText,
                   style: AppFonts.labelSmall.copyWith(
@@ -119,12 +119,12 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
             ),
           ),
 
-          const SizedBox(height: 8),
+          SizedBox(height: context.r(16)),
           
           Column(
             children: [
               if (!canAfford) ...[
-                Text(
+                context.autoText(
                   "(Credit available at Level ${widget.nextLevel})",
                   style: AppFonts.labelMedium,
                 ),
@@ -132,7 +132,7 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
             ],
           ),
       
-          const SizedBox(height: AppLayout.size2XL),
+          SizedBox(height: context.r(32)),
       
           Row(
             children: [
