@@ -1,3 +1,4 @@
+import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:uniordle/shared/exports/profile_exports.dart';
 
 class LevelCard extends StatelessWidget {
@@ -17,10 +18,10 @@ class LevelCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(24),
+      padding: EdgeInsets.all(AppLayout.cardPadding),
       decoration: BoxDecoration(
         color: AppColors.surfaceVariant, 
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(AppLayout.cardRounding),
       ),
       child: Column(
         children: [
@@ -32,7 +33,7 @@ class LevelCard extends StatelessWidget {
             ],
           ),
           
-          const SizedBox(height: 16),
+          SizedBox(height: context.r(16)),
           
           // The Progress Bar
           ClipRRect(
@@ -97,8 +98,14 @@ class _LevelInfo extends StatelessWidget {
     return Column(
       crossAxisAlignment: crossAlign,
       children: [
-        Text(label, style: AppFonts.labelSmall.copyWith(color: Colors.grey)),
-        Text(level, style: AppFonts.headline.copyWith(fontWeight: FontWeight.bold)),
+        context.autoText(
+          label,
+          style: AppFonts.labelSmall.copyWith(color: Colors.grey),
+        ),
+        context.autoText(
+          level,
+          style: AppFonts.headline,
+        ),
       ],
     );
   }

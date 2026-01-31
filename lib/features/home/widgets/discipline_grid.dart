@@ -26,7 +26,7 @@ class DisciplineGrid extends StatelessWidget {
       padding: EdgeInsets.zero,
       physics: const NeverScrollableScrollPhysics(),
       itemCount: disciplines.length,
-      separatorBuilder: (_, __) => const SizedBox(height: 12),
+      separatorBuilder: (_, _) => const SizedBox(height: 12),
       itemBuilder: (context, index) => SizedBox(
         height: 80,
         child: _buildTile(disciplines[index]),

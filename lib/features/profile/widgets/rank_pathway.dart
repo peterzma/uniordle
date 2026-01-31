@@ -26,7 +26,7 @@ class RankPathway extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text("Academic Pathway", style: AppFonts.headline),
+        Text("Academic Pathway", style: AppFonts.labelLarge),
 
         const SizedBox(height: 8),
 

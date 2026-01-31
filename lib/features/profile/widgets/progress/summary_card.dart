@@ -1,5 +1,4 @@
-import 'package:auto_size_text/auto_size_text.dart';
-import 'package:uniordle/shared/exports/profile_exports.dart';
+import 'package:uniordle/shared/exports/game_exports.dart';
 
 class SummaryCard extends StatelessWidget {
   final String label, value;
@@ -17,8 +16,7 @@ class SummaryCard extends StatelessWidget {
   @override
 Widget build(BuildContext context) {
   return Container(
-    height: 140,
-    padding: const EdgeInsets.all(12),
+    height: context.responsive(120, 160),
     decoration: BoxDecoration(
       color: AppColors.surfaceVariant, 
       borderRadius: BorderRadius.circular(24),
@@ -26,24 +24,18 @@ Widget build(BuildContext context) {
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Icon(icon, color: iconColor, size: 28),
-        const SizedBox(height: 8),
-        SizedBox(
-          height: 40,
-          child: Center(
-            child: AutoSizeText(
-              label.toUpperCase(),
-              style: AppFonts.labelMedium,
-              textAlign: TextAlign.center,
-              maxLines: 2,
-              minFontSize: 8,
-            ),
+        Icon(icon, color: iconColor, size: context.responsive(24, 32)),
+        SizedBox(height: 8),
+        Center(
+          child: context.autoText(
+            label.toUpperCase(),
+            style: AppFonts.labelMedium,
+            textAlign: TextAlign.center,
           ),
         ),
-        AutoSizeText(
+        context.autoText(
           value,
           style: AppFonts.headline,
-          maxLines: 1,
         ),
       ],
     ),

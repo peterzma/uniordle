@@ -29,6 +29,8 @@ abstract class AppLayout {
   // Common layout constants
   static const double marginHeight = 64.0; // header/footers
   static const double pagePadding = 24.0;
+  static const double cardPadding = 24.0;
+  static const double cardRounding = 24.0;
 
   static const double settingsTileHeight = 60.0;
   static const int flipSpeedMs = 300;
@@ -78,20 +80,24 @@ extension ResponsiveLayout on BuildContext {
   double r(double value) => AppLayout.lerp(this, value / 2, value);
   
   Widget autoText(
-  String text, {
-  required TextStyle style,
-  required double minSize,
-  double? maxSize,
-  int maxLines = 1,
+    String text, {
+    required TextStyle style,
+    double? minSize, 
+    double? maxSize,
+    int maxLines = 1,
+    TextAlign textAlign = TextAlign.center,
   }) {
     final double effectiveMax = maxSize ?? style.fontSize ?? 14;
+    
+    final double effectiveMin = minSize ?? effectiveMax - 2;
 
     return AutoSizeText(
       text,
+      textAlign: textAlign,
       style: style.copyWith(
-        fontSize: responsive(minSize, effectiveMax),
+        fontSize: responsive(effectiveMin, effectiveMax),
       ),
-      minFontSize: minSize, 
+      minFontSize: effectiveMin, 
       maxLines: maxLines,
       overflow: TextOverflow.ellipsis,
     );

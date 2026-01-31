@@ -39,12 +39,10 @@ class ProfileHeader extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 8),
             Text(
               "Temp Name",
-              style: AppFonts.displayMedium
+              style: AppFonts.displayLarge
             ),
-            const SizedBox(height: 8),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

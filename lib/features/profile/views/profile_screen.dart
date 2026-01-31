@@ -20,8 +20,6 @@ class ProfileScreen extends StatelessWidget {
           padding: const EdgeInsets.all(AppLayout.pagePadding),
           child: Column(
             children: [
-              const SizedBox(height: 16),
-
               const ProfileHeader(),
 
               const SizedBox(height: 16),
@@ -30,7 +28,7 @@ class ProfileScreen extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   "Academic Progress",
-                  style: AppFonts.headline,
+                  style: AppFonts.labelLarge,
                 ),
               ),
         
@@ -43,8 +41,7 @@ class ProfileScreen extends StatelessWidget {
                 progressLabel: stats.progressText,
               ),
         
-              const SizedBox(height: 16),
-        
+              SizedBox(height: context.r(16)),
 
               IntrinsicHeight(
                 child: Row(
@@ -52,27 +49,28 @@ class ProfileScreen extends StatelessWidget {
                   children: [
                     Expanded(
                       child: SummaryCard(
-                        label: "Major\nBonus",
+                        label: "Major Bonus",
                         value: "+$dBonus%",
                         icon: LucideIcons.graduationCap,
                         iconColor: dBonus > 0 ? AppColors.correctColor : AppColors.onSurfaceVariant,
                       ),
                     ),
-                    const SizedBox(width: 12),
+                    SizedBox(width: context.r(16)),
 
                     Expanded(
                       child: SummaryCard(
-                        label: "Total\nMerit",
+                        label: "Total Merit",
                         value: '${stats.merit}',
                         icon: AppIcons.merits,
                         iconColor: AppColors.accent,
                       ),
                     ),
-                    const SizedBox(width: 12),
+
+                    SizedBox(width: context.r(16)),
 
                     Expanded(
                       child: SummaryCard(
-                        label: "Rank\nBonus",
+                        label: "Rank Bonus",
                         value: "+$rBonus%",
                         icon: LucideIcons.award,
                         iconColor: rBonus > 0 ? Colors.orange : AppColors.onSurfaceVariant,
@@ -82,11 +80,9 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
         
-              const SizedBox(height: 16),
+              SizedBox(height: context.r(16)),
 
               RankPathway(currentLevel: stats.currentLevel),
-
-              const SizedBox(height: 16),
             ],
           ),
         );
