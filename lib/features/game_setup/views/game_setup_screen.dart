@@ -43,6 +43,7 @@ class _GameSetupScreenState extends State<GameSetupScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final bool mobileMode = AppLayout.mobileMode(context);
     return Scaffold(
       backgroundColor: AppColors.surface,
       appBar: const GameSetupHeader(),
@@ -55,23 +56,34 @@ class _GameSetupScreenState extends State<GameSetupScreen> {
           child: Column(
             children: [
               Expanded(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    GameSetupHero(discipline: widget.discipline),
-                    const SizedBox(height: 24),
-                    WordLengthSelector(
-                      value: _wordLength, 
-                      onChanged: (v) => setState(() => _wordLength = v),
-                      discipline: widget.discipline,
+                child: LayoutBuilder(
+                  builder: (context, constraints) {
+                  return SingleChildScrollView(
+                    child: ConstrainedBox(
+                      constraints: BoxConstraints(
+                        minHeight: constraints.maxHeight, 
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          GameSetupHero(discipline: widget.discipline),
+                          SizedBox(height: mobileMode ? 12 : 48),
+                          WordLengthSelector(
+                            value: _wordLength, 
+                            onChanged: (v) => setState(() => _wordLength = v),
+                            discipline: widget.discipline,
+                          ),
+                          SizedBox(height: mobileMode ? 24 : 48),
+                          DifficultySelector(
+                            value: _difficulty, 
+                            onChanged: (v) => setState(() => _difficulty = v),
+                            discipline: widget.discipline,
+                          ),
+                        ],
+                      ),
                     ),
-                    const SizedBox(height: 24),
-                    DifficultySelector(
-                      value: _difficulty, 
-                      onChanged: (v) => setState(() => _difficulty = v),
-                      discipline: widget.discipline,
-                    ),
-                  ],
+                  );
+                  }
                 ),
               ),
 

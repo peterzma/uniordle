@@ -9,7 +9,7 @@ abstract class AppLayout {
 
   // Height constraints (flexible)
   static const double minAppHeight = 640.0;
-  static const double startAppHeight = 850.0;
+  static const double startAppHeight = 767.0;
 
   // Dialog constraints
   static const double maxDialogWidth = 480.0;
