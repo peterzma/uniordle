@@ -29,7 +29,7 @@ class StatsScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     context.autoText("Performance", style: AppFonts.displayLarge, maxLines: 1),
-                    SizedBox(height: context.r(8)),
+                    SizedBox(height: context.r(4)),
                     context.autoText("Your learning journey analytics", textAlign: TextAlign.center, style: AppFonts.labelMedium),
                     SizedBox(height: context.r(8)),
                   ],
