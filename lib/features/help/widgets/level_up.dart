@@ -40,10 +40,10 @@ class LevelUp extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
         ),
-        const SizedBox(height: 16),
+        SizedBox(height: context.r(24)),
         
         Padding(
-          padding: const EdgeInsets.only(left: 30.0),
+          padding: EdgeInsets.symmetric(horizontal: context.r(32)),
           child: Column(
             children: [
               InstructionRow(
@@ -52,14 +52,14 @@ class LevelUp extends StatelessWidget {
                 title: 'Earn Merits',
                 subtitle: 'FOR EVERY CORRECT GUESS',
               ),
-              const SizedBox(height: 32),
+              SizedBox(height: context.r(32)),
               InstructionRow(
                 leading: Icon(LucideIcons.trendingUp, color: Colors.green, size: 24),
                 color: AppColors.surfaceVariant,
                 title: 'Customise',
                 subtitle: 'HARDER SETTINGS = MORE MERITS',
               ),
-              const SizedBox(height: 32),
+              SizedBox(height: context.r(32)),
               InstructionRow(
                 leading: Icon(AppIcons.credits, color: AppColors.accent3, size: 24),
                 color: AppColors.surfaceVariant,

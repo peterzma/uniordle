@@ -16,7 +16,7 @@ abstract class AppLayout {
   static const double maxDialogWidth = 480.0;
   static const double maxDialogHeight = 620.0;
   
-// Base Scale Units
+// --- Base Scale Units ---
   static const double size3XL = 64.0; 
   static const double size2XL = 32.0; 
   static const double sizeXL  = 24.0; 
@@ -34,6 +34,7 @@ abstract class AppLayout {
   static const double dialogIcon = 64.0;
   static const double titleToSubtitle = 8.0;
   static const double gapBetweenButtons = 16.0;
+  static const double gapToButton = 32.0;
   static const double badgeToContent = 16.0;
 
   /// Returns the actual width of the window
@@ -70,6 +71,10 @@ abstract class AppLayout {
 extension ResponsiveLayout on BuildContext {
   /// Shorthand for AppLayout.lerp: context.responsive(16, 32)
   double responsive(double min, double max) => AppLayout.lerp(this, min, max);
+
+  /// Automatically scales any number by 50% on the smallest mobile width.
+  /// Usage: context.r(32) -> returns 16 on mobile, 32 on desktop.
+  double r(double value) => AppLayout.lerp(this, value / 2, value);
   
   Widget autoText(
   String text, {

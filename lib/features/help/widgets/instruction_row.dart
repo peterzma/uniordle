@@ -43,7 +43,7 @@ class InstructionRow extends StatelessWidget {
               context.autoText(
                 subtitle, 
                 style: AppFonts.labelMedium, 
-                maxLines: 1, 
+                maxLines: 2, 
                 minSize: 10
               ),
             ]

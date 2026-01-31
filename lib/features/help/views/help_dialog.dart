@@ -32,7 +32,7 @@ class _HelpDialogState extends State<HelpDialog> {
         mainAxisSize: MainAxisSize.min,
         children: [
           SizedBox(
-            height: 320,
+            height: context.responsive(280, 320),
             child: PageView(
               controller: _pageController,
               physics: const BouncingScrollPhysics(),
@@ -49,13 +49,12 @@ class _HelpDialogState extends State<HelpDialog> {
             totalPages: _totalPages,
             currentPage: _currentPage,
           ),
-          const SizedBox(height: AppLayout.size2XL),
+          SizedBox(height: 16),
           PrimaryButton(
             label: 'Got it!',
             color: AppColors.accent,
             onPressed: () => Navigator.pop(context),
           ),
-          const SizedBox(height: 8),
         ],
       ),
     );
@@ -78,8 +77,9 @@ class NavHitArea extends StatelessWidget {
       onTap: onTap,
       behavior: HitTestBehavior.opaque,
       child: Container(
-        width: 50, 
-        height: 310, 
+        width: context.responsive(26, 50), 
+        height: context.responsive(260, 310), 
+        color: Colors.red,
         alignment: Alignment.center,
         child: Transform.translate(
           offset: const Offset(0, -20),

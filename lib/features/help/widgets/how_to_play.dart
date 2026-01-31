@@ -12,38 +12,39 @@ class HowToPlay extends StatelessWidget {
         Text('HOW TO PLAY', style: AppFonts.headline, textAlign: TextAlign.center),
         const SizedBox(height: AppLayout.titleToSubtitle),
         ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 360),
+          constraints: const BoxConstraints(maxWidth: AppLayout.minAppWidth),
           child: Text(
             'Choose a starting discipline, customise your game settings and then guess the word!',
             style: AppFonts.labelMedium.copyWith(color: AppColors.onSurfaceVariant),
             textAlign: TextAlign.center,
           ),
         ),
-        const SizedBox(height: 16),
+
+        SizedBox(height: context.r(24)),
         
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30.0),
+          padding: EdgeInsets.symmetric(horizontal: context.r(32)),
           child: Column(
             children: [
               InstructionRow(
                 leading: Text('U', style: AppFonts.displayMedium),
                 color: AppColors.correctColor,
                 title: 'Correct Letter',
-                subtitle: 'Right spot',
+                subtitle: 'RIGHT SPOT',
               ),
-              SizedBox(height: context.responsive(16, 32)),
+              SizedBox(height: context.r(32)),
               InstructionRow(
                 leading: Text('N', style: AppFonts.displayMedium), 
                 color: AppColors.inWordColor, 
                 title: 'Correct Letter', 
-                subtitle: 'Wrong spot'
+                subtitle: 'WRONG SPOT'
               ),
-              SizedBox(height: context.responsive(16, 32)),
+              SizedBox(height: context.r(32)),
               InstructionRow(
                 leading: Text('I', style: AppFonts.displayMedium), 
                 color: AppColors.notInWordColor, 
                 title: 'Letter not in word', 
-                subtitle: 'Not in any spot'
+                subtitle: 'NO SPOT'
               ),
             ]
           ),

@@ -21,20 +21,20 @@ class ReachTop extends StatelessWidget {
           style: AppFonts.labelMedium,
           textAlign: TextAlign.center,
         ),
-        const SizedBox(height: 24),
+        SizedBox(height: context.r(16)),
         
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30),
+          padding: EdgeInsets.symmetric(horizontal: context.r(32)),
           child: Column(
             children: [
-              _buildRankRow(ranks[0], color: AppColors.accent),
+              _buildRankRow(context, ranks[0], color: AppColors.accent),
               const Divider(color: AppColors.outline, height: 1),
 
-              _buildRankRow(ranks[1], color: AppColors.onSurface),
+              _buildRankRow(context, ranks[1], color: AppColors.onSurface),
               const Divider(color: AppColors.outline, height: 1),
 
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8),
+                padding: EdgeInsets.symmetric(vertical: context.responsive(0, 8)),
                 child: Text(
                   '.\n.\n.',
                   style: AppFonts.headline.copyWith(
@@ -45,7 +45,7 @@ class ReachTop extends StatelessWidget {
                 ),
               ),
 
-              _buildRankRow(ranks[2], color: AppColors.onSurfaceVariant, isBold: true),
+              _buildRankRow(context, ranks[2], color: AppColors.onSurfaceVariant, isBold: true),
               const Divider(color: AppColors.outline, height: 1),
             ],
           ),
@@ -54,9 +54,9 @@ class ReachTop extends StatelessWidget {
     );
   }
 
-  Widget _buildRankRow(Map<String, String> rank, {required Color color, bool isBold = false}) {
+  Widget _buildRankRow(BuildContext context, Map<String, String> rank, {required Color color, bool isBold = false}) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 12.0),
+      padding: EdgeInsets.symmetric(vertical: context.r(16)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
