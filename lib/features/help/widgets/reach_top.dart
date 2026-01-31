@@ -14,12 +14,13 @@ class ReachTop extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text('REACH THE TOP', style: AppFonts.headline, textAlign: TextAlign.center),
+        context.autoText('REACH THE TOP', style: AppFonts.headline, textAlign: TextAlign.center),
         const SizedBox(height: AppLayout.titleToSubtitle),
-        Text(
-          'Earn a new academic rank every 10 levels and reach the end. Will you be able to do it?',
+        context.autoText(
+          'Earn new academic ranks every 10 levels and reach the end. Can you do it?',
           style: AppFonts.labelMedium,
           textAlign: TextAlign.center,
+          maxLines: 2
         ),
         SizedBox(height: context.r(16)),
         
@@ -34,7 +35,7 @@ class ReachTop extends StatelessWidget {
               const Divider(color: AppColors.outline, height: 1),
 
               Padding(
-                padding: EdgeInsets.symmetric(vertical: context.responsive(0, 8)),
+                padding: EdgeInsets.symmetric(vertical: context.responsive(0, 4)),
                 child: Text(
                   '.\n.\n.',
                   style: AppFonts.headline.copyWith(

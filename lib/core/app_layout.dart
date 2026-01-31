@@ -119,4 +119,29 @@ extension ResponsiveLayout on BuildContext {
       size: responsive(size - reduction, size),
     );
   }
+
+  Widget autoRichText(
+    List<InlineSpan> children, {
+    required TextStyle style,
+    double? minSize,
+    double? maxSize,
+    double reduction = 2,
+    TextAlign textAlign = TextAlign.center,
+    int? maxLines,
+  }) {
+    final double effectiveMax = maxSize ?? style.fontSize ?? 14;
+    final double effectiveMin = minSize ?? (effectiveMax - reduction);
+
+    final double currentFontSize = responsive(effectiveMin, effectiveMax);
+
+    return RichText(
+      textAlign: textAlign,
+      maxLines: maxLines,
+      overflow: maxLines != null ? TextOverflow.ellipsis : TextOverflow.clip,
+      text: TextSpan(
+        children: children,
+        style: style.copyWith(fontSize: currentFontSize),
+      ),
+    );
+  }
 }

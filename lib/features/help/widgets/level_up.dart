@@ -10,36 +10,18 @@ class LevelUp extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text('LEVEL UP & UNLOCK', style: AppFonts.headline, textAlign: TextAlign.center),
-        const SizedBox(height: AppLayout.titleToSubtitle),
+        context.autoText('LEVEL UP & UNLOCK', style: AppFonts.headline, textAlign: TextAlign.center),
+        SizedBox(height: context.r(8)),
         ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 360),
-          child: Text.rich(
-            TextSpan(
-              children: [
-                const TextSpan(text: 'Guess words correctly to earn '),
-                TextSpan(
-                  text: 'merits',
-                  style: TextStyle(
-                    color: AppColors.accent,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const TextSpan(text: '. Level up with merits, and gain a '),
-                TextSpan(
-                  text: 'credit ',
-                  style: TextStyle(
-                    color: AppColors.accent3,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const TextSpan(text: 'every five levels.'),
-              ],
-            ),
-            style: AppFonts.labelMedium,
+          child: context.autoText(
+            'Guess words to earn merits. Level up with merits, and gain credits.',
+            style: AppFonts.labelMedium.copyWith(color: AppColors.onSurfaceVariant),
             textAlign: TextAlign.center,
+            maxLines: 2,
           ),
         ),
+
         SizedBox(height: context.r(24)),
         
         Padding(
@@ -47,24 +29,24 @@ class LevelUp extends StatelessWidget {
           child: Column(
             children: [
               InstructionRow(
-                leading: Icon(AppIcons.merits, color: AppColors.accent, size: 24),
+                leading: context.autoIcon(AppIcons.merits, color: AppColors.accent, size: 24),
                 color: AppColors.surfaceVariant,
                 title: 'Earn Merits',
-                subtitle: 'FOR EVERY CORRECT GUESS',
+                subtitle: 'EVERY CORRECT GUESS',
               ),
               SizedBox(height: context.r(32)),
               InstructionRow(
-                leading: Icon(LucideIcons.trendingUp, color: Colors.green, size: 24),
+                leading: context.autoIcon(LucideIcons.trendingUp, color: Colors.green, size: 24),
                 color: AppColors.surfaceVariant,
-                title: 'Customise',
-                subtitle: 'HARDER SETTINGS = MORE MERITS',
+                title: 'Level Up',
+                subtitle: 'GAIN MERIT BONUSES',
               ),
               SizedBox(height: context.r(32)),
               InstructionRow(
-                leading: Icon(AppIcons.credits, color: AppColors.accent3, size: 24),
+                leading: context.autoIcon(AppIcons.credits, color: AppColors.accent3, size: 24),
                 color: AppColors.surfaceVariant,
                 title: 'Use Credits',
-                subtitle: 'UNLOCK NEW DISCIPLINES',
+                subtitle: 'UNLOCK NEW MAJORS',
               ),
             ]
           ),

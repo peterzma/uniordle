@@ -9,14 +9,15 @@ class HowToPlay extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text('HOW TO PLAY', style: AppFonts.headline, textAlign: TextAlign.center),
-        const SizedBox(height: AppLayout.titleToSubtitle),
+        context.autoText('HOW TO PLAY', style: AppFonts.headline, textAlign: TextAlign.center),
+        SizedBox(height: context.r(8)),
         ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: AppLayout.minAppWidth),
-          child: Text(
+          child: context.autoText(
             'Choose a starting major, customise your game settings and then guess the word!',
             style: AppFonts.labelMedium.copyWith(color: AppColors.onSurfaceVariant),
             textAlign: TextAlign.center,
+            maxLines: 2,
           ),
         ),
 
@@ -43,7 +44,7 @@ class HowToPlay extends StatelessWidget {
               InstructionRow(
                 leading: Text('I', style: AppFonts.displayMedium), 
                 color: AppColors.notInWordColor, 
-                title: 'Letter not in word', 
+                title: 'Wrong Letter', 
                 subtitle: 'NO SPOT'
               ),
             ]

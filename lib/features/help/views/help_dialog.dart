@@ -32,7 +32,7 @@ class _HelpDialogState extends State<HelpDialog> {
         mainAxisSize: MainAxisSize.min,
         children: [
           SizedBox(
-            height: context.responsive(280, 320),
+            height: context.responsive(250, 320),
             child: PageView(
               controller: _pageController,
               physics: const BouncingScrollPhysics(),
@@ -77,11 +77,11 @@ class NavHitArea extends StatelessWidget {
       onTap: onTap,
       behavior: HitTestBehavior.opaque,
       child: Container(
-        width: context.responsive(26, 50), 
-        height: context.responsive(260, 300), 
+        width: context.responsive(40, 60), 
+        height: context.responsive(240, 300), 
         alignment: Alignment.center,
         child: Transform.translate(
-          offset: Offset(context.responsive(6, 0), context.responsive(0, -6)),
+          offset: Offset(0, context.responsive(-16, -8)),
           child: Icon(
             isLeft ? LucideIcons.chevronLeft : LucideIcons.chevronRight,
             color: AppColors.onSurfaceVariant,
