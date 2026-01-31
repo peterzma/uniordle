@@ -19,9 +19,9 @@ class DataResetService {
             style: AppFonts.labelMedium,
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height: AppLayout.size2XL),
+          SizedBox(height: context.r(32)),
           PrimaryButton(
-            label: 'YES, RESET EVERYTHING',
+            label: 'RESET EVERYTHING',
             color: Colors.red,
             onPressed: () => Navigator.pop(context, true),
           ),
@@ -43,7 +43,7 @@ class DataResetService {
         mainAxisSize: MainAxisSize.min,
         children: [
           const Icon(AppIcons.inProgressDeleteData2, size: AppLayout.dialogIcon, color: AppColors.accent2),
-          const SizedBox(height: 16),
+          SizedBox(height: context.r(8)),
           Text("ARE YOU CERTAIN?", style: AppFonts.headline),
           const SizedBox(height: AppLayout.titleToSubtitle),
           Text(
@@ -51,13 +51,13 @@ class DataResetService {
             style: AppFonts.labelMedium,
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height: AppLayout.size2XL),
+          SizedBox(height: context.r(32)),
           PrimaryButton(
-            label: 'I AM SURE, DELETE IT ALL',
+            label: 'I AM SURE',
             color: Colors.red,
             onPressed: () => Navigator.pop(context, true),
           ),
-          const SizedBox(height: 12),
+          SizedBox(height: context.r(8)),
           PrimaryButton(
             label: 'NEVERMIND',
             onPressed: () => Navigator.pop(context, false),
