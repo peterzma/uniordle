@@ -1,3 +1,4 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/features/home/widgets/unlocked_major_dialog.dart';
 import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:uniordle/shared/exports/help_exports.dart';
@@ -68,10 +69,18 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          MajorIcon(
-            iconName: canAfford ? widget.major.icon : 'lock',
-            color: statusColor,
-            size: AppLayout.dialogIcon,
+          Container(
+            width: context.responsive(60, 80),
+            height: context.responsive(60, 80),
+            decoration: BoxDecoration(
+              color: AppColors.surfaceVariant,
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: Icon(
+              IconMapper.getIcon(widget.major.icon),
+              color: statusColor,
+              size: context.r(60),
+            ),
           ),
           SizedBox(height: context.r(8)),
       
@@ -147,7 +156,7 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
                 child: WiggleButtonWrapper(
                   key: wiggleKey, 
                   child: PrimaryButton(
-                    label: "UNLOCK",
+                    label: "ENROLL",
                     color: buttonColor,
                     onPressed: () {
                       if (canAfford) {

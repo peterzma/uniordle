@@ -1,3 +1,4 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:uniordle/shared/exports/help_exports.dart';
 
@@ -13,23 +14,33 @@ class UnlockedMajorDialog extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          MajorIcon(
-            iconName: major.icon,
-            color: major.color,
-            size: AppLayout.dialogIcon * 1.2,
+          Container(
+            width: context.responsive(60, 80),
+            height: context.responsive(60, 80),
+            decoration: BoxDecoration(
+              color: AppColors.surfaceVariant,
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: Icon(
+              IconMapper.getIcon(major.icon),
+              color: major.color,
+              size: context.r(60),
+            ),
           ),
-          const SizedBox(height: 16),
-          Text(
+          SizedBox(height: context.r(8)),
+          context.autoText(
             "CONGRATULATIONS",
             style: AppFonts.displayMedium.copyWith(color: major.color),
+            reduction: 8,
           ),
-          const SizedBox(height: 12),
-          Text(
-            "You have officially enrolled in the\n${major.name} Department.",
+          SizedBox(height: context.r(16)),
+          context.autoText(
+            "You have officially enrolled in the ${major.name} Department.",
             textAlign: TextAlign.center,
             style: AppFonts.labelLarge,
+            maxLines: 2,
           ),
-          const SizedBox(height: AppLayout.size2XL),
+          SizedBox(height: context.r(32)),
           PrimaryButton(
             onPressed: () => Navigator.pop(context),
             label: "START STUDYING",
