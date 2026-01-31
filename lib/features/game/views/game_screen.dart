@@ -129,39 +129,42 @@ class _GameScreenState extends State<GameScreen> {
         appBar: GameHeader(
           onBack: _handleBack
         ),
-        body: Column(
-          children: [
-            Expanded(
-              child: Center(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: AppLayout.pagePadding),
-                  child: Board(
-                    board: _controller.board, 
-                    flipCardKeys: _controller.flipCardKeys
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(AppLayout.pagePadding),
+            child: Column(
+              children: [
+                Expanded(
+                  child: Center(
+                    child: Board(
+                      board: _controller.board, 
+                      flipCardKeys: _controller.flipCardKeys
+                    ),
                   ),
                 ),
-              ),
-            ),
-            SafeArea(
-              top: false,
-              child: Column(
-                children: [
-                  GameInfoBar(
-                    majorName: _majorName,
-                    yearLevel: _yearLevel,
-                    wordLength: _wordLength,
+                SafeArea(
+                  top: false,
+                  child: Column(
+                    children: [
+                      SizedBox(height: context.r(32)),
+                      GameInfoBar(
+                        majorName: _majorName,
+                        yearLevel: _yearLevel,
+                        wordLength: _wordLength,
+                      ),
+                      SizedBox(height: context.r(32)),
+                      Keyboard(
+                        onKeyTapped: _controller.addLetter,
+                        onDeleteTapped: _controller.removeLetter,
+                        onEnterTapped: _controller.submitWord,
+                        letters: _controller.keyboardLetters,
+                      ),
+                    ]
                   ),
-                  Keyboard(
-                    onKeyTapped: _controller.addLetter,
-                    onDeleteTapped: _controller.removeLetter,
-                    onEnterTapped: _controller.submitWord,
-                    letters: _controller.keyboardLetters,
-                  ),
-                  const SizedBox(height: 12),
-                ]
-              ),
+                ),
+              ],
             ),
-          ],
+          ),
         ),
       ),
     );

@@ -70,7 +70,9 @@ class _GameSetupScreenState extends State<GameSetupScreen> {
                           onChanged: (v) => setState(() => _wordLength = v),
                           major: widget.major,
                         ),
-                        SizedBox(height: context.responsive(32, 16)),
+
+                        SizedBox(height: context.responsive(64, 16)),
+
                         context.autoText(
                           'YEAR LEVEL',
                           style: AppFonts.displayMedium,

@@ -22,23 +22,20 @@ class GameInfoBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: IntrinsicWidth(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Expanded(child: InfoTag(label: majorName)),
-              const SizedBox(width: 8),
-              Expanded(child: InfoTag(label: '$wordLength LETTERS')),
-              const SizedBox(width: 8),
-              Expanded(
-                child: InfoTag(
-                  label: _attemptsLabel, 
-                  icon: const Icon(AppIcons.attempts, size: 12, color: AppColors.onSurfaceVariant),
-                ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Expanded(child: InfoTag(label: majorName)),
+            SizedBox(width: context.r(8)),
+            Expanded(child: InfoTag(label: '$wordLength LETTERS')),
+            SizedBox(width: context.r(8)),
+            Expanded(
+              child: InfoTag(
+                label: _attemptsLabel, 
+                icon: context.autoIcon(AppIcons.attempts, size: 14, color: AppColors.onSurfaceVariant, reduction: 2),
               ),
-            ],
-          ),
+            ),
+          ],
         )
       ),
     );
