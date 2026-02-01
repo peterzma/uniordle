@@ -1,7 +1,6 @@
 import 'package:uniordle/shared/exports/app_exports.dart';
 import 'package:uniordle/shared/exports/game_setup_exports.dart';
 import 'package:uniordle/features/home/models/major.dart';
-import 'package:uniordle/core/app_icons.dart';
 
 class GameSetupHero extends StatelessWidget {
   final Major major;
@@ -16,18 +15,12 @@ class GameSetupHero extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Container(
-          width: 80,
-          height: 80,
-          decoration: BoxDecoration(
-            color: AppColors.surfaceVariant,
-            borderRadius: BorderRadius.circular(32),
-          ),
-          child: Icon(
-            IconMapper.getIcon(major.icon),
-            color: major.color,
-            size: 48,
-          ),
+        MajorIcon(
+          iconName: major.icon,
+          color: major.color,
+          dimension: 80,
+          iconSize: 48,
+          rounding: 32,
         ),
         SizedBox(height: context.r(8)),
         context.autoText(

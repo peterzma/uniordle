@@ -76,12 +76,13 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
 
   @override
   Widget build(BuildContext context) {
+    final double tileSize = context.responsive(60, 64);
     return ScaleTransition(
       scale: _scale,
       child: Container(
         margin: EdgeInsets.all(context.r(4)),
-        height: context.responsive(60, 64),
-        width: context.responsive(60, 64),
+        height: tileSize,
+        width: tileSize,
         alignment: Alignment.center,
         decoration: BoxDecoration(
           color: widget.letter.val.isEmpty

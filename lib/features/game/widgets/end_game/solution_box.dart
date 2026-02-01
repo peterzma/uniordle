@@ -12,11 +12,8 @@ class SolutionBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-      ),
       child: Column(
         children: [
           Text(
@@ -32,7 +29,7 @@ class SolutionBox extends StatelessWidget {
                 color: AppColors.outline,
                 width: 2
               ),
-              borderRadius: BorderRadius.circular(12),
+              borderRadius: BorderRadius.circular(16),
             ),
             child: FittedBox(
               fit: BoxFit.scaleDown,

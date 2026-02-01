@@ -5,27 +5,34 @@ import 'package:uniordle/core/app_icons.dart';
 class MajorIcon extends StatelessWidget {
   final String iconName;
   final Color? color;
-  final double size;
+  final double iconSize;
+  final double dimension;
+  final double rounding;
 
   const MajorIcon({
-    super.key, 
-    required this.iconName, 
+    super.key,
+    required this.iconName,
     required this.color,
-    this.size = 24,
+    this.iconSize = 24,
+    this.dimension = 40,
+    this.rounding = 16,
   });
 
   @override
   Widget build(BuildContext context) {
-
     return Container(
-      width: 40,
-      height: 40,
+      width: dimension,
+      height: dimension,
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.05),
-        borderRadius: BorderRadius.circular(12),
+        color: AppColors.surfaceVariant,
+        borderRadius: BorderRadius.circular(rounding),
       ),
-      child: context.autoIcon(IconMapper.getIcon(iconName), color: color, size: size),
+      child: Icon(
+        IconMapper.getIcon(iconName),
+        color: color,
+        size: iconSize,
+      ),
     );
   }
 }

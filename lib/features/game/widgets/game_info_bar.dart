@@ -26,9 +26,9 @@ class GameInfoBar extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Expanded(child: InfoTag(label: majorName)),
-            SizedBox(width: context.r(16)),
+            SizedBox(width: context.r(8)),
             Expanded(child: InfoTag(label: '$wordLength LETTERS')),
-            SizedBox(width: context.r(16)),
+            SizedBox(width: context.r(8)),
             Expanded(
               child: InfoTag(
                 label: _attemptsLabel, 

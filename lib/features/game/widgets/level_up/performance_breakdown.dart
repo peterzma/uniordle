@@ -23,7 +23,7 @@ class PerformanceBreakdown extends StatelessWidget {
       padding: EdgeInsets.all(AppLayout.cardPadding),
       decoration: BoxDecoration(
         color: grade.color.withValues(alpha: 0.1),
-        borderRadius: BorderRadius.circular(context.r(16)),
+        borderRadius: BorderRadius.circular(AppLayout.cardRounding),
       ),
       child: Column(
         children: [

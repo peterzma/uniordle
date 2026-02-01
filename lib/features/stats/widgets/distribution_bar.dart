@@ -40,7 +40,7 @@ class DistributionBar extends StatelessWidget {
                       height: 24,
                       decoration: BoxDecoration(
                         color: AppColors.surfaceVariant,
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(64),
                       ),
                     ),
                     // Animated bar
@@ -53,7 +53,7 @@ class DistributionBar extends StatelessWidget {
                       padding: EdgeInsets.only(right: count == 0 ? 0 : 8),
                       decoration: BoxDecoration(
                         color: isHighest ? AppColors.accent : AppColors.onSurfaceVariant,
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(64),
                       ),
                       child: Text(
                         "$count",

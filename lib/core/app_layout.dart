@@ -15,25 +15,21 @@ abstract class AppLayout {
   // Dialog constraints
   static const double maxDialogWidth = 480.0;
   static const double maxDialogHeight = 620.0;
-  
-// --- Base Scale Units ---
-  static const double size3XL = 64.0; 
-  static const double size2XL = 32.0; 
-  static const double sizeXL  = 24.0; 
-  static const double sizeL   = 16.0; 
-  static const double sizeM   = 12.0; 
-  static const double sizeS   = 8.0;  
-  static const double sizeXS  = 4.0;  
-  static const double sizeXXS = 2.0;
+
 
   // Common layout constants
   static const double marginHeight = 64.0; // header/footers
-  static const double pagePadding = 16.0; // not fully used
+  static const double pagePadding = 16.0;
   static const double cardPadding = 16.0;
-  static const double cardRounding = 16.0; // not fully used
+  static const double cardRounding = 16.0;
   static const double dialogPadding = 32.0;
-  static const double dialogRounding = 16.0; // unused
   static const double settingsPadding = 16;
+
+  // Corner Ratio Presets
+  static const double ratioPill = 0.5; // Perfectly round ends
+  static const double ratioPlayful = 0.4; // Bubbly look
+  static const double ratioModern = 0.2; // Standard soft rounding
+  static const double ratioSharp = 0.1; // Professional/Subtle
 
   static const int flipSpeedMs = 300;
 
