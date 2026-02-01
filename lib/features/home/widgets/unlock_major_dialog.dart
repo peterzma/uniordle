@@ -34,7 +34,7 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
     }
     
     // TODO: change to victory
-    SoundManager().play(SoundType.grid);
+    // SoundManager().play(SoundType.grid);
   }
 
   @override
@@ -167,7 +167,7 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
                         wiggleKey.currentState?.wiggle();
       
                         // TODO: change sound to negative
-                        SoundManager().play(SoundType.grid); 
+                        // SoundManager().play(SoundType.grid); 
                       }
                     },
                     width: 300,

@@ -63,7 +63,7 @@ class DifficultySelector extends StatelessWidget {
                 final newValue = v.round();
                 
                 if (newValue != value) {
-                  SoundManager().play(SoundType.settings, volumeOverride: 0.5);
+                  SoundManager().play(SoundType.gameSettings, volumeOverride: 0.5);
                   
                   onChanged(newValue);
                 }

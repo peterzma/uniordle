@@ -7,8 +7,9 @@ enum SoundType {
   delete,
   enter,
   hover,
-  grid,
   settings,
+  menuMusic,
+  gameMusic,
 }
 
 class SoundManager {
@@ -24,7 +25,6 @@ class SoundManager {
     SoundType.delete: 0.2,
     SoundType.enter: 0.2,
     SoundType.hover: 0.4,
-    SoundType.grid: 0.4,
     SoundType.settings: 0.4,
   };
 
@@ -36,16 +36,13 @@ class SoundManager {
     try {
       await SoLoud.instance.init();
       
-      _sources[SoundType.click] = await SoLoud.instance.loadAsset('assets/audio/keyboard_tap.mp3');
+      _sources[SoundType.click] = await SoLoud.instance.loadAsset('assets/audio/click.mp3');
       _sources[SoundType.keyboard] = await SoLoud.instance.loadAsset('assets/audio/keyboard_tap.mp3');
-      _sources[SoundType.delete] = await SoLoud.instance.loadAsset('assets/audio/delete_tap.mp3');
-      _sources[SoundType.enter] = await SoLoud.instance.loadAsset('assets/audio/delete_tap.mp3');
+      _sources[SoundType.delete] = await SoLoud.instance.loadAsset('assets/audio/special_key.mp3');
+      _sources[SoundType.enter] = await SoLoud.instance.loadAsset('assets/audio/special_key.mp3');
       _sources[SoundType.hover] = await SoLoud.instance.loadAsset('assets/audio/hover.mp3');
-      _sources[SoundType.grid] = await SoLoud.instance.loadAsset('assets/audio/keyboard_tap.mp3');
-      _sources[SoundType.settings] = await SoLoud.instance.loadAsset('assets/audio/keyboard_tap.mp3');
+      _sources[SoundType.settings] = await SoLoud.instance.loadAsset('assets/audio/click.mp3');
 
-      
-      
       _isInitialized = true;
     } catch (e) {
       log('Audio Init Error: $e');

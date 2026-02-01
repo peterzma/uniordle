@@ -33,7 +33,7 @@ class WordLengthSelector extends StatelessWidget {
                     padding: EdgeInsets.symmetric(horizontal: context.r(8)),
                     child: SelectButtonWrapper(
                       onTap: () => onChanged(len),
-                      soundType: SoundType.settings,
+                      soundType: SoundType.gameSettings,
                       baseColor: baseColor,
                       enableDarken: true,
                       borderRadius: BorderRadius.circular(36),

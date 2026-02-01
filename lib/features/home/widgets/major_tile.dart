@@ -37,7 +37,7 @@ class _MajorTileState extends State<MajorTile> {
 
         return SelectButtonWrapper(
           onTap: widget.onTap,
-          soundType: SoundType.grid,
+          soundType: SoundType.click,
           child: MouseRegion(
             onEnter: (_) {
               setState(() => _hovering = true);
