@@ -79,7 +79,7 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
     return ScaleTransition(
       scale: _scale,
       child: Container(
-        margin: EdgeInsets.all(4),
+        margin: EdgeInsets.all(context.r(4)),
         height: context.responsive(60, 64),
         width: context.responsive(60, 64),
         alignment: Alignment.center,

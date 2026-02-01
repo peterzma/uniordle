@@ -51,12 +51,8 @@ class KeyboardButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double availableWidth = AppLayout.contentWidth(context);
-    final double scaleFactor = (availableWidth / AppLayout.maxAppWidth).clamp(0.7, 1.0);
-    final double dynamicPadding = 4.0 * scaleFactor;
-
     return Padding(
-      padding: EdgeInsets.all(dynamicPadding),
+      padding: EdgeInsets.all(context.r(4)),
       child: SelectButtonWrapper(
         onTap: onTap,
         enableDarken: true,

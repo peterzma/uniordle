@@ -18,8 +18,8 @@ class InvalidWordDialog {
         return BaseDialog(
           showBorder: false,
           blur: 0.0,
-          padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 12),
-          child: Text(
+          padding: EdgeInsets.all(context.r(16)),
+          child: context.autoText(
             'Word not found',
             textAlign: TextAlign.center,
             style: AppFonts.displayMedium,

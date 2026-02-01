@@ -93,13 +93,8 @@ Latest release:
 * Add stats/profile screens
 * change sound effect of tile flipping in game screen
 * replace ui click on buttons to be more minimal
-* Add level up pop up.
 * Add win/loss sound to end dialog
-* Make a pop up surprise when you reach level 5 for the unlocking, and also in this update the academic title
-* improve popup for levelling up, add differnet pop up for user to have a credit to unlock major
 * add intro for app only
-* fix slight offset on text in settings when holding down buttons (rasturising issue)
-* improve transition between end game dialog and levelup dialog
 * add progress on each major. increase likihood of new unique words. once mastered, **stop user from farming it by decreasing merits earned** (need to add this part now)
 * **IMPROVE APPEARANCE AND DESIGN AFTER ADDING LOGIC**
 * **IMPORTANT: ensure widths 360 to 512 are handled properly**

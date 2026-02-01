@@ -146,13 +146,13 @@ class _GameScreenState extends State<GameScreen> {
                   top: false,
                   child: Column(
                     children: [
-                      SizedBox(height: context.r(32)),
+                      SizedBox(height: context.r(16)),
                       GameInfoBar(
                         majorName: _majorName,
                         yearLevel: _yearLevel,
                         wordLength: _wordLength,
                       ),
-                      SizedBox(height: context.r(32)),
+                      SizedBox(height: context.r(8)),
                       Keyboard(
                         onKeyTapped: _controller.addLetter,
                         onDeleteTapped: _controller.removeLetter,
