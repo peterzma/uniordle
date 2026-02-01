@@ -84,18 +84,19 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
           ),
           SizedBox(height: context.r(8)),
       
-          Text(
+          context.autoText(
             canAfford ? "Enroll in ${widget.major.name}?" : "LOCKED",
-            style: AppFonts.displayMedium,
+            style: AppFonts.headline,
           ),
-          SizedBox(height: context.r(16)),
+          SizedBox(height: context.r(8)),
           
-          Text(
+          context.autoText(
             canAfford 
               ? "Spend 1 Credit to unlock ${widget.major.name}?"
               : "You don't have any credits to unlock ${widget.major.name}.",
             textAlign: TextAlign.center,
-            style: AppFonts.labelLarge,
+            style: AppFonts.labelMedium,
+            maxLines: 2
           ),
           
           SizedBox(height: context.r(16)),
@@ -111,13 +112,13 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(
+                context.autoIcon(
                   bonusIcon,
                   size: 16, 
                   color: canAfford ? widget.major.color : AppColors.onSurfaceVariant,
                 ),
                 const SizedBox(width: 4),
-                Text(
+                context.autoText(
                   bonusText,
                   style: AppFonts.labelSmall.copyWith(
                     color: canAfford ? widget.major.color : AppColors.onSurfaceVariant,
@@ -149,6 +150,7 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
                 child: PrimaryButton(
                   onPressed: () => Navigator.pop(context),
                   label: "BACK",
+                  width: 300,
                 ),
               ),
               SizedBox(width: context.r(16)),
@@ -168,6 +170,7 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
                         SoundManager().play(SoundType.grid); 
                       }
                     },
+                    width: 300,
                   ),
                 ),
               ),

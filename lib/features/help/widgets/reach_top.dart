@@ -35,14 +35,15 @@ class ReachTop extends StatelessWidget {
               const Divider(color: AppColors.outline, height: 1),
 
               Padding(
-                padding: EdgeInsets.symmetric(vertical: context.responsive(0, 4)),
-                child: Text(
+                padding: EdgeInsets.symmetric(vertical: context.responsive(0, 8)),
+                child: context.autoText(
                   '.\n.\n.',
                   style: AppFonts.headline.copyWith(
                     color: AppColors.outline,
                     height: 1,
                   ),
                   textAlign: TextAlign.center,
+                  maxLines: 3
                 ),
               ),
 
@@ -57,17 +58,17 @@ class ReachTop extends StatelessWidget {
 
   Widget _buildRankRow(BuildContext context, Map<String, String> rank, {required Color color, bool isBold = false}) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: context.r(16)),
+      padding: EdgeInsets.symmetric(vertical: context.r(8)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(
+          context.autoText(
             rank['title']!,
             style: AppFonts.labelMedium.copyWith(
               color: color,
             ),
           ),
-          Text(
+          context.autoText(
             rank['level']!,
             style: AppFonts.labelSmall.copyWith(
               color: color,

@@ -45,7 +45,6 @@ class UnlockedMajorDialog extends StatelessWidget {
             onPressed: () => Navigator.pop(context),
             label: "START STUDYING",
             color: major.color,
-            width: 260
           ),
         ],
       ),
