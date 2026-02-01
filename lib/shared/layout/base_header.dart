@@ -17,15 +17,13 @@ class BaseHeader extends StatelessWidget {
     required this.onLeftTap,
     this.rightIcon,
     this.onRightTap,
-    this.height = 72,
+    this.height = AppLayout.marginHeight,
   });
 
   @override
   Widget build(BuildContext context) {
-    final double topPadding = MediaQuery.of(context).padding.top;
-
     return Container(
-      height: AppLayout.marginHeight + topPadding,
+      height: height,
       width: double.infinity,
       decoration: BoxDecoration(
         color: AppColors.surface,
@@ -36,33 +34,39 @@ class BaseHeader extends StatelessWidget {
           ),
         ),
       ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: AppLayout.pagePadding),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            NavigationItem(
-              icon: leftIcon,
-              onTap: onLeftTap,
-            ),
-            Text(
-              title,
-              style: AppFonts.displayMedium,
-            ),
-            if (rightIcon != null)
-              NavigationItem(icon: rightIcon!, onTap: onRightTap ?? () {})
-            else
+      child: SafeArea(
+        bottom: false,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: AppLayout.pagePadding),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              NavigationItem(
+                icon: leftIcon,
+                onTap: onLeftTap,
+              ),
+              Text(
+                title,
+                style: AppFonts.displayMedium,
+              ),
+              if (rightIcon != null)
+                NavigationItem(
+                  icon: rightIcon!,
+                  onTap: onRightTap ?? () {},
+                )
+              else
                 Opacity(
                   opacity: 0,
                   child: IgnorePointer(
                     child: NavigationItem(
-                      icon: leftIcon,
+                      icon: Icons.circle,
                       onTap: () {},
                     ),
                   ),
                 ),
-          ],
+            ],
+          ),
         ),
       ),
     );

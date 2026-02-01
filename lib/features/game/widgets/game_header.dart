@@ -14,7 +14,7 @@ class GameHeader extends StatelessWidget implements PreferredSizeWidget {
   });
 
   @override
-  Size get preferredSize => const Size.fromHeight(72);
+  Size get preferredSize => const Size.fromHeight(AppLayout.marginHeight);
 
   @override
   Widget build(BuildContext context) {

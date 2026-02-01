@@ -8,15 +8,16 @@ class BaseFooter extends StatelessWidget {
   const BaseFooter({
     super.key,
     required this.children,
-    this.height = 72,
+    this.height = AppLayout.marginHeight,
   });
 
   @override
   Widget build(BuildContext context) {
-    final double bottomPadding = MediaQuery.of(context).padding.bottom;
+  final double bottomPadding = MediaQuery.of(context).padding.bottom;
+  final double totalHeight = height + bottomPadding;
 
     return Container(
-      height: AppLayout.marginHeight + bottomPadding,
+      height: totalHeight,
       decoration: BoxDecoration(
         color: AppColors.surface,
         border: const Border(
