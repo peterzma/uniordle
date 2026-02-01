@@ -105,3 +105,4 @@ Latest release:
 * add account syncing / creation with suprabase
 * test with emulators
 * check volumes are equalised
+* if adding music - add mute button top right next to help button in game
