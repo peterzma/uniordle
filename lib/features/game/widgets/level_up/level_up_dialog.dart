@@ -1,6 +1,9 @@
+import 'package:confetti/confetti.dart';
+import 'package:uniordle/features/game/widgets/level_up/milestone_celebration_dialog.dart';
 import 'package:uniordle/features/game/widgets/level_up/performance_breakdown.dart';
-import 'package:uniordle/features/game/widgets/level_up/milestone_item.dart'; // Ensure this import exists
 import 'package:uniordle/shared/exports/end_game_exports.dart';
+
+enum MilestoneType { levelUp, creditEarned, rankUp }
 
 class LevelUpDialog extends StatefulWidget {
   final int startingLevel;
@@ -29,20 +32,21 @@ class LevelUpDialog extends StatefulWidget {
 class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
+  late ConfettiController _confettiController;
   
-  final GlobalKey<AnimatedListState> _listKey = GlobalKey<AnimatedListState>();
-  final List<int> _visibleMilestones = [];
-  final ScrollController _scrollController = ScrollController();
+  int _lastThrottledLevel = 0;
 
   @override
   void initState() {
     super.initState();
+    _lastThrottledLevel = widget.startingLevel;
+    
+    _confettiController = ConfettiController(duration: const Duration(seconds: 1));
 
     final double startTotal = widget.startingLevel + widget.startingProgress;
     final double levelChange = widget.gainedMerit / UserStats.meritPerLevel;
     final double endTotal = startTotal + levelChange;
 
-    // Adjust duration based on how many levels were gained
     _controller = AnimationController(
       vsync: this,
       duration: Duration(milliseconds: 1500 + (levelChange.abs() * 500).toInt()),
@@ -52,18 +56,17 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
         .animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOutCubic));
 
     _controller.addListener(() {
-      final double animatedVal = _animation.value;
-      final int animatedLevel = animatedVal.floor();
+      final int currentLevel = _animation.value.floor();
       
-      final List<int> allAchieved = statsManager.statsNotifier.value.achievedMilestones;
+      if (currentLevel > _lastThrottledLevel) {
+        _lastThrottledLevel = currentLevel;
+        
+        _confettiController.play();
 
-      // Trigger milestones as the bar animates past them
-      for (int level in allAchieved) {
-        if (level <= animatedLevel && 
-            level > widget.startingLevel && 
-            !_visibleMilestones.contains(level)) {
-          
-          _revealMilestone(level);
+        if (currentLevel % 10 == 0) {
+          _showMilestoneDialog(MilestoneType.rankUp, currentLevel);
+        } else if (currentLevel % 5 == 0) {
+          _showMilestoneDialog(MilestoneType.creditEarned, currentLevel);
         }
       }
     });
@@ -71,123 +74,95 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
     Future.delayed(const Duration(milliseconds: 400), () => _controller.forward());
   }
 
-  void _revealMilestone(int level) {
-    if (!mounted) return;
-    setState(() {
-      _visibleMilestones.insert(0, level);
-      _listKey.currentState?.insertItem(0, duration: const Duration(milliseconds: 500));
-    });
-    
-    if (_scrollController.hasClients) {
-      _scrollController.animateTo(0, 
-        duration: const Duration(milliseconds: 300), 
-        curve: Curves.easeOut
-      );
-    }
+  void _showMilestoneDialog(MilestoneType type, int level) {
+    showDialog(
+      context: context,
+      // Prevents accidental closing during the celebration
+      barrierDismissible: false, 
+      builder: (context) => MilestoneCelebrationDialog(type: type, level: level),
+    );
   }
 
   @override
   void dispose() {
     _controller.dispose();
-    _scrollController.dispose();
+    _confettiController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
+    return Stack(
+      alignment: Alignment.topCenter,
       children: [
-        FittedBox(
-          fit: BoxFit.scaleDown,
-          child: Text(
-            "STUDIES REPORT",
-            style: AppFonts.displayLarge,
-          ),
-        ),
-
-        SizedBox(height: context.r(32)),
-
-        PerformanceBreakdown(
-          won: widget.won,
-          attempts: widget.attempts,
-          maxAttempts: widget.maxAttempts,
-          gainedMerit: widget.gainedMerit,
-        ),
-
-        SizedBox(height: context.r(32)),
-
-        AnimatedBuilder(
-          animation: _animation,
-          builder: (context, _) {
-            final double val = _animation.value;
-            final int displayLevel = val.floor();
-            final double displayProgress = val % 1.0;
-            final int percentage = (displayProgress * 100).round();
-            
-            return LevelCard(
-              level: displayLevel,
-              progress: displayProgress,
-              nextLevel: displayLevel + 1,
-              progressLabel: "$percentage%",
-            );
-          },
-        ),
-
-        SizedBox(height: context.r(16)),
-
-        ConstrainedBox(
-          constraints: const BoxConstraints(maxHeight: 200),
-          child: AnimatedList(
-            key: _listKey,
-            controller: _scrollController,
-            shrinkWrap: true,
-            initialItemCount: _visibleMilestones.length,
-            itemBuilder: (context, index, animation) {
-              return FadeTransition(
-                opacity: animation,
-                child: SizeTransition(
-                  sizeFactor: animation,
-                  child: Padding(
-                    padding: const EdgeInsets.only(bottom: 8.0),
-                    child: MilestoneItem(level: _visibleMilestones[index]),
+        Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                "STUDIES REPORT",
+                style: AppFonts.displayLarge,
+              ),
+            ),
+            SizedBox(height: context.r(32)),
+            PerformanceBreakdown(
+              won: widget.won,
+              attempts: widget.attempts,
+              maxAttempts: widget.maxAttempts,
+              gainedMerit: widget.gainedMerit,
+            ),
+            SizedBox(height: context.r(16)),
+            AnimatedBuilder(
+              animation: _animation,
+              builder: (context, _) {
+                final double val = _animation.value;
+                final int displayLevel = val.floor();
+                final double displayProgress = val % 1.0;
+                final int percentage = (displayProgress * 100).round();
+                
+                return LevelCard(
+                  level: displayLevel,
+                  progress: displayProgress,
+                  nextLevel: displayLevel + 1,
+                  progressLabel: "$percentage%",
+                );
+              },
+            ),
+            SizedBox(height: context.r(32)), 
+            Row(
+              children: [
+                Expanded(
+                  child: PrimaryButton(
+                    label: 'HOME',
+                    onPressed: () => Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false),
                   ),
                 ),
-              );
-            },
-          ),
-        ),
-
-        SizedBox(height: context.r(32)),
-
-        Row(
-          children: [
-            Expanded(
-              child: PrimaryButton(
-                label: 'HOME',
-                onPressed: () {
-                  Navigator.of(context).pushNamedAndRemoveUntil(
-                    '/',
-                    (route) => false,
-                  );
-                },
-              ),
-            ),
-            SizedBox(width: context.r(16)),
-            Expanded(
-              child: PrimaryButton(
-                label: 'NEW GAME',
-                color: AppColors.accent,
-                onPressed: () {
-                  Navigator.of(context).pushNamedAndRemoveUntil(
-                    '/setup',
-                    (route) => route.isFirst,
-                    arguments: widget.major,
-                  );
-                },
-              ),
+                SizedBox(width: context.r(16)),
+                Expanded(
+                  child: PrimaryButton(
+                    label: 'NEW GAME',
+                    color: AppColors.accent,
+                    onPressed: () {
+                      Navigator.of(context).pushNamedAndRemoveUntil(
+                        '/setup',
+                        (route) => route.isFirst,
+                        arguments: widget.major,
+                      );
+                    },
+                  ),
+                ),
+              ],
             ),
           ],
+        ),
+        ConfettiWidget(
+          confettiController: _confettiController,
+          blastDirectionality: BlastDirectionality.explosive,
+          shouldLoop: false,
+          colors: const [Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple],
+          numberOfParticles: 20,
+          gravity: 0.2,
         ),
       ],
     );

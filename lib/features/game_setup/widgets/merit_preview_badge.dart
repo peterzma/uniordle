@@ -21,7 +21,8 @@ class MeritPreviewBadge extends StatelessWidget {
       valueListenable: statsManager.statsNotifier,
       builder: (context, stats, child) {
         final ranges = UserStatsRewards.getMeritRange(stats, difficulty, wordLength);
-        final int bonusPercent = (max(0, stats.unlockedIds.length - 1) * 5);
+      
+        final bool hasBonus = stats.meritMultiplier > 1.0;
 
         return Container(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -53,15 +54,15 @@ class MeritPreviewBadge extends StatelessWidget {
                     Text(
                       ranges.original,
                       style: AppFonts.labelLarge.copyWith(
-                        color: bonusPercent > 0 
+                        color: hasBonus
                             ? major.color.withValues(alpha: 0.5) 
                             : major.color,
-                        fontWeight: bonusPercent > 0 ? FontWeight.normal : FontWeight.bold,
-                        decoration: bonusPercent > 0 ? TextDecoration.lineThrough : null,
+                        fontWeight: hasBonus ? FontWeight.normal : FontWeight.bold,
+                        decoration: hasBonus ? TextDecoration.lineThrough : null,
                       ),
                     ),
             
-                    if (bonusPercent > 0) ...[
+                    if (hasBonus) ...[
                       const SizedBox(width: 6),
                       Icon(
                         LucideIcons.arrowRight, 

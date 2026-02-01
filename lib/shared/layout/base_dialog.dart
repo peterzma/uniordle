@@ -33,9 +33,6 @@ class BaseDialog extends StatelessWidget {
             backgroundColor: AppColors.surfaceDialog, 
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(32),
-              // side: showBorder 
-              //     ? BorderSide(color: AppColors.surfaceVariant, width: 4) 
-              //     : BorderSide.none,
             ),
             child: ConstrainedBox(
               constraints: const BoxConstraints(

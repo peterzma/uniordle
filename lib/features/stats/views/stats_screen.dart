@@ -2,7 +2,6 @@ import 'package:uniordle/features/stats/widgets/academic.dart/academic_history.d
 import 'package:uniordle/features/stats/widgets/mode_analytics_chart.dart';
 import 'package:uniordle/shared/exports/end_game_exports.dart';
 import 'package:uniordle/shared/exports/stats_exports.dart';
-import 'package:auto_size_text/auto_size_text.dart';
 
 class StatsScreen extends StatelessWidget {
 
