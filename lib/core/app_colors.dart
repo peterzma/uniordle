@@ -10,6 +10,8 @@ abstract class AppColors {
   static const Color surface = Color(0xFF00121f); // Main dark background
   static const Color surfaceDialog = Color(0xFF060C16); // Main dark background
   static const Color surfaceVariant = Color(0x401A1F2E); // Cards, tiles, keyboard buttons
+
+  static const Color gameTiles = Color(0xFF1A1F2E); // Cards, tiles, keyboard buttons
   
   // Content (Text/Icons)
   static const Color onSurface = Color(0xFFF8FAFC); // High emphasis text

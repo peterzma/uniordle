@@ -27,7 +27,7 @@ class KeyboardButton extends StatelessWidget {
       KeyboardButton(
         width: 62,
         onTap: onTap,
-        backgroundColor: AppColors.surfaceVariant,
+        backgroundColor: AppColors.gameTiles,
         soundType: SoundType.delete,
         child: Icon(
           AppIcons.backspace, 
@@ -40,7 +40,7 @@ class KeyboardButton extends StatelessWidget {
       KeyboardButton(
         width: 62,
         onTap: onTap,
-        backgroundColor: AppColors.surfaceVariant,
+        backgroundColor: AppColors.gameTiles,
         letter: 'ENTER',
         soundType: SoundType.enter,
         child: Text(

@@ -22,7 +22,7 @@ class Letter extends Equatable {
   Color get backgroundColor {
     switch (status) {
       case LetterStatus.initial:
-        return AppColors.surfaceVariant;
+        return AppColors.gameTiles;
       case LetterStatus.notInWord:
         return AppColors.notInWordColor;
       case LetterStatus.inWord:

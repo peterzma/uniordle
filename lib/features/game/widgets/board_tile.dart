@@ -79,18 +79,18 @@ class _BoardTileState extends State<BoardTile> with SingleTickerProviderStateMix
     return ScaleTransition(
       scale: _scale,
       child: Container(
-        margin: EdgeInsets.all(context.r(4)),
-        height: 64,
-        width: 64,
+        margin: EdgeInsets.all(4),
+        height: context.responsive(48, 64),
+        width: context.responsive(48, 64),
         alignment: Alignment.center,
         decoration: BoxDecoration(
           color: widget.letter.val.isEmpty
-              ? AppColors.surfaceVariant
+              ? AppColors.gameTiles
               : widget.letter.backgroundColor,
-          border: Border.all(
-            color: widget.letter.borderColor,
-            width: 2,
-          ),
+          // border: Border.all(
+          //   color: widget.letter.borderColor,
+          //   width: 2,
+          // ),
           borderRadius: BorderRadius.circular(8),
         ),
         child: Text(
