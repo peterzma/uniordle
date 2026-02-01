@@ -98,9 +98,6 @@ Latest release:
 * add progress on each major. increase likihood of new unique words. once mastered, **stop user from farming it by decreasing merits earned** (need to add this part now)
 * **IMPROVE APPEARANCE AND DESIGN AFTER ADDING LOGIC**
 * **IMPORTANT: ensure widths 360 to 512 are handled properly**
-* check headers/footers are same size
-* change level up pop up 
 * check/add sounds for everything needed. add music, add music toggle
 * add more words
 * replace vague categories with more specific
-* make all roundings consistent
