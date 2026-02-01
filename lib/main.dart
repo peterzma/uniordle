@@ -1,3 +1,4 @@
+import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:uniordle/core/app.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:uniordle/core/app_layout.dart';
@@ -14,7 +15,11 @@ void main() async {
 
   await SoundManager().init();
 
-  runApp(const App());
+  runApp(
+    Phoenix(
+      child: const App(),
+    ),
+  );
 
   doWhenWindowReady(() {
     const double widthOverhead = 16.0; 

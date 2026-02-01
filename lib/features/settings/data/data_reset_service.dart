@@ -1,3 +1,4 @@
+import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/exports/end_game_exports.dart';
 import 'package:uniordle/shared/exports/profile_exports.dart';
@@ -21,7 +22,7 @@ class DataResetService {
           ),
           SizedBox(height: context.r(32)),
           PrimaryButton(
-            label: 'RESET EVERYTHING',
+            label: 'YES, RESET EVERYTHING',
             color: Colors.red,
             onPressed: () => Navigator.pop(context, true),
           ),
@@ -53,7 +54,7 @@ class DataResetService {
           ),
           SizedBox(height: context.r(32)),
           PrimaryButton(
-            label: 'I AM SURE',
+            label: 'I AM SURE, RESET EVERYTHING',
             color: Colors.red,
             onPressed: () => Navigator.pop(context, true),
           ),
@@ -77,21 +78,7 @@ class DataResetService {
     await prefs.clear();
 
     if (context.mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Center(
-            heightFactor: 1,
-            child: Text(
-              'Data wiped. Restart app to finalise.',
-              style: AppFonts.labelLarge.copyWith(color: AppColors.onSurface),
-            ),
-          ),
-          backgroundColor: AppColors.accent2,
-          behavior: SnackBarBehavior.floating,
-        ),
-      );
-      
-      Navigator.of(context).popUntil((route) => route.isFirst);
+      Phoenix.rebirth(context);
     }
   }
 }

@@ -101,3 +101,5 @@ Latest release:
 * check/add sounds for everything needed. add music, add music toggle
 * add more words
 * replace vague categories with more specific
+* update help dialog to account for: abandoining game loses merits. losing game loses merits, lose more as you rank up.
+* add account syncing / creation with suprabase
