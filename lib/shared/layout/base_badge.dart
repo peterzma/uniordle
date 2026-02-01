@@ -20,7 +20,7 @@ class BaseBadge extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: context.r(16), vertical: context.r(8)),
       decoration: BoxDecoration(
         color: color.withValues(alpha: 0.1),
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(16),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,

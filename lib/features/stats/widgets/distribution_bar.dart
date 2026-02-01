@@ -1,3 +1,4 @@
+import 'package:uniordle/shared/exports/app_exports.dart';
 import 'package:uniordle/shared/exports/stats_exports.dart';
 
 class DistributionBar extends StatelessWidget {
@@ -17,7 +18,7 @@ class DistributionBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 4),
+      padding: EdgeInsets.symmetric(vertical: context.r(4)),
       child: Row(
         children: [
           SizedBox(
@@ -27,7 +28,7 @@ class DistributionBar extends StatelessWidget {
               style: AppFonts.labelMedium,
             ),
           ),
-          const SizedBox(width: 12),
+          const SizedBox(width: 8),
           Expanded(
             child: LayoutBuilder(
               builder: (context, constraints) {
@@ -44,12 +45,12 @@ class DistributionBar extends StatelessWidget {
                     ),
                     // Animated bar
                     AnimatedContainer(
-                      duration: const Duration(milliseconds: 1000),
+                      duration: const Duration(milliseconds: 800),
                       curve: Curves.easeOutQuart,
                       height: 24,
                       width: barWidth,
                       alignment: count == 0 ? Alignment.center : Alignment.centerRight,
-                      padding: EdgeInsets.only(right: count == 0 ? 0 : 12),
+                      padding: EdgeInsets.only(right: count == 0 ? 0 : 8),
                       decoration: BoxDecoration(
                         color: isHighest ? AppColors.accent : AppColors.onSurfaceVariant,
                         borderRadius: BorderRadius.circular(12),

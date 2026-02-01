@@ -34,7 +34,7 @@ class SimpleButton extends StatelessWidget {
             return null;
           },
         ),
-        padding: WidgetStateProperty.all(padding ?? const EdgeInsets.all(12)),
+        padding: WidgetStateProperty.all(padding ?? const EdgeInsets.all(16)),
         minimumSize: WidgetStateProperty.all(Size.zero),
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
         shape: WidgetStateProperty.all(
@@ -52,7 +52,7 @@ class SimpleButton extends StatelessWidget {
             ),
           if (icon != null && text != null) const SizedBox(width: 8),
           if (text != null)
-            Text(
+            context.autoText(
               text!,
               style: AppFonts.labelSmall.copyWith(
                 color: displayColor,

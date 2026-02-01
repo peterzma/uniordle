@@ -16,8 +16,8 @@ class EndDialogHeader extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
             color: won
-                ? AppColors.correctColor.withValues(alpha: 0.15)
-                : Colors.red.withValues(alpha: 0.15),
+                ? AppColors.correctColor.withValues(alpha: 0.1)
+                : Colors.red.withValues(alpha: 0.1),
             shape: BoxShape.circle,
           ),
           

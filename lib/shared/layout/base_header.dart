@@ -26,7 +26,6 @@ class BaseHeader extends StatelessWidget {
 
     return Container(
       height: AppLayout.marginHeight + topPadding,
-      padding: EdgeInsets.only(top: topPadding),
       width: double.infinity,
       decoration: BoxDecoration(
         color: AppColors.surface,

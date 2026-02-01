@@ -26,9 +26,9 @@ class NavigationItem extends StatelessWidget {
     return SelectButtonWrapper(
       borderRadius: BorderRadius.circular(16),
       onTap: onTap,
-      pressScale: 0.90,
+      pressScale: 0.95,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+        padding: const EdgeInsets.all(4),
         child: SizedBox(
           height: 48, 
           width: 48,

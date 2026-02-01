@@ -34,29 +34,30 @@ class AcademicHistory extends StatelessWidget {
         ),
         SizedBox(height: context.r(8)),
         if (recentGames.isEmpty)
-          _buildEmptyHistory()
+          _buildEmptyHistory(context)
         else
           ...recentGames.map((game) => HistoryItemCard(game: game)),
       ],
     );
   }
 
-  Widget _buildEmptyHistory() {
+  Widget _buildEmptyHistory(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(24),
+      padding: EdgeInsets.all(context.r(AppLayout.cardPadding)),
       decoration: BoxDecoration(
         color: AppColors.surfaceVariant,
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
         children: [
-          Icon(LucideIcons.scrollText, color: AppColors.onSurfaceVariant, size: 32),
-          SizedBox(height: 8),
-          Text(
+          context.autoIcon(LucideIcons.scrollText, color: AppColors.onSurfaceVariant, size: 32),
+          // SizedBox(height: 8),
+          context.autoText(
             "No academic records found.\nComplete a game to start your transcript.",
             textAlign: TextAlign.center,
             style: AppFonts.labelMedium,
+            maxLines: 2
           ),
         ],
       ),

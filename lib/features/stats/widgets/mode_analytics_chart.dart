@@ -17,7 +17,7 @@ class ModeAnalyticsChart extends StatelessWidget {
       children: [
         _buildHeaderRow(),
         const SizedBox(height: 8),
-        ...[5, 6, 7].map((len) => _buildDataRow(len, maxUsage)),
+        ...[5, 6, 7].map((len) => _buildDataRow(context, len, maxUsage)),
       ],
     );
   }
@@ -51,57 +51,54 @@ class ModeAnalyticsChart extends StatelessWidget {
       );
     }
 
-  Widget _buildDataRow(int length, int maxUsage) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 2),
-      child: Row(
-        children: [
-          // Label Column (Word Length)
-          SizedBox(
-            width: 40, 
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  "$length", 
-                  style: AppFonts.labelMedium
-                ),
-                const SizedBox(width: 4),
-                Icon(
-                  Icons.text_fields_rounded,
-                  size: 12,
-                  color: AppColors.onSurfaceVariant,
-                ),
-              ],
-            ),
+  Widget _buildDataRow(BuildContext context, int length, int maxUsage) {
+    return Row(
+      children: [
+        // Label Column (Word Length)
+        SizedBox(
+          width: 40, 
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                "$length", 
+                style: AppFonts.labelMedium
+              ),
+              const SizedBox(width: 4),
+              Icon(
+                Icons.text_fields_rounded,
+                size: 12,
+                color: AppColors.onSurfaceVariant,
+              ),
+            ],
           ),
+        ),
+        
+        // Heat Map Cells
+        ...[8, 7, 6, 5].map((tries) {
+          final count = modeFrequency["$length-$tries"] ?? 0;
+          final opacity = count == 0 ? 0.05 : (count / maxUsage).clamp(0.1, 1.0);
           
-          // Heat Map Cells
-          ...[8, 7, 6, 5].map((tries) {
-            final count = modeFrequency["$length-$tries"] ?? 0;
-            final opacity = count == 0 ? 0.05 : (count / maxUsage).clamp(0.1, 1.0);
-            
-            return Expanded(
-              child: Container(
-                height: 30,
-                margin: const EdgeInsets.all(2),
-                decoration: BoxDecoration(
-                  color: AppColors.accent.withValues(alpha: opacity),
-                  borderRadius: BorderRadius.circular(4),
-                ),
-                child: Center(
-                  child: Text(
-                    count > 0 ? "$count" : "-", 
-                    style: AppFonts.labelSmall.copyWith(
-                      color: opacity > 0.5 ? AppColors.onSurface : AppColors.onSurfaceVariant,
-                    ),
+          return Expanded(
+            child: Container(
+              height: 30,
+              margin: EdgeInsets.all(context.r(4)),
+              decoration: BoxDecoration(
+                color: AppColors.accent.withValues(alpha: opacity),
+                borderRadius: BorderRadius.circular(4),
+              ),
+              child: Center(
+                child: Text(
+                  count > 0 ? "$count" : "-", 
+                  style: AppFonts.labelSmall.copyWith(
+                    color: opacity > 0.5 ? AppColors.onSurface : AppColors.onSurfaceVariant,
                   ),
                 ),
               ),
-            );
-          }),
-        ],
-      ),
+            ),
+          );
+        }),
+      ],
     );
   }
 }

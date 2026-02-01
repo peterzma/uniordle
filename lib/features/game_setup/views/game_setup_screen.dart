@@ -105,7 +105,6 @@ class _GameSetupScreenState extends State<GameSetupScreen> {
                 color: widget.major.color,
                 isLoading: _isLoading,
                 icon: AppIcons.play,
-                showShadow: true,
                 height: 64,
                 width: double.infinity,
                 resizeLabel: false,
