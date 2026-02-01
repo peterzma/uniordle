@@ -107,7 +107,7 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
               color: canAfford 
                   ? widget.major.color.withValues(alpha: 0.1)
                   : AppColors.onSurfaceVariant.withValues(alpha: 0.1),
-              borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(32),
             ),
             child: Row(
               mainAxisSize: MainAxisSize.min,

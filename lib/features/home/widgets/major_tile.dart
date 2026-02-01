@@ -50,7 +50,7 @@ class _MajorTileState extends State<MajorTile> {
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: AppColors.surfaceVariant,
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(16),
                 border: Border.all(
                   color: _hovering ? displayColor : Colors.transparent,
                   width: 1.5,
