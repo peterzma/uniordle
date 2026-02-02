@@ -46,6 +46,7 @@ class GameController extends ChangeNotifier {
     solution = Word.fromString(nextWord.toUpperCase());
   }
 
+  // Validates correct guess
   Future<void> submitWord() async {
     if (status != GameStatus.playing || currentWord == null) return;
     if (currentWord!.letters.any((l) => l.val.isEmpty)) return;
@@ -56,12 +57,14 @@ class GameController extends ChangeNotifier {
       return;
     }
 
+    // Lock the game state during the animation sequence
     status = GameStatus.submitting;
     notifyListeners();
 
     List<String> remainingLetters = solution.letters.map((l) => l.val).toList();
     List<LetterStatus> statuses = List.filled(wordLength, LetterStatus.notInWord);
 
+    // First pass: Find Correct
     for (int i = 0; i < wordLength; i++) {
       if (currentWord!.letters[i].val == solution.letters[i].val) {
         statuses[i] = LetterStatus.correct;
@@ -69,6 +72,7 @@ class GameController extends ChangeNotifier {
       }
     }
 
+    // Second pass: Find Correct but wrong position
     for (int i = 0; i < wordLength; i++) {
       if (statuses[i] != LetterStatus.correct) {
         int indexInRemaining = remainingLetters.indexOf(currentWord!.letters[i].val);
@@ -79,18 +83,21 @@ class GameController extends ChangeNotifier {
       }
     }
 
+    // Flip tiles one by one with sound
     for (int i = 0; i < wordLength; i++) {
       currentWord!.letters[i] = currentWord!.letters[i].copyWith(status: statuses[i]);
       _updateKeyboard(currentWord!.letters[i]);
       
       notifyListeners();
 
-      SoundManager().play(SoundType.keyboard);
+      SoundManager().play(SoundType.tileFlip);
 
+      // Trigger the UI flip animation
       if (currentWordIndex < flipCardKeys.length && i < flipCardKeys[currentWordIndex].length) {
         flipCardKeys[currentWordIndex][i].currentState?.toggleCard();
       }
       
+      // Wait for animation to finish before next tile
       await Future.delayed(const Duration(milliseconds: AppLayout.flipSpeedMs));
     }
 

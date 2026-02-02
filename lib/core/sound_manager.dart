@@ -12,6 +12,7 @@ enum SoundType {
   levelUp,
   creditEarned,
   rankUp,
+  tileFlip,
   gameSettings,
   menuMusic,
   gameMusic,
@@ -36,6 +37,7 @@ class SoundManager {
     SoundType.levelUp: 1,
     SoundType.creditEarned: 1,
     SoundType.rankUp: 1,
+    SoundType.tileFlip: 1,
   };
 
   bool _isInitialized = false;
@@ -57,6 +59,7 @@ class SoundManager {
       _sources[SoundType.levelUp] = await SoLoud.instance.loadAsset('assets/audio/level_up.mp3');
       _sources[SoundType.creditEarned] = await SoLoud.instance.loadAsset('assets/audio/credit_earned.mp3');
       _sources[SoundType.rankUp] = await SoLoud.instance.loadAsset('assets/audio/rank_up.mp3');
+      _sources[SoundType.tileFlip] = await SoLoud.instance.loadAsset('assets/audio/tile_flip.mp3');
 
       _isInitialized = true;
     } catch (e) {
