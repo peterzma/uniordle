@@ -59,7 +59,7 @@ class SoundManager {
       _sources[SoundType.levelUp] = await SoLoud.instance.loadAsset('assets/audio/level_up.mp3');
       _sources[SoundType.creditEarned] = await SoLoud.instance.loadAsset('assets/audio/credit_earned.mp3');
       _sources[SoundType.rankUp] = await SoLoud.instance.loadAsset('assets/audio/rank_up.mp3');
-      _sources[SoundType.tileFlip] = await SoLoud.instance.loadAsset('assets/audio/tile_flip.mp3');
+      _sources[SoundType.tileFlip] = await SoLoud.instance.loadAsset('assets/audio/tile_flip.wav');
 
       _isInitialized = true;
     } catch (e) {
