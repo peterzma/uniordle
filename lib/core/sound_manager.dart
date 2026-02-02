@@ -51,7 +51,7 @@ class SoundManager {
       _sources[SoundType.gameSettings] = await SoLoud.instance.loadAsset('assets/audio/click.mp3');
       _sources[SoundType.win] = await SoLoud.instance.loadAsset('assets/audio/win.mp3');
       _sources[SoundType.lose] = await SoLoud.instance.loadAsset('assets/audio/lose.mp3');
-      _sources[SoundType.levelUp] = await SoLoud.instance.loadAsset('assets/audio/click.mp3');
+      _sources[SoundType.levelUp] = await SoLoud.instance.loadAsset('assets/audio/level_up.mp3');
 
       _isInitialized = true;
     } catch (e) {
