@@ -77,6 +77,8 @@ class DataResetService {
     final prefs = await SharedPreferences.getInstance();
     await prefs.clear();
 
+    await statsManager.reinitialize();
+
     if (context.mounted) {
       Phoenix.rebirth(context);
     }
