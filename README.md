@@ -107,4 +107,5 @@ Latest release:
 * check volumes are equalised
 * if adding music - add mute button top right next to help button in game
 * replace tile flip sound
-* 
+* fix: other keys move as key is hovered/selected in small width keyboard
+* finetune sounds by cutting off silence

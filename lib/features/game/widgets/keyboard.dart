@@ -8,7 +8,7 @@ const _qwerty = [
 ];
 
 class Keyboard extends StatelessWidget {
-  const Keyboard({ 
+  const Keyboard({
     super.key,
     required this.onKeyTapped,
     required this.onDeleteTapped,
@@ -21,18 +21,18 @@ class Keyboard extends StatelessWidget {
   final VoidCallback onEnterTapped;
   final Set<Letter> letters;
 
-  void _handlePhysicalKey(String key) {
-    if (key == 'Enter') {
+  void _handlePhysicalKey(String keyLabel) {
+    if (keyLabel == 'Enter') {
       onEnterTapped();
       SoundManager().play(SoundType.enter);
-    } else if (key == 'Backspace') {
+    } else if (keyLabel == 'Backspace') {
       onDeleteTapped();
       SoundManager().play(SoundType.delete);
     } else {
-      final upper = key.toUpperCase();
+      final upper = keyLabel.toUpperCase();
       if (_qwerty.any((row) => row.contains(upper))) {
         onKeyTapped(upper);
-          SoundManager().play(SoundType.keyboard);
+        SoundManager().play(SoundType.keyboard);
       }
     }
   }
@@ -47,39 +47,51 @@ class Keyboard extends StatelessWidget {
         }
         return KeyEventResult.handled;
       },
-      child: FittedBox(
-        fit: BoxFit.contain,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: _qwerty
-              .map(
-                (keyRow) => Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: keyRow.map(
-                    (letter) {
-                      if (letter == 'DEL') {
-                        return KeyboardButton.delete(onTap: onDeleteTapped);
-                      } else if (letter == 'ENTER') {
-                        return KeyboardButton.enter(onTap: onEnterTapped);
-                      }
-        
-                      final letterKey = letters.firstWhere(
-                        (e) => e.val == letter,
-                        orElse: () => Letter.empty(),
-                      );
-        
-                      return KeyboardButton(
-                        onTap: () => onKeyTapped(letter),
-                        letter: letter,
-                        backgroundColor: letterKey != Letter.empty()
-                            ? letterKey.backgroundColor
-                            : AppColors.gameTiles,
-                      );
-                    },
-                  ).toList(),
-                ),
-              )
-              .toList(),
+      child: Center(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10.0),
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: IntrinsicWidth(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: _qwerty.asMap().entries.map((entry) {
+                  final int index = entry.key;
+                  final List<String> keyRow = entry.value;
+
+                  return Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      if (index == 1) const SizedBox(width: 20),
+
+                      ...keyRow.map((letter) {
+                        if (letter == 'DEL') {
+                          return KeyboardButton.delete(onTap: onDeleteTapped);
+                        } else if (letter == 'ENTER') {
+                          return KeyboardButton.enter(onTap: onEnterTapped);
+                        }
+
+                        final letterKey = letters.firstWhere(
+                          (e) => e.val == letter,
+                          orElse: () => Letter.empty(),
+                        );
+
+                        return KeyboardButton(
+                          onTap: () => onKeyTapped(letter),
+                          letter: letter,
+                          backgroundColor: letterKey != Letter.empty()
+                              ? letterKey.backgroundColor
+                              : AppColors.gameTiles,
+                        );
+                      }),
+
+                      if (index == 1) const SizedBox(width: 20),
+                    ],
+                  );
+                }).toList(),
+              ),
+            ),
+          ),
         ),
       ),
     );
