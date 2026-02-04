@@ -54,9 +54,9 @@ class SoundManager {
     _musicEnabled = value;
 
     if (!value) {
-      fadeOutAndStop(duration: const Duration(milliseconds: 500), isMuting: true);
+      fadeOutAndStop(duration: const Duration(milliseconds: 300), isMuting: true);
     } else {
-      if (_currentlyPlayingType != null) {
+      if (_currentlyPlayingType != null && _activeMusicHandle == null) {
         _startMusic(_currentlyPlayingType!);
       }
     }
@@ -110,6 +110,10 @@ class SoundManager {
   void playMusic(SoundType type, {double? volumeOverride}) async {
     if (!_isInitialized) return;
 
+    if (_currentlyPlayingType == type && _activeMusicHandle != null) {
+      return;
+    }
+
     _currentlyPlayingType = type;
 
     if (!_musicEnabled) return;
@@ -121,21 +125,23 @@ class SoundManager {
     final source = _sources[type];
     if (source == null) return;
 
+    const fadeDuration = Duration(milliseconds: 1000);
+
     if (_activeMusicHandle != null) {
       final oldHandle = _activeMusicHandle!;
-      SoLoud.instance.fadeVolume(oldHandle, 0, const Duration(seconds: 1));
-      Future.delayed(const Duration(seconds: 1), () => SoLoud.instance.stop(oldHandle));
+      SoLoud.instance.fadeVolume(oldHandle, 0, fadeDuration);
+      Future.delayed(fadeDuration, () => SoLoud.instance.stop(oldHandle));
     }
 
     final double vol = volumeOverride ?? _volumes[type] ?? 1.0;
 
     _activeMusicHandle = await SoLoud.instance.play(
       source,
-      volume: 0,
+      volume: 0, 
       looping: true,
     );
 
-    SoLoud.instance.fadeVolume(_activeMusicHandle!, vol, const Duration(seconds: 1));
+    SoLoud.instance.fadeVolume(_activeMusicHandle!, vol, fadeDuration);
   }
 
   void fadeOutAndStop({Duration duration = const Duration(seconds: 2), bool isMuting = false}) {
