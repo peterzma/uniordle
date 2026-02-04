@@ -48,8 +48,20 @@ class _MajorTileState extends State<MajorTile> {
               decoration: BoxDecoration(
                 color: AppColors.surfaceVariant,
                 borderRadius: BorderRadius.circular(16),
+                gradient: isFullyMastered
+                  ? RadialGradient(
+                      center: const Alignment(-0.6, -0.5),
+                      radius: 1.5,
+                      colors: [
+                        AppColors.accent3.withValues(alpha: 0.15),
+                        AppColors.surfaceVariant,
+                      ],
+                    )
+                  : null,
                 border: Border.all(
-                  color: _hovering ? displayColor : Colors.transparent,
+                  color: _hovering 
+                      ? (isFullyMastered ? AppColors.accent3 : sub.color) 
+                      : Colors.transparent,
                   width: 1.5,
                 ),
               ),
