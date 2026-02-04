@@ -16,7 +16,7 @@ class SummaryCard extends StatelessWidget {
   @override
 Widget build(BuildContext context) {
   return Container(
-    height: context.responsive(100, 140),
+    height: 100,
     decoration: BoxDecoration(
       color: AppColors.surfaceVariant, 
       borderRadius: BorderRadius.circular(AppLayout.cardRounding),

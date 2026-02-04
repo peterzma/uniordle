@@ -42,6 +42,7 @@ abstract class AppIcons {
   static const IconData lockedRank = Icons.lock_outline;
   static const IconData finalRank = Icons.workspace_premium;
   static const IconData thankYou = Icons.auto_stories;
+  static const IconData mastered = Icons.workspace_premium;
 }
 
 class IconMapper {

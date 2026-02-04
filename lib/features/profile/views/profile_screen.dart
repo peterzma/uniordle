@@ -79,6 +79,44 @@ class ProfileScreen extends StatelessWidget {
                   ],
                 ),
               ),
+
+              SizedBox(height: context.r(8)),
+
+              IntrinsicHeight(
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Expanded(
+                      child: SummaryCard(
+                        label: "Loss Penalty",
+                        value: "-${stats.standardPenalty}",
+                        icon: LucideIcons.trendingDown,
+                        iconColor: AppColors.accent2,
+                      ),
+                    ),
+                    SizedBox(width: context.r(8)),
+
+                    Expanded(
+                      child: SummaryCard(
+                        label: "Abandon Cost",
+                        value: "-${stats.activePenalty}",
+                        icon: LucideIcons.skull,
+                        iconColor: AppColors.accent2,
+                      ),
+                    ),
+                    SizedBox(width: context.r(8)),
+
+                    Expanded(
+                      child: SummaryCard(
+                        label: "Mastered",
+                        value: "${stats.unlockedIds.length}",
+                        icon: AppIcons.mastered,
+                        iconColor: AppColors.accent3,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
         
               SizedBox(height: context.r(16)),
 

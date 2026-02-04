@@ -12,8 +12,8 @@ Credits
 Levelling up
 5 levels = credit
 10 levels = rank up
-penalty increases by 5 from original 5 so lose 40 once you hit level 70
-
+abandon penalty increases by 10 from original 10 up until level 70. so -70
+loss penalty increases by 5 from original 5 so -35
 ## Getting Started
 
 ### Prerequisites
