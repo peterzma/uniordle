@@ -18,7 +18,7 @@ class RankPathway extends StatelessWidget {
   //     ? allRanks.length - 1 
   //     : allRanks.lastIndexWhere((r) => currentLevel >= r['minLevel']);
 
-  //   final bool isPathwayComplete = currentRankIndex == allRanks.length - 1;
+    // final bool isPathwayComplete = currentRankIndex == allRanks.length - 1;
 // /// --------------------------------
     final int currentRankIndex = allRanks.lastIndexWhere(
       (r) => currentLevel >= r['minLevel'],

@@ -11,7 +11,7 @@ class HelpDialog extends StatefulWidget {
 class _HelpDialogState extends State<HelpDialog> {
   final PageController _pageController = PageController();
   int _currentPage = 0;
-  final int _totalPages = 3;
+  final int _totalPages = 4;
 
   @override
   Widget build(BuildContext context) {
@@ -39,6 +39,7 @@ class _HelpDialogState extends State<HelpDialog> {
               onPageChanged: (index) => setState(() => _currentPage = index),
               children: [
                 const HowToPlay(),
+                const LevelUp(),
                 const LevelUp(),
                 const ReachTop(),
               ],

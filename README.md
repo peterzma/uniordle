@@ -7,6 +7,12 @@ Uniordle is a Wordle-style word puzzle game built with Flutter and Dart. Choose 
 ## Features
 
 * WIP
+Merits
+Credits
+Levelling up
+5 levels = credit
+10 levels = rank up
+penalty increases by 5 from original 5 so lose 40 once you hit level 70
 
 ## Getting Started
 
@@ -89,11 +95,6 @@ Latest release:
 
 * Make categories more university related
 * Add more words
-* Add sound/music
-* Add stats/profile screens
-* change sound effect of tile flipping in game screen
-* replace ui click on buttons to be more minimal
-* Add win/loss sound to end dialog
 * add intro for app only
 * add progress on each major. increase likihood of new unique words. once mastered, **stop user from farming it by decreasing merits earned** (need to add this part now)
 * **IMPROVE APPEARANCE AND DESIGN AFTER ADDING LOGIC**
@@ -106,3 +107,5 @@ Latest release:
 * test with emulators
 * check volumes are equalised
 * finetune sounds by cutting off silence
+* rename stuff to be university themed
+* add game finished dialog once all majors are mastered

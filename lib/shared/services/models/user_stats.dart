@@ -1,7 +1,7 @@
 class UserStats {
 
   static const int meritPerLevel = 100;
-  static const int penaltyAmount = 10;
+  static const int penaltyAmount = 5;
 
   final int streak;
   final int maxStreak;
