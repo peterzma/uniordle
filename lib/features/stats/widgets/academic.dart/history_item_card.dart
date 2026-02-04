@@ -3,7 +3,10 @@ import 'package:uniordle/shared/services/models/game_grade.dart';
 
 class HistoryItemCard extends StatelessWidget {
   final Map<String, dynamic> game;
-  const HistoryItemCard({required this.game});
+  const HistoryItemCard({
+    super.key,
+    required this.game
+  });
 
   @override
   Widget build(BuildContext context) {
