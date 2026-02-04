@@ -1,3 +1,5 @@
+import 'package:uniordle/features/home/data/major_data.dart';
+
 class UserStats {
 
   static const int meritPerLevel = 100;
@@ -9,6 +11,7 @@ class UserStats {
   final int merit;
   final Map<int, int> guessDistribution;
   final List<String> unlockedIds;
+  final List<String> masteredIds;
   final List<int> achievedMilestones;
   final Map<String, int> modeFrequency;
   final List<String> solvedWords;
@@ -22,6 +25,7 @@ class UserStats {
     this.lost = 0,
     this.guessDistribution = const {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0},
     this.unlockedIds = const [],
+    this.masteredIds = const [],
     this.achievedMilestones = const [],
     this.modeFrequency = const {},
     this.solvedWords = const [],
@@ -36,6 +40,7 @@ class UserStats {
     int? merit,
     Map<int, int>? guessDistribution,
     List<String>? unlockedIds,
+    List<String>? masteredIds,
     List<int>? achievedMilestones,
     Map<String, int>? modeFrequency,
     List<String>? solvedWords,
@@ -49,6 +54,7 @@ class UserStats {
       merit: merit ?? this.merit,
       guessDistribution: guessDistribution ?? this.guessDistribution,
       unlockedIds: unlockedIds ?? this.unlockedIds,
+      masteredIds: masteredIds ?? this.masteredIds,
       achievedMilestones: achievedMilestones ?? this.achievedMilestones,
       modeFrequency: modeFrequency ?? this.modeFrequency,
       solvedWords: solvedWords ?? this.solvedWords,
@@ -156,4 +162,30 @@ extension UserStatsUnlocks on UserStats {
   bool get hasAnyUnlock => unlockedIds.isNotEmpty;
   
   int get nextCreditAtLevel => (creditsSpent) * 5;
+}
+
+extension UserStatsMastery on UserStats {
+  /// Returns a list of IDs for majors that are 100% complete
+  List<String> get masteredMajorIds {
+    return MajorsData.all.where((major) {
+      final List<String> library = MajorsData.getAllWordsForMajor(major.id);
+      if (library.isEmpty) return false;
+      
+      return library.every((word) => solvedWords.contains(word));
+    }).map((m) => m.id).toList();
+  }
+
+  int get masteredCount => masteredMajorIds.length;
+
+  ({int solved, double percent}) getMajorProgress(String majorId, int totalWords) {
+    if (totalWords == 0) return (solved: 0, percent: 0.0);
+    
+    final List<String> library = MajorsData.getAllWordsForMajor(majorId);
+    final int solvedCount = library.where((w) => solvedWords.contains(w)).length;
+    
+    return (
+      solved: solvedCount,
+      percent: (solvedCount / totalWords).clamp(0.0, 1.0)
+    );
+  }
 }

@@ -1,4 +1,3 @@
-import 'package:uniordle/features/home/data/major_data.dart';
 import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:uniordle/shared/exports/home_exports.dart';
 import 'package:uniordle/shared/buttons/select_button_wrapper.dart';
@@ -30,10 +29,8 @@ class _MajorTileState extends State<MajorTile> {
     return ValueListenableBuilder(
       valueListenable: statsManager.statsNotifier,
       builder: (context, stats, _) {
-        final List<String> library = MajorsData.getAllWordsForMajor(sub.id);
-        final int masteredCount = library.where((w) => stats.solvedWords.contains(w)).length;
-
-        final double progress = (masteredCount / sub.totalWords).clamp(0.0, 1.0);
+        final progressData = stats.getMajorProgress(sub.id, sub.totalWords);
+        final bool isFullyMastered = progressData.percent >= 1.0;
 
         return SelectButtonWrapper(
           onTap: widget.onTap,
@@ -61,8 +58,12 @@ class _MajorTileState extends State<MajorTile> {
                 child: Row(
                   children: [
                     MajorIcon(
-                      iconName: widget.isLocked ? 'lock' : sub.icon, 
-                      color: widget.isLocked ? Colors.grey : sub.color,
+                      iconName: widget.isLocked 
+                          ? 'lock' 
+                          : (isFullyMastered ? 'check_circle' : sub.icon), 
+                      color: widget.isLocked 
+                          ? Colors.grey 
+                          : (isFullyMastered ? AppColors.correctColor : sub.color),
                     ),
                     const SizedBox(width: 16),
                     Expanded(
@@ -78,7 +79,7 @@ class _MajorTileState extends State<MajorTile> {
                               ),
                               if (!widget.isLocked)
                                 Text(
-                                  "$masteredCount/${sub.totalWords}",
+                                  "${progressData.solved}/${sub.totalWords}",
                                   style: AppFonts.labelSmall.copyWith(
                                     color: displayColor, 
                                     fontWeight: FontWeight.bold
@@ -91,7 +92,7 @@ class _MajorTileState extends State<MajorTile> {
                           ClipRRect(
                             borderRadius: BorderRadius.circular(2),
                             child: LinearProgressIndicator(
-                              value: progress,
+                              value: progressData.percent,
                               minHeight: 4,
                               backgroundColor: displayColor.withValues(alpha: 0.1),
                               valueColor: AlwaysStoppedAnimation<Color>(displayColor),
@@ -99,9 +100,15 @@ class _MajorTileState extends State<MajorTile> {
                           ),
                           const SizedBox(height: 2),
                           Text(
-                            widget.isLocked ? "LOCKED" : "MASTERY: ${(progress * 100).toInt()}%", 
+                            widget.isLocked 
+                                ? "LOCKED" 
+                                : (isFullyMastered 
+                                    ? "FULLY MASTERED" 
+                                    : "MASTERY: ${(progressData.percent * 100).toInt()}%"), 
                             style: AppFonts.labelSmall.copyWith(
-                              color: displayColor.withValues(alpha: 0.7),
+                              color: isFullyMastered 
+                                  ? AppColors.correctColor 
+                                  : displayColor.withValues(alpha: 0.7),
                               fontSize: 10,
                             )
                           ),
