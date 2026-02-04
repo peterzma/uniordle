@@ -72,6 +72,7 @@ class _GameScreenState extends State<GameScreen> {
         attempts: _controller.currentWordIndex + 1,
         maxAttempts: _maxAttempts,
         word: solutionWord,
+        majorId: major.id,
       );
     } else {
       meritChange = statsManager.statsNotifier.value.standardPenalty;

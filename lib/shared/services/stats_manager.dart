@@ -58,6 +58,7 @@ class StatsManager {
     required int attempts, 
     required int maxAttempts,
     required String word,
+    required String majorId,
   }) async {
     final current = statsNotifier.value;
 
@@ -66,6 +67,7 @@ class StatsManager {
       yearLevel: yearLevel, 
       wordLength: wordLength, 
       attempts: attempts,
+      majorId: majorId,
     );
 
     final int newMerit = current.merit + gainedMerit;

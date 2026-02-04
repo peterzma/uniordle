@@ -121,6 +121,7 @@ class GameController extends ChangeNotifier {
         wordLength: wordLength, 
         attempts: currentWordIndex + 1,
         maxAttempts: maxAttempts,
+        majorId: majorId,
       );
       onGameEnd(true);
     } else if (currentWordIndex + 1 >= maxAttempts) {

@@ -109,3 +109,4 @@ Latest release:
 * finetune sounds by cutting off silence
 * rename stuff to be university themed
 * add game finished dialog once all majors are mastered
+* reduce merit to play game padding

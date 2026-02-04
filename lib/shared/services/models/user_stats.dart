@@ -140,6 +140,7 @@ extension UserStatsRewards on UserStats {
     required int yearLevel, 
     required int wordLength, 
     required int attempts,
+    required String majorId,
   }) {
     final bounds = _calculateMeritBounds(yearLevel, wordLength);
     
@@ -148,8 +149,16 @@ extension UserStatsRewards on UserStats {
     performanceWeight = performanceWeight.clamp(0.0, 1.0);
 
     int baseMerit = bounds.min + ((bounds.max - bounds.min) * performanceWeight).round();
+
+    double totalMerit = baseMerit * stats.meritMultiplier;
+
+    final isMastered = stats.masteredMajorIds.contains(majorId);
+
+    if (isMastered) {
+      totalMerit *= 0.5;
+    }
     
-    return (baseMerit * stats.meritMultiplier).round();
+    return totalMerit.round();
   }
 }
 
