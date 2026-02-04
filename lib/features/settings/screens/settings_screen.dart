@@ -40,6 +40,13 @@ class SettingsScreen extends StatelessWidget {
                         value: state.soundsEnabled,
                         onChanged: controller.toggleSounds,
                       ),
+                      const SizedBox(height: 8),
+                      SettingsToggleTile(
+                        icon: AppIcons.backgroundMusic,
+                        label: 'Background Music',
+                        value: state.musicEnabled,
+                        onChanged: controller.toggleMusic,
+                      ),
                       const SettingsHeader(title: 'SOCIALS'),
                       SettingsActionTile(
                         icon: AppIcons.linkedIn,

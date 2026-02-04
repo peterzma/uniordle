@@ -50,8 +50,16 @@ class SoundManager {
   bool _musicEnabled = true;
 
   set musicEnabled(bool value) {
+    if (_musicEnabled == value) return;
     _musicEnabled = value;
-    if (!value) stopMusic();
+
+    if (!value) {
+      fadeOutAndStop(duration: const Duration(milliseconds: 500), isMuting: true);
+    } else {
+      if (_currentlyPlayingType != null) {
+        _startMusic(_currentlyPlayingType!);
+      }
+    }
   }
   
   SoundType? _currentlyPlayingType;
@@ -100,43 +108,48 @@ class SoundManager {
   }
 
   void playMusic(SoundType type, {double? volumeOverride}) async {
-    if (!_isInitialized || !_musicEnabled) return;
+    if (!_isInitialized) return;
 
-    if (_currentlyPlayingType == type && _activeMusicHandle != null) {
-      return; 
-    }
+    _currentlyPlayingType = type;
 
+    if (!_musicEnabled) return;
+
+    _startMusic(type, volumeOverride: volumeOverride);
+  }
+
+  void _startMusic(SoundType type, {double? volumeOverride}) async {
     final source = _sources[type];
     if (source == null) return;
 
     if (_activeMusicHandle != null) {
-      await stopMusic();
+      final oldHandle = _activeMusicHandle!;
+      SoLoud.instance.fadeVolume(oldHandle, 0, const Duration(seconds: 1));
+      Future.delayed(const Duration(seconds: 1), () => SoLoud.instance.stop(oldHandle));
     }
 
     final double vol = volumeOverride ?? _volumes[type] ?? 1.0;
 
     _activeMusicHandle = await SoLoud.instance.play(
       source,
-      volume: vol,
+      volume: 0,
       looping: true,
-      loopingStartAt: Duration.zero,
     );
-    
-    _currentlyPlayingType = type;
+
+    SoLoud.instance.fadeVolume(_activeMusicHandle!, vol, const Duration(seconds: 1));
   }
 
-  Future<void> stopMusic() async {
+  void fadeOutAndStop({Duration duration = const Duration(seconds: 2), bool isMuting = false}) {
     if (_activeMusicHandle != null) {
-      await SoLoud.instance.stop(_activeMusicHandle!);
+      final handleToStop = _activeMusicHandle!;
+      SoLoud.instance.fadeVolume(handleToStop, 0, duration);
+      
       _activeMusicHandle = null;
-      _currentlyPlayingType = null;
-    }
-  }
+      
+      if (!isMuting) {
+        _currentlyPlayingType = null;
+      }
 
-  void fadeOutAndStop({Duration duration = const Duration(seconds: 2)}) {
-    if (_activeMusicHandle != null) {
-      SoLoud.instance.fadeVolume(_activeMusicHandle!, 0, duration);
-      Future.delayed(duration, () => stopMusic());
+      Future.delayed(duration, () => SoLoud.instance.stop(handleToStop));
     }
   }
 }

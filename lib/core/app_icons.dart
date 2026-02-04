@@ -19,6 +19,7 @@ abstract class AppIcons {
   static const IconData inProgressDeleteData1 = Icons.warning_amber_rounded;
   static const IconData inProgressDeleteData2 = Icons.error_outline_rounded; 
   static const IconData settingsRightArrow = Icons.chevron_right;
+  static const IconData backgroundMusic = Icons.music_note;
 
   // Gameplay
   static const IconData play = Icons.play_arrow_rounded;

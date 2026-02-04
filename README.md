@@ -105,6 +105,7 @@ Latest release:
 * add account syncing / creation with suprabase
 * test with emulators
 * check volumes are equalised
+* add volu
 * if adding music - add mute button top right next to help button in game
 * fix: other keys move as key is hovered/selected in small width keyboard
 * finetune sounds by cutting off silence

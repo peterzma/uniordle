@@ -16,14 +16,17 @@ class SettingsController {
     final prefs = await SharedPreferences.getInstance();
     
     final sounds = prefs.getBool('sounds_enabled') ?? true;
+    final music = prefs.getBool('music_enabled') ?? true;
     final darkMode = prefs.getBool('dark_mode_enabled') ?? true;
 
     _state.value = SettingsState(
       soundsEnabled: sounds,
+      musicEnabled: music,
       darkModeEnabled: darkMode,
     );
 
     SoundManager().soundsEnabled = sounds;
+    SoundManager().musicEnabled = music;
   }
 
   Future<void> toggleSounds(bool value) async {
@@ -32,5 +35,13 @@ class SettingsController {
     
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool('sounds_enabled', value);
+  }
+
+  Future<void> toggleMusic(bool value) async {
+    _state.value = _state.value.copyWith(musicEnabled: value);
+    SoundManager().musicEnabled = value;
+    
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('music_enabled', value);
   }
 }
