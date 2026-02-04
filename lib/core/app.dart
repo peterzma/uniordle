@@ -2,6 +2,7 @@ import 'package:flutter_soloud/flutter_soloud.dart';
 import 'package:uniordle/shared/exports/app_exports.dart';
 import 'package:uniordle/shared/navigation/instant_page_route.dart';
 import 'package:uniordle/shared/navigation/main_navigation_screen.dart';
+import 'package:uniordle/shared/navigation/music_navigation_observer.dart';
 import 'package:uniordle/shared/responsive/responsive_wrapper.dart';
 
 class App extends StatefulWidget {
@@ -14,6 +15,8 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> with WidgetsBindingObserver {
+
+  final MusicNavigationObserver _musicObserver = MusicNavigationObserver();
 
   @override
   void initState() {
@@ -42,6 +45,7 @@ class _AppState extends State<App> with WidgetsBindingObserver {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Uniordle',
+      navigatorObservers: [_musicObserver],
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
 
@@ -61,29 +65,26 @@ class _AppState extends State<App> with WidgetsBindingObserver {
   }
 
   Widget _getPage(RouteSettings settings) {
-  switch (settings.name) {
-    case '/':
-      SoundManager().playMusic(SoundType.menuMusic);
-      return const MainNavigationScreen();
-      
-    case '/uniordle':
-      SoundManager().playMusic(SoundType.gameMusic);
-      return const GameScreen();
-      
-    case '/setup':
-      final args = settings.arguments as Major;
-      return GameSetupScreen(major: args);
-      
-    case '/settings':
-      return Builder(builder: (context) {
-        return SettingsScreen(
-          onClose: () => Navigator.of(context).pop(),
-        );
-      });
-      
-    default:
-      SoundManager().playMusic(SoundType.menuMusic);
-      return const HomeScreen();
+    switch (settings.name) {
+      case '/':
+        return const MainNavigationScreen();
+        
+      case '/uniordle':
+        return const GameScreen();
+        
+      case '/setup':
+        final args = settings.arguments as Major;
+        return GameSetupScreen(major: args);
+        
+      case '/settings':
+        return Builder(builder: (context) {
+          return SettingsScreen(
+            onClose: () => Navigator.of(context).pop(),
+          );
+        });
+        
+      default:
+        return const HomeScreen();
+    }
   }
-}
 }

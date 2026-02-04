@@ -43,6 +43,18 @@ class SoundManager {
   };
 
   bool _isInitialized = false;
+  bool _enabled = true;
+  set soundsEnabled(bool value) => _enabled = value;
+
+  SoundHandle? _activeMusicHandle; 
+  bool _musicEnabled = true;
+
+  set musicEnabled(bool value) {
+    _musicEnabled = value;
+    if (!value) stopMusic();
+  }
+  
+  SoundType? _currentlyPlayingType;
 
   Future<void> init() async {
     if (_isInitialized) return;
@@ -71,17 +83,6 @@ class SoundManager {
     }
   }
 
-  bool _enabled = true;
-  set soundsEnabled(bool value) => _enabled = value;
-
-  SoundHandle? _activeMusicHandle; 
-  bool _musicEnabled = true;
-
-  set musicEnabled(bool value) {
-    _musicEnabled = value;
-    if (!value) stopMusic();
-  }
-
   void play(SoundType type, {double? volumeOverride}) {
     if (!_isInitialized || !_enabled) return;
     
@@ -101,6 +102,10 @@ class SoundManager {
   void playMusic(SoundType type, {double? volumeOverride}) async {
     if (!_isInitialized || !_musicEnabled) return;
 
+    if (_currentlyPlayingType == type && _activeMusicHandle != null) {
+      return; 
+    }
+
     final source = _sources[type];
     if (source == null) return;
 
@@ -116,12 +121,15 @@ class SoundManager {
       looping: true,
       loopingStartAt: Duration.zero,
     );
+    
+    _currentlyPlayingType = type;
   }
 
   Future<void> stopMusic() async {
     if (_activeMusicHandle != null) {
       await SoLoud.instance.stop(_activeMusicHandle!);
       _activeMusicHandle = null;
+      _currentlyPlayingType = null;
     }
   }
 
