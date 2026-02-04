@@ -62,6 +62,17 @@ abstract class AppLayout {
   static double lerp(BuildContext context, double min, double max) {
     return min + (max - min) * scaleFactor(context);
   }
+
+  static double verticalScaleFactor(BuildContext context) {
+    final double height = screenHeight(context);
+    if (height <= minAppHeight) return 0.0;
+    if (height >= startAppHeight) return 1.0;
+    return (height - minAppHeight) / (startAppHeight - minAppHeight);
+  }
+
+  static double lerpHeight(BuildContext context, double min, double max) {
+    return min + (max - min) * verticalScaleFactor(context);
+  }
 }
 
 extension ResponsiveLayout on BuildContext {
@@ -71,6 +82,10 @@ extension ResponsiveLayout on BuildContext {
   /// Automatically scales any number by 50% on the smallest mobile width.
   /// Usage: context.r(32) -> returns 16 on mobile, 32 on desktop.
   double r(double value) => AppLayout.lerp(this, value / 2, value);
+
+  /// Scales based on height, capped at my 767px sweet spot.
+  /// Usage: context.v(16, 64) -> won't exceed 64 even on a giant screen.
+  double v(double min, double max) => AppLayout.lerpHeight(this, min, max);
   
   Widget autoText(
     String text, {

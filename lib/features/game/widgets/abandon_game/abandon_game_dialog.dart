@@ -60,7 +60,6 @@ class AbandonGameDialog extends StatelessWidget {
                 child: PrimaryButton(
                   label: 'CANCEL',
                   onPressed: () => Navigator.pop(context, false),
-                  width: 300,
                 ),
               ),
               SizedBox(width: context.r(16)),
@@ -69,7 +68,6 @@ class AbandonGameDialog extends StatelessWidget {
                   label: 'LEAVE',
                   color: AppColors.accent2,
                   onPressed: () => Navigator.pop(context, true),
-                  width: 300,
                 ),
               ),
             ],

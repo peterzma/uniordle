@@ -67,14 +67,14 @@ class _GameSetupScreenState extends State<GameSetupScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Padding(
-                              padding: EdgeInsets.only(top: context.responsive(0, 32)),
+                              padding: EdgeInsets.only(top: context.v(0, 16)),
                               child: GameSetupHero(major: widget.major),
                             ),
 
                             Column(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                SizedBox(height: context.r(16)),
+                                SizedBox(height: context.v(16, 32)),
                                 context.autoText(
                                   'WORD LENGTH',
                                   style: AppFonts.displayMedium,
@@ -86,7 +86,7 @@ class _GameSetupScreenState extends State<GameSetupScreen> {
                                   major: widget.major,
                                 ),
                                 
-                                SizedBox(height: context.responsive(16, 64)),
+                                SizedBox(height: context.v(16, 64)),
 
                                 context.autoText(
                                   'YEAR LEVEL',
@@ -101,7 +101,7 @@ class _GameSetupScreenState extends State<GameSetupScreen> {
                             ),
 
                             // Bottom Buffer: Prevents selectors from hitting the badge
-                            SizedBox(height: context.responsive(16, 64)),
+                            SizedBox(height: context.v(16, 64)),
                           ],
                         ),
                       ),
