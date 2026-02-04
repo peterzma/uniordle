@@ -37,7 +37,7 @@ class SettingsScreen extends StatelessWidget {
                       const SettingsHeader(title: 'PREFERENCES'),
                       SettingsSliderTile(
                         icon: AppIcons.backgroundMusic,
-                        muteIcon: Icons.music_off,
+                        muteIcon: AppIcons.backgroundMusicMuted,
                         label: 'Background Music',
                         value: state.musicVolume,
                         onChanged: controller.setMusicVolume,
@@ -46,7 +46,7 @@ class SettingsScreen extends StatelessWidget {
                       const SizedBox(height: 8),
                       SettingsSliderTile(
                         icon: AppIcons.volume,
-                        muteIcon: Icons.volume_off,
+                        muteIcon: AppIcons.volumeOff,
                         label: 'Sound Effects',
                         value: state.soundVolume,
                         onChanged: controller.setSoundVolume,

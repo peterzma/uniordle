@@ -8,6 +8,7 @@ class BaseHeader extends StatelessWidget {
   final VoidCallback onLeftTap;
   final IconData? rightIcon;
   final VoidCallback? onRightTap;
+  final List<Widget>? actions;
   final double height;
 
   const BaseHeader({
@@ -17,6 +18,7 @@ class BaseHeader extends StatelessWidget {
     required this.onLeftTap,
     this.rightIcon,
     this.onRightTap,
+    this.actions,
     this.height = AppLayout.marginHeight,
   });
 
@@ -42,29 +44,36 @@ class BaseHeader extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              NavigationItem(
-                icon: leftIcon,
-                onTap: onLeftTap,
+              Expanded(
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: NavigationItem(
+                    icon: leftIcon,
+                    onTap: onLeftTap,
+                  ),
+                ),
               ),
               Text(
                 title,
                 style: AppFonts.displayMedium,
+                textAlign: TextAlign.center,
               ),
-              if (rightIcon != null)
-                NavigationItem(
-                  icon: rightIcon!,
-                  onTap: onRightTap ?? () {},
-                )
-              else
-                Opacity(
-                  opacity: 0,
-                  child: IgnorePointer(
-                    child: NavigationItem(
-                      icon: Icons.circle,
-                      onTap: () {},
-                    ),
-                  ),
-                ),
+              Expanded(
+              child: Align(
+                alignment: Alignment.centerRight,
+                child: actions != null
+                    ? Row(
+                        mainAxisSize: MainAxisSize.min, 
+                        children: actions!,
+                      )
+                    : rightIcon != null
+                        ? NavigationItem(
+                            icon: rightIcon!,
+                            onTap: onRightTap ?? () {},
+                          )
+                        : const SizedBox.shrink(),
+              ),
+            ),
             ],
           ),
         ),

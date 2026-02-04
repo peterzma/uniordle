@@ -10,6 +10,7 @@ abstract class AppIcons {
   
   // Settings
   static const IconData volume = Icons.volume_up_rounded;
+  static const IconData volumeOff = Icons.volume_off;
   static const IconData linkedIn = Icons.person_search_rounded;
   static const IconData gitHub = Icons.code_rounded;
   static const IconData bugReport = Icons.bug_report_rounded;
@@ -20,6 +21,7 @@ abstract class AppIcons {
   static const IconData inProgressDeleteData2 = Icons.error_outline_rounded; 
   static const IconData settingsRightArrow = Icons.chevron_right;
   static const IconData backgroundMusic = Icons.music_note;
+  static const IconData backgroundMusicMuted = Icons.music_off;
 
   // Gameplay
   static const IconData play = Icons.play_arrow_rounded;

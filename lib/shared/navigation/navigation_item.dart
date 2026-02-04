@@ -7,6 +7,7 @@ class NavigationItem extends StatelessWidget {
   final VoidCallback onTap;
   final bool isActive;
   final double iconSize;
+  final Color? color;
 
   const NavigationItem({
     super.key,
@@ -15,6 +16,7 @@ class NavigationItem extends StatelessWidget {
     this.label,
     this.isActive = false,
     this.iconSize = 24,
+    this.color,
   });
 
   @override
