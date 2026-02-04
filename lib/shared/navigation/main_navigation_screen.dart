@@ -15,6 +15,12 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   void _onTabChange(String tabId) => setState(() => _activeTab = tabId);
 
   @override
+  void initState() {
+    super.initState();
+    SoundManager().playMusic(SoundType.menuMusic);
+  }
+
+  @override
   Widget build(BuildContext context) {
     Widget activeBody;
     String activeTitle;

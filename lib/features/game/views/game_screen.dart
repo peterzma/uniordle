@@ -21,8 +21,6 @@ class _GameScreenState extends State<GameScreen> {
     int _wordLength = 5;
     int _maxAttempts = 6;
 
-    
-
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
@@ -51,6 +49,7 @@ class _GameScreenState extends State<GameScreen> {
       );
 
       _controller.addListener(() => setState(() {}));
+      SoundManager().playMusic(SoundType.gameMusic);
       _isInitialized = true;
     }
   }

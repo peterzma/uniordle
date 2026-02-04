@@ -1,11 +1,42 @@
+import 'package:flutter_soloud/flutter_soloud.dart';
 import 'package:uniordle/shared/exports/app_exports.dart';
+import 'package:uniordle/shared/navigation/instant_page_route.dart';
 import 'package:uniordle/shared/navigation/main_navigation_screen.dart';
 import 'package:uniordle/shared/responsive/responsive_wrapper.dart';
 
-class App extends StatelessWidget {
+class App extends StatefulWidget {
   const App({
     super.key,
   });
+
+  @override
+  State<App> createState() => _AppState();
+}
+
+class _AppState extends State<App> with WidgetsBindingObserver {
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
+    
+    if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive) {
+      SoLoud.instance.setPause;
+    } else if (state == AppLifecycleState.resumed) {
+      SoLoud.instance.play;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -48,17 +79,4 @@ class App extends StatelessWidget {
         return const HomeScreen();
     }
   }
-}
-
-class InstantPageRoute extends PageRouteBuilder {
-  final Widget page;
-
-  InstantPageRoute({
-    required this.page, super.settings
-  }): super(
-      pageBuilder: (context, animation, secondaryAnimation) => page,
-      transitionDuration: Duration.zero,
-      reverseTransitionDuration: Duration.zero,
-      transitionsBuilder: (context, animation, secondaryAnimation, child) => child,
-    );
 }

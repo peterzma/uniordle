@@ -39,6 +39,7 @@ class _GameSetupScreenState extends State<GameSetupScreen> {
     if (mounted) {
     setState(() => _isLoading = false);
     }
+    SoundManager().playMusic(SoundType.gameMusic);
   }
 
   @override
