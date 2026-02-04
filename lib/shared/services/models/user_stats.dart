@@ -87,6 +87,11 @@ extension UserStatsProgress on UserStats {
     return (oldMerit ~/ UserStats.meritPerLevel, (oldMerit % UserStats.meritPerLevel) / UserStats.meritPerLevel.toDouble());
   }
 
+  int get standardPenalty {
+    int rank = currentLevel ~/ 10;
+    return UserStats.penaltyAmount + (rank * 2); 
+  }
+
   int get activePenalty {
     int rank = currentLevel ~/ 10;
     return UserStats.penaltyAmount + (rank * 5);

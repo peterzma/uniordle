@@ -117,11 +117,12 @@ class StatsManager {
     required int wordLength, 
     required int maxAttempts
   }) async {
+    final current = statsNotifier.value;
     return _handleFailure(
       word: word,
       wordLength: wordLength,
       maxAttempts: maxAttempts,
-      penalty: UserStats.penaltyAmount,
+      penalty: current.standardPenalty,
     );
   }
 
