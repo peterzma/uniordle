@@ -52,7 +52,7 @@ class ProfileScreen extends StatelessWidget {
                       child: SummaryCard(
                         label: "Rank Bonus",
                         value: "+$rBonus%",
-                        icon: LucideIcons.award,
+                        icon: AppIcons.mastered,
                         iconColor: rBonus > 0 ? Colors.orange : AppColors.onSurfaceVariant,
                       ),
                     ),

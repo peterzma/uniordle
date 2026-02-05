@@ -73,12 +73,13 @@ class ProfileHeader extends StatelessWidget {
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(AppIcons.mastered, color: Colors.amber, size: 14),
+                        const Icon(AppIcons.completionist, color: Colors.amber, size: 14),
                         const SizedBox(width: 4),
                         context.autoText(
                           "+50%",
                           style: AppFonts.labelSmall.copyWith(
                             color: Colors.amber,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                       ],

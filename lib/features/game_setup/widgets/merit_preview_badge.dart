@@ -1,4 +1,5 @@
 import 'package:uniordle/core/app_icons.dart';
+import 'package:uniordle/features/home/data/major_data.dart';
 import 'package:uniordle/shared/exports/game_exports.dart';
 
 class MeritPreviewBadge extends StatelessWidget {
@@ -22,7 +23,7 @@ class MeritPreviewBadge extends StatelessWidget {
       builder: (context, stats, child) {
         final ranges = UserStatsRewards.getMeritRange(stats, difficulty, wordLength);
       
-        final bool hasMasteredEverything = stats.masteredCount >= 14;
+        final bool hasMasteredEverything = stats.masteredCount >= MajorsData.all.length;
         final bool isMastered = stats.masteredMajorIds.contains(major.id);
         final bool hasBonus = stats.meritMultiplier > 1.0;
 
@@ -32,8 +33,8 @@ class MeritPreviewBadge extends StatelessWidget {
         IconData displayIcon;
         
         if (hasMasteredEverything) {
-          labelText = mobileMode ? "CHANCELLOR: " : "CHANCELLOR REWARDS: ";
-          displayIcon = LucideIcons.crown; // Higher tier than trendingUp
+          labelText = mobileMode ? "COMPLETIONIST: " : "COMPLETIONIST MERITS: ";
+          displayIcon = AppIcons.completionist; // Higher tier than trendingUp
         } else if (showReductionUI) {
           labelText = "REDUCED MERITS: ";
           displayIcon = LucideIcons.refreshCw;

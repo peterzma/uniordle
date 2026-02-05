@@ -40,9 +40,10 @@ abstract class AppIcons {
   static const IconData unlockedRank = Icons.check_circle;
   static const IconData nextRank = Icons.radio_button_checked;
   static const IconData lockedRank = Icons.lock_outline;
-  static const IconData finalRank = Icons.workspace_premium;
+  static const IconData finalRank = LucideIcons.crown;
   static const IconData thankYou = Icons.auto_stories;
   static const IconData mastered = Icons.workspace_premium;
+  static const IconData completionist = LucideIcons.crown;
 }
 
 class IconMapper {

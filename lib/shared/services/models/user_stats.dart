@@ -110,8 +110,19 @@ extension UserStatsRewards on UserStats {
   double get meritMultiplier {
     final double rankMultiplier = (currentLevel ~/ 10) * 0.10;
     
-    final int additionalMajors = (unlockedIds.length - 1).clamp(0, 99);
-    final double majorMultiplier = additionalMajors * 0.05;
+    final int unlockedCount = unlockedIds.length;
+    double majorMultiplier = 0.0;
+
+    if (unlockedCount > 1) {
+      
+      final bool hasAllMajors = unlockedCount >= MajorsData.all.length;
+      
+      if (hasAllMajors) {
+        majorMultiplier = ((unlockedCount - 2) * 0.05) + 0.10;
+      } else {
+        majorMultiplier = (unlockedCount - 1) * 0.05;
+      }
+    }
     
     final double chancellorBonus = masteredCount >= MajorsData.all.length ? 0.50 : 0.0;
     
