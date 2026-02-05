@@ -1,4 +1,5 @@
 import 'package:uniordle/core/app_icons.dart';
+import 'package:uniordle/shared/buttons/pulsing_button_wrapper.dart';
 import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:uniordle/shared/layout/base_badge.dart';
 
@@ -25,12 +26,21 @@ class HomeHero extends StatelessWidget {
           style: AppFonts.labelMedium,
         ),
         SizedBox(height: context.r(16)),
-        BaseBadge(
-          label: "${stats.availableCredits} ${stats.availableCredits == 1 ? 'CREDIT' : 'CREDITS'}",
-          icon: AppIcons.credits,
-          color: statusColor,
-        ),
+        hasCredits 
+          ? PulsingButtonWrapper(
+              glowColor: statusColor,
+              child: _buildBadge(statusColor),
+            )
+          : _buildBadge(statusColor),
       ],
+    );
+  }
+
+  Widget _buildBadge(Color statusColor) {
+    return BaseBadge(
+      label: "${stats.availableCredits} ${stats.availableCredits == 1 ? 'CREDIT' : 'CREDITS'}",
+      icon: AppIcons.credits,
+      color: statusColor,
     );
   }
 }

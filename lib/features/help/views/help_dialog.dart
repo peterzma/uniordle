@@ -41,8 +41,8 @@ class _HelpDialogState extends State<HelpDialog> {
               children: [
                 const HowToPlay(),
                 const LevelUp(),
-                const RiseAndReach(),
                 const RiskAndReward(),
+                const RiseAndReach(),
               ],
             ),
           ),
