@@ -56,36 +56,33 @@ class ProfileHeader extends StatelessWidget {
             ),
             context.autoText("Temp Name", style: AppFonts.displayLarge),
             
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+            context.autoText(
+              academicTitle,
+              style: AppFonts.labelLarge.copyWith(
+                color: academicTitle == "THE ORACLE" ? Colors.amber : AppColors.accent,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: context.r(4)),
+            Wrap(
+              alignment: WrapAlignment.center,
+              spacing: 8,
+              runSpacing: 8,
               children: [
-                context.autoText(
-                  academicTitle,
-                  style: AppFonts.labelLarge.copyWith(
-                    color: academicTitle == "THE ORACLE" ? Colors.amber : AppColors.accent,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                if (hasSummit) ...[
-                  const SizedBox(width: 8),
+                if (hasSummit)
                   _buildBadge(
                     context: context,
-                    icon: LucideIcons.trophy, // Or a specific Summit icon
+                    icon: LucideIcons.trophy,
                     label: "+${(summitBonus * 100).toInt()}%",
                     color: Colors.amber,
                   ),
-                ],
-
-                // 2. MASTERY BADGE (+200%)
-                if (hasMastery) ...[
-                  const SizedBox(width: 8),
+                if (hasMastery)
                   _buildBadge(
                     context: context,
                     icon: AppIcons.completionist,
                     label: "+${(masteryBonus * 100).toInt()}%",
-                    color: Colors.orange, // Slightly different color to distinguish
+                    color: Colors.orange,
                   ),
-                ],
               ],
             ),
           ],
