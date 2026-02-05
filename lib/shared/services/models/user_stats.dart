@@ -72,7 +72,7 @@ class UserStats {
 
 extension UserStatsProgress on UserStats {
   int get currentLevel => merit ~/ UserStats.meritPerLevel;
-  // int get currentLevel => 1000;
+  // int get currentLevel => 100;
   int get nextLevel => currentLevel + 1;
   int get meritInCurrentLevel => merit % UserStats.meritPerLevel;
   double get levelProgress => (merit % UserStats.meritPerLevel) / UserStats.meritPerLevel.toDouble();
@@ -96,37 +96,40 @@ extension UserStatsProgress on UserStats {
 
   int get standardPenalty {
     int rank = currentLevel ~/ 10;
-    return 5 + (rank * 5); 
+    return (rank * 5); 
   }
 
   int get activePenalty {
     int rank = currentLevel ~/ 10;
-    return 10 + (rank * 10);
+    return (rank * 10);
   }
 }
 
 extension UserStatsRewards on UserStats {
 
+  double get majorMultiplier {
+    final int unlockedCount = unlockedIds.length;
+    if (unlockedCount == 0) return 0.0;
+
+    if (unlockedCount >= 20) return 1.0;
+
+    if (unlockedCount == 19) return 0.90;
+
+    return unlockedCount * 0.05;
+  }
+
   double get meritMultiplier {
+    // Rank Bonus: +10% for every 10 levels
     final double rankMultiplier = (currentLevel ~/ 10) * 0.10;
     
-    final int unlockedCount = unlockedIds.length;
-    double majorMultiplier = 0.0;
-
-    if (unlockedCount > 1) {
-      
-      final bool hasAllMajors = unlockedCount >= MajorsData.all.length;
-      
-      if (hasAllMajors) {
-        majorMultiplier = ((unlockedCount - 2) * 0.05) + 0.10;
-      } else {
-        majorMultiplier = (unlockedCount - 1) * 0.05;
-      }
-    }
+    // Major Bonus: Using the logic defined above
+    final double majorBonus = majorMultiplier;
     
+    // Mastery Bonus: +50% if every single major in the game is mastered
     final double chancellorBonus = masteredCount >= MajorsData.all.length ? 0.50 : 0.0;
     
-    return 1.0 + majorMultiplier + rankMultiplier + chancellorBonus;
+    // Base is 1.0 (100%)
+    return 1.0 + majorBonus + rankMultiplier + chancellorBonus;
   }
 
   static ({int min, int max}) _calculateMeritBounds(int yearLevel, int wordLength) {

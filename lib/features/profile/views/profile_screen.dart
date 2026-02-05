@@ -14,7 +14,7 @@ class ProfileScreen extends StatelessWidget {
       valueListenable: statsManager.statsNotifier,
       builder: (context, stats, child) {
 
-        final int dBonus = ((stats.unlockedIds.length - 1).clamp(0, 99)) * 5;
+        final int dBonus = (stats.majorMultiplier * 100).toInt();
         final int rBonus = (stats.currentLevel ~/ 10) * 10;
 
         return SingleChildScrollView(
