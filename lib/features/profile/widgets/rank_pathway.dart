@@ -1,5 +1,6 @@
 import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/buttons/primary_button.dart';
+import 'package:uniordle/shared/buttons/pulsing_button_wrapper.dart';
 import 'package:uniordle/shared/exports/end_game_exports.dart';
 import 'package:uniordle/shared/exports/profile_exports.dart';
 import 'package:uniordle/shared/layout/show_base_dialog.dart';
@@ -93,15 +94,18 @@ class RankPathway extends StatelessWidget {
           Center(
             child: ConstrainedBox(
               constraints: BoxConstraints(maxWidth: AppLayout.contentWidth(context)),
-              child: PrimaryButton(
-                label: 'A Vision from the Beyond',
-                color: Colors.orange,
-                onPressed: () {
-                  showBaseDialog(
-                    context: context,
-                    child: const ThankYouDialog(),
-                  );
-                },
+              child: PulsingButtonWrapper(
+                glowColor: Colors.orange,
+                child: PrimaryButton(
+                  label: 'A Vision from the Beyond',
+                  color: Colors.orange,
+                  onPressed: () {
+                    showBaseDialog(
+                      context: context,
+                      child: const ThankYouDialog(),
+                    );
+                  },
+                ),
               ),
             ),
           ),
