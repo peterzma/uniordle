@@ -97,13 +97,9 @@ Latest release:
 * Make categories more university related
 * Add more words
 * add intro for app only
-* add progress on each major. increase likihood of new unique words. once mastered, **stop user from farming it by decreasing merits earned** (need to add this part now)
-* **IMPROVE APPEARANCE AND DESIGN AFTER ADDING LOGIC**
-* **IMPORTANT: ensure widths 360 to 512 are handled properly**
-* check/add sounds for everything needed. add music, add music toggle
+* check/add sounds for everything needed.
 * add more words
 * replace vague categories with more specific
-* update help dialog to account for: abandoining game loses merits. losing game loses merits, lose more as you rank up.
 * add account syncing / creation with suprabase
 * test with emulators
 * check volumes are equalised
