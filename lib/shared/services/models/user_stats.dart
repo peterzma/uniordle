@@ -133,7 +133,9 @@ extension UserStatsRewards on UserStats {
       baseMultiplier = unlockedCount * 0.05;
     }
 
-    return baseMultiplier + (extraBoosts * 0.05);
+    final double researchBonus = extraBoosts * 0.10;
+
+    return baseMultiplier + researchBonus;
   }
 
   double get meritMultiplier {

@@ -95,7 +95,7 @@ class _UseCreditsState extends State<UseCredits> {
                 ),
                 const SizedBox(width: 8),
                 context.autoText(
-                  "PERMANENT +5% MAJOR BONUS",
+                  "PERMANENT +10% MAJOR BONUS",
                   style: AppFonts.labelSmall.copyWith(
                     color: accentColor,
                     fontWeight: FontWeight.bold,
