@@ -33,7 +33,7 @@ class MeritPreviewBadge extends StatelessWidget {
         IconData displayIcon;
         
         if (hasMasteredEverything) {
-          labelText = mobileMode ? "ASCENSION: " : "ASCENSION MERITS: ";
+          labelText = mobileMode ? ": " : " MERITS: ";
           displayIcon = AppIcons.completionist; // Higher tier than trendingUp
         } else if (showReductionUI) {
           labelText = "REDUCED MERITS: ";

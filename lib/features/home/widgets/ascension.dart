@@ -3,14 +3,14 @@ import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/buttons/primary_button.dart';
 import 'package:uniordle/shared/exports/app_exports.dart';
 
-class CompletedGame extends StatefulWidget {
-  const CompletedGame({super.key});
+class Ascension extends StatefulWidget {
+  const Ascension({super.key});
 
   @override
-  State<CompletedGame> createState() => _CompletedGameState();
+  State<Ascension> createState() => _AscensionState();
 }
 
-class _CompletedGameState extends State<CompletedGame> {
+class _AscensionState extends State<Ascension> {
   late ConfettiController _confettiController;
 
   @override
@@ -38,7 +38,7 @@ class _CompletedGameState extends State<CompletedGame> {
             Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                context.autoIcon(AppIcons.thankYou, size: 64, color: Colors.orange),
+                context.autoIcon(AppIcons.ascension, size: 64, color: Colors.orange),
                 SizedBox(height: context.r(16)),
                 context.autoText("ASCENSION", style: AppFonts.headline),
                 SizedBox(height: context.r(12)),

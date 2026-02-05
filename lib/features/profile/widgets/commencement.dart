@@ -3,14 +3,14 @@ import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/buttons/primary_button.dart';
 import 'package:uniordle/shared/exports/app_exports.dart';
 
-class ThankYouDialog extends StatefulWidget {
-  const ThankYouDialog({super.key});
+class Commencement extends StatefulWidget {
+  const Commencement({super.key});
 
   @override
-  State<ThankYouDialog> createState() => _ThankYouDialogState();
+  State<Commencement> createState() => _CommencementState();
 }
 
-class _ThankYouDialogState extends State<ThankYouDialog> {
+class _CommencementState extends State<Commencement> {
   late ConfettiController _confettiController;
 
   @override

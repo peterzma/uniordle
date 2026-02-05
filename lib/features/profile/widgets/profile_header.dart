@@ -72,7 +72,7 @@ class ProfileHeader extends StatelessWidget {
                 if (hasSummit)
                   _buildBadge(
                     context: context,
-                    icon: LucideIcons.trophy,
+                    icon: AppIcons.,
                     label: "+${(summitBonus * 100).toInt()}%",
                     color: Colors.amber,
                   ),

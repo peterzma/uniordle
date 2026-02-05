@@ -44,6 +44,7 @@ abstract class AppIcons {
   static const IconData thankYou = Icons.auto_stories;
   static const IconData mastered = Icons.workspace_premium;
   static const IconData completionist = LucideIcons.crown;
+  static const IconData ascension = LucideIcons.trophy;
 }
 
 class IconMapper {

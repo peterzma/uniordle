@@ -102,7 +102,7 @@ class RankPathway extends StatelessWidget {
                   onPressed: () {
                     showBaseDialog(
                       context: context,
-                      child: const ThankYouDialog(),
+                      child: const Commencement(),
                     );
                   },
                 ),

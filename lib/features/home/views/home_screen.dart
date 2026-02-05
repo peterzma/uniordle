@@ -58,7 +58,7 @@ Widget build(BuildContext context) {
                       onPressed: () {
                         showBaseDialog(
                           context: context,
-                          child: const CompletedGame(),
+                          child: const Ascension(),
                         );
                       },
                     ),
