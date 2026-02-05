@@ -1,7 +1,9 @@
 import 'package:uniordle/core/app_icons.dart';
+import 'package:uniordle/features/home/widgets/use_credits.dart';
 import 'package:uniordle/shared/buttons/pulsing_button_wrapper.dart';
 import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:uniordle/shared/layout/base_badge.dart';
+import 'package:uniordle/shared/layout/show_base_dialog.dart';
 
 class HomeHero extends StatelessWidget {
   final UserStats stats;
@@ -26,13 +28,26 @@ class HomeHero extends StatelessWidget {
           style: AppFonts.labelMedium,
         ),
         SizedBox(height: context.r(16)),
-        hasCredits 
-          ? PulsingButtonWrapper(
-              glowColor: statusColor,
-              child: _buildBadge(statusColor),
-            )
-          : _buildBadge(statusColor),
+        GestureDetector(
+          onTap: hasCredits ? () => _showUseCreditsDialog(context) : null,
+          child: hasCredits 
+            ? PulsingButtonWrapper(
+                glowColor: statusColor,
+                child: _buildBadge(statusColor),
+              )
+            : _buildBadge(statusColor),
+        ),
       ],
+    );
+  }
+
+  void _showUseCreditsDialog(BuildContext context) {
+    showBaseDialog(
+      context: context,
+      child: UseCredits(
+        credits: stats.availableCredits,
+        nextLevel: stats.nextCreditAtLevel,
+      ),
     );
   }
 

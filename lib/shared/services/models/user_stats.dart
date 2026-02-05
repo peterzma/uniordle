@@ -16,6 +16,7 @@ class UserStats {
   final Map<String, int> modeFrequency;
   final List<String> solvedWords;
   final List<Map<String, dynamic>> gameHistory;
+  final int extraBoosts;
 
   UserStats({
     required this.streak,
@@ -30,7 +31,8 @@ class UserStats {
     this.modeFrequency = const {},
     this.solvedWords = const [],
     this.gameHistory = const [],
-  });
+    int? extraBoosts,
+  }): extraBoosts = extraBoosts ?? 0;
 
     UserStats copyWith({
     int? streak,
@@ -45,6 +47,7 @@ class UserStats {
     Map<String, int>? modeFrequency,
     List<String>? solvedWords,
     List<Map<String, dynamic>>? gameHistory,
+    int? extraBoosts,
   }) {
     return UserStats(
       streak: streak ?? this.streak,
@@ -59,6 +62,7 @@ class UserStats {
       modeFrequency: modeFrequency ?? this.modeFrequency,
       solvedWords: solvedWords ?? this.solvedWords,
       gameHistory: gameHistory ?? this.gameHistory,
+      extraBoosts: extraBoosts ?? this.extraBoosts,
     );
   }
 
@@ -72,7 +76,7 @@ class UserStats {
 
 extension UserStatsProgress on UserStats {
   // int get currentLevel => merit ~/ UserStats.meritPerLevel;
-  int get currentLevel => 100;
+  int get currentLevel => 125;
   int get nextLevel => currentLevel + 1;
   int get meritInCurrentLevel => merit % UserStats.meritPerLevel;
   double get levelProgress => (merit % UserStats.meritPerLevel) / UserStats.meritPerLevel.toDouble();
@@ -106,18 +110,21 @@ extension UserStatsProgress on UserStats {
 }
 
 extension UserStatsRewards on UserStats {
-
   double get masteryBonusValue => masteredCount >= MajorsData.all.length ? 2.0 : 0.0;
 
   double get majorMultiplier {
     final int unlockedCount = unlockedIds.length;
-    if (unlockedCount == 0) return 0.0;
+    double baseMultiplier = 0.0;
 
-    if (unlockedCount >= 20) return 1.0;
+    if (unlockedCount >= 20) {
+      baseMultiplier = 1.0;
+    } else if (unlockedCount == 19) {
+      baseMultiplier = 0.90;
+    } else {
+      baseMultiplier = unlockedCount * 0.05;
+    }
 
-    if (unlockedCount == 19) return 0.90;
-
-    return unlockedCount * 0.05;
+    return baseMultiplier + (extraBoosts * 0.05);
   }
 
   double get meritMultiplier {
@@ -199,7 +206,7 @@ extension UserStatsRewards on UserStats {
 
 extension UserStatsUnlocks on UserStats {
   int get totalCreditsEarned => 1 + (currentLevel ~/ 5);
-  int get creditsSpent => unlockedIds.length;
+  int get creditsSpent => unlockedIds.length + extraBoosts;
   int get availableCredits => totalCreditsEarned - creditsSpent;
   
   bool get hasCredits => availableCredits > 0;
@@ -213,7 +220,7 @@ extension UserStatsMastery on UserStats {
   List<String> get masteredMajorIds {
     // ==========================================
     // TEST MODE: Uncomment to Master All Majors
-    return MajorsData.all.map((m) => m.id).toList();
+    // return MajorsData.all.map((m) => m.id).toList();
     // ==========================================
 
     return MajorsData.all.where((major) {

@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:math';
+import 'package:uniordle/features/home/data/major_data.dart';
 import 'package:uniordle/shared/exports/profile_exports.dart';
 
 class StatsManager {
@@ -36,6 +37,7 @@ class StatsManager {
       for (int i = 1; i <= 8; i++) i: distribution[i] ?? 0
     };
 
+    final int extraBoosts = _prefs.getInt('stat_extra_boosts') ?? 0;
 
     statsNotifier.value = UserStats(
       streak: _prefs.getInt('stat_streak') ?? 0,
@@ -49,6 +51,7 @@ class StatsManager {
       modeFrequency: modeFrequency,
       gameHistory: gameHistory,
       solvedWords: solvedWords,
+      extraBoosts: extraBoosts,
     );
   }
 
@@ -173,6 +176,23 @@ class StatsManager {
       merit: newMerit,
       modeFrequency: updatedModeFreq,
       gameHistory: updatedHistory,
+    );
+  }
+
+  Future<void> applyMajorBonusBoost() async {
+    final current = statsNotifier.value;
+    
+    final bool allMajorsUnlocked = current.unlockedIds.length >= MajorsData.all.length;
+    
+    if (!allMajorsUnlocked || current.availableCredits <= 0) {
+      return;
+    }
+
+    final int newBoostCount = current.extraBoosts + 1;
+    await _prefs.setInt('stat_extra_boosts', newBoostCount);
+    
+    statsNotifier.value = current.copyWith(
+      extraBoosts: newBoostCount,
     );
   }
 
