@@ -71,8 +71,8 @@ class UserStats {
 }
 
 extension UserStatsProgress on UserStats {
-  int get currentLevel => merit ~/ UserStats.meritPerLevel;
-  // int get currentLevel => 100;
+  // int get currentLevel => merit ~/ UserStats.meritPerLevel;
+  int get currentLevel => 100;
   int get nextLevel => currentLevel + 1;
   int get meritInCurrentLevel => merit % UserStats.meritPerLevel;
   double get levelProgress => (merit % UserStats.meritPerLevel) / UserStats.meritPerLevel.toDouble();
@@ -107,6 +107,8 @@ extension UserStatsProgress on UserStats {
 
 extension UserStatsRewards on UserStats {
 
+  double get masteryBonusValue => masteredCount >= MajorsData.all.length ? 1.0 : 0.0;
+
   double get majorMultiplier {
     final int unlockedCount = unlockedIds.length;
     if (unlockedCount == 0) return 0.0;
@@ -125,11 +127,8 @@ extension UserStatsRewards on UserStats {
     // Major Bonus: Using the logic defined above
     final double majorBonus = majorMultiplier;
     
-    // Mastery Bonus: +50% if every single major in the game is mastered
-    final double chancellorBonus = masteredCount >= MajorsData.all.length ? 0.50 : 0.0;
-    
     // Base is 1.0 (100%)
-    return 1.0 + majorBonus + rankMultiplier + chancellorBonus;
+    return 1.0 + majorBonus + rankMultiplier + masteryBonusValue;
   }
 
   static ({int min, int max}) _calculateMeritBounds(int yearLevel, int wordLength) {

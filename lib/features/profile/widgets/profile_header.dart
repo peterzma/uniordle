@@ -12,7 +12,8 @@ class ProfileHeader extends StatelessWidget {
       valueListenable: statsManager.statsNotifier,
       builder: (context, stats, child) {
         final String academicTitle = stats.academicTitle;
-        final bool unlockedAllMajors = stats.masteredCount >= MajorsData.all.length;
+        final double masteryBonus = stats.masteryBonusValue;
+        final bool hasMasteryBonus = masteryBonus > 0;
 
         // TEST MODE TOGGLES
         // 1. Uncomment below to force Chancellor's List badge
@@ -61,7 +62,7 @@ class ProfileHeader extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                if (unlockedAllMajors) ...[
+                if (hasMasteryBonus) ...[
                   const SizedBox(width: 8),
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
@@ -76,7 +77,7 @@ class ProfileHeader extends StatelessWidget {
                         const Icon(AppIcons.completionist, color: Colors.amber, size: 14),
                         const SizedBox(width: 4),
                         context.autoText(
-                          "+50%",
+                          "+${(masteryBonus * 100).toInt()}%",
                           style: AppFonts.labelSmall.copyWith(
                             color: Colors.amber,
                             fontWeight: FontWeight.bold,

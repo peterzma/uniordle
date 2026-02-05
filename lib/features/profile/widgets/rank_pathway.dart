@@ -94,7 +94,7 @@ class RankPathway extends StatelessWidget {
             child: ConstrainedBox(
               constraints: BoxConstraints(maxWidth: AppLayout.contentWidth(context)),
               child: PrimaryButton(
-                label: 'A Message from the Faculty',
+                label: 'A Vision from the Beyond',
                 color: Colors.orange,
                 onPressed: () {
                   showBaseDialog(

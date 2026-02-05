@@ -39,9 +39,10 @@ class _ThankYouDialogState extends State<ThankYouDialog> {
             context.autoText("COMMENCEMENT", style: AppFonts.headline),
             SizedBox(height: context.r(12)),
             context.autoText(
-              "Congratulations, Graduate! You've reached the highest rank in Uniordle. But can you master all the majors?",
+              "Congratulations, Oracle! You've reached the summit of knowledge. Level 100 is yours, but true prestige lies in the archives. Can you master every single major?",
+              textAlign: TextAlign.center,
               style: AppFonts.labelMedium,
-              maxLines: 3,
+              maxLines: 4,
             ),
             SizedBox(height: context.r(32)),
             PrimaryButton(
