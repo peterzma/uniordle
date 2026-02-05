@@ -80,11 +80,17 @@ class MeritPreviewBadge extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Text(
-                          ranges.boosted,
+                          showReductionUI ? ranges.boosted : ranges.original,
                           style: AppFonts.labelLarge.copyWith(
-                            color: isMastered ? major.color.withValues(alpha: 0.5) : major.color,
-                            fontWeight: isMastered ? FontWeight.normal : FontWeight.bold,
-                            decoration: isMastered ? TextDecoration.lineThrough : null,
+                            color: (showReductionUI || hasBonus || hasMasteredEverything) 
+                                ? major.color.withValues(alpha: 0.5) 
+                                : major.color,
+                            fontWeight: (showReductionUI || hasBonus || hasMasteredEverything) 
+                                ? FontWeight.normal 
+                                : FontWeight.bold,
+                            decoration: (showReductionUI || hasBonus || hasMasteredEverything) 
+                                ? TextDecoration.lineThrough 
+                                : null,
                           ),
                         ),
                 

@@ -1,5 +1,6 @@
 import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/core/app_layout.dart';
+import 'package:uniordle/features/home/data/major_data.dart';
 import 'package:uniordle/shared/exports/profile_exports.dart';
 
 class ProfileHeader extends StatelessWidget {
@@ -11,8 +12,13 @@ class ProfileHeader extends StatelessWidget {
       valueListenable: statsManager.statsNotifier,
       builder: (context, stats, child) {
         final String academicTitle = stats.academicTitle;
-        // Check if the user has mastered all 14 majors
-        final bool isChancellorOfMajors = stats.masteredCount >= 14;
+        final bool unlockedAllMajors = stats.masteredCount >= MajorsData.all.length;
+
+        // TEST MODE TOGGLES
+        // 1. Uncomment below to force Chancellor's List badge
+        // final bool unlockedAllMajors = true; 
+        // 2. Uncomment below to force the final rank level
+        // final String academicTitle = "THE ORACLE";
 
         return Column(
           children: [
@@ -50,24 +56,32 @@ class ProfileHeader extends StatelessWidget {
               children: [
                 context.autoText(
                   academicTitle,
-                  style: AppFonts.labelLarge.copyWith(color: AppColors.accent),
+                  style: AppFonts.labelLarge.copyWith(
+                    color: academicTitle == "THE ORACLE" ? Colors.amber : AppColors.accent,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-                if (isChancellorOfMajors) ...[
+                if (unlockedAllMajors) ...[
                   const SizedBox(width: 8),
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                     decoration: BoxDecoration(
-                      color: Colors.amber.withValues(alpha: 0.15),
-                      borderRadius: BorderRadius.circular(4),
-                      border: Border.all(color: Colors.amber.withValues(alpha: 0.5)),
+                      color: Colors.amber.withValues(alpha: 0.1),
+                      borderRadius: BorderRadius.circular(6),
+                      border: Border.all(color: Colors.amber.withValues(alpha: 0.3), width: 1),
                     ),
-                    child: context.autoText(
-                      "CHANCELLOR'S LIST (+50%)",
-                      style: AppFonts.labelSmall.copyWith(
-                        color: Colors.amber,
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 0.5,
-                      ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const Icon(AppIcons.mastered, color: Colors.amber, size: 14),
+                        const SizedBox(width: 4),
+                        context.autoText(
+                          "+50%",
+                          style: AppFonts.labelSmall.copyWith(
+                            color: Colors.amber,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ],

@@ -72,6 +72,7 @@ class UserStats {
 
 extension UserStatsProgress on UserStats {
   int get currentLevel => merit ~/ UserStats.meritPerLevel;
+  // int get currentLevel => 1000;
   int get nextLevel => currentLevel + 1;
   int get meritInCurrentLevel => merit % UserStats.meritPerLevel;
   double get levelProgress => (merit % UserStats.meritPerLevel) / UserStats.meritPerLevel.toDouble();
@@ -80,8 +81,9 @@ extension UserStatsProgress on UserStats {
 
   String get academicTitle {
     const titles = [
-      "UNDERGRADUATE", "BACHELOR", "HONOURS", "MASTERS", 
-      "DOCTORAL", "PROFESSOR", "DEAN", "CHANCELLOR",
+      "UNDERGRADUATE", "BACHELOR", "MASTER", "DOCTORATE", 
+      "PROFESSOR", "DEAN", "VICE CHANCELLOR", "CHANCELLOR",
+      "GRAND CHANCELLOR", "CHANCELLOR EMERITUS", "THE ORACLE",
     ];
     int index = (currentLevel ~/ 10).clamp(0, titles.length - 1);
     return titles[index];
@@ -155,7 +157,7 @@ extension UserStatsRewards on UserStats {
     double totalMerit = baseMerit * stats.meritMultiplier;
 
     final bool isMastered = stats.masteredMajorIds.contains(majorId);
-    final bool hasFinishedAll = stats.masteredCount >= 14;
+    final bool hasFinishedAll = stats.masteredCount >= MajorsData.all.length;
 
     if (isMastered && !hasFinishedAll) {
       totalMerit *= 0.5;
