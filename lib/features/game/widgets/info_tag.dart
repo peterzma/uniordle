@@ -19,7 +19,7 @@ class InfoTag extends StatelessWidget {
       alignment: Alignment.center,
       padding: EdgeInsets.symmetric(vertical: context.r(4), horizontal: context.r(8)),
       decoration: BoxDecoration(
-        color: backgroundColor.withValues(alpha: 0.5),
+        color: backgroundColor,
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(

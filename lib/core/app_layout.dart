@@ -22,7 +22,7 @@ abstract class AppLayout {
   static const double cardPadding = 16.0;
   static const double cardRounding = 16.0;
   static const double dialogPadding = 32.0;
-  static const double settingsPadding = 16;
+  static const double settingsPadding = 16.0;
 
   // Corner Ratio Presets
   static const double ratioPill = 0.5; // Perfectly round ends

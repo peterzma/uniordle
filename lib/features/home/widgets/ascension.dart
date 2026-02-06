@@ -54,7 +54,7 @@ class _AscensionState extends State<Ascension> {
                   decoration: BoxDecoration(
                     color: AppColors.accent3.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: AppColors.accent3.withValues(alpha: 0.3)),
+                    border: Border.all(color: AppColors.accent3.withValues(alpha: 0.5)),
                   ),
                   child: Column(
                     children: [

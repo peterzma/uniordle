@@ -27,7 +27,7 @@ Route slideUpRoute(Widget page) {
               sigmaY: 5 * animation.value,
             ),
             child: Container(
-              color: Colors.black.withValues(alpha: 0.15 * animation.value),
+              color: Colors.black.withValues(alpha: 0.1 * animation.value),
             ),
           ),
 

@@ -20,7 +20,7 @@ class SelectButtonWrapper extends StatefulWidget {
     this.pressScale = 0.98,
     this.enableDarken = false,
     this.baseColor,
-    this.darkenIntensity = 0.15,
+    this.darkenIntensity = 0.1,
     this.borderRadius,
     this.soundType = SoundType.click,
   });

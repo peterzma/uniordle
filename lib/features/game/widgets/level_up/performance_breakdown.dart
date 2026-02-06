@@ -64,7 +64,7 @@ class PerformanceBreakdown extends StatelessWidget {
                     color: normalColor,
                   ),
                   children: [
-                    TextSpan(text: isPositive ? "You earned " : "You gained "),
+                    TextSpan(text: isPositive ? "You earned " : "You received "),
                     TextSpan(
                       text: amount,
                       style: TextStyle(

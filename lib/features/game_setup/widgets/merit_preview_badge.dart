@@ -97,7 +97,7 @@ class MeritPreviewBadge extends StatelessWidget {
                 
                         if (showReductionUI) ...[
                           const SizedBox(width: 4),
-                          Icon(AppIcons.gameMeritRange, size: 16, color: major.color.withValues(alpha: 0.7)),
+                          Icon(AppIcons.gameMeritRange, size: 16, color: major.color.withValues(alpha: 0.5)),
                           const SizedBox(width: 4),
                           Text(
                             UserStatsRewards.formatReducedRange(ranges.boosted),
@@ -108,7 +108,7 @@ class MeritPreviewBadge extends StatelessWidget {
                           ),
                         ] else if (hasBonus || hasMasteredEverything) ...[
                           const SizedBox(width: 4),
-                          Icon(AppIcons.gameMeritRange, size: 16, color: major.color.withValues(alpha: 0.7)),
+                          Icon(AppIcons.gameMeritRange, size: 16, color: major.color.withValues(alpha: 0.5)),
                           const SizedBox(width: 4),
                           Text(
                             ranges.boosted,
