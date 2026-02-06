@@ -94,7 +94,6 @@ Latest release:
 
 ## TODO
 
-* Add more words
 * add intro for app only
 * check/add sounds for everything needed.
 * add more words

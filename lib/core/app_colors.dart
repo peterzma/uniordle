@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 abstract class AppColors {
   // Game Logic
-  static const Color correctColor = Color(0xFF538D4E); // Success / Correct
-  static const Color inWordColor = Color(0XFFDAC316); // Warning / In Word
+  static const Color correctColor = Colors.green; // Success / Correct
+  static const Color inWordColor = Color(0XFFEAD637); // Warning / In Word
   static const Color notInWordColor = Color(0xFF787C7E); // Gray / Not in Word
   
   // Backgrounds
@@ -16,9 +16,9 @@ abstract class AppColors {
   // Content (Text/Icons)
   static const Color onSurface = Color(0xFFF8FAFC); // High emphasis text
   static const Color onSurfaceVariant = Color(0xFF94A3B8); // Medium emphasis / secondary text / inactive
-  static const Color accent = Colors.blue; // Active icons/selection
-  static const Color accent2 = Colors.red; // Loss etc
-  static const Color accent3 = Colors.amberAccent; // Good, Merits
+  static const Color accent = Colors.blue; // Active icons/selection / Basic
+  static const Color accent2 = Colors.red; // Negative / Loss etc
+  static const Color accent3 = Colors.amberAccent; // Good, Merits / Positive
 
   static const Color outline = Colors.white10;
 }

@@ -78,13 +78,11 @@ abstract class AppIcons {
   static const IconData majorEducation = LucideIcons.graduationCap;
   static const IconData majorMaths = LucideIcons.calculator;
   static const IconData majorMusic = LucideIcons.music;
-  static const IconData majorDesign = LucideIcons.penTool;
   static const IconData majorArchitecture = LucideIcons.building2;
   static const IconData majorNursing = LucideIcons.stethoscope;
   static const IconData majorHistory = LucideIcons.landmark;
-  static const IconData majorAgriculture = LucideIcons.sprout;
   static const IconData majorJournalism = LucideIcons.newspaper;
-  static const IconData majorAstronomy = LucideIcons.star;
+  static const IconData majorAstronomy = LucideIcons.sparkles;
   static const IconData majorPhilosophy = LucideIcons.scroll;
   static const IconData majorPhysics = LucideIcons.atom;
   static const IconData majorChemistry = LucideIcons.testTube2;

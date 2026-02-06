@@ -75,8 +75,8 @@ class UserStats {
 }
 
 extension UserStatsProgress on UserStats {
-  int get currentLevel => merit ~/ UserStats.meritPerLevel;
-  // int get currentLevel => 125;
+  // int get currentLevel => merit ~/ UserStats.meritPerLevel;
+  int get currentLevel => 125;
   int get nextLevel => currentLevel + 1;
   int get meritInCurrentLevel => merit % UserStats.meritPerLevel;
   double get levelProgress => (merit % UserStats.meritPerLevel) / UserStats.meritPerLevel.toDouble();
@@ -236,7 +236,7 @@ extension UserStatsMastery on UserStats {
   List<String> get masteredMajorIds {
     // ==========================================
     // TEST MODE: Uncomment to Master All Majors
-    // return MajorsData.all.map((m) => m.id).toList();
+    return MajorsData.all.map((m) => m.id).toList();
     // ==========================================
 
     return MajorsData.all.where((major) {
