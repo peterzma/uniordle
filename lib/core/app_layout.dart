@@ -16,7 +16,6 @@ abstract class AppLayout {
   static const double maxDialogWidth = 480.0;
   static const double maxDialogHeight = 620.0;
 
-
   // Common layout constants
   static const double marginHeight = 64.0; // header/footers
   static const double pagePadding = 16.0;

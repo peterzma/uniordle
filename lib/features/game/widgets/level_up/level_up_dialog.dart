@@ -81,8 +81,7 @@ class _LevelUpDialogState extends State<LevelUpDialog> with SingleTickerProvider
   void _showMilestoneDialog(MilestoneType type, int level) {
     showDialog(
       context: context,
-      // Prevents accidental closing during the celebration
-      barrierDismissible: false, 
+      barrierDismissible: true, 
       builder: (context) => MilestoneCelebrationDialog(type: type, level: level),
     );
   }

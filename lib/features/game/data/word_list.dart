@@ -15,4 +15,5 @@ final Map<String, Map<int, List<String>>> categorizedWords = {
   'science': scienceWords,
   'design': designWords,
   'architecture': architectureWords,
+  // TODO: add the new majors into here instead of importing each
 };

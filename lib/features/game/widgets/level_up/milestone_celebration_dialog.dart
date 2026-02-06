@@ -25,6 +25,13 @@ class MilestoneCelebrationDialog extends StatelessWidget {
       merit: level * UserStats.meritPerLevel,
     ).academicTitle;
 
+    String rankTitle;
+    if (isRank) {
+      rankTitle = isUnderBonusCap ? "RANK UP" : "ARCHIVAL MASTERY";
+    } else {
+      rankTitle = "CREDIT EARNED";
+    }
+
     String description = "";
     if (isRank) {
       description = isUnderBonusCap 
@@ -42,15 +49,17 @@ class MilestoneCelebrationDialog extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(
-            isRank ? LucideIcons.graduationCap : AppIcons.gameCredit,
+            isRank 
+              ? (isUnderBonusCap ? AppIcons.statRank : AppIcons.badgeOracle) 
+              : AppIcons.gameCredit,
             color: isRank ? AppColors.accent3 : AppColors.accent,
-            size: context.r(80),
+            size: context.r(64),
           ),
-          
+
           SizedBox(height: context.r(16)),
       
           context.autoText(
-            isRank ? "RANK ASCENSION" : "CREDIT EARNED",
+            rankTitle,
             style: AppFonts.headline,
           ),
 

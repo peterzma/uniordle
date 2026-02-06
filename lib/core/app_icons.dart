@@ -26,7 +26,7 @@ abstract class AppIcons {
   static const IconData statStreak = Icons.local_fire_department;
   static const IconData statSolved = Icons.check_circle_outline;
   static const IconData statMastered = Icons.auto_stories;
-  static const IconData statBonus = Icons.workspace_premium;
+  static const IconData statRank = Icons.workspace_premium;
 
   // Profile UI
   static const IconData profileDefault = Icons.account_circle;

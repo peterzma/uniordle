@@ -48,48 +48,45 @@ class Keyboard extends StatelessWidget {
         return KeyEventResult.handled;
       },
       child: Center(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10.0),
-          child: FittedBox(
-            fit: BoxFit.scaleDown,
-            child: IntrinsicWidth(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: _qwerty.asMap().entries.map((entry) {
-                  final int index = entry.key;
-                  final List<String> keyRow = entry.value;
-
-                  return Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      if (index == 1) const SizedBox(width: 20),
-
-                      ...keyRow.map((letter) {
-                        if (letter == 'DEL') {
-                          return KeyboardButton.delete(onTap: onDeleteTapped);
-                        } else if (letter == 'ENTER') {
-                          return KeyboardButton.enter(onTap: onEnterTapped);
-                        }
-
-                        final letterKey = letters.firstWhere(
-                          (e) => e.val == letter,
-                          orElse: () => Letter.empty(),
-                        );
-
-                        return KeyboardButton(
-                          onTap: () => onKeyTapped(letter),
-                          letter: letter,
-                          backgroundColor: letterKey != Letter.empty()
-                              ? letterKey.backgroundColor
-                              : AppColors.gameTiles,
-                        );
-                      }),
-
-                      if (index == 1) const SizedBox(width: 20),
-                    ],
-                  );
-                }).toList(),
-              ),
+        child: FittedBox(
+          fit: BoxFit.scaleDown,
+          child: IntrinsicWidth(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: _qwerty.asMap().entries.map((entry) {
+                final int index = entry.key;
+                final List<String> keyRow = entry.value;
+        
+                return Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    if (index == 1) const SizedBox(width: 20),
+        
+                    ...keyRow.map((letter) {
+                      if (letter == 'DEL') {
+                        return KeyboardButton.delete(onTap: onDeleteTapped);
+                      } else if (letter == 'ENTER') {
+                        return KeyboardButton.enter(onTap: onEnterTapped);
+                      }
+        
+                      final letterKey = letters.firstWhere(
+                        (e) => e.val == letter,
+                        orElse: () => Letter.empty(),
+                      );
+        
+                      return KeyboardButton(
+                        onTap: () => onKeyTapped(letter),
+                        letter: letter,
+                        backgroundColor: letterKey != Letter.empty()
+                            ? letterKey.backgroundColor
+                            : AppColors.gameTiles,
+                      );
+                    }),
+        
+                    if (index == 1) const SizedBox(width: 20),
+                  ],
+                );
+              }).toList(),
             ),
           ),
         ),
