@@ -121,14 +121,6 @@ class MajorsData {
       color: Colors.lime,
     ),
     Major(
-      id: 'design',
-      name: 'Design',
-      icon: AppIcons.majorDesign,
-      totalWords: getWordCount(designWords),
-      tag: '${getWordCount(designWords)} WORDS',
-      color: Colors.cyanAccent,
-    ),
-    Major(
       id: 'architecture',
       name: 'Architecture',
       icon: AppIcons.majorArchitecture,
@@ -151,14 +143,6 @@ class MajorsData {
       totalWords: getWordCount(historyWords),
       tag: '${getWordCount(historyWords)} WORDS',
       color: Colors.brown,
-    ),
-    Major(
-      id: 'agriculture',
-      name: 'Agriculture',
-      icon: AppIcons.majorAgriculture,
-      totalWords: getWordCount(agricultureWords),
-      tag: '${getWordCount(agricultureWords)} WORDS',
-      color: Colors.green,
     ),
     Major(
       id: 'journalism',

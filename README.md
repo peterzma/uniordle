@@ -94,17 +94,14 @@ Latest release:
 
 ## TODO
 
-* Make categories more university related
 * Add more words
 * add intro for app only
 * check/add sounds for everything needed.
 * add more words
-* replace vague categories with more specific
 * add account syncing / creation with suprabase
 * test with emulators
 * check volumes are equalised
 * finetune sounds by cutting off silence
-* rename stuff to be university themed
 * make colours easier to see, colours arent individually used, too many shared
 * add indiciator of guest mode and give pop up for user to sign in to see stats
 * redo colours of majors

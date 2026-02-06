@@ -75,7 +75,7 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
               borderRadius: BorderRadius.circular(16),
             ),
             child: Icon(
-              widget.major.icon,
+              AppIcons.profileLock,
               color: statusColor,
               size: context.r(60),
             ),
