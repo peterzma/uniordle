@@ -55,6 +55,13 @@ class _MajorTileState extends State<MajorTile> {
                       : Colors.transparent,
                   width: 1.5,
                 ),
+                boxShadow: isFullyMastered ? [
+                  BoxShadow(
+                    color: displayColor.withValues(alpha: 0.1),
+                    blurRadius: 10,
+                    spreadRadius: 1,
+                  )
+                ] : null,
               ),
               child: Opacity(
                 opacity: widget.isLocked ? 0.5 : 1.0,
@@ -63,10 +70,16 @@ class _MajorTileState extends State<MajorTile> {
                     MajorIcon(
                       icon: widget.isLocked 
                           ? AppIcons.profileLock
-                          : (isFullyMastered ? AppIcons.badgeMastery : sub.icon), 
+                          : sub.icon, 
                       color: widget.isLocked 
                           ? Colors.grey 
                           : displayColor,
+                      shadows: isFullyMastered ? [
+                        Shadow(
+                          color: displayColor,
+                          blurRadius: 10.0,
+                        ),
+                      ] : null,
                     ),
                     const SizedBox(width: 16),
                     Expanded(
@@ -106,7 +119,7 @@ class _MajorTileState extends State<MajorTile> {
                             widget.isLocked 
                                 ? "LOCKED" 
                                 : (isFullyMastered 
-                                    ? "COMPLETED" 
+                                    ? "MASTERED" 
                                     : "MASTERY: ${(progressData.percent * 100).toInt()}%"), 
                             style: AppFonts.labelSmall.copyWith(
                               color: displayColor,

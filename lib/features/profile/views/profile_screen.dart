@@ -104,7 +104,7 @@ class ProfileScreen extends StatelessWidget {
                       child: SummaryCard(
                         label: "Mastered",
                         value: "${stats.masteredCount}/${MajorsData.all.length}",
-                        icon: AppIcons.statMastered,
+                        icon: AppIcons.badgeMastery,
                         iconColor: stats.masteredCount > 0 ? AppColors.accent3 : AppColors.onSurfaceVariant,
                       ),
                     ),

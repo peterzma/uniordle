@@ -106,4 +106,5 @@ Latest release:
 * redo colours of majors
 * possibly add light mode?
 * stat for which majors played often?
-* clean export files (move extensions from usr stats into its own file)
+* clean export files (move extensions from user stats into its own file)
+* make variables consistent for future readability

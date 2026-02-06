@@ -52,7 +52,7 @@ class MilestoneCelebrationDialog extends StatelessWidget {
             isRank 
               ? (isUnderBonusCap ? AppIcons.statRank : AppIcons.badgeOracle) 
               : AppIcons.gameCredit,
-            color: isRank ? AppColors.accent3 : AppColors.accent,
+            color: isRank ? AppColors.accent4 : AppColors.accent,
             size: context.r(64),
           ),
 
@@ -67,7 +67,7 @@ class MilestoneCelebrationDialog extends StatelessWidget {
             context.autoText(
               currentTitle,
               style: AppFonts.headline.copyWith(
-                color: AppColors.accent3,
+                color: AppColors.accent4,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -86,7 +86,7 @@ class MilestoneCelebrationDialog extends StatelessWidget {
       
           PrimaryButton(
             label: "COLLECT",
-            color: isRank ? AppColors.accent3 : AppColors.accent,
+            color: isRank ? AppColors.accent4 : AppColors.accent,
             onPressed: () => Navigator.pop(context),
           ),
         ],

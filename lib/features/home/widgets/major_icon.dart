@@ -6,6 +6,7 @@ class MajorIcon extends StatelessWidget {
   final double iconSize;
   final double dimension;
   final double rounding;
+  final List<Shadow>? shadows;
 
   const MajorIcon({
     super.key,
@@ -14,6 +15,7 @@ class MajorIcon extends StatelessWidget {
     this.iconSize = 24,
     this.dimension = 40,
     this.rounding = 16,
+    this.shadows,
   });
 
   @override
@@ -30,6 +32,7 @@ class MajorIcon extends StatelessWidget {
         icon,
         color: color,
         size: iconSize,
+        shadows: shadows,
       ),
     );
   }
