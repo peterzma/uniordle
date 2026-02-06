@@ -2,15 +2,15 @@ import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:uniordle/shared/exports/help_exports.dart';
 
-class RiskAndReward extends StatelessWidget {
-  const RiskAndReward({super.key});
+class StakesAndPenalties extends StatelessWidget {
+  const StakesAndPenalties({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        context.autoText('RISK & REWARD', style: AppFonts.headline, textAlign: TextAlign.center),
+        context.autoText('STAKES & PENALTIES', style: AppFonts.headline, textAlign: TextAlign.center),
         SizedBox(height: context.r(8)),
         ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 360),
@@ -36,7 +36,7 @@ class RiskAndReward extends StatelessWidget {
               ),
               SizedBox(height: context.r(64)),
               InstructionRow(
-                leading: context.autoIcon(LucideIcons.ghost, color: Colors.orange, size: 24),
+                leading: context.autoIcon(AppIcons.statAbandonCost, color: Colors.orange, size: 24),
                 color: AppColors.surfaceVariant,
                 title: 'Ghosting Penalty',
                 subtitle: 'QUITTING EARLY COSTS EXTRA',

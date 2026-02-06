@@ -75,7 +75,7 @@ class ProfileScreen extends StatelessWidget {
                       child: SummaryCard(
                         label: "Abandon Cost",
                         value: "-${stats.activePenalty}",
-                        icon: LucideIcons.skull,
+                        icon: AppIcons.statAbandonCost,
                         iconColor: AppColors.accent2,
                       ),
                     ),      

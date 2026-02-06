@@ -1,5 +1,5 @@
 import 'package:uniordle/core/app_icons.dart';
-import 'package:uniordle/features/help/widgets/risk_and_reward.dart';
+import 'package:uniordle/features/help/widgets/stakes_and_penalties.dart';
 import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:uniordle/shared/exports/help_exports.dart';
 
@@ -42,7 +42,7 @@ class _HelpDialogState extends State<HelpDialog> {
               children: [
                 const HowToPlay(),
                 const LevelUp(),
-                const RiskAndReward(),
+                const StakesAndPenalties(),
                 const RiseAndReach(),
               ],
             ),

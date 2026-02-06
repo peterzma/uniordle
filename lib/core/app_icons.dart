@@ -31,6 +31,7 @@ abstract class AppIcons {
   static const IconData statMastered = Icons.auto_stories;
   static const IconData statRank = Icons.workspace_premium;
   static const IconData statLossPenalty = LucideIcons.trendingDown;
+  static const IconData statAbandonCost = LucideIcons.ghost;
 
   // Profile UI
   static const IconData profileDefault = Icons.account_circle;
