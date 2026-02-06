@@ -12,6 +12,16 @@ class ProfileHeader extends StatelessWidget {
       valueListenable: statsManager.statsNotifier,
       builder: (context, stats, child) {
         final String academicTitle = stats.academicTitle;
+        final int level = stats.currentLevel;
+        final double transitionPower = (level / 100).clamp(0.0, 1.0);
+
+        final Color themeColor = Color.lerp(
+          AppColors.accent, 
+          AppColors.accent4, 
+          transitionPower
+        )!;
+
+        final bool isOracle = level >= 100;
 
         final double masteryBonus = stats.masteryBonusValue;
         final double summitBonus = stats.summitBonusValue;
@@ -33,9 +43,16 @@ class ProfileHeader extends StatelessWidget {
                 children: [
                   Container(
                     padding: const EdgeInsets.all(4),
-                    decoration: const BoxDecoration(
-                      color: AppColors.accent,
+                    decoration: BoxDecoration(
+                      color: themeColor,
                       shape: BoxShape.circle,
+                      boxShadow: isOracle ? [
+                      BoxShadow(
+                        color: themeColor.withValues(alpha: 0.2 + (0.3 * transitionPower)),
+                        blurRadius: 10 + (10 * transitionPower),
+                        spreadRadius: 2 * transitionPower,
+                      )
+                    ] : null,
                     ),
                     child: Container(
                       padding: const EdgeInsets.all(4),
@@ -59,8 +76,9 @@ class ProfileHeader extends StatelessWidget {
             context.autoText(
               academicTitle,
               style: AppFonts.labelLarge.copyWith(
-                color: academicTitle == "THE ORACLE" ? AppColors.accent4 : AppColors.accent,
+                color: themeColor,
                 fontWeight: FontWeight.bold,
+                letterSpacing: 1.5,
               ),
             ),
             SizedBox(height: context.r(4)),
