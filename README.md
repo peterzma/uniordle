@@ -105,3 +105,4 @@ Latest release:
 * possibly add light mode?
 * stat for which majors played often? what grades are received most often?
 * make variables consistent for future readability
+* move small exports back as imports (start from third party downwards)
