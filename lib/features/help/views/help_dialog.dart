@@ -1,3 +1,4 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/features/help/widgets/risk_and_reward.dart';
 import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:uniordle/shared/exports/help_exports.dart';
@@ -86,7 +87,7 @@ class NavHitArea extends StatelessWidget {
         child: Transform.translate(
           offset: Offset(0, context.responsive(-4, -6)),
           child: Icon(
-            isLeft ? LucideIcons.chevronLeft : LucideIcons.chevronRight,
+            isLeft ? AppIcons.navBack : AppIcons.navForward,
             color: AppColors.onSurfaceVariant,
             size: context.r(32),
           ),

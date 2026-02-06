@@ -17,6 +17,9 @@ abstract class AppIcons {
   static const IconData gameAttempts = Icons.favorite;
   static const IconData gameAbandon = Icons.warning_amber_rounded;
   static const IconData gameBackspace = Icons.backspace;
+  static const IconData gameRepeat = Icons.refresh;
+  static const IconData gameMeritRange = LucideIcons.arrowRight;
+  static const IconData gameBoostedMerit = LucideIcons.trendingUp;
 
   // Progression & Badges
   // Level 100
@@ -27,6 +30,7 @@ abstract class AppIcons {
   static const IconData statSolved = Icons.check_circle_outline;
   static const IconData statMastered = Icons.auto_stories;
   static const IconData statRank = Icons.workspace_premium;
+  static const IconData statLossPenalty = LucideIcons.trendingDown;
 
   // Profile UI
   static const IconData profileDefault = Icons.account_circle;

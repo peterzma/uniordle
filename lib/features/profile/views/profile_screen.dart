@@ -115,7 +115,7 @@ class ProfileScreen extends StatelessWidget {
                       child: SummaryCard(
                         label: "Loss Penalty",
                         value: "-${stats.standardPenalty}",
-                        icon: LucideIcons.trendingDown,
+                        icon: AppIcons.statLossPenalty,
                         iconColor: AppColors.accent2,
                       ),
                     ),

@@ -36,24 +36,18 @@ class LevelUp extends StatelessWidget {
               ),
               SizedBox(height: context.r(32)),
               InstructionRow(
-                leading: context.autoIcon(LucideIcons.trendingUp, color: Colors.green, size: 24),
+                leading: context.autoIcon(AppIcons.gameCredit, color: Colors.green, size: 24),
                 color: AppColors.surfaceVariant,
                 title: 'Earn Credits',
                 subtitle: 'EVERY 5 LVLS TO UNLOCK MAJORS',
               ),
               SizedBox(height: context.r(32)),
               InstructionRow(
-                leading: context.autoIcon(AppIcons.gameCredit, color: AppColors.accent3, size: 24),
+                leading: context.autoIcon(AppIcons.statMastered, color: AppColors.accent3, size: 24),
                 color: AppColors.surfaceVariant,
                 title: 'Ultimate Reward',
                 subtitle: 'MASTER EVERY MAJOR',
               ),
-              // InstructionRow(
-              //   leading: context.autoIcon(AppIcons.gameCredit, color: AppColors.accent3, size: 24),
-              //   color: AppColors.surfaceVariant,
-              //   title: 'Use Credits',
-              //   subtitle: 'UNLOCK NEW MAJORS',
-              // ),
             ]
           ),
         ),

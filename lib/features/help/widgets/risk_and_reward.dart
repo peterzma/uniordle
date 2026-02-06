@@ -1,3 +1,4 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:uniordle/shared/exports/help_exports.dart';
 
@@ -28,7 +29,7 @@ class RiskAndReward extends StatelessWidget {
           child: Column(
             children: [
               InstructionRow(
-                leading: context.autoIcon(LucideIcons.trendingDown, color: AppColors.accent2, size: 24),
+                leading: context.autoIcon(AppIcons.statLossPenalty, color: AppColors.accent2, size: 24),
                 color: AppColors.surfaceVariant,
                 title: 'Tough Break',
                 subtitle: 'LOSE MERITS ON FAILING',
@@ -40,13 +41,6 @@ class RiskAndReward extends StatelessWidget {
                 title: 'Ghosting Penalty',
                 subtitle: 'QUITTING EARLY COSTS EXTRA',
               ),
-              // SizedBox(height: context.r(32)),
-              // InstructionRow(
-              //   leading: context.autoIcon(LucideIcons.graduationCap, color: Colors.amber, size: 24),
-              //   color: AppColors.surfaceVariant,
-              //   title: 'Master Majors',
-              //   subtitle: 'COMPLETE EVERY WORD FOR A SPECIAL PERK',
-              // ),
             ]
           ),
         ),

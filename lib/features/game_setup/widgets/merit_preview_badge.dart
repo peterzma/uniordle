@@ -34,13 +34,13 @@ class MeritPreviewBadge extends StatelessWidget {
         
         if (hasMasteredEverything) {
           labelText = mobileMode ? "ASCENSION: " : "ASCENSION MERITS: ";
-          displayIcon = AppIcons.badgeMastery; // Higher tier than trendingUp
+          displayIcon = AppIcons.badgeMastery;
         } else if (showReductionUI) {
           labelText = "REDUCED MERITS: ";
-          displayIcon = LucideIcons.refreshCw;
+          displayIcon = AppIcons.gameRepeat;
         } else if (hasBonus) {
           labelText = mobileMode ? "BOOSTED: " : "BOOSTED MERITS: ";
-          displayIcon = LucideIcons.trendingUp;
+          displayIcon = AppIcons.gameBoostedMerit;
         } else {
           labelText = mobileMode ? "MERITS: " : "POTENTIAL MERITS: ";
           displayIcon = AppIcons.gameMerit;
@@ -97,7 +97,7 @@ class MeritPreviewBadge extends StatelessWidget {
                 
                         if (showReductionUI) ...[
                           const SizedBox(width: 4),
-                          Icon(LucideIcons.arrowRight, size: 14, color: major.color.withValues(alpha: 0.7)),
+                          Icon(AppIcons.gameMeritRange, size: 16, color: major.color.withValues(alpha: 0.7)),
                           const SizedBox(width: 4),
                           Text(
                             UserStatsRewards.formatReducedRange(ranges.boosted),
@@ -108,7 +108,7 @@ class MeritPreviewBadge extends StatelessWidget {
                           ),
                         ] else if (hasBonus || hasMasteredEverything) ...[
                           const SizedBox(width: 4),
-                          Icon(LucideIcons.arrowRight, size: 14, color: major.color.withValues(alpha: 0.7)),
+                          Icon(AppIcons.gameMeritRange, size: 16, color: major.color.withValues(alpha: 0.7)),
                           const SizedBox(width: 4),
                           Text(
                             ranges.boosted,
