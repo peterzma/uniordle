@@ -52,7 +52,7 @@ class _UseCreditsState extends State<UseCredits> {
               borderRadius: BorderRadius.circular(20),
             ),
             child: Icon(
-              allMajorsUnlocked ? LucideIcons.microscope : AppIcons.profileLock,
+              allMajorsUnlocked ? AppIcons.badgeResearch : AppIcons.profileLock,
               color: accentColor,
               size: context.r(60),
             ),
@@ -89,14 +89,16 @@ class _UseCreditsState extends State<UseCredits> {
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                context.autoIcon(
-                  LucideIcons.trendingUp, 
-                  size: 16, 
-                  color: accentColor
-                ),
-                const SizedBox(width: 8),
+                if (allMajorsUnlocked) ...[
+                  context.autoIcon(
+                    AppIcons.permanentMeritBonus, 
+                    size: 16, 
+                    color: accentColor,
+                  ),
+                  const SizedBox(width: 8),
+                ],
                 context.autoText(
-                  "PERMANENT +10% MAJOR BONUS",
+                  !allMajorsUnlocked ? "???" : "PERMANENT +10% MAJOR BONUS",
                   style: AppFonts.labelSmall.copyWith(
                     color: accentColor,
                     fontWeight: FontWeight.bold,

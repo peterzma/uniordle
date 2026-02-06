@@ -26,12 +26,15 @@ abstract class AppIcons {
   static const IconData badgeOracle = LucideIcons.crown; 
   // The "I solved everything" reward
   static const IconData badgeMastery = LucideIcons.trophy; 
+  static const IconData badgeResearch = LucideIcons.microscope;
   static const IconData statStreak = Icons.local_fire_department;
   static const IconData statSolved = Icons.check_circle_outline;
   static const IconData statMastered = Icons.auto_stories;
   static const IconData statRank = Icons.workspace_premium;
   static const IconData statLossPenalty = LucideIcons.trendingDown;
   static const IconData statAbandonCost = LucideIcons.ghost;
+  static const IconData firstEnrollment = LucideIcons.bookOpen;
+  static const IconData permanentMeritBonus = LucideIcons.trendingUp;
 
   // Profile UI
   static const IconData profileDefault = Icons.account_circle;

@@ -236,7 +236,7 @@ extension UserStatsMastery on UserStats {
   List<String> get masteredMajorIds {
     // ==========================================
     // TEST MODE: Uncomment to Master All Majors
-    return MajorsData.all.map((m) => m.id).toList();
+    // return MajorsData.all.map((m) => m.id).toList();
     // ==========================================
 
     return MajorsData.all.where((major) {

@@ -1,3 +1,4 @@
+import 'package:uniordle/core/app_icons.dart';
 import 'package:uniordle/features/home/widgets/unlocked_major_dialog.dart';
 import 'package:uniordle/shared/exports/game_exports.dart';
 import 'package:uniordle/shared/exports/help_exports.dart';
@@ -56,8 +57,8 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
     : "PERMANENT +5% MAJOR BONUS";
 
     final IconData bonusIcon = isFirstEnrollment 
-        ? LucideIcons.bookOpen 
-        : LucideIcons.trendingUp;
+        ? AppIcons.firstEnrollment
+        : AppIcons.permanentMeritBonus;
 
     final wiggleKey = GlobalKey<WiggleButtonWrapperState>();
 
