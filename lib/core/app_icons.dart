@@ -74,12 +74,10 @@ abstract class AppIcons {
   static const IconData majorLaw = LucideIcons.scale;
   static const IconData majorPsychology = LucideIcons.brain;
   static const IconData majorArts = LucideIcons.palette;
-  static const IconData majorBusiness = LucideIcons.briefcase;
   static const IconData majorHumanities = LucideIcons.bookOpen;
   static const IconData majorEducation = LucideIcons.graduationCap;
   static const IconData majorMaths = LucideIcons.calculator;
   static const IconData majorMusic = LucideIcons.music;
-  static const IconData majorScience = LucideIcons.flaskConical;
   static const IconData majorDesign = LucideIcons.penTool;
   static const IconData majorArchitecture = LucideIcons.building2;
   static const IconData majorNursing = LucideIcons.stethoscope;
@@ -88,4 +86,8 @@ abstract class AppIcons {
   static const IconData majorJournalism = LucideIcons.newspaper;
   static const IconData majorAstronomy = LucideIcons.star;
   static const IconData majorPhilosophy = LucideIcons.scroll;
+  static const IconData majorPhysics = LucideIcons.atom;
+  static const IconData majorChemistry = LucideIcons.testTube2;
+  static const IconData majorBiology = LucideIcons.dna;
+  static const IconData majorEconomics = LucideIcons.lineChart;
 }

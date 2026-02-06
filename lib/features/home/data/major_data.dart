@@ -89,14 +89,6 @@ class MajorsData {
       color: Colors.deepPurpleAccent,
     ),
     Major(
-      id: 'business',
-      name: 'Business',
-      icon: AppIcons.majorBusiness,
-      totalWords: getWordCount(businessWords),
-      tag: '${getWordCount(businessWords)} WORDS',
-      color: Colors.greenAccent,
-    ),
-    Major(
       id: 'humanities',
       name: 'Humanities',
       icon: AppIcons.majorHumanities,
@@ -127,14 +119,6 @@ class MajorsData {
       totalWords: getWordCount(musicWords),
       tag: '${getWordCount(musicWords)} WORDS',
       color: Colors.lime,
-    ),
-    Major(
-      id: 'science',
-      name: 'Science',
-      icon: AppIcons.majorScience,
-      totalWords: getWordCount(scienceWords),
-      tag: '${getWordCount(scienceWords)} WORDS',
-      color: Colors.tealAccent,
     ),
     Major(
       id: 'design',
@@ -200,6 +184,38 @@ class MajorsData {
       tag: '${getWordCount(philosophyWords)} WORDS',
       color: Colors.yellowAccent,
     ),
+    Major(
+    id: 'physics',
+    name: 'Physics',
+    icon: AppIcons.majorPhysics,
+    totalWords: getWordCount(physicsWords),
+    tag: '${getWordCount(physicsWords)} WORDS',
+    color: Colors.indigoAccent,
+  ),
+  Major(
+    id: 'chemistry',
+    name: 'Chemistry',
+    icon: AppIcons.majorChemistry,
+    totalWords: getWordCount(chemistryWords),
+    tag: '${getWordCount(chemistryWords)} WORDS',
+    color: Colors.greenAccent,
+  ),
+  Major(
+    id: 'biology',
+    name: 'Biology',
+    icon: AppIcons.majorBiology,
+    totalWords: getWordCount(biologyWords),
+    tag: '${getWordCount(biologyWords)} WORDS',
+    color: Colors.lightGreen,
+  ),
+  Major(
+    id: 'economics',
+    name: 'Economics',
+    icon: AppIcons.majorEconomics,
+    totalWords: getWordCount(economicsWords),
+    tag: '${getWordCount(economicsWords)} WORDS',
+    color: Colors.teal,
+  ),
   ]..sort((a, b) => a.name.compareTo(b.name));
 
 }

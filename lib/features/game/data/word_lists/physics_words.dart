@@ -1,0 +1,5 @@
+final Map<int, List<String>> physicsWords = {
+  5: ['FORCE', 'EARTH', 'PLANT', 'OZONE', 'ATOMS', 'CELLS', 'IRONS', 'LIGHT', 'SOLAR', 'SPACE'],
+  6: ['PLANET', 'ENERGY', 'VIRUS', 'PROTON', 'NUCLEI', 'MAGNET', 'LABORY', 'SYSTEM', 'THEORY', 'SILVER'],
+  7: ['MOLECULE', 'REACTION', 'CHEMICAL', 'GRAVITY', 'BIOLOGY', 'PHYSICS', 'ELEMENT', 'GENETIC', 'VOLCANO'],
+};
