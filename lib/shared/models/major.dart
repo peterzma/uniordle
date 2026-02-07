@@ -4,7 +4,6 @@ class Major {
   final String id;
   final String name;
   final IconData icon;
-  final String tag;
   final bool isLocked;
   final int totalWords;
 
@@ -12,7 +11,6 @@ class Major {
     required this.id,
     required this.name,
     required this.icon,
-    required this.tag,
     required this.totalWords,
     this.isLocked = true,
   });
@@ -23,7 +21,6 @@ class Major {
       id: 'cs_101',
       name: 'Computer Science',
       icon: Icons.laptop,
-      tag: 'STEM',
       totalWords: 150,
       isLocked: false,
     );
@@ -35,7 +32,6 @@ class Major {
       id: id,
       name: name ?? this.name,
       icon: icon,
-      tag: tag,
       totalWords: totalWords,
       isLocked: isLocked ?? this.isLocked,
     );
