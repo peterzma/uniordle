@@ -1,4 +1,5 @@
 import 'package:uniordle/shared/exports/settings_exports.dart';
+import 'package:flutter/foundation.dart';
 
 class SettingsController {
   static final SettingsController _instance = SettingsController._internal();

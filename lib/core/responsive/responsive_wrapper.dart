@@ -1,4 +1,5 @@
 import 'package:uniordle/shared/exports/core_exports.dart';
+import 'package:flutter/foundation.dart';
 
 class ResponsiveWrapper extends StatelessWidget {
   final Widget child;

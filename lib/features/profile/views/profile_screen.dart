@@ -1,4 +1,5 @@
 import 'package:uniordle/shared/exports/profile_exports.dart';
+import 'package:uniordle/features/profile/widgets/progress/level_card.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});

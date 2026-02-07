@@ -1,4 +1,5 @@
 import 'package:uniordle/shared/exports/core_exports.dart';
+import 'package:uniordle/features/help/views/help_dialog.dart';
 
 class MainNavigationHeader extends StatelessWidget
     implements PreferredSizeWidget {

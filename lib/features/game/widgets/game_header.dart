@@ -1,4 +1,5 @@
 import 'package:uniordle/shared/exports/game_exports.dart';
+import 'package:uniordle/features/help/views/help_dialog.dart';
 
 class GameHeader extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback? onBack;

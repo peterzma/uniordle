@@ -1,6 +1,5 @@
 // System & Flutter
 export 'package:flutter/material.dart';
-export 'package:flutter/foundation.dart';
 
 // Third-Party Packages
 export 'package:shared_preferences/shared_preferences.dart';
@@ -30,19 +29,15 @@ export 'package:uniordle/shared/services/stats_manager.dart';
 export 'package:uniordle/shared/navigation/main_navigation_footer.dart';
 export 'package:uniordle/shared/navigation/main_navigation_header.dart';
 export 'package:uniordle/features/settings/controller/settings_controller.dart';
-export 'package:uniordle/features/help/views/help_dialog.dart';
 
 // Common Utilities
 export 'package:uniordle/shared/buttons/primary_button.dart';
-export 'package:uniordle/shared/layout/base_dialog.dart';
-export 'package:uniordle/shared/layout/show_base_dialog.dart';
-export 'package:uniordle/features/profile/widgets/progress/level_card.dart';
 export 'package:uniordle/shared/buttons/pulsing_button_wrapper.dart';
 export 'package:uniordle/shared/buttons/select_button_wrapper.dart';
-export 'package:uniordle/shared/layout/base_badge.dart';
-export 'package:uniordle/features/home/data/major_data.dart';
 export 'package:uniordle/shared/buttons/wiggle_button_wrapper.dart';
+export 'package:uniordle/shared/layout/base_dialog.dart';
 export 'package:uniordle/shared/layout/base_header.dart';
 export 'package:uniordle/shared/layout/base_footer.dart';
+export 'package:uniordle/shared/layout/show_base_dialog.dart';
 export 'package:uniordle/shared/navigation/navigation_item.dart';
-export 'package:uniordle/shared/buttons/simple_button.dart';
+export 'package:uniordle/shared/data/major_data.dart';

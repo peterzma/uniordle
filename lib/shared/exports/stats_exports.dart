@@ -8,3 +8,4 @@ export 'package:uniordle/features/stats/widgets/academic.dart/history_item_card.
 export 'package:uniordle/features/stats/widgets/academic.dart/academic_transcript_content.dart';
 export 'package:uniordle/features/stats/widgets/academic.dart/academic_history.dart';
 export 'package:uniordle/features/stats/widgets/mode_analytics_chart.dart';
+export 'package:uniordle/shared/buttons/simple_button.dart';

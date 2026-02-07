@@ -1,4 +1,5 @@
 import 'package:uniordle/shared/exports/home_exports.dart';
+import 'package:uniordle/shared/layout/base_badge.dart';
 
 class HomeHero extends StatelessWidget {
   final UserStats stats;

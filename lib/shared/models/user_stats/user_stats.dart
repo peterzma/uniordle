@@ -1,4 +1,4 @@
-import 'package:uniordle/features/home/data/major_data.dart';
+import 'package:uniordle/shared/data/major_data.dart';
 
 part 'user_stats_progression.dart';
 part 'user_stats_rewards.dart';
