@@ -12,11 +12,19 @@ class AppTheme {
         surfaceTintColor: Colors.transparent,
       ),
       textTheme: _buildTextTheme(Brightness.dark),
+      extensions: [
+        GameColors(
+          correct: AppColorsDark.correctColor,
+          inWord: AppColorsDark.inWordColor,
+          notInWord: AppColorsDark.notInWordColor,
+        ),
+      ],
       colorScheme: const ColorScheme.dark(
         surface: AppColorsDark.surface,
         onSurface: AppColorsDark.onSurface,
         primary: AppColorsDark.accent,
         secondary: AppColorsDark.accent3,
+        tertiary: AppColorsDark.accent4,
         error: AppColorsDark.accent2,
 
         outline: AppColorsDark.outline,
@@ -37,11 +45,19 @@ class AppTheme {
         surfaceTintColor: Colors.transparent,
       ),
       textTheme: _buildTextTheme(Brightness.light),
+      extensions: [
+        GameColors(
+          correct: AppColorsLight.correctColor,
+          inWord: AppColorsLight.inWordColor,
+          notInWord: AppColorsLight.notInWordColor,
+        ),
+      ],
       colorScheme: const ColorScheme.light(
         surface: AppColorsLight.surface,
         onSurface: AppColorsLight.onSurface,
         primary: AppColorsLight.accent,
         secondary: AppColorsLight.accent3,
+        tertiary: AppColorsLight.accent4,
         error: AppColorsLight.accent2,
 
         outline: AppColorsLight.outline,

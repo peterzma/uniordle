@@ -17,6 +17,7 @@ export 'package:uniordle/core/app_layout.dart';
 export 'package:uniordle/core/app_theme.dart';
 export 'package:uniordle/core/app_colors_dark.dart';
 export 'package:uniordle/core/app_colors_light.dart';
+export 'package:uniordle/core/game_colors.dart';
 export 'package:uniordle/core/app_fonts.dart';
 export 'package:uniordle/core/app_icons.dart';
 export 'package:uniordle/core/app_extensions.dart';
