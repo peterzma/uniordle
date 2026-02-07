@@ -60,7 +60,7 @@ class PerformanceBreakdown extends StatelessWidget {
 
               final Color normalColor = isPositive
                   ? context.colorScheme.onSurfaceVariant
-                  : AppColorsDark.accent2.withValues(alpha: 0.8);
+                  : context.colorScheme.error.withValues(alpha: 0.8);
 
               return RichText(
                 textAlign: TextAlign.center,

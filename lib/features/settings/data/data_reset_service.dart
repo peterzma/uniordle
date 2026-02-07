@@ -10,7 +10,7 @@ class DataResetService {
           Icon(
             AppIcons.inProgressDeleteData1,
             size: context.r(64),
-            color: AppColorsDark.accent2,
+            color: context.colorScheme.error,
           ),
           SizedBox(height: context.r(8)),
           Text("RESET PROGRESS?", style: AppFonts.headlineMedium),
@@ -46,7 +46,7 @@ class DataResetService {
           Icon(
             AppIcons.inProgressDeleteData2,
             size: context.r(64),
-            color: AppColorsDark.accent2,
+            color: context.colorScheme.error,
           ),
           SizedBox(height: context.r(8)),
           Text("ARE YOU CERTAIN?", style: AppFonts.headlineMedium),
