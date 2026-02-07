@@ -1,6 +1,7 @@
 import 'package:uniordle/shared/exports/app_exports.dart';
 
 abstract class AppLayout {
+  // Screen
   static const double breakpoint = 512.0;
 
   // Width constraints
@@ -11,46 +12,33 @@ abstract class AppLayout {
   static const double minAppHeight = 640.0;
   static const double startAppHeight = 767.0;
 
-  // Dialog constraints
-  static const double maxDialogWidth = 480.0;
-  static const double maxDialogHeight = 620.0;
-
   // Common layout constants
   static const double marginHeight = 64.0; // header/footers
-  static const double pagePadding = 16.0;
-  static const double cardPadding = 16.0;
-  static const double cardRounding = 16.0;
   static const double dialogPadding = 32.0;
   static const double settingsPadding = 16.0;
+  static const double cardRounding = 16.0;
+  static const double pagePadding = 16.0;
+  static const double cardPadding = 16.0; // stats
 
-  // Corner Ratio Presets
-  static const double ratioPill = 0.5; // Perfectly round ends
-  static const double ratioPlayful = 0.4; // Bubbly look
-  static const double ratioModern = 0.2; // Standard soft rounding
-  static const double ratioSharp = 0.1; // Professional/Subtle
-
+  // Game
   static const int flipSpeedMs = 300;
 
-  /// Returns the actual width of the window
   static double screenWidth(BuildContext context) =>
       MediaQuery.of(context).size.width;
 
-  /// Returns the actual height of the window
   static double screenHeight(BuildContext context) =>
       MediaQuery.of(context).size.height;
 
-  /// Global check if we are in "Mobile" mode (under 512px)
+  /// Check if we are in "Mobile" mode
   static bool mobileMode(BuildContext context) =>
       screenWidth(context) < breakpoint;
 
-  /// Global check if we are in "Desktop" mode (exactly 512px or centered)
+  /// Check if we are in "Desktop" mode (exactly 512px or centered)
   static bool desktopMode(BuildContext context) =>
       screenWidth(context) >= breakpoint;
 
   /// Returns the width of the app content (clamped between 360 and 512)
   static double contentWidth(BuildContext context) {
-    // If window is 340, it returns 360
-    // If window is 400, it returns 400.
     return screenWidth(context).clamp(minAppWidth, maxAppWidth);
   }
 

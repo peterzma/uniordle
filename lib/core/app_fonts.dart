@@ -26,7 +26,7 @@ abstract class AppFonts {
     color: AppColors.onSurface,
   );
 
-  // UI/ Labels (Buttons, Captions)
+  // UI / Labels (Buttons, Captions)
   static TextStyle get labelLarge => const TextStyle(
     fontFamily: displayFont,
     fontSize: 16,

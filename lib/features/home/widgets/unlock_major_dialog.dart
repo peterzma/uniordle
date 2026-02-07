@@ -57,7 +57,6 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
     final wiggleKey = GlobalKey<WiggleButtonWrapperState>();
 
     return SizedBox(
-      width: AppLayout.maxDialogWidth,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [

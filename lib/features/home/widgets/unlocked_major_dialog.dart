@@ -8,7 +8,6 @@ class UnlockedMajorDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: AppLayout.maxDialogWidth,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [

@@ -33,7 +33,6 @@ class _UseCreditsState extends State<UseCredits> {
         : AppColors.onSurfaceVariant;
 
     return SizedBox(
-      width: AppLayout.maxDialogWidth,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [

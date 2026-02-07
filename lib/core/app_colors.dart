@@ -2,19 +2,17 @@ import 'package:uniordle/shared/exports/app_exports.dart';
 
 abstract class AppColors {
   // Game Logic
-  static const Color correctColor = Colors.green; // Success / Correct
+  static const Color correctColor = Color(0xFF4caf50); // Success / Correct
   static const Color inWordColor = Color(0XFFEAD637); // Warning / In Word
-  static const Color notInWordColor = Color(0xFF475569); // Gray / Not in Word
+  static const Color notInWordColor = Color(0xFF475569); // Wrong / Not in Word
 
   // Backgrounds
-  static const Color surface = Color(0xFF00121f); // Main dark background
-  static const Color surfaceDialog = Color(0xFF060C16); // Main dark background
+  static const Color surface = Color(0xFF00121f); // Main background
+  static const Color surfaceDialog = Color(0xFF060C16); // Only for dialog boxs
   static const Color surfaceVariant = Color(
     0x401A1F2E,
-  ); // Cards, tiles, keyboard buttons
-  static const Color gameTiles = Color(
-    0xFF1A1F2E,
-  ); // Cards, tiles, keyboard buttons
+  ); // Cards,keyboard buttons
+  static const Color gameTiles = Color(0xFF1A1F2E); // In-game Tiles
 
   // Content (Text/Icons)
   static const Color onSurface = Color(0xFFF8FAFC); // High emphasis text
@@ -29,7 +27,7 @@ abstract class AppColors {
   ); // Active icons/selection / Basic
   static const Color accent2 = Color(0xFFEF4444); // Negative / Loss etc
   static const Color accent3 = Color(0xFFF4D35E); // Good, Merits / Positive
-  static const Color accent4 = Color(0xFFF18F01); // Very good
+  static const Color accent4 = Color(0xFFF18F01); // Very good / Best
 
   // Major Specific Colors
   static const Color majorEngineering = Color(0xFF4DD0E1); // Muted Cyan

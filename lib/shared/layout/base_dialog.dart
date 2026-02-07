@@ -34,21 +34,13 @@ class BaseDialog extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(32),
             ),
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(
-                maxWidth: AppLayout.maxDialogWidth,
-              ),
-              child: Padding(
-                padding:
-                    padding ??
-                    EdgeInsets.all(
-                      context.responsive(24, AppLayout.dialogPadding),
-                    ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [child],
-                ),
-              ),
+            child: Padding(
+              padding:
+                  padding ??
+                  EdgeInsets.all(
+                    context.responsive(24, AppLayout.dialogPadding),
+                  ),
+              child: Column(mainAxisSize: MainAxisSize.min, children: [child]),
             ),
           ),
 
