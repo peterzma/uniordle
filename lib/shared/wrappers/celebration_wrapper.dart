@@ -5,12 +5,14 @@ class CelebrationWrapper extends StatefulWidget {
   final Widget child;
   final List<Color>? colors;
   final Duration duration;
+  final ConfettiController? externalController;
 
   const CelebrationWrapper({
     super.key,
     required this.child,
     this.colors,
-    this.duration = const Duration(seconds: 3),
+    this.duration = const Duration(seconds: 2),
+    this.externalController,
   });
 
   @override
@@ -18,19 +20,24 @@ class CelebrationWrapper extends StatefulWidget {
 }
 
 class _CelebrationWrapperState extends State<CelebrationWrapper> {
-  late ConfettiController _controller;
+  late ConfettiController _internalController;
+
+  ConfettiController get _effectiveController =>
+      widget.externalController ?? _internalController;
 
   @override
   void initState() {
     super.initState();
-    _controller = ConfettiController(duration: widget.duration);
-    // Start the party immediately
-    _controller.play();
+    _internalController = ConfettiController(duration: widget.duration);
+
+    if (widget.externalController == null) {
+      _internalController.play();
+    }
   }
 
   @override
   void dispose() {
-    _controller.dispose();
+    _internalController.dispose();
     super.dispose();
   }
 
@@ -38,10 +45,11 @@ class _CelebrationWrapperState extends State<CelebrationWrapper> {
   Widget build(BuildContext context) {
     return Stack(
       alignment: Alignment.topCenter,
+      clipBehavior: Clip.none,
       children: [
         widget.child,
         ConfettiWidget(
-          confettiController: _controller,
+          confettiController: _effectiveController,
           blastDirectionality: BlastDirectionality.explosive,
           shouldLoop: false,
           colors:
@@ -53,9 +61,10 @@ class _CelebrationWrapperState extends State<CelebrationWrapper> {
                 Colors.red,
                 Colors.purple,
               ],
-          minimumSize: const Size(5, 5),
-          maximumSize: const Size(10, 10),
-          gravity: 0.2,
+          minimumSize: const Size(6, 6),
+          maximumSize: const Size(12, 12),
+          gravity: 0.15,
+          numberOfParticles: 25,
         ),
       ],
     );

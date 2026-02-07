@@ -32,12 +32,17 @@ class _LevelUpDialogState extends State<LevelUpDialog>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
+  late ConfettiController _confettiController;
   int _lastThrottledLevel = 0;
 
   @override
   void initState() {
     super.initState();
     _lastThrottledLevel = widget.startingLevel;
+
+    _confettiController = ConfettiController(
+      duration: const Duration(seconds: 1),
+    );
 
     final double startTotal = widget.startingLevel + widget.startingProgress;
     final double levelChange = widget.gainedMerit / UserStats.meritPerLevel;
@@ -70,6 +75,7 @@ class _LevelUpDialogState extends State<LevelUpDialog>
   }
 
   void _triggerMilestoneEffects(int level) {
+    _confettiController.play();
     if (level % 10 == 0) {
       SoundManager().play(SoundType.rankUp);
       _showMilestone(MilestoneType.rankUp, level);
@@ -92,12 +98,14 @@ class _LevelUpDialogState extends State<LevelUpDialog>
   @override
   void dispose() {
     _controller.dispose();
+    _confettiController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return CelebrationWrapper(
+      externalController: _confettiController,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
