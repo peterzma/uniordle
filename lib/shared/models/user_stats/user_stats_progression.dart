@@ -39,13 +39,13 @@ extension UserStatsProgress on UserStats {
     );
   }
 
-  int get effectiveRank => (currentLevel ~/ 10).clamp(0, 10);
+  int get effectiveRank => (currentLevel ~/ 10);
 
   int get standardPenalty {
     return (effectiveRank * 5);
   }
 
   int get activePenalty {
-    return (effectiveRank * 10);
+    return (effectiveRank * 20);
   }
 }

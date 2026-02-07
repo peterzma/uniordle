@@ -103,5 +103,3 @@ Latest release:
 * finetune sounds by cutting off silence
 * add indiciator of guest mode and give pop up for user to sign in to see stats
 * stat for which majors played often? what grades are received most often?
-* colours dont match game result in history in stats
-* make abandon/lost penalties be based on level since player can still increase % with credits

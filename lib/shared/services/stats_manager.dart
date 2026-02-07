@@ -49,7 +49,6 @@ class StatsManager {
       solved: _prefs.getInt('stat_solved') ?? 0,
       lost: _prefs.getInt('stat_lost') ?? 0,
       merit: _prefs.getInt('stat_merit') ?? 0,
-      // merit: 12400,
       guessDistribution: fullDistribution,
       unlockedIds: unlocked,
       achievedMilestones: milestonesRaw.map(int.parse).toList(),
