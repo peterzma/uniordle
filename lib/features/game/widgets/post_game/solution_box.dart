@@ -21,7 +21,7 @@ class SolutionBox extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
             decoration: BoxDecoration(
-              border: Border.all(color: AppColorsDark.outline, width: 2),
+              border: Border.all(color: context.colorScheme.outline, width: 2),
               borderRadius: BorderRadius.circular(16),
             ),
             child: FittedBox(

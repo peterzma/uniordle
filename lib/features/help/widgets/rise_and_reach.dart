@@ -37,14 +37,14 @@ class RiseAndReach extends StatelessWidget {
                 ranks[0],
                 color: context.colorScheme.primary,
               ),
-              const Divider(color: AppColorsDark.outline, height: 1),
+              const Divider(color: context.colorScheme.outline, height: 1),
 
               _buildRankRow(
                 context,
                 ranks[1],
                 color: context.colorScheme.onSurface,
               ),
-              const Divider(color: AppColorsDark.outline, height: 1),
+              const Divider(color: context.colorScheme.outline, height: 1),
 
               Padding(
                 padding: EdgeInsets.symmetric(
@@ -53,7 +53,7 @@ class RiseAndReach extends StatelessWidget {
                 child: context.autoText(
                   '.\n.\n.',
                   style: AppFonts.headlineMedium.copyWith(
-                    color: AppColorsDark.outline,
+                    color: context.colorScheme.outline,
                     height: 1,
                   ),
                   textAlign: TextAlign.center,
@@ -67,7 +67,7 @@ class RiseAndReach extends StatelessWidget {
                 color: AppColorsDark.onSurfaceVariant,
                 isBold: true,
               ),
-              const Divider(color: AppColorsDark.outline, height: 1),
+              const Divider(color: context.colorScheme.outline, height: 1),
             ],
           ),
         ),
