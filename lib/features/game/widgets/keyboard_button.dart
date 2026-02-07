@@ -4,6 +4,7 @@ class KeyboardButton extends StatelessWidget {
   final double height;
   final double width;
   final VoidCallback onTap;
+  final Color? backgroundColor;
   final String? letter;
   final Widget? child;
   final SoundType soundType;
@@ -13,6 +14,7 @@ class KeyboardButton extends StatelessWidget {
     this.height = 66,
     this.width = 40,
     required this.onTap,
+    this.backgroundColor,
     this.letter,
     this.child,
     this.soundType = SoundType.keyboard,
@@ -40,7 +42,7 @@ class KeyboardButton extends StatelessWidget {
       child: SelectButtonWrapper(
         onTap: onTap,
         enableDarken: true,
-        baseColor: context.surfaceVariant,
+        baseColor: backgroundColor ?? context.surfaceVariant,
         soundType: soundType,
         child: SizedBox(
           height: height,
