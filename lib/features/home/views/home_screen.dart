@@ -24,7 +24,8 @@ class HomeScreen extends StatelessWidget {
       valueListenable: statsManager.statsNotifier,
       builder: (context, stats, _) {
         final sortedMajors = MajorsData.getSortedMajors(stats.unlockedIds);
-
+        final bool masteredAllMajors =
+            stats.masteredCount >= MajorsData.all.length;
         return Scaffold(
           backgroundColor: context.surface,
           body: SafeArea(
@@ -42,7 +43,7 @@ class HomeScreen extends StatelessWidget {
                     onSubjectTap: (sub) => _onMajorTap(context, sub, stats),
                   ),
 
-                  if (stats.masteredCount >= MajorsData.all.length) ...[
+                  if (masteredAllMajors) ...[
                     SizedBox(height: context.r(32)),
                     PulsingButtonWrapper(
                       glowColor: context.colorScheme.secondary,

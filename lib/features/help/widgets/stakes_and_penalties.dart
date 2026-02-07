@@ -17,7 +17,7 @@ class StakesAndPenalties extends StatelessWidget {
         ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 360),
           child: context.autoText(
-            'Higher ranks bring bigger challenges. \n Don\'t give up!',
+            'Higher levels gain more merits, but also bring bigger challenges. Don\'t give up!',
             style: context.labelMedium.copyWith(
               color: context.colorScheme.onSurfaceVariant,
             ),

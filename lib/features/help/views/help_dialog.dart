@@ -74,7 +74,7 @@ class NavHitArea extends StatelessWidget {
         height: context.responsive(220, 300),
         alignment: Alignment.center,
         child: Transform.translate(
-          offset: Offset(0, context.responsive(-4, -6)),
+          offset: Offset(0, context.responsive(-6, -8)),
           child: Icon(
             isLeft ? AppIcons.navBack : AppIcons.navForward,
             color: context.colorScheme.onSurfaceVariant,

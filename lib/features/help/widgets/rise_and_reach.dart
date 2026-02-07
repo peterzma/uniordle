@@ -6,7 +6,7 @@ class RiseAndReach extends StatelessWidget {
   final List<Map<String, String>> ranks = const [
     {'title': 'UNDERGRADUATE', 'level': 'LEVEL 0+'},
     {'title': 'BACHELOR', 'level': 'LEVEL 10+'},
-    {'title': '???', 'level': 'LEVEL ???'}, // CHANCELLOR
+    {'title': '???', 'level': 'LEVEL ???'},
   ];
 
   @override
@@ -21,7 +21,7 @@ class RiseAndReach extends StatelessWidget {
         ),
         SizedBox(height: context.r(8)),
         context.autoText(
-          'Earn new academic ranks every 10 levels and unlock prestigious titles to become ???',
+          'Climb the academic ranks every 10 levels and unlock new titles to become ???',
           style: context.labelMedium,
           textAlign: TextAlign.center,
           maxLines: 2,
@@ -37,14 +37,20 @@ class RiseAndReach extends StatelessWidget {
                 ranks[0],
                 color: context.colorScheme.primary,
               ),
+
+              SizedBox(height: context.responsive(12, 16)),
               Divider(color: context.colorScheme.outline, height: 1),
+              SizedBox(height: context.responsive(12, 16)),
 
               _buildRankRow(
                 context,
                 ranks[1],
                 color: context.colorScheme.onSurface,
               ),
+
+              SizedBox(height: context.responsive(12, 16)),
               Divider(color: context.colorScheme.outline, height: 1),
+              SizedBox(height: context.responsive(12, 16)),
 
               Padding(
                 padding: EdgeInsets.symmetric(
@@ -61,12 +67,16 @@ class RiseAndReach extends StatelessWidget {
                 ),
               ),
 
+              SizedBox(height: context.responsive(12, 16)),
+
               _buildRankRow(
                 context,
                 ranks[2],
                 color: context.colorScheme.onSurfaceVariant,
                 isBold: true,
               ),
+
+              SizedBox(height: context.responsive(12, 16)),
               Divider(color: context.colorScheme.outline, height: 1),
             ],
           ),
@@ -81,21 +91,18 @@ class RiseAndReach extends StatelessWidget {
     required Color color,
     bool isBold = false,
   }) {
-    return Padding(
-      padding: EdgeInsets.symmetric(vertical: context.r(16)),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          context.autoText(
-            rank['title']!,
-            style: context.labelMedium.copyWith(color: color),
-          ),
-          context.autoText(
-            rank['level']!,
-            style: context.labelSmall.copyWith(color: color),
-          ),
-        ],
-      ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        context.autoText(
+          rank['title']!,
+          style: context.labelMedium.copyWith(color: color),
+        ),
+        context.autoText(
+          rank['level']!,
+          style: context.labelSmall.copyWith(color: color),
+        ),
+      ],
     );
   }
 }

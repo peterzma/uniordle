@@ -59,7 +59,7 @@ class ProfileScreen extends StatelessWidget {
 
                     Expanded(
                       child: SummaryCard(
-                        label: "Total Merit",
+                        label: stats.merit > 1 ? "Total Merits" : "Total Merit",
                         value: '${stats.merit}',
                         icon: AppIcons.gameMerit,
                         iconColor: stats.merit > 0

@@ -30,23 +30,20 @@ class MeritPreviewBadge extends StatelessWidget {
         final bool isMastered = stats.masteredMajorIds.contains(major.id);
         final bool hasBonus = stats.meritMultiplier > 1.0;
 
-        final bool showReductionUI = isMastered && !hasMasteredEverything;
+        final bool reducedMerits = isMastered && !hasMasteredEverything;
 
         String labelText;
         IconData displayIcon;
 
         if (hasMasteredEverything) {
-          labelText = mobileMode ? "ASCENSION: " : "ASCENSION MERITS: ";
+          labelText = mobileMode ? "EMERITUS: " : "EMERITUS MERITS: ";
           displayIcon = AppIcons.badgeMastery;
-        } else if (showReductionUI) {
-          labelText = "REDUCED MERITS: ";
+        } else if (reducedMerits) {
+          labelText = mobileMode ? "REDUCED: " : "REDUCED MERITS: ";
           displayIcon = AppIcons.gameRepeat;
-        } else if (hasBonus) {
-          labelText = mobileMode ? "BOOSTED: " : "BOOSTED MERITS: ";
-          displayIcon = AppIcons.gameBoostedMerit;
         } else {
-          labelText = mobileMode ? "MERITS: " : "POTENTIAL MERITS: ";
-          displayIcon = AppIcons.gameMerit;
+          labelText = mobileMode ? "POTENTIAL: " : "POTENTIAL MERITS: ";
+          displayIcon = AppIcons.gameBoostedMerit;
         }
 
         return Column(
@@ -86,10 +83,10 @@ class MeritPreviewBadge extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Text(
-                          showReductionUI ? ranges.boosted : ranges.original,
+                          reducedMerits ? ranges.boosted : ranges.original,
                           style: context.labelLarge.copyWith(
                             color:
-                                (showReductionUI ||
+                                (reducedMerits ||
                                     hasBonus ||
                                     hasMasteredEverything)
                                 ? context
@@ -97,13 +94,13 @@ class MeritPreviewBadge extends StatelessWidget {
                                       .withValues(alpha: 0.5)
                                 : context.getMajorColor(major.id),
                             fontWeight:
-                                (showReductionUI ||
+                                (reducedMerits ||
                                     hasBonus ||
                                     hasMasteredEverything)
                                 ? FontWeight.normal
                                 : FontWeight.bold,
                             decoration:
-                                (showReductionUI ||
+                                (reducedMerits ||
                                     hasBonus ||
                                     hasMasteredEverything)
                                 ? TextDecoration.lineThrough
@@ -111,7 +108,7 @@ class MeritPreviewBadge extends StatelessWidget {
                           ),
                         ),
 
-                        if (showReductionUI) ...[
+                        if (reducedMerits) ...[
                           const SizedBox(width: 4),
                           Icon(
                             AppIcons.gameMeritRange,

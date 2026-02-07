@@ -11,7 +11,7 @@ class GameSetupHero extends StatelessWidget {
       valueListenable: statsManager.statsNotifier,
       builder: (context, stats, _) {
         final progress = stats.getMajorProgress(major.id, major.totalWords);
-        final bool isFullyMastered = progress.percent >= 1.0;
+        final bool isMasteredMajor = progress.percent >= 1.0;
 
         return Column(
           mainAxisSize: MainAxisSize.min,
@@ -22,7 +22,7 @@ class GameSetupHero extends StatelessWidget {
               dimension: 80,
               iconSize: 48,
               rounding: 32,
-              shadows: isFullyMastered
+              shadows: isMasteredMajor
                   ? [
                       Shadow(
                         color: context.getMajorColor(major.id),

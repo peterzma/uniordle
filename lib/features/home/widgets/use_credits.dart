@@ -22,16 +22,13 @@ class _UseCreditsState extends State<UseCredits> {
   Widget build(BuildContext context) {
     final stats = statsManager.statsNotifier.value;
 
-    final bool allMajorsUnlocked =
+    final bool unlockedAllMajors =
         stats.unlockedIds.length >= MajorsData.all.length;
     final bool canAfford = widget.credits > 0;
+    final bool canApply = unlockedAllMajors && canAfford;
 
-    final bool canApply = allMajorsUnlocked && canAfford;
-
-    final Color accentColor = allMajorsUnlocked
-        ? (canAfford
-              ? context.colorScheme.secondary
-              : context.colorScheme.onSurfaceVariant)
+    final Color accentColor = canApply
+        ? context.colorScheme.secondary
         : context.colorScheme.onSurfaceVariant;
 
     return SizedBox(
@@ -46,7 +43,7 @@ class _UseCreditsState extends State<UseCredits> {
               borderRadius: BorderRadius.circular(20),
             ),
             child: Icon(
-              allMajorsUnlocked ? AppIcons.badgeResearch : AppIcons.profileLock,
+              unlockedAllMajors ? AppIcons.badgeResearch : AppIcons.profileLock,
               color: accentColor,
               size: context.r(60),
             ),
@@ -55,14 +52,14 @@ class _UseCreditsState extends State<UseCredits> {
           SizedBox(height: context.r(8)),
 
           context.autoText(
-            !allMajorsUnlocked ? "???" : "Extra Research",
+            !unlockedAllMajors ? "???" : "Extra Research",
             style: context.headlineMedium,
           ),
 
           SizedBox(height: context.r(16)),
 
           context.autoText(
-            !allMajorsUnlocked
+            !unlockedAllMajors
                 ? "You must enroll in all available Majors before proceeding."
                 : "Apply your extra credit towards completing more research.",
             textAlign: TextAlign.center,
@@ -72,37 +69,36 @@ class _UseCreditsState extends State<UseCredits> {
 
           SizedBox(height: context.r(16)),
 
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-            decoration: BoxDecoration(
-              color: accentColor.withValues(alpha: 0.1),
-              borderRadius: BorderRadius.circular(32),
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                if (allMajorsUnlocked) ...[
+          if (unlockedAllMajors) ...[
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: accentColor.withValues(alpha: 0.1),
+                borderRadius: BorderRadius.circular(32),
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
                   context.autoIcon(
                     AppIcons.permanentMeritBonus,
                     size: 16,
                     color: accentColor,
                   ),
                   const SizedBox(width: 8),
-                ],
-                context.autoText(
-                  !allMajorsUnlocked ? "???" : "PERMANENT +10% MAJOR BONUS",
-                  style: context.labelSmall.copyWith(
-                    color: accentColor,
-                    fontWeight: FontWeight.bold,
+                  context.autoText(
+                    "PERMANENT +10% MAJOR BONUS",
+                    style: context.labelSmall.copyWith(
+                      color: accentColor,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
+            SizedBox(height: context.r(16)),
+          ],
 
-          SizedBox(height: context.r(16)),
-
-          if (!allMajorsUnlocked) ...[
+          if (!unlockedAllMajors) ...[
             context.autoText(
               "Enrolled Majors: ${stats.unlockedIds.length}/${MajorsData.all.length}",
               style: context.labelMedium,

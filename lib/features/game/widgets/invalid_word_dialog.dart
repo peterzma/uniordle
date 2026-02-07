@@ -8,7 +8,7 @@ class InvalidWordDialog {
       barrierColor: Colors.transparent,
       barrierDismissible: false,
       builder: (dialogContext) {
-        Timer(const Duration(milliseconds: 700), () {
+        Timer(const Duration(milliseconds: 600), () {
           if (dialogContext.mounted) {
             Navigator.of(dialogContext).pop();
           }

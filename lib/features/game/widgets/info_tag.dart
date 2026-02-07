@@ -14,8 +14,6 @@ class InfoTag extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color effectiveBg = backgroundColor ?? context.surfaceVariant;
-
     return Container(
       width: double.infinity,
       alignment: Alignment.center,
@@ -24,7 +22,7 @@ class InfoTag extends StatelessWidget {
         horizontal: context.r(8),
       ),
       decoration: BoxDecoration(
-        color: effectiveBg,
+        color: context.surfaceVariant,
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(

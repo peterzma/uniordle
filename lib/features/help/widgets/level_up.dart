@@ -17,7 +17,7 @@ class LevelUp extends StatelessWidget {
         ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 360),
           child: context.autoText(
-            'Guess words to earn merits. Level up with merits, and gain credits.',
+            'Guess words to level up with merits and gain credits to enroll in new majors.',
             style: context.labelMedium.copyWith(
               color: context.colorScheme.onSurfaceVariant,
             ),

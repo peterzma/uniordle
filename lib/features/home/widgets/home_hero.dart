@@ -22,7 +22,7 @@ class HomeHero extends StatelessWidget {
         ),
         SizedBox(height: context.r(4)),
         context.autoText(
-          'Master your academic vocabulary.',
+          'Master your vocabulary.',
           textAlign: TextAlign.center,
           style: context.labelMedium,
         ),

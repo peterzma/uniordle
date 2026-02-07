@@ -25,49 +25,46 @@ class WordLengthSelector extends StatelessWidget {
                 : context.surfaceVariant;
             return Expanded(
               child: Center(
-                child: ConstrainedBox(
-                  constraints: BoxConstraints(maxWidth: 160),
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: context.r(8)),
-                    child: SelectButtonWrapper(
-                      onTap: () => onChanged(len),
-                      soundType: SoundType.gameSettings,
-                      baseColor: baseColor,
-                      enableDarken: true,
-                      borderRadius: BorderRadius.circular(36),
-                      child: AspectRatio(
-                        aspectRatio: 1,
-                        child: AnimatedContainer(
-                          duration: const Duration(milliseconds: 300),
-                          curve: Curves.easeInOut,
-                          decoration: BoxDecoration(
-                            color: active
-                                ? context.getMajorColor(major.id)
-                                : context.surfaceVariant,
-                            borderRadius: BorderRadius.circular(36),
-                          ),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              AutoSizeText(
-                                '$len',
-                                style: active
-                                    ? context.displayMedium.copyWith(
-                                        fontWeight: FontWeight.w900,
-                                      )
-                                    : context.displayMedium,
-                              ),
-                              AutoSizeText(
-                                'LETTERS',
-                                style: active
-                                    ? context.labelMedium.copyWith(
-                                        color: context.colorScheme.onSurface,
-                                        fontWeight: FontWeight.w600,
-                                      )
-                                    : context.labelMedium,
-                              ),
-                            ],
-                          ),
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: context.r(8)),
+                  child: SelectButtonWrapper(
+                    onTap: () => onChanged(len),
+                    soundType: SoundType.gameSettings,
+                    baseColor: baseColor,
+                    enableDarken: true,
+                    borderRadius: BorderRadius.circular(36),
+                    child: AspectRatio(
+                      aspectRatio: 1,
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 300),
+                        curve: Curves.easeInOut,
+                        decoration: BoxDecoration(
+                          color: active
+                              ? context.getMajorColor(major.id)
+                              : context.surfaceVariant,
+                          borderRadius: BorderRadius.circular(36),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            AutoSizeText(
+                              '$len',
+                              style: active
+                                  ? context.displayMedium.copyWith(
+                                      fontWeight: FontWeight.w900,
+                                    )
+                                  : context.displayMedium,
+                            ),
+                            AutoSizeText(
+                              'LETTERS',
+                              style: active
+                                  ? AppFonts.labelMedium.copyWith(
+                                      color: context.colorScheme.onSurface,
+                                      fontWeight: FontWeight.w600,
+                                    )
+                                  : AppFonts.labelMedium,
+                            ),
+                          ],
                         ),
                       ),
                     ),
