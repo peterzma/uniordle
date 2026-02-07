@@ -14,14 +14,14 @@ class SolutionBox extends StatelessWidget {
           Text(
             'THE WORD WAS',
             style: AppFonts.labelLarge.copyWith(
-              color: AppColorsDark.onSurfaceVariant,
+              color: context.colorScheme.onSurfaceVariant,
             ),
           ),
           SizedBox(height: context.r(8)),
           Container(
             padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
             decoration: BoxDecoration(
-              border: Border.all(color: context.colorScheme.outline, width: 2),
+              border: Border.all(color: AppColorsDark.outline, width: 2),
               borderRadius: BorderRadius.circular(16),
             ),
             child: FittedBox(

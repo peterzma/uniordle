@@ -51,7 +51,7 @@ class ProfileScreen extends StatelessWidget {
                         icon: AppIcons.statRank,
                         iconColor: rBonus > 0
                             ? context.colorScheme.tertiary
-                            : AppColorsDark.onSurfaceVariant,
+                            : context.colorScheme.onSurfaceVariant,
                       ),
                     ),
 
@@ -64,7 +64,7 @@ class ProfileScreen extends StatelessWidget {
                         icon: AppIcons.gameMerit,
                         iconColor: stats.merit > 0
                             ? context.colorScheme.primary
-                            : AppColorsDark.onSurfaceVariant,
+                            : context.colorScheme.onSurfaceVariant,
                       ),
                     ),
 
@@ -77,7 +77,7 @@ class ProfileScreen extends StatelessWidget {
                         icon: AppIcons.statAbandonCost,
                         iconColor: stats.activePenalty > 0
                             ? context.colorScheme.onSurface
-                            : AppColorsDark.onSurfaceVariant,
+                            : context.colorScheme.onSurfaceVariant,
                       ),
                     ),
                   ],
@@ -97,7 +97,7 @@ class ProfileScreen extends StatelessWidget {
                         icon: AppIcons.statMajor,
                         iconColor: dBonus > 0
                             ? AppColorsDark.correctColor
-                            : AppColorsDark.onSurfaceVariant,
+                            : context.colorScheme.onSurfaceVariant,
                       ),
                     ),
 
@@ -111,7 +111,7 @@ class ProfileScreen extends StatelessWidget {
                         icon: AppIcons.badgeMastery,
                         iconColor: stats.masteredCount > 0
                             ? context.colorScheme.secondary
-                            : AppColorsDark.onSurfaceVariant,
+                            : context.colorScheme.onSurfaceVariant,
                       ),
                     ),
 
@@ -124,7 +124,7 @@ class ProfileScreen extends StatelessWidget {
                         icon: AppIcons.statLossPenalty,
                         iconColor: stats.standardPenalty > 0
                             ? AppColorsDark.accent2
-                            : AppColorsDark.onSurfaceVariant,
+                            : context.colorScheme.onSurfaceVariant,
                       ),
                     ),
                   ],

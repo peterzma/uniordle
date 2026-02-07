@@ -33,7 +33,7 @@ class GameInfoBar extends StatelessWidget {
                 icon: context.autoIcon(
                   AppIcons.gameAttempts,
                   size: 14,
-                  color: AppColorsDark.onSurfaceVariant,
+                  color: context.colorScheme.onSurfaceVariant,
                   reduction: 2,
                 ),
               ),

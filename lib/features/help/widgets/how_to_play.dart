@@ -19,7 +19,7 @@ class HowToPlay extends StatelessWidget {
           child: context.autoText(
             'Choose a starting major, customise your game settings and then guess the word!',
             style: AppFonts.labelMedium.copyWith(
-              color: AppColorsDark.onSurfaceVariant,
+              color: context.colorScheme.onSurfaceVariant,
             ),
             textAlign: TextAlign.center,
             maxLines: 2,

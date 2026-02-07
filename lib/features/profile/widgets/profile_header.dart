@@ -67,7 +67,7 @@ class ProfileHeader extends StatelessWidget {
                         child: Icon(
                           AppIcons.profileDefault,
                           size: 48,
-                          color: AppColorsDark.onSurfaceVariant,
+                          color: context.colorScheme.onSurfaceVariant,
                         ),
                       ),
                     ),

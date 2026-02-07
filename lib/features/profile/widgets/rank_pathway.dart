@@ -123,7 +123,7 @@ class RankPathway extends StatelessWidget {
         ? context.colorScheme.tertiary
         : (isAchieved
               ? AppColorsDark.accent
-              : (isNext ? Colors.white : AppColorsDark.onSurfaceVariant));
+              : (isNext ? Colors.white : context.colorScheme.onSurfaceVariant));
 
     return Row(
       children: [

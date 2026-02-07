@@ -37,7 +37,7 @@ class HistoryItemCard extends StatelessWidget {
                       ? "$attempts/$maxAttempts ATTEMPTS"
                       : "X/$maxAttempts ATTEMPTS",
                   style: AppFonts.labelSmall.copyWith(
-                    color: AppColorsDark.onSurfaceVariant,
+                    color: context.colorScheme.onSurfaceVariant,
                   ),
                   textAlign: TextAlign.left,
                 ),

@@ -41,10 +41,10 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
     final bool canAfford = widget.credits > 0;
     final Color buttonColor = canAfford
         ? widget.major.color
-        : AppColorsDark.onSurfaceVariant.withValues(alpha: 0.5);
+        : context.colorScheme.onSurfaceVariant.withValues(alpha: 0.5);
     final Color statusColor = canAfford
         ? widget.major.color
-        : AppColorsDark.onSurfaceVariant.withValues(alpha: 0.5);
+        : context.colorScheme.onSurfaceVariant.withValues(alpha: 0.5);
 
     final String bonusText = isFirstEnrollment
         ? "FIRST ENROLLMENT"
@@ -97,7 +97,7 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
             decoration: BoxDecoration(
               color: canAfford
                   ? widget.major.color.withValues(alpha: 0.1)
-                  : AppColorsDark.onSurfaceVariant.withValues(alpha: 0.1),
+                  : context.colorScheme.onSurfaceVariant.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(32),
             ),
             child: Row(
@@ -108,7 +108,7 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
                   size: 16,
                   color: canAfford
                       ? widget.major.color
-                      : AppColorsDark.onSurfaceVariant,
+                      : context.colorScheme.onSurfaceVariant,
                 ),
                 const SizedBox(width: 4),
                 context.autoText(
@@ -116,7 +116,7 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
                   style: AppFonts.labelSmall.copyWith(
                     color: canAfford
                         ? widget.major.color
-                        : AppColorsDark.onSurfaceVariant,
+                        : context.colorScheme.onSurfaceVariant,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

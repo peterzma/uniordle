@@ -31,7 +31,7 @@ class SettingsActionTile extends StatelessWidget {
               children: [
                 context.autoIcon(
                   icon,
-                  color: AppColorsDark.onSurfaceVariant,
+                  color: context.colorScheme.onSurfaceVariant,
                   size: 24,
                 ),
                 const SizedBox(width: 12),
@@ -44,7 +44,7 @@ class SettingsActionTile extends StatelessWidget {
                 if (value != null) const SizedBox(width: 8),
                 Icon(
                   AppIcons.navForward,
-                  color: AppColorsDark.onSurfaceVariant,
+                  color: context.colorScheme.onSurfaceVariant,
                   size: 20,
                 ),
               ],

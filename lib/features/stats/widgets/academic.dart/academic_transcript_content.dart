@@ -26,7 +26,7 @@ class AcademicTranscriptContent extends StatelessWidget {
             SimpleButton(
               icon: AppIcons.navClose,
               onTap: () => Navigator.pop(context),
-              color: AppColorsDark.onSurfaceVariant,
+              color: context.colorScheme.onSurfaceVariant,
               iconSize: 16,
             ),
           ],

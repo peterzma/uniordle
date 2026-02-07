@@ -23,7 +23,7 @@ class _MajorTileState extends State<MajorTile> {
   Widget build(BuildContext context) {
     final sub = widget.major;
     final displayColor = widget.isLocked
-        ? AppColorsDark.onSurfaceVariant.withValues(alpha: 0.5)
+        ? context.colorScheme.onSurfaceVariant.withValues(alpha: 0.5)
         : sub.color;
 
     return ValueListenableBuilder(
@@ -69,7 +69,7 @@ class _MajorTileState extends State<MajorTile> {
                     MajorIcon(
                       icon: widget.isLocked ? AppIcons.profileLock : sub.icon,
                       color: widget.isLocked
-                          ? AppColorsDark.onSurfaceVariant
+                          ? context.colorScheme.onSurfaceVariant
                           : displayColor,
                       shadows: isFullyMastered
                           ? [Shadow(color: displayColor, blurRadius: 10.0)]

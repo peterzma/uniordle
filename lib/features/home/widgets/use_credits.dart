@@ -31,8 +31,8 @@ class _UseCreditsState extends State<UseCredits> {
     final Color accentColor = allMajorsUnlocked
         ? (canAfford
               ? context.colorScheme.secondary
-              : AppColorsDark.onSurfaceVariant)
-        : AppColorsDark.onSurfaceVariant;
+              : context.colorScheme.onSurfaceVariant)
+        : context.colorScheme.onSurfaceVariant;
 
     return SizedBox(
       child: Column(
@@ -132,7 +132,9 @@ class _UseCreditsState extends State<UseCredits> {
                     label: "APPLY",
                     color: canApply
                         ? context.colorScheme.secondary
-                        : AppColorsDark.onSurfaceVariant.withValues(alpha: 0.5),
+                        : context.colorScheme.onSurfaceVariant.withValues(
+                            alpha: 0.5,
+                          ),
                     onPressed: () {
                       if (canApply) {
                         _handleBonusBoost();

@@ -19,7 +19,7 @@ class LevelUp extends StatelessWidget {
           child: context.autoText(
             'Guess words to earn merits. Level up with merits, and gain credits.',
             style: AppFonts.labelMedium.copyWith(
-              color: AppColorsDark.onSurfaceVariant,
+              color: context.colorScheme.onSurfaceVariant,
             ),
             textAlign: TextAlign.center,
             maxLines: 2,

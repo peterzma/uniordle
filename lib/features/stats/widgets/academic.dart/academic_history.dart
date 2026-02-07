@@ -49,7 +49,7 @@ class AcademicHistory extends StatelessWidget {
         children: [
           context.autoIcon(
             AppIcons.gameHistory,
-            color: AppColorsDark.onSurfaceVariant,
+            color: context.colorScheme.onSurfaceVariant,
             size: 32,
           ),
           // SizedBox(height: 8),

@@ -59,7 +59,7 @@ class PerformanceBreakdown extends StatelessWidget {
               final String unit = isPositive ? "merits" : "demerits";
 
               final Color normalColor = isPositive
-                  ? AppColorsDark.onSurfaceVariant
+                  ? context.colorScheme.onSurfaceVariant
                   : AppColorsDark.accent2.withValues(alpha: 0.8);
 
               return RichText(

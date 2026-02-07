@@ -20,7 +20,7 @@ class BaseFooter extends StatelessWidget {
       decoration: BoxDecoration(
         color: context.surface,
         border: const Border(
-          top: BorderSide(color: context.colorScheme.outline, width: 0.5),
+          top: BorderSide(color: AppColorsDark.outline, width: 0.5),
         ),
       ),
       child: SafeArea(

@@ -28,7 +28,10 @@ class SettingsToggleTile extends StatelessWidget {
         children: [
           Row(
             children: [
-              context.autoIcon(icon, color: AppColorsDark.onSurfaceVariant),
+              context.autoIcon(
+                icon,
+                color: context.colorScheme.onSurfaceVariant,
+              ),
               const SizedBox(width: 12),
               context.autoText(label, style: AppFonts.labelLarge),
             ],
@@ -41,7 +44,7 @@ class SettingsToggleTile extends StatelessWidget {
                 value: value,
                 onChanged: onChanged,
                 activeTrackColor: context.colorScheme.primary,
-                inactiveTrackColor: AppColorsDark.onSurfaceVariant,
+                inactiveTrackColor: context.colorScheme.onSurfaceVariant,
               ),
             ),
           ),

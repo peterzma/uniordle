@@ -19,7 +19,7 @@ class StakesAndPenalties extends StatelessWidget {
           child: context.autoText(
             'Higher ranks bring bigger challenges. \n Don\'t give up!',
             style: AppFonts.labelMedium.copyWith(
-              color: AppColorsDark.onSurfaceVariant,
+              color: context.colorScheme.onSurfaceVariant,
             ),
             textAlign: TextAlign.center,
             maxLines: 2,

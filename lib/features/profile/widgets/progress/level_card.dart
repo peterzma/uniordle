@@ -44,7 +44,7 @@ class LevelCard extends StatelessWidget {
             child: LinearProgressIndicator(
               value: progress,
               minHeight: context.r(16),
-              backgroundColor: AppColorsDark.onSurfaceVariant,
+              backgroundColor: context.colorScheme.onSurfaceVariant,
               borderRadius: BorderRadius.circular(64),
               valueColor: AlwaysStoppedAnimation<Color>(
                 context.colorScheme.primary,
@@ -111,7 +111,7 @@ class _LevelInfo extends StatelessWidget {
         context.autoText(
           label,
           style: AppFonts.labelSmall.copyWith(
-            color: AppColorsDark.onSurfaceVariant,
+            color: context.colorScheme.onSurfaceVariant,
           ),
         ),
         context.autoText(level, style: AppFonts.headlineMedium, reduction: 8),

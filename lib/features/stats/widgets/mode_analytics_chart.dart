@@ -34,14 +34,14 @@ class ModeAnalyticsChart extends StatelessWidget {
                   "$tries",
                   textAlign: TextAlign.center,
                   style: AppFonts.labelMedium.copyWith(
-                    color: AppColorsDark.onSurfaceVariant,
+                    color: context.colorScheme.onSurfaceVariant,
                   ),
                 ),
                 SizedBox(width: context.r(4)),
                 Icon(
                   AppIcons.gameAttempts,
                   size: 12,
-                  color: AppColorsDark.onSurfaceVariant,
+                  color: context.colorScheme.onSurfaceVariant,
                 ),
               ],
             ),
@@ -67,7 +67,7 @@ class ModeAnalyticsChart extends StatelessWidget {
                 child: Icon(
                   AppIcons.gameLetters,
                   size: 12,
-                  color: AppColorsDark.onSurfaceVariant,
+                  color: context.colorScheme.onSurfaceVariant,
                 ),
               ),
             ],
@@ -99,7 +99,7 @@ class ModeAnalyticsChart extends StatelessWidget {
                   style: AppFonts.labelSmall.copyWith(
                     color: !isEmpty && (count / maxUsage > 0.5)
                         ? context.colorScheme.onSurface
-                        : AppColorsDark.onSurfaceVariant,
+                        : context.colorScheme.onSurfaceVariant,
                   ),
                 ),
               ),

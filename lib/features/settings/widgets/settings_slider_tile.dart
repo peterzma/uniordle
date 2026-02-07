@@ -39,7 +39,7 @@ class SettingsSliderTile extends StatelessWidget {
                       value > 0 ? icon : muteIcon,
                       color: value > 0
                           ? context.colorScheme.primary
-                          : AppColorsDark.onSurfaceVariant,
+                          : context.colorScheme.onSurfaceVariant,
                     ),
                   ),
                   const SizedBox(width: 12),
@@ -56,7 +56,7 @@ class SettingsSliderTile extends StatelessWidget {
             data: SliderTheme.of(context).copyWith(
               trackHeight: 4,
               activeTrackColor: context.colorScheme.primary,
-              inactiveTrackColor: AppColorsDark.onSurfaceVariant,
+              inactiveTrackColor: context.colorScheme.onSurfaceVariant,
               thumbColor: context.colorScheme.onSurface,
               overlayColor: Colors.transparent,
               thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 5.0),
