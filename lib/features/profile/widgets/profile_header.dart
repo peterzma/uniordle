@@ -14,7 +14,7 @@ class ProfileHeader extends StatelessWidget {
 
         final Color themeColor = Color.lerp(
           context.colorScheme.primary,
-          AppColorsDark.accent4,
+          context.colorScheme.tertiary,
           transitionPower,
         )!;
 
@@ -96,7 +96,7 @@ class ProfileHeader extends StatelessWidget {
                     context: context,
                     icon: AppIcons.badgeOracle,
                     label: "+${(summitBonus * 100).toInt()}%",
-                    color: AppColorsDark.accent4,
+                    color: context.colorScheme.tertiary,
                   ),
                 if (hasMastery)
                   _buildBadge(

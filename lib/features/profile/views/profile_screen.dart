@@ -50,7 +50,7 @@ class ProfileScreen extends StatelessWidget {
                         value: "+$rBonus%",
                         icon: AppIcons.statRank,
                         iconColor: rBonus > 0
-                            ? AppColorsDark.accent4
+                            ? context.colorScheme.tertiary
                             : AppColorsDark.onSurfaceVariant,
                       ),
                     ),

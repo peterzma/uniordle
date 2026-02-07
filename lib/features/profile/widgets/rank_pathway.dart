@@ -44,6 +44,7 @@ class RankPathway extends StatelessWidget {
               return Column(
                 children: [
                   _buildRankItem(
+                    context: context,
                     title: title,
                     levelRange: levelRange,
                     isAchieved: isAchieved,
@@ -61,7 +62,7 @@ class RankPathway extends StatelessWidget {
                         width: 2,
                         decoration: BoxDecoration(
                           color: isPathwayComplete
-                              ? AppColorsDark.accent4
+                              ? context.colorScheme.tertiary
                               : (isAchieved
                                     ? AppColorsDark.accent
                                     : AppColorsDark.onSurface),
@@ -83,10 +84,10 @@ class RankPathway extends StatelessWidget {
                 maxWidth: AppLayout.contentWidth(context),
               ),
               child: PulsingButtonWrapper(
-                glowColor: AppColorsDark.accent4,
+                glowColor: context.colorScheme.tertiary,
                 child: PrimaryButton(
                   label: 'A Vision from the Beyond',
-                  color: AppColorsDark.accent4,
+                  color: context.colorScheme.tertiary,
                   onPressed: () {
                     showBaseDialog(
                       context: context,
@@ -103,6 +104,7 @@ class RankPathway extends StatelessWidget {
   }
 
   Widget _buildRankItem({
+    required BuildContext context,
     required String title,
     required String levelRange,
     required bool isAchieved,
@@ -118,7 +120,7 @@ class RankPathway extends StatelessWidget {
     // 4. Otherwise -> Grey (Outline)
 
     final Color rowColor = isPathwayComplete
-        ? AppColorsDark.accent4
+        ? context.colorScheme.tertiary
         : (isAchieved
               ? AppColorsDark.accent
               : (isNext ? Colors.white : AppColorsDark.onSurfaceVariant));

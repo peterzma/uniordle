@@ -36,7 +36,7 @@ class _CommencementState extends State<Commencement> {
             context.autoIcon(
               AppIcons.badgeOracle,
               size: 64,
-              color: AppColorsDark.accent4,
+              color: context.colorScheme.tertiary,
             ),
             SizedBox(height: context.r(16)),
             context.autoText("COMMENCEMENT", style: AppFonts.headlineMedium),
@@ -51,10 +51,10 @@ class _CommencementState extends State<Commencement> {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               decoration: BoxDecoration(
-                color: AppColorsDark.accent4.withValues(alpha: 0.1),
+                color: context.colorScheme.tertiary.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
-                  color: AppColorsDark.accent4.withValues(alpha: 0.5),
+                  color: context.colorScheme.tertiary.withValues(alpha: 0.5),
                 ),
               ),
               child: Column(
@@ -62,14 +62,14 @@ class _CommencementState extends State<Commencement> {
                   context.autoText(
                     "SUMMIT CONFERMENT",
                     style: AppFonts.labelSmall.copyWith(
-                      color: AppColorsDark.accent4,
+                      color: context.colorScheme.tertiary,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   context.autoText(
                     "+100% PERMANENT MERIT",
                     style: AppFonts.headlineMedium.copyWith(
-                      color: AppColorsDark.accent4,
+                      color: context.colorScheme.tertiary,
                       fontSize: 20,
                     ),
                     reduction: 8,
@@ -81,7 +81,7 @@ class _CommencementState extends State<Commencement> {
             SizedBox(height: context.r(32)),
             PrimaryButton(
               label: 'I am ready',
-              color: AppColorsDark.accent4,
+              color: context.colorScheme.tertiary,
               onPressed: () => Navigator.pop(context),
             ),
           ],

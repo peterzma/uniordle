@@ -74,7 +74,7 @@ class StatsScreen extends StatelessWidget {
                       child: StatCard(
                         value: "${stats.maxStreak}",
                         label: "Best\nStreak",
-                        color: AppColorsDark.accent4,
+                        color: context.colorScheme.tertiary,
                       ),
                     ),
                   ],
