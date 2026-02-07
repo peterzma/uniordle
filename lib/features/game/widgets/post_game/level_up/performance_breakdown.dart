@@ -56,7 +56,7 @@ class PerformanceBreakdown extends StatelessWidget {
 
               final Color normalColor = isPositive
                   ? AppColorsDark.onSurfaceVariant
-                  : AppColorsDark.accent2.withValues(alpha: 0.8);
+                  : context.colorScheme.error.withValues(alpha: 0.8);
 
               final Color highlightColor = grade.color;
 

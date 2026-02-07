@@ -56,7 +56,7 @@ class HistoryItemCard extends StatelessWidget {
                 style: AppFonts.labelSmall.copyWith(
                   color: won
                       ? AppColorsDark.correctColor
-                      : AppColorsDark.accent2,
+                      : context.colorScheme.error,
                 ),
               ),
             ],

@@ -123,7 +123,7 @@ class ProfileScreen extends StatelessWidget {
                         value: "-${stats.standardPenalty}",
                         icon: AppIcons.statLossPenalty,
                         iconColor: stats.standardPenalty > 0
-                            ? AppColorsDark.accent2
+                            ? context.colorScheme.error
                             : AppColorsDark.onSurfaceVariant,
                       ),
                     ),

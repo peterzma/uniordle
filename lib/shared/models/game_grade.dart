@@ -25,7 +25,7 @@ enum GameGrade {
   Color get color {
     switch (this) {
       case GameGrade.fail:
-        return AppColorsDark.accent2;
+        return context.colorScheme.error;
       case GameGrade.highDistinction:
         return AppColorsDark.accent4;
       case GameGrade.distinction:
