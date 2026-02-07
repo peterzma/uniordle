@@ -19,7 +19,7 @@ class AcademicTranscriptContent extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Transcript", style: context.headlineMedium),
-                Text("${allGames.length} ENTRIES", style: context.labelMedium),
+                Text("${allGames.length} GRADES", style: context.labelMedium),
               ],
             ),
             // Close button inside the content
@@ -48,7 +48,7 @@ class AcademicTranscriptContent extends StatelessWidget {
 
         SizedBox(height: context.r(16)),
 
-        Text("Only the last 50 scores are shown.", style: context.labelMedium),
+        Text("Only the last 50 grades are shown.", style: context.labelMedium),
       ],
     );
   }
