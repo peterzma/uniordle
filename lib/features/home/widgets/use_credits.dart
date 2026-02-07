@@ -54,7 +54,7 @@ class _UseCreditsState extends State<UseCredits> {
 
           context.autoText(
             !allMajorsUnlocked ? "???" : "Extra Research",
-            style: AppFonts.headline,
+            style: AppFonts.headlineMedium,
           ),
 
           SizedBox(height: context.r(16)),

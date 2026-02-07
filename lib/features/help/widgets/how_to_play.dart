@@ -10,7 +10,7 @@ class HowToPlay extends StatelessWidget {
       children: [
         context.autoText(
           'HOW TO PLAY',
-          style: AppFonts.headline,
+          style: AppFonts.headlineMedium,
           textAlign: TextAlign.center,
         ),
         SizedBox(height: context.r(8)),

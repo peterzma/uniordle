@@ -18,7 +18,7 @@ class AcademicTranscriptContent extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Transcript", style: AppFonts.headline),
+                Text("Transcript", style: AppFonts.headlineMedium),
                 Text("${allGames.length} ENTRIES", style: AppFonts.labelMedium),
               ],
             ),

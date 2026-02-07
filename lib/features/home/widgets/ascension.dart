@@ -44,7 +44,7 @@ class _AscensionState extends State<Ascension> {
                   color: AppColors.accent3,
                 ),
                 SizedBox(height: context.r(16)),
-                context.autoText("ASCENSION", style: AppFonts.headline),
+                context.autoText("ASCENSION", style: AppFonts.headlineMedium),
                 SizedBox(height: context.r(12)),
                 context.autoText(
                   "You have done it, Oracle. Every major mastered, every archive opened. You have transcended the university and reached the end of the path. Well Done.",
@@ -76,7 +76,7 @@ class _AscensionState extends State<Ascension> {
                       ),
                       context.autoText(
                         "$dynamicBonus PERMANENT MERIT",
-                        style: AppFonts.headline.copyWith(
+                        style: AppFonts.headlineMedium.copyWith(
                           color: AppColors.accent3,
                           fontSize: 20,
                         ),

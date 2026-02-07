@@ -16,7 +16,7 @@ class RiseAndReach extends StatelessWidget {
       children: [
         context.autoText(
           'RISE & REACH',
-          style: AppFonts.headline,
+          style: AppFonts.headlineMedium,
           textAlign: TextAlign.center,
         ),
         SizedBox(height: context.r(8)),
@@ -44,7 +44,7 @@ class RiseAndReach extends StatelessWidget {
                 ),
                 child: context.autoText(
                   '.\n.\n.',
-                  style: AppFonts.headline.copyWith(
+                  style: AppFonts.headlineMedium.copyWith(
                     color: AppColors.outline,
                     height: 1,
                   ),

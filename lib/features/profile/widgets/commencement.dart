@@ -39,7 +39,7 @@ class _CommencementState extends State<Commencement> {
               color: AppColors.accent4,
             ),
             SizedBox(height: context.r(16)),
-            context.autoText("COMMENCEMENT", style: AppFonts.headline),
+            context.autoText("COMMENCEMENT", style: AppFonts.headlineMedium),
             SizedBox(height: context.r(12)),
             context.autoText(
               "Congratulations, Oracle! You've reached the summit of knowledge. Level 100 is yours, but true prestige lies in the archives. Can you master every single major?",
@@ -68,7 +68,7 @@ class _CommencementState extends State<Commencement> {
                   ),
                   context.autoText(
                     "+100% PERMANENT MERIT",
-                    style: AppFonts.headline.copyWith(
+                    style: AppFonts.headlineMedium.copyWith(
                       color: AppColors.accent4,
                       fontSize: 20,
                     ),

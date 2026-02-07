@@ -33,7 +33,7 @@ class SummaryCard extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-          context.autoText(value, style: AppFonts.headline, reduction: 4),
+          context.autoText(value, style: AppFonts.headlineMedium, reduction: 4),
         ],
       ),
     );

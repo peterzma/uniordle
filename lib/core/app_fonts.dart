@@ -19,7 +19,7 @@ abstract class AppFonts {
   );
 
   // Titles / Tiles
-  static TextStyle get headline => const TextStyle(
+  static TextStyle get headlineMedium => const TextStyle(
     fontFamily: displayFont,
     fontSize: 20,
     fontWeight: FontWeight.w700,

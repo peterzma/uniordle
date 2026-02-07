@@ -10,7 +10,7 @@ class LevelUp extends StatelessWidget {
       children: [
         context.autoText(
           'LEVEL UP & UNLOCK',
-          style: AppFonts.headline,
+          style: AppFonts.headlineMedium,
           textAlign: TextAlign.center,
         ),
         SizedBox(height: context.r(8)),

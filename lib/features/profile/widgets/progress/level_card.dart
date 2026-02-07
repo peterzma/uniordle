@@ -112,7 +112,7 @@ class _LevelInfo extends StatelessWidget {
             color: AppColors.onSurfaceVariant,
           ),
         ),
-        context.autoText(level, style: AppFonts.headline, reduction: 8),
+        context.autoText(level, style: AppFonts.headlineMedium, reduction: 8),
       ],
     );
   }

@@ -13,7 +13,7 @@ class DataResetService {
             color: AppColors.accent2,
           ),
           SizedBox(height: context.r(8)),
-          Text("RESET PROGRESS?", style: AppFonts.headline),
+          Text("RESET PROGRESS?", style: AppFonts.headlineMedium),
           SizedBox(height: context.r(8)),
           Text(
             "This will permanently delete your level, stats, and academic rank.",
@@ -49,7 +49,7 @@ class DataResetService {
             color: AppColors.accent2,
           ),
           SizedBox(height: context.r(8)),
-          Text("ARE YOU CERTAIN?", style: AppFonts.headline),
+          Text("ARE YOU CERTAIN?", style: AppFonts.headlineMedium),
           SizedBox(height: context.r(8)),
           Text(
             "There is no way to recover your data once deleted. Be very careful!",

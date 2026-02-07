@@ -40,8 +40,10 @@ class _AppState extends State<App> with WidgetsBindingObserver {
       title: 'Uniordle',
       navigatorObservers: [_musicObserver],
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.darkTheme,
 
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.system,
       builder: (context, child) {
         return ResponsiveWrapper(child: child!);
       },

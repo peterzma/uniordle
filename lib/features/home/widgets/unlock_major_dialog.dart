@@ -77,7 +77,7 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
 
           context.autoText(
             canAfford ? "Enroll in ${widget.major.name}?" : "RESTRICTED",
-            style: AppFonts.headline,
+            style: AppFonts.headlineMedium,
           ),
           SizedBox(height: context.r(16)),
 
