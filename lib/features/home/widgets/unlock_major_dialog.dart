@@ -42,7 +42,7 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
     final Color majorColor = context.getMajorColor(widget.major.id);
     final Color statusColor = canAfford
         ? majorColor
-        : context.colorScheme.onSurfaceVariant.withValues(alpha: 0.5);
+        : context.colorScheme.onSurfaceVariant;
 
     final String bonusText = isFirstEnrollment
         ? "FIRST ENROLLMENT"
