@@ -43,42 +43,42 @@ class StatsManager {
 
     final int extraBoosts = _prefs.getInt('stat_extra_boosts') ?? 0;
 
-    // statsNotifier.value = UserStats(
-    //   streak: _prefs.getInt('stat_streak') ?? 0,
-    //   maxStreak: _prefs.getInt('stat_max_streak') ?? 0,
-    //   solved: _prefs.getInt('stat_solved') ?? 0,
-    //   lost: _prefs.getInt('stat_lost') ?? 0,
-    //   merit: _prefs.getInt('stat_merit') ?? 0,
-    //   // merit: 12400,
-    //   guessDistribution: fullDistribution,
-    //   unlockedIds: unlocked,
-    //   achievedMilestones: milestonesRaw.map(int.parse).toList(),
-    //   modeFrequency: modeFrequency,
-    //   gameHistory: gameHistory,
-    //   solvedWords: solvedWords,
-    //   extraBoosts: extraBoosts,
-    // );
-
-    // TEST MODE TO UNLOCK EVERYTHING
     statsNotifier.value = UserStats(
-      streak: 999,
-      maxStreak: 999,
-      solved: 500,
-      lost: 0,
-      merit: 15000,
-      unlockedIds: MajorsData.all.map((m) => m.id).toList(),
-      solvedWords: [],
-      guessDistribution: {
-        1: 10,
-        2: 20,
-        3: 50,
-        4: 100,
-        5: 30,
-        6: 10,
-        7: 5,
-        8: 2,
-      },
+      streak: _prefs.getInt('stat_streak') ?? 0,
+      maxStreak: _prefs.getInt('stat_max_streak') ?? 0,
+      solved: _prefs.getInt('stat_solved') ?? 0,
+      lost: _prefs.getInt('stat_lost') ?? 0,
+      merit: _prefs.getInt('stat_merit') ?? 0,
+      // merit: 12400,
+      guessDistribution: fullDistribution,
+      unlockedIds: unlocked,
+      achievedMilestones: milestonesRaw.map(int.parse).toList(),
+      modeFrequency: modeFrequency,
+      gameHistory: gameHistory,
+      solvedWords: solvedWords,
+      extraBoosts: extraBoosts,
     );
+
+    // // TEST MODE TO UNLOCK EVERYTHING
+    // statsNotifier.value = UserStats(
+    //   streak: 999,
+    //   maxStreak: 999,
+    //   solved: 500,
+    //   lost: 0,
+    //   merit: 15000,
+    //   unlockedIds: MajorsData.all.map((m) => m.id).toList(),
+    //   solvedWords: [],
+    //   guessDistribution: {
+    //     1: 10,
+    //     2: 20,
+    //     3: 50,
+    //     4: 100,
+    //     5: 30,
+    //     6: 10,
+    //     7: 5,
+    //     8: 2,
+    //   },
+    // );
   }
 
   Future<int> recordWin({

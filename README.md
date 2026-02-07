@@ -102,6 +102,5 @@ Latest release:
 * check volumes are equalised
 * finetune sounds by cutting off silence
 * add indiciator of guest mode and give pop up for user to sign in to see stats
-* possibly add light mode?
 * stat for which majors played often? what grades are received most often?
 * make variables consistent for future readability

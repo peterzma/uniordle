@@ -8,7 +8,7 @@ export 'package:auto_size_text/auto_size_text.dart';
 export 'package:lucide_icons/lucide_icons.dart';
 export 'package:flip_card/flip_card.dart';
 export 'package:equatable/equatable.dart';
-export 'package:confetti/confetti.dart';
+
 export 'package:flutter_phoenix/flutter_phoenix.dart';
 export 'package:bitsdojo_window/bitsdojo_window.dart';
 

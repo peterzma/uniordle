@@ -1,6 +1,7 @@
 import 'package:uniordle/shared/exports/post_game_exports.dart';
 import 'package:uniordle/features/profile/widgets/progress/level_card.dart';
 import 'package:uniordle/shared/wrappers/celebration_wrapper.dart';
+import 'package:confetti/confetti.dart';
 
 enum MilestoneType { levelUp, creditEarned, rankUp }
 
