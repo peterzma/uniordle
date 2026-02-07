@@ -74,7 +74,7 @@ class _GameScreenState extends State<GameScreen> {
         majorId: major.id,
       );
     } else {
-      meritChange = statsManager.statsNotifier.value.standardPenalty;
+      meritChange = statsManager.statsNotifier.value.lossPenalty;
       await statsManager.recordLoss(
         wordLength: rawYearLevel,
         maxAttempts: _maxAttempts,

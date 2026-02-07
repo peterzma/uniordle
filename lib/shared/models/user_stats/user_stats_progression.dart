@@ -39,13 +39,11 @@ extension UserStatsProgress on UserStats {
     );
   }
 
-  int get effectiveRank => (currentLevel ~/ 10);
-
-  int get standardPenalty {
-    return (effectiveRank * 5);
+  int get lossPenalty {
+    return (currentLevel * 0.5).round();
   }
 
-  int get activePenalty {
-    return (effectiveRank * 20);
+  int get abandonPenalty {
+    return (currentLevel * 2);
   }
 }

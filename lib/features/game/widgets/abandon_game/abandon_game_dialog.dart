@@ -7,7 +7,7 @@ class AbandonGameDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     final stats = statsManager.statsNotifier.value;
     final streak = stats.streak;
-    final penalty = stats.activePenalty;
+    final penalty = stats.abandonPenalty;
 
     final highlightStyle = context.labelMedium.copyWith(
       color: context.colorScheme.error,

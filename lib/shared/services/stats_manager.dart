@@ -158,7 +158,7 @@ class StatsManager {
       word: word,
       wordLength: wordLength,
       maxAttempts: maxAttempts,
-      penalty: current.standardPenalty,
+      penalty: current.lossPenalty,
     );
   }
 
@@ -172,7 +172,7 @@ class StatsManager {
       word: word,
       wordLength: wordLength,
       maxAttempts: maxAttempts,
-      penalty: current.activePenalty,
+      penalty: current.abandonPenalty,
     );
   }
 
