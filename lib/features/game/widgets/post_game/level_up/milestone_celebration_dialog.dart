@@ -53,7 +53,7 @@ class MilestoneCelebrationDialog extends StatelessWidget {
                 : AppIcons.gameCredit,
             color: isRank
                 ? context.colorScheme.tertiary
-                : context.colorScheme.primary,
+                : context.gameColors.correct,
             size: context.r(64),
           ),
 

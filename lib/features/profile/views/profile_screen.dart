@@ -96,7 +96,7 @@ class ProfileScreen extends StatelessWidget {
                         value: "+$dBonus%",
                         icon: AppIcons.statMajor,
                         iconColor: dBonus > 0
-                            ? AppColorsDark.correctColor
+                            ? context.gameColors.correct
                             : context.colorScheme.onSurfaceVariant,
                       ),
                     ),

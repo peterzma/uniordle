@@ -56,14 +56,18 @@ class PostGameDialog extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(context.r(16)),
             decoration: BoxDecoration(
-              color: (won ? AppColorsDark.correctColor : Colors.red).withValues(
-                alpha: 0.1,
-              ),
+              color:
+                  (won
+                          ? context.gameColors.correct
+                          : context.colorScheme.error)!
+                      .withValues(alpha: 0.1),
               shape: BoxShape.circle,
             ),
             child: Icon(
               won ? AppIcons.gameWin : AppIcons.gameLoss,
-              color: won ? AppColorsDark.correctColor : Colors.red,
+              color: won
+                  ? context.gameColors.correct
+                  : context.colorScheme.error,
               size: context.r(64),
             ),
           ),

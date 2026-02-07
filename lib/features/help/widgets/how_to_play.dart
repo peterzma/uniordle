@@ -34,21 +34,21 @@ class HowToPlay extends StatelessWidget {
             children: [
               InstructionRow(
                 leading: Text('U', style: AppFonts.displayMedium),
-                color: AppColorsDark.correctColor,
+                color: context.gameColors.correct,
                 title: 'Correct Letter',
                 subtitle: 'RIGHT SPOT',
               ),
               SizedBox(height: context.r(32)),
               InstructionRow(
                 leading: Text('N', style: AppFonts.displayMedium),
-                color: AppColorsDark.inWordColor,
+                color: context.gameColors.inWord,
                 title: 'Correct Letter',
                 subtitle: 'WRONG SPOT',
               ),
               SizedBox(height: context.r(32)),
               InstructionRow(
                 leading: Text('I', style: AppFonts.displayMedium),
-                color: AppColorsDark.notInWordColor,
+                color: context.gameColors.notInWord,
                 title: 'Wrong Letter',
                 subtitle: 'NO SPOT',
               ),

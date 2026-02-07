@@ -57,7 +57,7 @@ class HistoryItemCard extends StatelessWidget {
                 won ? "+$merit MERITS" : "$merit MERITS",
                 style: AppFonts.labelSmall.copyWith(
                   color: won
-                      ? AppColorsDark.correctColor
+                      ? context.gameColors.correct
                       : context.colorScheme.error,
                 ),
               ),

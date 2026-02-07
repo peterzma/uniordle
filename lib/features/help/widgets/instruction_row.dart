@@ -2,7 +2,7 @@ import 'package:uniordle/shared/exports/help_exports.dart';
 
 class InstructionRow extends StatelessWidget {
   final Widget leading;
-  final Color color;
+  final Color? color;
   final String title;
   final String subtitle;
 

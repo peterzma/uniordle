@@ -14,7 +14,7 @@ class AttemptsInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color attemptsColor = won ? AppColorsDark.correctColor : Colors.red;
+    final Color attemptsColor = won ? context.gameColors.correct! : Colors.red;
     return RichText(
       text: TextSpan(
         children: [

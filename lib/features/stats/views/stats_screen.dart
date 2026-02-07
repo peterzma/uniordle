@@ -13,7 +13,7 @@ class StatsScreen extends StatelessWidget {
         final double normalizedValue = (winValue / 100).clamp(0.0, 1.0);
         final Color winColor = Color.lerp(
           context.colorScheme.error,
-          AppColorsDark.correctColor,
+          context.gameColors.correct,
           normalizedValue,
         )!;
 

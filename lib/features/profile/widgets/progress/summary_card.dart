@@ -3,7 +3,7 @@ import 'package:uniordle/shared/exports/profile_exports.dart';
 class SummaryCard extends StatelessWidget {
   final String label, value;
   final IconData icon;
-  final Color iconColor;
+  final Color? iconColor;
 
   const SummaryCard({
     super.key,

@@ -14,14 +14,14 @@ class PostGameDialogHeader extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
             color: won
-                ? AppColorsDark.correctColor.withValues(alpha: 0.1)
+                ? context.gameColors.correct!.withValues(alpha: 0.1)
                 : Colors.red.withValues(alpha: 0.1),
             shape: BoxShape.circle,
           ),
 
           child: Icon(
             won ? AppIcons.gameWin : AppIcons.gameLoss,
-            color: won ? AppColorsDark.correctColor : Colors.red,
+            color: won ? context.gameColors.correct : Colors.red,
             size: 64,
           ),
         ),
