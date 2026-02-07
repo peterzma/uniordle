@@ -40,7 +40,7 @@ class DifficultySelector extends StatelessWidget {
           data: SliderTheme.of(context).copyWith(
             trackHeight: 4,
             activeTrackColor: context.getMajorColor(major.id),
-            inactiveTrackColor: context.colorScheme.onSurfaceVariant,
+            inactiveTrackColor: context.colorScheme.surfaceContainer,
             thumbColor: context.getMajorColor(major.id),
             overlayColor: Colors.transparent,
             overlayShape: RoundSliderOverlayShape(
@@ -49,7 +49,7 @@ class DifficultySelector extends StatelessWidget {
             thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 5.0),
             tickMarkShape: const RoundSliderTickMarkShape(tickMarkRadius: 3.0),
             activeTickMarkColor: context.getMajorColor(major.id),
-            inactiveTickMarkColor: context.colorScheme.onSurfaceVariant,
+            inactiveTickMarkColor: context.colorScheme.outline,
           ),
           child: SizedBox(
             height: 20,
