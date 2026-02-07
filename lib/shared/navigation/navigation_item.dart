@@ -7,7 +7,7 @@ class NavigationItem extends StatelessWidget {
   final bool isActive;
   final double iconSize;
   final Color? color;
-  final double width; // Add this
+  final double width;
 
   const NavigationItem({
     super.key,
@@ -17,7 +17,7 @@ class NavigationItem extends StatelessWidget {
     this.isActive = false,
     this.iconSize = 24,
     this.color,
-    this.width = 48,
+    this.width = 50,
   });
 
   @override
