@@ -14,7 +14,6 @@ class ResponsiveWrapper extends StatelessWidget {
         final bool mobileMode = windowWidth < AppLayout.breakpoint;
 
         return Material(
-          color: AppColorsDark.surface,
           child: Stack(
             children: [
               Center(

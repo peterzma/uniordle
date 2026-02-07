@@ -7,11 +7,21 @@ class AppTheme {
       brightness: Brightness.dark,
       fontFamily: AppFonts.displayFont,
       scaffoldBackgroundColor: AppColorsDark.surface,
+      dialogTheme: const DialogThemeData(
+        backgroundColor: AppColorsDark.surfaceDialog,
+        surfaceTintColor: Colors.transparent,
+      ),
       textTheme: _buildTextTheme(Brightness.dark),
       colorScheme: const ColorScheme.dark(
         surface: AppColorsDark.surface,
         onSurface: AppColorsDark.onSurface,
         primary: AppColorsDark.accent,
+        secondary: AppColorsDark.accent3,
+        error: AppColorsDark.accent2,
+
+        outline: AppColorsDark.outline,
+        surfaceContainer: AppColorsDark.surfaceVariant,
+        onSurfaceVariant: AppColorsDark.onSurfaceVariant,
       ),
     );
   }
@@ -22,11 +32,21 @@ class AppTheme {
       brightness: Brightness.light,
       fontFamily: AppFonts.displayFont,
       scaffoldBackgroundColor: AppColorsLight.surface,
+      dialogTheme: const DialogThemeData(
+        backgroundColor: AppColorsLight.surfaceDialog,
+        surfaceTintColor: Colors.transparent,
+      ),
       textTheme: _buildTextTheme(Brightness.light),
       colorScheme: const ColorScheme.light(
         surface: AppColorsLight.surface,
         onSurface: AppColorsLight.onSurface,
         primary: AppColorsLight.accent,
+        secondary: AppColorsLight.accent3,
+        error: AppColorsLight.accent2,
+
+        outline: AppColorsLight.outline,
+        surfaceContainer: AppColorsLight.surfaceVariant,
+        onSurfaceVariant: AppColorsLight.onSurfaceVariant,
       ),
     );
   }
