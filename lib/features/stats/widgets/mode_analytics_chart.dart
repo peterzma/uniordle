@@ -98,7 +98,7 @@ class ModeAnalyticsChart extends StatelessWidget {
                   count > 0 ? "$count" : "-",
                   style: AppFonts.labelSmall.copyWith(
                     color: !isEmpty && (count / maxUsage > 0.5)
-                        ? AppColorsDark.onSurface
+                        ? context.colorScheme.onSurface
                         : AppColorsDark.onSurfaceVariant,
                   ),
                 ),

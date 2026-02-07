@@ -76,7 +76,7 @@ class ProfileScreen extends StatelessWidget {
                         value: "-${stats.activePenalty}",
                         icon: AppIcons.statAbandonCost,
                         iconColor: stats.activePenalty > 0
-                            ? AppColorsDark.onSurface
+                            ? context.colorScheme.onSurface
                             : AppColorsDark.onSurfaceVariant,
                       ),
                     ),

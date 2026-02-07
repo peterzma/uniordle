@@ -39,7 +39,11 @@ class RiseAndReach extends StatelessWidget {
               ),
               const Divider(color: AppColorsDark.outline, height: 1),
 
-              _buildRankRow(context, ranks[1], color: AppColorsDark.onSurface),
+              _buildRankRow(
+                context,
+                ranks[1],
+                color: context.colorScheme.onSurface,
+              ),
               const Divider(color: AppColorsDark.outline, height: 1),
 
               Padding(

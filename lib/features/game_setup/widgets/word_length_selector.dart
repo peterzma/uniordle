@@ -61,7 +61,7 @@ class WordLengthSelector extends StatelessWidget {
                                 'LETTERS',
                                 style: active
                                     ? AppFonts.labelMedium.copyWith(
-                                        color: AppColorsDark.onSurface,
+                                        color: context.colorScheme.onSurface,
                                         fontWeight: FontWeight.w600,
                                       )
                                     : AppFonts.labelMedium,

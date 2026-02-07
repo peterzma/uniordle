@@ -65,7 +65,7 @@ class RankPathway extends StatelessWidget {
                               ? context.colorScheme.tertiary
                               : (isAchieved
                                     ? AppColorsDark.accent
-                                    : AppColorsDark.onSurface),
+                                    : context.colorScheme.onSurface),
                           borderRadius: BorderRadius.circular(2),
                         ),
                       ),

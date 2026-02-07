@@ -58,9 +58,9 @@ class PrimaryButton extends StatelessWidget {
     return SizedBox(
       height: loaderSize,
       width: loaderSize,
-      child: const CircularProgressIndicator(
+      child: CircularProgressIndicator(
         strokeWidth: 3,
-        color: AppColorsDark.onSurface,
+        color: context.colorScheme.onSurface,
       ),
     );
   }

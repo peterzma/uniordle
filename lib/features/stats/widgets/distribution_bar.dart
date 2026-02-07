@@ -58,7 +58,7 @@ class DistributionBar extends StatelessWidget {
                       child: Text(
                         "$count",
                         style: AppFonts.labelSmall.copyWith(
-                          color: AppColorsDark.onSurface,
+                          color: context.colorScheme.onSurface,
                         ),
                       ),
                     ),

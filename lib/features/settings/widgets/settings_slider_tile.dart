@@ -57,7 +57,7 @@ class SettingsSliderTile extends StatelessWidget {
               trackHeight: 4,
               activeTrackColor: context.colorScheme.primary,
               inactiveTrackColor: AppColorsDark.onSurfaceVariant,
-              thumbColor: AppColorsDark.onSurface,
+              thumbColor: context.colorScheme.onSurface,
               overlayColor: Colors.transparent,
               thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 5.0),
               overlayShape: const RoundSliderOverlayShape(overlayRadius: 16.0),

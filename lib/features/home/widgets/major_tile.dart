@@ -86,7 +86,7 @@ class _MajorTileState extends State<MajorTile> {
                               Text(
                                 sub.name,
                                 style: AppFonts.labelLarge.copyWith(
-                                  color: AppColorsDark.onSurface,
+                                  color: context.colorScheme.onSurface,
                                 ),
                               ),
                               if (!widget.isLocked)
