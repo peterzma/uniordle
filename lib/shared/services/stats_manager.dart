@@ -118,6 +118,7 @@ class StatsManager {
       attempts: attempts,
       maxAttempts: maxAttempts,
       merit: gainedMerit,
+      majorId: majorId,
     );
 
     final updatedModeFreq = await _incrementModeFrequency(
@@ -152,6 +153,7 @@ class StatsManager {
     required String word,
     required int wordLength,
     required int maxAttempts,
+    required String majorId,
   }) async {
     final current = statsNotifier.value;
     return _handleFailure(
@@ -159,6 +161,7 @@ class StatsManager {
       wordLength: wordLength,
       maxAttempts: maxAttempts,
       penalty: current.lossPenalty,
+      majorId: majorId,
     );
   }
 
@@ -166,6 +169,7 @@ class StatsManager {
     required String word,
     required int wordLength,
     required int maxAttempts,
+    required String majorId,
   }) async {
     final current = statsNotifier.value;
     return _handleFailure(
@@ -173,6 +177,7 @@ class StatsManager {
       wordLength: wordLength,
       maxAttempts: maxAttempts,
       penalty: current.abandonPenalty,
+      majorId: majorId,
     );
   }
 
@@ -181,6 +186,7 @@ class StatsManager {
     required int wordLength,
     required int maxAttempts,
     required int penalty,
+    required String majorId,
   }) async {
     final current = statsNotifier.value;
     final newLost = current.lost + 1;
@@ -198,6 +204,7 @@ class StatsManager {
       attempts: maxAttempts,
       maxAttempts: maxAttempts,
       merit: -penalty,
+      majorId: majorId,
     );
 
     await _prefs.setInt('stat_streak', 0);
@@ -263,18 +270,19 @@ class StatsManager {
     required int attempts,
     required int maxAttempts,
     required int merit,
+    required String majorId,
   }) {
     final List<Map<String, dynamic>> updatedHistory = List.from(
       current.gameHistory,
     );
 
-    // Add the new entry
     updatedHistory.add({
       'word': word,
       'won': won,
       'attempts': attempts,
       'maxAttempts': maxAttempts,
       'merit': merit,
+      'majorId': majorId,
       'timestamp': DateTime.now().millisecondsSinceEpoch,
     });
 

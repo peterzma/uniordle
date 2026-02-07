@@ -29,14 +29,21 @@ class GameController extends ChangeNotifier {
   GameStatus status = GameStatus.playing;
   final Set<Letter> keyboardLetters = {};
 
-  Word? get currentWord => currentWordIndex < board.length ? board[currentWordIndex] : null;
+  Word? get currentWord =>
+      currentWordIndex < board.length ? board[currentWordIndex] : null;
 
   void _initGame() {
-    board = List.generate(maxAttempts, (_) => Word(letters: List.generate(wordLength, (_) => Letter.empty())));
-    flipCardKeys = List.generate(maxAttempts, (_) => List.generate(wordLength, (_) => GlobalKey<FlipCardState>()));
+    board = List.generate(
+      maxAttempts,
+      (_) => Word(letters: List.generate(wordLength, (_) => Letter.empty())),
+    );
+    flipCardKeys = List.generate(
+      maxAttempts,
+      (_) => List.generate(wordLength, (_) => GlobalKey<FlipCardState>()),
+    );
 
     final userSolvedWords = statsManager.statsNotifier.value.solvedWords;
-    
+
     final String nextWord = WordRepository.getNextWord(
       majorId: majorId,
       length: wordLength,
@@ -51,9 +58,9 @@ class GameController extends ChangeNotifier {
     if (status != GameStatus.playing || currentWord == null) return;
     if (currentWord!.letters.any((l) => l.val.isEmpty)) return;
 
-    final guess = currentWord!.wordString; 
+    final guess = currentWord!.wordString;
     if (!WordRepository.isValidWord(guess)) {
-      onInvalidWord?.call(); 
+      onInvalidWord?.call();
       return;
     }
 
@@ -62,7 +69,10 @@ class GameController extends ChangeNotifier {
     notifyListeners();
 
     List<String> remainingLetters = solution.letters.map((l) => l.val).toList();
-    List<LetterStatus> statuses = List.filled(wordLength, LetterStatus.notInWord);
+    List<LetterStatus> statuses = List.filled(
+      wordLength,
+      LetterStatus.notInWord,
+    );
 
     // First pass: Find Correct
     for (int i = 0; i < wordLength; i++) {
@@ -75,7 +85,9 @@ class GameController extends ChangeNotifier {
     // Second pass: Find Correct but wrong position
     for (int i = 0; i < wordLength; i++) {
       if (statuses[i] != LetterStatus.correct) {
-        int indexInRemaining = remainingLetters.indexOf(currentWord!.letters[i].val);
+        int indexInRemaining = remainingLetters.indexOf(
+          currentWord!.letters[i].val,
+        );
         if (indexInRemaining != -1) {
           statuses[i] = LetterStatus.inWord;
           remainingLetters[indexInRemaining] = "";
@@ -85,18 +97,21 @@ class GameController extends ChangeNotifier {
 
     // Flip tiles one by one with sound
     for (int i = 0; i < wordLength; i++) {
-      currentWord!.letters[i] = currentWord!.letters[i].copyWith(status: statuses[i]);
+      currentWord!.letters[i] = currentWord!.letters[i].copyWith(
+        status: statuses[i],
+      );
       _updateKeyboard(currentWord!.letters[i]);
-      
+
       notifyListeners();
 
       SoundManager().play(SoundType.tileFlip);
 
       // Trigger the UI flip animation
-      if (currentWordIndex < flipCardKeys.length && i < flipCardKeys[currentWordIndex].length) {
+      if (currentWordIndex < flipCardKeys.length &&
+          i < flipCardKeys[currentWordIndex].length) {
         flipCardKeys[currentWordIndex][i].currentState?.toggleCard();
       }
-      
+
       // Wait for animation to finish before next tile
       await Future.delayed(const Duration(milliseconds: AppLayout.flipSpeedMs));
     }
@@ -105,7 +120,10 @@ class GameController extends ChangeNotifier {
   }
 
   void _updateKeyboard(Letter newLetter) {
-    final existing = keyboardLetters.firstWhere((l) => l.val == newLetter.val, orElse: () => Letter.empty());
+    final existing = keyboardLetters.firstWhere(
+      (l) => l.val == newLetter.val,
+      orElse: () => Letter.empty(),
+    );
     if (existing.status != LetterStatus.correct) {
       keyboardLetters.removeWhere((l) => l.val == newLetter.val);
       keyboardLetters.add(newLetter);
@@ -117,8 +135,8 @@ class GameController extends ChangeNotifier {
       status = GameStatus.won;
       statsManager.recordWin(
         word: solution.wordString,
-        yearLevel: yearLevel, 
-        wordLength: wordLength, 
+        yearLevel: yearLevel,
+        wordLength: wordLength,
         attempts: currentWordIndex + 1,
         maxAttempts: maxAttempts,
         majorId: majorId,
@@ -126,7 +144,12 @@ class GameController extends ChangeNotifier {
       onGameEnd(true);
     } else if (currentWordIndex + 1 >= maxAttempts) {
       status = GameStatus.lost;
-      statsManager.recordLoss(wordLength: wordLength, maxAttempts: maxAttempts, word: solution.wordString);
+      statsManager.recordLoss(
+        wordLength: wordLength,
+        maxAttempts: maxAttempts,
+        word: solution.wordString,
+        majorId: majorId,
+      );
       onGameEnd(false);
     } else {
       status = GameStatus.playing;
@@ -162,8 +185,9 @@ class GameController extends ChangeNotifier {
       status = GameStatus.lost;
       statsManager.recordAbandonment(
         word: solution.wordString,
-        wordLength: wordLength, 
-        maxAttempts: maxAttempts
+        wordLength: wordLength,
+        maxAttempts: maxAttempts,
+        majorId: majorId,
       );
       notifyListeners();
     }

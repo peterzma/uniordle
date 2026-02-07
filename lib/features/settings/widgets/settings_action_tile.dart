@@ -34,7 +34,7 @@ class SettingsActionTile extends StatelessWidget {
                   color: context.colorScheme.onSurfaceVariant,
                   size: 24,
                 ),
-                const SizedBox(width: 12),
+                const SizedBox(width: 16),
                 context.autoText(label, style: context.labelLarge),
               ],
             ),

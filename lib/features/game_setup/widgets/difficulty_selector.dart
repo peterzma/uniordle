@@ -46,7 +46,7 @@ class DifficultySelector extends StatelessWidget {
             overlayShape: RoundSliderOverlayShape(
               overlayRadius: mobileMode ? 40 : 60,
             ),
-            thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 5.0),
+            thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 4.0),
             tickMarkShape: const RoundSliderTickMarkShape(tickMarkRadius: 3.0),
             activeTickMarkColor: context.getMajorColor(major.id),
             inactiveTickMarkColor: context.colorScheme.outline,
