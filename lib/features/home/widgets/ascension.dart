@@ -1,29 +1,8 @@
 import 'package:uniordle/shared/exports/home_exports.dart';
+import 'package:uniordle/shared/wrappers/celebration_wrapper.dart';
 
-class Ascension extends StatefulWidget {
+class Ascension extends StatelessWidget {
   const Ascension({super.key});
-
-  @override
-  State<Ascension> createState() => _AscensionState();
-}
-
-class _AscensionState extends State<Ascension> {
-  late ConfettiController _confettiController;
-
-  @override
-  void initState() {
-    super.initState();
-    _confettiController = ConfettiController(
-      duration: const Duration(seconds: 10),
-    );
-    _confettiController.play();
-  }
-
-  @override
-  void dispose() {
-    _confettiController.dispose();
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,87 +11,77 @@ class _AscensionState extends State<Ascension> {
       builder: (context, stats, _) {
         final String dynamicBonus =
             "+${(stats.masteryBonusValue * 100).toInt()}%";
-        return Stack(
-          alignment: Alignment.topCenter,
-          children: [
-            Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                context.autoIcon(
-                  AppIcons.badgeMastery,
-                  size: 64,
-                  color: context.colorScheme.secondary,
-                ),
-                SizedBox(height: context.r(16)),
-                context.autoText("ASCENSION", style: context.headlineMedium),
-                SizedBox(height: context.r(12)),
-                context.autoText(
-                  "You have done it, Oracle. Every major mastered, every archive opened. You have transcended the university and reached the end of the path. Well Done.",
-                  textAlign: TextAlign.center,
-                  style: context.labelMedium,
-                  maxLines: 4,
-                ),
-                SizedBox(height: context.r(32)),
-                Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 16,
-                    vertical: 8,
-                  ),
-                  decoration: BoxDecoration(
-                    color: context.colorScheme.secondary.withValues(alpha: 0.1),
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(
-                      color: context.colorScheme.secondary.withValues(
-                        alpha: 0.5,
-                      ),
-                    ),
-                  ),
-                  child: Column(
-                    children: [
-                      context.autoText(
-                        "THE ORACLE'S LEGACY",
-                        style: context.labelSmall.copyWith(
-                          color: context.colorScheme.secondary,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      context.autoText(
-                        "$dynamicBonus PERMANENT MERIT",
-                        style: context.headlineMedium.copyWith(
-                          color: context.colorScheme.secondary,
-                          fontSize: 20,
-                        ),
-                        reduction: 8,
-                      ),
-                    ],
-                  ),
-                ),
 
-                SizedBox(height: context.r(32)),
-                PrimaryButton(
-                  label: 'So it is written',
-                  color: context.colorScheme.secondary,
-                  onPressed: () => Navigator.pop(context),
-                ),
-              ],
-            ),
+        return CelebrationWrapper(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // Icon & Title
+              context.autoIcon(
+                AppIcons.badgeMastery,
+                size: 64,
+                color: context.colorScheme.secondary,
+              ),
+              SizedBox(height: context.r(16)),
+              context.autoText("ASCENSION", style: context.headlineMedium),
 
-            ConfettiWidget(
-              confettiController: _confettiController,
-              blastDirectionality: BlastDirectionality.explosive,
-              shouldLoop: false,
-              colors: [
-                Colors.orange,
-                context.colorScheme.primary,
-                Colors.white,
-                Colors.red,
-              ],
-              minimumSize: const Size(5, 5),
-              maximumSize: const Size(10, 10),
-            ),
-          ],
+              // Narrative Text
+              SizedBox(height: context.r(12)),
+              context.autoText(
+                "You have done it, Oracle. Every major mastered, every archive opened. "
+                "You have transcended the university and reached the end of the path. Well Done.",
+                textAlign: TextAlign.center,
+                style: context.labelMedium,
+                maxLines: 4,
+              ),
+
+              // Legacy Bonus Card
+              SizedBox(height: context.r(32)),
+              _buildLegacyCard(context, dynamicBonus),
+
+              // Action Button
+              SizedBox(height: context.r(32)),
+              PrimaryButton(
+                label: 'So it is written',
+                color: context.colorScheme.secondary,
+                onPressed: () => Navigator.pop(context),
+              ),
+            ],
+          ),
         );
       },
+    );
+  }
+
+  Widget _buildLegacyCard(BuildContext context, String bonus) {
+    final Color accentColor = context.colorScheme.secondary;
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      decoration: BoxDecoration(
+        color: accentColor.withValues(alpha: 0.1),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: accentColor.withValues(alpha: 0.5)),
+      ),
+      child: Column(
+        children: [
+          context.autoText(
+            "THE ORACLE'S LEGACY",
+            style: context.labelSmall.copyWith(
+              color: accentColor,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          context.autoText(
+            "$bonus PERMANENT MERIT",
+            style: context.headlineMedium.copyWith(
+              color: accentColor,
+              fontSize: 20,
+            ),
+            reduction: 8,
+          ),
+        ],
+      ),
     );
   }
 }
