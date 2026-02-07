@@ -40,7 +40,7 @@ class _UseCreditsState extends State<UseCredits> {
             width: context.responsive(60, 80),
             height: context.responsive(60, 80),
             decoration: BoxDecoration(
-              color: AppColorsDark.surfaceVariant,
+              color: context.surfaceVariant,
               borderRadius: BorderRadius.circular(20),
             ),
             child: Icon(

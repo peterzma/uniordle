@@ -25,7 +25,7 @@ class MajorIcon extends StatelessWidget {
       height: dimension,
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        color: AppColorsDark.surfaceVariant,
+        color: context.surfaceVariant,
         borderRadius: BorderRadius.circular(rounding),
       ),
       child: Icon(icon, color: color, size: iconSize, shadows: shadows),

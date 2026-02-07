@@ -64,7 +64,7 @@ class _UnlockMajorDialogState extends State<UnlockMajorDialog> {
             width: context.responsive(60, 80),
             height: context.responsive(60, 80),
             decoration: BoxDecoration(
-              color: AppColorsDark.surfaceVariant,
+              color: context.surfaceVariant,
               borderRadius: BorderRadius.circular(16),
             ),
             child: Icon(

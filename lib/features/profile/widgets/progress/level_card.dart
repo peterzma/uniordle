@@ -19,7 +19,7 @@ class LevelCard extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(AppLayout.cardPadding),
       decoration: BoxDecoration(
-        color: AppColorsDark.surfaceVariant,
+        color: context.surfaceVariant,
         borderRadius: BorderRadius.circular(AppLayout.cardRounding),
       ),
       child: Column(

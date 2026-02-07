@@ -46,7 +46,7 @@ class _MajorTileState extends State<MajorTile> {
               duration: const Duration(milliseconds: 80),
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: AppColorsDark.surfaceVariant,
+                color: context.surfaceVariant,
                 borderRadius: BorderRadius.circular(16),
                 border: Border.all(
                   color: _hovering ? displayColor : Colors.transparent,

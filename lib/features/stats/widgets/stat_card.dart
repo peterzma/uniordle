@@ -17,7 +17,7 @@ class StatCard extends StatelessWidget {
     return Container(
       height: context.responsive(80, 120),
       decoration: BoxDecoration(
-        color: AppColorsDark.surfaceVariant,
+        color: context.surfaceVariant,
         borderRadius: BorderRadius.circular(AppLayout.cardRounding),
       ),
       child: Column(

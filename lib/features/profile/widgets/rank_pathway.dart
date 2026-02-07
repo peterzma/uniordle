@@ -18,7 +18,7 @@ class RankPathway extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(AppLayout.cardPadding),
           decoration: BoxDecoration(
-            color: AppColorsDark.surfaceVariant,
+            color: context.surfaceVariant,
             borderRadius: BorderRadius.circular(AppLayout.cardRounding),
           ),
           child: Column(

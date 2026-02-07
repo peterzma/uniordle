@@ -15,7 +15,7 @@ class UnlockedMajorDialog extends StatelessWidget {
             width: context.responsive(60, 80),
             height: context.responsive(60, 80),
             decoration: BoxDecoration(
-              color: AppColorsDark.surfaceVariant,
+              color: context.surfaceVariant,
               borderRadius: BorderRadius.circular(16),
             ),
             child: Icon(major.icon, color: major.color, size: context.r(60)),

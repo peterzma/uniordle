@@ -37,7 +37,7 @@ class AboutGameDialog extends StatelessWidget {
 
   Widget _buildAppIcon(BuildContext context) => CircleAvatar(
     radius: context.r(60),
-    backgroundColor: AppColorsDark.surfaceVariant,
+    backgroundColor: context.surfaceVariant,
     child: Image.asset(
       'assets/images/white_on_blue/favicon.png',
       fit: BoxFit.contain,

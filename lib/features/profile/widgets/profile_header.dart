@@ -63,7 +63,7 @@ class ProfileHeader extends StatelessWidget {
                       ),
                       child: CircleAvatar(
                         radius: 40,
-                        backgroundColor: AppColorsDark.surfaceVariant,
+                        backgroundColor: context.surfaceVariant,
                         child: Icon(
                           AppIcons.profileDefault,
                           size: 48,

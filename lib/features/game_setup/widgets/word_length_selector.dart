@@ -22,7 +22,7 @@ class WordLengthSelector extends StatelessWidget {
             final bool active = value == len;
             final Color baseColor = active
                 ? major.color
-                : AppColorsDark.surfaceVariant;
+                : context.surfaceVariant;
             return Expanded(
               child: Center(
                 child: ConstrainedBox(
@@ -43,7 +43,7 @@ class WordLengthSelector extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: active
                                 ? major.color
-                                : AppColorsDark.surfaceVariant,
+                                : context.surfaceVariant,
                             borderRadius: BorderRadius.circular(36),
                           ),
                           child: Column(

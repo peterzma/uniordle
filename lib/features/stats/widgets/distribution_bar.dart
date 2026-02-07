@@ -35,7 +35,7 @@ class DistributionBar extends StatelessWidget {
                     Container(
                       height: 24,
                       decoration: BoxDecoration(
-                        color: AppColorsDark.surfaceVariant,
+                        color: context.surfaceVariant,
                         borderRadius: BorderRadius.circular(64),
                       ),
                     ),

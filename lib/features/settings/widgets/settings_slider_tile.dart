@@ -23,7 +23,7 @@ class SettingsSliderTile extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(AppLayout.settingsPadding),
       decoration: BoxDecoration(
-        color: AppColorsDark.surfaceVariant,
+        color: context.surfaceVariant,
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
