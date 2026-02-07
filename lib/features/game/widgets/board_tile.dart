@@ -91,7 +91,7 @@ class _BoardTileState extends State<BoardTile>
         child: Text(
           widget.letter.val,
           textAlign: TextAlign.center,
-          style: AppFonts.displayLarge,
+          style: context.textTheme.displayLarge,
         ),
       ),
     );

@@ -32,7 +32,7 @@ class GameSetupHero extends StatelessWidget {
                   : null,
             ),
             SizedBox(height: context.r(8)),
-            context.autoText(major.name, style: AppFonts.displayLarge),
+            context.autoText(major.name, style: context.textTheme.displayLarge),
             context.autoText(
               'MAJOR SETTINGS',
               style: AppFonts.labelLarge.copyWith(

@@ -25,7 +25,10 @@ class PostGameDialogHeader extends StatelessWidget {
             size: 64,
           ),
         ),
-        Text(won ? 'YOU WIN!' : 'GAME OVER', style: AppFonts.displayLarge),
+        Text(
+          won ? 'YOU WIN!' : 'GAME OVER',
+          style: context.textTheme.displayLarge,
+        ),
       ],
     );
   }

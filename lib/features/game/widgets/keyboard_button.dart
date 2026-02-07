@@ -68,7 +68,7 @@ class KeyboardButton extends StatelessWidget {
 
     return Text(
       letter ?? '',
-      style: AppFonts.displayMedium.copyWith(fontSize: 24, color: color),
+      style: context.displayMedium.copyWith(fontSize: 24, color: color),
     );
   }
 }

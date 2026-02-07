@@ -69,7 +69,7 @@ class _GameSetupScreenState extends State<GameSetupScreen> {
                                 SizedBox(height: context.v(16, 32)),
                                 context.autoText(
                                   'WORD LENGTH',
-                                  style: AppFonts.displayMedium,
+                                  style: context.displayMedium,
                                 ),
                                 SizedBox(height: context.r(8)),
                                 WordLengthSelector(
@@ -83,7 +83,7 @@ class _GameSetupScreenState extends State<GameSetupScreen> {
 
                                 context.autoText(
                                   'YEAR LEVEL',
-                                  style: AppFonts.displayMedium,
+                                  style: context.displayMedium,
                                 ),
                                 DifficultySelector(
                                   value: _difficulty,

@@ -75,7 +75,10 @@ class ProfileHeader extends StatelessWidget {
                 ],
               ),
             ),
-            context.autoText("Temp Name", style: AppFonts.displayLarge),
+            context.autoText(
+              "Temp Name",
+              style: context.textTheme.displayLarge,
+            ),
 
             context.autoText(
               academicTitle,

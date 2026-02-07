@@ -27,7 +27,7 @@ class StatsScreen extends StatelessWidget {
                   children: [
                     context.autoText(
                       "Performance",
-                      style: AppFonts.displayLarge,
+                      style: context.textTheme.displayLarge,
                       maxLines: 1,
                     ),
                     SizedBox(height: context.r(4)),

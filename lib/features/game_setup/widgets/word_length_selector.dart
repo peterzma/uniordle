@@ -52,10 +52,10 @@ class WordLengthSelector extends StatelessWidget {
                               AutoSizeText(
                                 '$len',
                                 style: active
-                                    ? AppFonts.displayMedium.copyWith(
+                                    ? context.displayMedium.copyWith(
                                         fontWeight: FontWeight.w900,
                                       )
-                                    : AppFonts.displayMedium,
+                                    : context.displayMedium,
                               ),
                               AutoSizeText(
                                 'LETTERS',

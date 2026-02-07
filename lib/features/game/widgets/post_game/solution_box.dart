@@ -28,7 +28,7 @@ class SolutionBox extends StatelessWidget {
               fit: BoxFit.scaleDown,
               child: Text(
                 solution.toUpperCase(),
-                style: AppFonts.displayLarge.copyWith(
+                style: context.textTheme.displayLarge!.copyWith(
                   fontSize: 48,
                   letterSpacing: 8,
                 ),

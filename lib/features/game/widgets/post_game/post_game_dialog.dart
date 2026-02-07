@@ -73,7 +73,7 @@ class PostGameDialog extends StatelessWidget {
           ),
           context.autoText(
             won ? 'YOU WIN!' : 'GAME OVER',
-            style: AppFonts.displayLarge,
+            style: context.textTheme.displayLarge,
             reduction: 4,
           ),
           SizedBox(height: context.r(32)),

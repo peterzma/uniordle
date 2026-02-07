@@ -52,7 +52,7 @@ class BaseHeader extends StatelessWidget {
                 flex: 3,
                 child: Text(
                   title,
-                  style: AppFonts.displayMedium,
+                  style: context.displayMedium,
                   textAlign: TextAlign.center,
                 ),
               ),

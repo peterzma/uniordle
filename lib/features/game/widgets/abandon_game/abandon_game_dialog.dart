@@ -25,7 +25,7 @@ class AbandonGameDialog extends StatelessWidget {
           SizedBox(height: context.r(8)),
           context.autoText(
             "ABANDON GAME?",
-            style: AppFonts.displayLarge,
+            style: context.textTheme.displayLarge,
             textAlign: TextAlign.center,
             reduction: 8,
             maxLines: 2,

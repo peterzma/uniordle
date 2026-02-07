@@ -111,7 +111,10 @@ class _LevelUpDialogState extends State<LevelUpDialog>
           children: [
             FittedBox(
               fit: BoxFit.scaleDown,
-              child: Text("STUDIES REPORT", style: AppFonts.displayLarge),
+              child: Text(
+                "STUDIES REPORT",
+                style: context.textTheme.displayLarge,
+              ),
             ),
             SizedBox(height: context.r(32)),
             AnimatedBuilder(

@@ -20,9 +20,9 @@ class AttemptsInfo extends StatelessWidget {
         children: [
           TextSpan(
             text: '$attempts/$maxAttempts ',
-            style: AppFonts.displayMedium.copyWith(color: attemptsColor),
+            style: context.displayMedium.copyWith(color: attemptsColor),
           ),
-          TextSpan(text: 'Attempts', style: AppFonts.displayMedium),
+          TextSpan(text: 'Attempts', style: context.displayMedium),
         ],
       ),
     );

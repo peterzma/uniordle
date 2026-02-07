@@ -1,38 +1,26 @@
-import 'package:uniordle/shared/data/major_colors.dart';
 import 'package:uniordle/shared/exports/app_exports.dart';
+import 'package:uniordle/shared/data/major_colors.dart';
 import 'package:uniordle/features/game/models/letter_model.dart';
 
 extension AppExtensions on BuildContext {
-  // Use: context.theme
   ThemeData get theme => Theme.of(this);
-
-  // Use: context.textTheme.displayLarge
   TextTheme get textTheme => theme.textTheme;
-
-  // Use: context.colorScheme.primary
   ColorScheme get colorScheme => theme.colorScheme;
 
-  // Use: context.dialogBackground
+  Color get outline => colorScheme.outline;
+  Color get surface => colorScheme.surface;
+  Color get surfaceVariant => colorScheme.surfaceContainer;
+  Color get onSurface => colorScheme.onSurface;
+  Color get onSurfaceVariant => colorScheme.onSurfaceVariant;
   Color get dialogBackground =>
       theme.dialogTheme.backgroundColor ?? colorScheme.surface;
 
-  // Use: context.gameColors.correct
   GameColors get gameColors => theme.extension<GameColors>()!;
 
-  // Use: context.outline
-  Color get outline => colorScheme.outline;
-
-  // Use: context.surface
-  Color get surface => colorScheme.surface;
-
-  // Use: context.surfaceVariant
-  Color get surfaceVariant => colorScheme.surfaceContainer;
-
-  // Use: context.onSurface
-  Color get onSurface => colorScheme.onSurface;
-
-  // Use: context.onSurfaceVariant
-  Color get onSurfaceVariant => colorScheme.onSurfaceVariant;
+  Color getMajorColor(String id) {
+    final majorExt = theme.extension<MajorColors>();
+    return majorExt?.map[id] ?? colorScheme.primary;
+  }
 
   // Use: context.getLetterBgColor(letter.status)
   Color getLetterBgColor(LetterStatus status) {
@@ -75,8 +63,10 @@ extension AppExtensions on BuildContext {
     }
   }
 
-  Color getMajorColor(String id) {
-    final majorExt = theme.extension<MajorColors>();
-    return majorExt?.map[id] ?? colorScheme.primary;
-  }
+  TextStyle get displayLarge => textTheme.displayLarge ?? const TextStyle();
+  TextStyle get displayMedium => textTheme.displayMedium ?? const TextStyle();
+  TextStyle get headlineMedium => textTheme.headlineMedium ?? const TextStyle();
+  TextStyle get labelLarge => textTheme.labelLarge ?? const TextStyle();
+  TextStyle get labelMedium => textTheme.labelMedium ?? const TextStyle();
+  TextStyle get labelSmall => textTheme.labelSmall ?? const TextStyle();
 }

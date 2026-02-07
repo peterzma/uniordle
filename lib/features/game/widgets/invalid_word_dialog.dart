@@ -21,7 +21,7 @@ class InvalidWordDialog {
           child: context.autoText(
             'Word not found',
             textAlign: TextAlign.center,
-            style: AppFonts.displayMedium,
+            style: context.displayMedium,
           ),
         );
       },

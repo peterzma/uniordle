@@ -27,7 +27,7 @@ class UnlockedMajorDialog extends StatelessWidget {
           SizedBox(height: context.r(8)),
           context.autoText(
             "CONGRATULATIONS",
-            style: AppFonts.displayMedium.copyWith(
+            style: context.displayMedium.copyWith(
               color: context.getMajorColor(major.id),
             ),
             reduction: 8,

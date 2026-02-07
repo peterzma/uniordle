@@ -25,7 +25,7 @@ class StatCard extends StatelessWidget {
         children: [
           context.autoText(
             value,
-            style: AppFonts.displayMedium.copyWith(color: color),
+            style: context.displayMedium.copyWith(color: color),
             reduction: 8,
           ),
           context.autoText(

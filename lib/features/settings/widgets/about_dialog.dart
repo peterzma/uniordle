@@ -11,7 +11,7 @@ class AboutGameDialog extends StatelessWidget {
         children: [
           _buildAppIcon(context),
           SizedBox(height: context.r(32)),
-          context.autoText("Uniordle", style: AppFonts.displayLarge),
+          context.autoText("Uniordle", style: context.textTheme.displayLarge),
           SizedBox(height: context.r(16)),
           context.autoText("Made by Peter", style: AppFonts.labelLarge),
           SizedBox(height: context.r(8)),
