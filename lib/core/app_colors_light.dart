@@ -2,25 +2,24 @@ import 'package:uniordle/shared/exports/app_exports.dart';
 
 abstract class AppColorsLight {
   // Game Logic
-  static const Color correctColor = Color(0xFF166534);
-  static const Color inWordColor = Color(0XFFEAD637);
-  static const Color notInWordColor = Color(0xFF64748B);
+  static const Color correctColor = Color(0xFF51b355);
+  static const Color inWordColor = Color(0XFFc6b215);
+  static const Color notInWordColor = Color(0xFF95a3b7);
 
   // Backgrounds - Clean and crisp
-  static const Color surface = Color(0xFFF8FAFC);
+  static const Color surface = Color(0xFFe0f2ff);
   static const Color surfaceDialog = Color(0xFFFFFFFF);
-  static const Color surfaceVariant = Color(0xFFF1F5F9);
-  static const Color gameTiles = Color(0xFFFFFFFF);
+  static const Color surfaceVariant = Color(0xFFd1ecff);
 
   // Content (Text/Icons)
-  static const Color onSurface = Color(0xFF00121f);
+  static const Color onSurface = Color(0xFF030507);
   static const Color onSurfaceVariant = Color(0x801A1F2E);
-  static const Color outline = Color(0xFFE2E8F0);
+  static const Color outline = Color(0xFFCBD5E1);
 
   // UI Accents
-  static const Color accent = Color(0xFF2563EB);
-  static const Color accent2 = Color(0xFFDC2626);
-  static const Color accent3 = Color(0xFFD97706);
+  static const Color accent = Color(0xFF0950c3);
+  static const Color accent2 = Color(0xFFbc1010);
+  static const Color accent3 = Color(0xFFa2810b);
   static const Color accent4 = Color(0xFFEA580C);
 
   // Major Specific Colors
