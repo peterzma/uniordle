@@ -79,21 +79,24 @@ extension ResponsiveLayout on BuildContext {
 
   Widget autoText(
     String text, {
-    required TextStyle style,
+    TextStyle? style,
     double? minSize,
     double? maxSize,
     double reduction = 2,
     int maxLines = 1,
     TextAlign textAlign = TextAlign.center,
   }) {
-    final double effectiveMax = maxSize ?? style.fontSize ?? 14;
+    final TextStyle effectiveStyle = style ?? const TextStyle();
 
+    final double effectiveMax = maxSize ?? effectiveStyle.fontSize ?? 14;
     final double effectiveMin = minSize ?? (effectiveMax - reduction);
 
     return AutoSizeText(
       text,
       textAlign: textAlign,
-      style: style.copyWith(fontSize: responsive(effectiveMin, effectiveMax)),
+      style: effectiveStyle.copyWith(
+        fontSize: responsive(effectiveMin, effectiveMax),
+      ),
       minFontSize: effectiveMin,
       maxLines: maxLines,
       overflow: TextOverflow.ellipsis,

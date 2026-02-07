@@ -18,6 +18,7 @@ export 'package:uniordle/core/app_theme.dart';
 export 'package:uniordle/core/app_colors.dart';
 export 'package:uniordle/core/app_fonts.dart';
 export 'package:uniordle/core/app_icons.dart';
+export 'package:uniordle/core/app_extensions.dart';
 export 'package:uniordle/core/sound_manager.dart';
 
 // Shared Data & Logic
