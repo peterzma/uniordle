@@ -23,7 +23,7 @@ class DataResetService {
           SizedBox(height: context.r(32)),
           PrimaryButton(
             label: 'YES, RESET EVERYTHING',
-            color: Colors.red,
+            color: context.colorScheme.error,
             onPressed: () => Navigator.pop(context, true),
           ),
           SizedBox(height: context.r(8)),
@@ -59,7 +59,7 @@ class DataResetService {
           SizedBox(height: context.r(32)),
           PrimaryButton(
             label: 'I AM SURE, RESET EVERYTHING',
-            color: Colors.red,
+            color: context.colorScheme.error,
             onPressed: () => Navigator.pop(context, true),
           ),
           SizedBox(height: context.r(8)),

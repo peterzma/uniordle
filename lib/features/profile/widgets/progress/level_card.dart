@@ -78,7 +78,7 @@ class LevelCard extends StatelessWidget {
                         child: context.autoText(
                           progressLabel,
                           style: context.labelSmall.copyWith(
-                            color: Colors.white,
+                            color: context.colorScheme.onSurface,
                           ),
                         ),
                       ),

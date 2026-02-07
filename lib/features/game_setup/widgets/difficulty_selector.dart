@@ -87,7 +87,7 @@ class DifficultySelector extends StatelessWidget {
                     maxLines: 1,
                     style: active
                         ? context.labelMedium.copyWith(
-                            color: Colors.white,
+                            color: context.colorScheme.onSurface,
                             fontWeight: FontWeight.bold,
                           )
                         : context.labelMedium.copyWith(

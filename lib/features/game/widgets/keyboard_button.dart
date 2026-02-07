@@ -25,7 +25,7 @@ class KeyboardButton extends StatelessWidget {
         width: 62,
         onTap: onTap,
         soundType: SoundType.delete,
-        child: Icon(AppIcons.gameBackspace, color: Colors.white, size: 22),
+        child: Icon(AppIcons.gameBackspace, size: 22),
       );
 
   factory KeyboardButton.enter({required VoidCallback onTap}) => KeyboardButton(

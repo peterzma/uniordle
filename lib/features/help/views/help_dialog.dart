@@ -72,7 +72,6 @@ class NavHitArea extends StatelessWidget {
       child: Container(
         width: context.responsive(40, 60),
         height: context.responsive(220, 300),
-        // color: Colors.red,
         alignment: Alignment.center,
         child: Transform.translate(
           offset: Offset(0, context.responsive(-4, -6)),

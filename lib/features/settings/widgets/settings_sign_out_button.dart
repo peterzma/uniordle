@@ -3,10 +3,7 @@ import 'package:uniordle/shared/exports/settings_exports.dart';
 class SettingsSignOutButton extends StatelessWidget {
   final VoidCallback onPressed;
 
-  const SettingsSignOutButton({
-    super.key,
-    required this.onPressed,
-  });
+  const SettingsSignOutButton({super.key, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +12,7 @@ class SettingsSignOutButton extends StatelessWidget {
       child: PrimaryButton(
         onPressed: onPressed,
         label: 'SIGN OUT',
-        color: Colors. red,
+        color: context.colorScheme.error,
       ),
     );
   }

@@ -28,7 +28,7 @@ class SimpleButton extends StatelessWidget {
         splashFactory: NoSplash.splashFactory,
         overlayColor: WidgetStateProperty.resolveWith<Color?>((states) {
           if (states.contains(WidgetState.pressed)) {
-            return Colors.white.withValues(alpha: 0.1);
+            return context.colorScheme.primary.withValues(alpha: 0.1);
           }
           return null;
         }),

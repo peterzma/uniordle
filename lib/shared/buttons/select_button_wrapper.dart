@@ -9,7 +9,6 @@ class SelectButtonWrapper extends StatefulWidget {
   final double pressScale;
   final bool enableDarken;
   final Color? baseColor;
-  final double darkenIntensity;
   final BorderRadius? borderRadius;
   final SoundType soundType;
 
@@ -20,7 +19,6 @@ class SelectButtonWrapper extends StatefulWidget {
     this.pressScale = 0.98,
     this.enableDarken = false,
     this.baseColor,
-    this.darkenIntensity = 0.1,
     this.borderRadius,
     this.soundType = SoundType.click,
   });
@@ -53,7 +51,7 @@ class _PumpButtonWrapperState extends State<SelectButtonWrapper> {
     if (widget.onTap != null && widget.baseColor != null) {
       if (_isPressed && widget.enableDarken) {
         backgroundColor = Color.alphaBlend(
-          Colors.black.withValues(alpha: widget.darkenIntensity),
+          context.colorScheme.primary.withValues(alpha: 0.1),
           widget.baseColor!,
         );
       }

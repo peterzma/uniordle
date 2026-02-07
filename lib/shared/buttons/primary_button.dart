@@ -73,7 +73,7 @@ class PrimaryButton extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         if (icon != null) ...[
-          Icon(icon, size: iconSize, color: Colors.white),
+          Icon(icon, size: iconSize, color: context.colorScheme.onSurface),
           SizedBox(width: context.r(8)),
         ],
         Flexible(
