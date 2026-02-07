@@ -30,7 +30,7 @@ class BaseDialog extends StatelessWidget {
         children: [
           Dialog(
             elevation: 0,
-            backgroundColor: AppColorsDark.surfaceDialog,
+            backgroundColor: context.dialogBackground,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(32),
             ),

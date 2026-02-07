@@ -20,6 +20,9 @@ extension ThemeHelper on BuildContext {
   // Use: context.outline
   Color get outline => colorScheme.outline;
 
+  // Use: context.surface
+  Color get surface => colorScheme.surface;
+
   // Use: context.surfaceVariant
   Color get surfaceVariant => colorScheme.surfaceContainer;
 

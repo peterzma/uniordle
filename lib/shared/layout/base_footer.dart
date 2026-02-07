@@ -18,7 +18,7 @@ class BaseFooter extends StatelessWidget {
     return Container(
       height: totalHeight,
       decoration: BoxDecoration(
-        color: AppColorsDark.surface,
+        color: context.surface,
         border: const Border(
           top: BorderSide(color: AppColorsDark.outline, width: 0.5),
         ),

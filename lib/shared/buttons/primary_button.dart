@@ -3,7 +3,7 @@ import 'package:uniordle/shared/exports/core_exports.dart';
 class PrimaryButton extends StatelessWidget {
   final String label;
   final VoidCallback? onPressed;
-  final Color color;
+  final Color? color;
   final bool isLoading;
   final IconData? icon;
   final double? height;
@@ -15,7 +15,7 @@ class PrimaryButton extends StatelessWidget {
     super.key,
     required this.label,
     required this.onPressed,
-    this.color = AppColorsDark.surfaceVariant,
+    this.color,
     this.isLoading = false,
     this.icon,
     this.height,
@@ -26,6 +26,7 @@ class PrimaryButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Color effectiveBgColor = color ?? context.surfaceVariant;
     final double effectiveWidth =
         width ?? MediaQuery.of(context).size.width * 0.9;
 
@@ -40,7 +41,7 @@ class PrimaryButton extends StatelessWidget {
         width: effectiveWidth,
         height: effectiveHeight,
         decoration: BoxDecoration(
-          color: color,
+          color: effectiveBgColor,
           borderRadius: BorderRadius.circular(effectiveRadius),
         ),
         child: Center(
