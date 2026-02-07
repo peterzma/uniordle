@@ -1,6 +1,5 @@
 export 'package:uniordle/shared/exports/core_exports.dart';
 
-export 'package:uniordle/features/settings/controller/settings_controller.dart';
 export 'package:uniordle/features/settings/data/data_reset_service.dart';
 export 'package:uniordle/features/settings/data/link_service.dart';
 export 'package:uniordle/features/settings/models/settings_state.dart';

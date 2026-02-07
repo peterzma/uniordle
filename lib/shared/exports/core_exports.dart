@@ -28,7 +28,7 @@ export 'package:uniordle/shared/models/major.dart';
 export 'package:uniordle/shared/services/stats_manager.dart';
 export 'package:uniordle/shared/navigation/main_navigation_footer.dart';
 export 'package:uniordle/shared/navigation/main_navigation_header.dart';
-export 'package:uniordle/features/settings/controller/settings_controller.dart';
+export 'package:uniordle/shared/services/settings_manager.dart';
 
 // Common Utilities
 export 'package:uniordle/shared/buttons/primary_button.dart';
